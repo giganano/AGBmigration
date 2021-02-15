@@ -79,23 +79,119 @@ units of the mass produced at~$\tau$~= 12.2 Gyr. }
 \label{fig:n_vs_fe_ssp} 
 \end{figure} 
 
-This demonstrates that if the IMF-integrated mass production of any element in 
-AGB stars is to be mass-independent, then the yield must scale with 1 less than 
-the power-law index of the IMF at masses of~$M \gtrsim 1~M_\odot$. If the IMF 
-has a slope of~$\alpha$~= 2.3 at these masses, then the yield must scale with 
-$m^\beta$~where~$\beta \geq$~1.3. Any higher, and the IMF-integrated net 
-production is more biased toward high mass stars, and conversely toward low 
-mass stars for lower values of~$\beta$. Based on these investigations of the 
-\citet{Cristallo2011} yields (see~\texttt{../yields/yields.pdf}), it appears 
-that~$\beta \approx$~1 for nitrogen, indicating the IMF-integrated production 
-is actually dominated by low-mass stars. 
+If the yield~$y$~scales with~$m^{-\gamma}$ and the IMF-integrated mass 
+production is to be mass-independent, then~$\gamma = 1 - \alpha$~= -1.3. Only 
+when~$y \propto m^{1.3}$ will the IMF-integrated contribution of high mass 
+stars be comparable to that of low-mass stars. The weight of low-mass stars 
+increases with increasing~$\gamma$, and conversely for high-mass stars with 
+decreasing~$\gamma$. Based on these investigations of the~\citet{Cristallo2011} 
+yields (see~\texttt{../yields/yields.pdf}), it appears that~$\gamma \approx$~-1 
+for nitrogen (if anything else, the~$y-m$ relation appears to me that it might 
+be slightly sub-linear), indicating that the IMF-integrated production is 
+marginally dominated by low-mass stars. 
+
 \twolineskip 
 {\Large \textit{How can the production be dominated by high-mass stars if the 
 IMF-integrated yields are dominated by low-mass stars?}} 
-This appears to be due to the long lifetimes of low mass stars. It's one thing 
-for low mass stars to contribute significantly to a given yield, but only 
-those with lifetimes on the order of a hubble time or shorter are going to 
-enrich the ISM. 
+To understand this, it is enlightening to consider the scenario in which the 
+production of some element~$x$~in AGB stars is time-independent. That is, 
+\begin{equation} 
+\dot{M}_x^\text{AGB} = \text{constant} 
+\end{equation} 
+Under this assumption, in any time interval from~$\tau$~to~$\tau + d\tau$, the 
+amount of production of some element~$x$~is always the same. This corresponds 
+to an idealized scenario in which stars of all masses contribute equally to 
+enrichment when stellar lifetimes are taken into account. The question then 
+becomes,~\textbf{what is the required dependence of the AGB yield on mass at a 
+given metallicity for the production rate to be constant?} For this calculation, 
+we'll assume the IMF, lifetime, and yield scale with progenitor stellar mass 
+$m$~in the following way: 
+\begin{subequations}\begin{align} 
+\frac{dN}{dm} \propto m^{-\alpha} \\ 
+\tau \propto m^{-\beta} \\ 
+y \propto m^{-\gamma} 
+\end{align}\end{subequations} 
+where to answer this question we will need to calculate the appropriate value 
+of~$\gamma$. 
+\par 
+The rate of production of some element~$x$~can be expressed according to: 
+\begin{equation} 
+\dot{M}_x^\text{AGB} = y(m_\text{to}|Z) M_\star \dot{h} 
+\end{equation} 
+where~$y(m_\text{to}|Z)$~is the yield at the main sequence turnoff mass at some 
+metallicity~$Z$,~$M_\star$~is the total initial mass of the progenitor stellar 
+population, and~$\dot{h}$~is the time-derivative of the~\textit{main sequence 
+mass fraction} (see~\citet{Johnson2020}, or section 3 of VICE's science 
+documentation\footnote{
+	\url{https://vice-astro.readthedocs.io/en/latest/science_documentation/SSPs/index.html}
+}). In detail, VICE takes into account post main-sequence lifetimes by simply 
+inflating the lifetime~$\tau$ by some amount (10\% by default), but for the 
+purposes of this calculation, I'm assuming it to be zero. It is defined by: 
+\begin{equation} 
+h = \ddfrac{
+	\int_l^{m_\text{to}} m \frac{dN}{dm} dm 
+}{
+	\int_l^u m \frac{dN}{dm} dm 
+}
+\end{equation} 
+where~$l$~and~$u$~are the lower and upper mass limits of star formation, 
+respectively, and~$dN/dm$~is the IMF. Taking the time-derivative of~$h$~may 
+appear non-trivial, but it is simplified greatly by the usage of the chain 
+rule and the fundamental theorem of calculus. Conventiently, the demoninator of 
+$h$~is simply the initial mass of the stellar population and is 
+time-independent; for ease, I'll denote it here simply as~$M_\star$. 
+\begin{subequations}\begin{align} 
+\dot{h} &= M_\star^{-1} \frac{d}{dm_\text{to}} 
+\left(\int_l^{m_\text{to}} m\frac{dN}{dm} dm\right) 
+\frac{dm_\text{to}}{d\tau} 
+\\ 
+&= M_\star^{-1} m_\text{to} \frac{dN}{dm}\Big|_{m_\text{to}} 
+\frac{dm_\text{to}}{d\tau} 
+\\ 
+&\propto M_\star^{-1} m_\text{to}^{1 - \alpha} \frac{d}{d\tau}(\tau^{-1/\beta}) 
+\\ 
+&\propto M_\star^{-1} m_\text{to}^{1 - \alpha} \frac{-1}{\beta} 
+\tau^{-(1 + \beta)/\beta} 
+\\ 
+&\propto M_\star^{-1} \tau^{(\alpha - 1) / \beta} \frac{-1}{\beta} 
+\tau^{-(1 + \beta)/\beta} 
+\\ 
+&\propto M_\star^{-1} \frac{-1}{\beta} \tau^{(\alpha - 2 - \beta)/\beta} 
+\end{align}\end{subequations} 
+Therefore, under this formalism, the main sequence mass fraction should 
+decrease monotonically with time (as expected) according to 
+$\dot{h}~\sim~\tau^{(\alpha - 2 - \beta) / \beta}$. 
+\par 
+Next, if the yield~$y$~scales with~$m_\text{to}^{-\gamma}$, then it should 
+scale with time according to~$y~\sim~\tau^{\gamma/\beta}$. Plugging all of this 
+in yields the following time-dependence for the AGB enrichment rate: 
+\begin{subequations}\begin{align} 
+\dot{M}_x^\text{AGB} &\sim \tau^{\gamma/\beta} 
+\tau^{(\alpha - 2 - \beta) / \beta} 
+\\ 
+&= \tau^{(\alpha + \gamma - 2 - \beta) / \beta} 
+\end{align}\end{subequations} 
+and if the enrichment rate is to be a constant, the power-law index must be 
+equal to zero: 
+\begin{equation} 
+\alpha + \gamma - 2 - \beta = 0 \implies \gamma = 2 + \beta - \alpha 
+\end{equation} 
+If~$\alpha$~= 2.3 and~$\beta$~= 3.5, as adopted in VICE, then~$\gamma$~= 3.2. 
+If all stellar masses are to contribute equally to the AGB enrichment rate when 
+lifetimes are taken into account such that the rate is constant, then the 
+yields must increase sharply with decreasing stellar mass. I note that the 
+high value of~$\gamma$~is truly a consequence of the high value of~$\beta$ 
+($2 - \alpha$~= -0.3). Under this parameterization, for higher values of 
+$\gamma$, the AGB enrichment rate increases with time as the yields of low-mass 
+stars become more and more important. For lower values, the production rate 
+falls with time due to the lifetimes of low-mass stars preventing them from 
+producing yields quickly enough to maintain a constant production rate. This 
+is an indication that even though the IMF-integrated AGB stars yields of N are 
+marginally weighted toward low-mass AGB stars, the amount which is produced on 
+the order of a hubble time will be dominated by high mass stars unless the 
+yields have a very strong, inverse dependence on progenitor stellar mass. 
+
+
 
 \newpage 
 \bibliographystyle{mnras} 
