@@ -4,6 +4,9 @@
 *.blg 
 *.log 
 *.out 
+*.config 
+*.vice/* 
 *.sublime-workspace 
+*/.ipynb_checkpoints/* 
 
 
