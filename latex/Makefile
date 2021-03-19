@@ -2,15 +2,21 @@
 TEXCOMPILER := pdflatex 
 BIBCOMPILER := bibtex 
 TEXSOURCES := $(wildcard *.tex) 
+SUBSOURCES := $(wildcard */*.tex) 
 TARGETS := $(TEXSOURCES:.tex=.pdf) 
+SUBDIRS := $(wildcard */) 
 
-all: $(TARGETS) 
+all: $(TARGETS) $(SUBDIRS) 
 
-%.pdf: $(TEXSOURCES) ../notes.bib 
+%.pdf: $(TEXSOURCES) $(SUBSOURCES) notes.bib 
 	@ $(TEXCOMPILER) $(basename $<) 
 	@ $(BIBCOMPILER) $(basename $<) 
 	@ $(TEXCOMPILER) $(basename $<) 
-	@ $(TEXCOMPILER) $(basename $<)  
+	@ $(TEXCOMPILER) $(basename $<) 
+
+.PHONY: $(SUBDIRS) 
+$(SUBDIRS): 
+	$(MAKE) -C $@ 
 
 .PHONY: clean 
 clean: 
@@ -19,4 +25,6 @@ clean:
 	@ rm -f *.blg 
 	@ rm -f *.log 
 	@ rm -f *.out 
-	@ rm -f yields.pdf 
+	@ rm -f *.pdf 
+	@ $(MAKE) -C yields/ clean 
+	@ $(MAKE) -C ssp/ clean  

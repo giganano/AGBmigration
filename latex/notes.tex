@@ -1,0 +1,53 @@
+
+\providecommand{\main}{.} % for subfiles 
+\documentclass[12pt]{report} 
+\usepackage{hyperref} 
+\usepackage{float} 
+\usepackage{natbib}
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{caption}
+\usepackage{float} 
+\usepackage{subfiles} 
+\usepackage[export]{adjustbox} 
+\usepackage[margin = 1in]{geometry} 
+\hypersetup{
+	colorlinks 		= true,
+	urlcolor 		= blue,
+	linkcolor 		= blue, 
+	citecolor 		= blue
+} 
+
+\newcommand\mnras{MNRAS} 
+\newcommand\apj{ApJ} 
+\newcommand\apjs{ApJS} 
+\newcommand\aap{A\&A} 
+\newcommand\araa{ARA\&A} 
+\newcommand\twolineskip{\par\noindent\null\par\noindent} 
+\newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}} 
+
+\newcommand{\biblio}{
+	\bibliographystyle{mnras}
+	\bibliography{\main/notes}
+}
+
+\begin{document} 
+\renewcommand{\biblio}{} 
+
+\begin{center} 
+\textbf{{\Large Stellar Migration and Chemical Enrichment in the Milky Way Disc: 
+The Impact on Enrichment from Asymptotic Giant Branch Stars}} 
+\\ 
+James W. Johnson 
+\end{center}
+
+\subfile{yields/yields.tex} 
+\newpage 
+\subfile{ssp/ssp.tex} 
+\newpage 
+\subfile{onezone/onezone.tex} 
+
+\bibliographystyle{mnras} 
+\bibliography{\main/notes} 
+
+\end{document} 

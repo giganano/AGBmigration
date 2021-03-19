@@ -1,34 +1,11 @@
 %%% Notes on Single stellar population production of N %%% 
 
-\documentclass[12pt]{report} 
-\usepackage{hyperref} 
-\usepackage{float} 
-\usepackage{natbib}
-\usepackage{amsmath} 
-\usepackage{amssymb} 
-\usepackage{caption}
-\usepackage{float}
-\usepackage[export]{adjustbox} 
-\usepackage[margin = 1in]{geometry} 
-\hypersetup{
-	colorlinks 		= true,
-	urlcolor 		= blue,
-	linkcolor 		= blue, 
-	citecolor 		= blue
-}
-
-\newcommand\mnras{MNRAS} 
-\newcommand\apj{ApJ} 
-\newcommand\apjs{ApJS} 
-\newcommand\aap{A\&A} 
-\newcommand\araa{ARA\&A} 
-\newcommand\twolineskip{\par\noindent\null\par\noindent} 
-\newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}} 
+\providecommand{\main}{..} 
+\documentclass[\main/notes.tex]{subfiles} 
 
 \begin{document} 
 \begin{center} 
-\textbf{{\Large Single Stellar Population Production of Nitrogen}} \\ 
-James W. Johnson 
+\textbf{{\Large Single Stellar Population Production of Nitrogen}} 
 \end{center} 
 
 \noindent 
@@ -72,7 +49,7 @@ dm_\text{N}|_{m = m_1} &= dm_\text{N}|_{m = m_2} \\
 
 \begin{figure}[t] 
 \centering 
-\includegraphics[scale = 0.5]{n_vs_fe_ssp.pdf} 
+\includegraphics[scale = 0.5]{\main/ssp/n_vs_fe_ssp.pdf} 
 \caption{Net mass of N (colored lines) and Fe (black) as a function of stellar 
 population age and metallicity (color-coded according to legend for N), in 
 units of the mass produced at~$\tau$~= 12.2 Gyr. } 
@@ -85,10 +62,10 @@ when~$y \propto m^{1.3}$ will the IMF-integrated contribution of high mass
 stars be comparable to that of low-mass stars. The weight of low-mass stars 
 increases with increasing~$\gamma$, and conversely for high-mass stars with 
 decreasing~$\gamma$. Based on these investigations of the~\citet{Cristallo2011} 
-yields (see~\texttt{../yields/yields.pdf}), it appears that~$\gamma \approx$~-1 
-for nitrogen (if anything else, the~$y-m$ relation appears to me that it might 
-be slightly sub-linear), indicating that the IMF-integrated production is 
-marginally dominated by low-mass stars. 
+yields (see~\texttt{latex/yields/yields.pdf}), it appears 
+that~$\gamma \approx$~-1 for nitrogen (if anything else, the~$y-m$ relation 
+appears to me that it might be slightly sub-linear), indicating that the 
+IMF-integrated production is marginally dominated by low-mass stars. 
 
 \twolineskip 
 {\Large \textit{How can the production be dominated by high-mass stars if the 
@@ -191,11 +168,7 @@ marginally weighted toward low-mass AGB stars, the amount which is produced on
 the order of a hubble time will be dominated by high mass stars unless the 
 yields have a very strong, inverse dependence on progenitor stellar mass. 
 
-
-
-\newpage 
-\bibliographystyle{mnras} 
-\bibliography{ssp} 
+\biblio  
 
 \end{document} 
 

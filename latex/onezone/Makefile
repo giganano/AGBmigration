@@ -19,4 +19,4 @@ clean:
 	@ rm -f *.blg 
 	@ rm -f *.log 
 	@ rm -f *.out 
-	@ rm -f yields.pdf 
+	@ rm -f onezone.pdf 

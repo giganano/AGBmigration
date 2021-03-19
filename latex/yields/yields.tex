@@ -1,34 +1,11 @@
 %%% Notes on nitrogen CCSN and AGB star yields of N %%% 
 
-\documentclass[12pt]{report} 
-\usepackage{hyperref} 
-\usepackage{float} 
-\usepackage{natbib}
-\usepackage{amsmath} 
-\usepackage{amssymb} 
-\usepackage{caption}
-\usepackage{float}
-\usepackage[export]{adjustbox} 
-\usepackage[margin = 1in]{geometry} 
-\hypersetup{
-	colorlinks 		= true,
-	urlcolor 		= blue,
-	linkcolor 		= blue, 
-	citecolor 		= blue
-}
-
-\newcommand\mnras{MNRAS} 
-\newcommand\apj{ApJ} 
-\newcommand\apjs{ApJS} 
-\newcommand\aap{A\&A} 
-\newcommand\araa{ARA\&A} 
-\newcommand\twolineskip{\par\noindent\null\par\noindent} 
-\newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}} 
+\providecommand{\main}{..} 
+\documentclass[\main/notes.tex]{subfiles} 
 
 \begin{document} 
 \begin{center} 
-\textbf{{\Large CCSN and AGB Star Yields of Nitrogen}} \\ 
-James W. Johnson 
+\textbf{{\Large CCSN and AGB Star Yields of Nitrogen}} 
 \end{center} 
 
 \noindent 
@@ -71,7 +48,7 @@ y_\text{O}^\text{CC} = \ddfrac{14.007}{15.999}10^{-1.5}(0.015) \approx
 
 \begin{figure}[!t] 
 \centering 
-\includegraphics[scale = 0.7]{n_cc_yields.pdf} 
+\includegraphics[scale = 0.7]{\main/yields/n_cc_yields.pdf} 
 \caption{IMF-integrated CCSN yields of N computed with VICE using the 
 \citet{Limongi2018} (black),~\citet{Sukhbold2016} (crimson),~\citet{Nomoto2013} 
 (lime), and~\citet{Woosley1995} (blue) yield sets. The~\citet{Limongi2018} 
@@ -174,17 +151,16 @@ to verify. }
 
 \begin{figure}[!t]
 \centering 
-\includegraphics[scale = 0.45]{n_agb_yields.pdf} 
+\includegraphics[scale = 0.45]{\main/yields/n_agb_yields.pdf} 
 \caption{Fractional yields of N as a function of progenitor zero age main 
 sequence mass at the metallicities at which~\citet{Cristallo2011} (left) and 
 \citet{Karakas2010} report yields.} 
 \label{fig:n_agb_yields} 
 \end{figure} 
 
-
-\newpage 
-\bibliographystyle{mnras} 
-\bibliography{yields}  
+% \bibliographystyle{mnras}  
+% \bibliography{\main/notes} 
+\biblio 
 
 \end{document} 
 

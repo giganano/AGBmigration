@@ -1,13 +1,17 @@
 
-all: ssp.pdf 
-texcompiler = pdflatex 
-bibcompiler = bibtex 
+TEXCOMPILER := pdflatex 
+BIBCOMPILER := bibtex 
+TEXSOURCES = $(wildcard *.tex) 
+TARGETS := $(TEXSOURCES:.tex=.pdf) 
 
-ssp.pdf: ssp.tex 
-	@ $(texcompiler) ssp 
-	@ $(bibcompiler) ssp 
-	@ $(texcompiler) ssp 
-	@ $(texcompiler) ssp 
+all: $(TARGETS) 
+
+%.pdf: $(TEXSOURCES) ../notes.bib 
+	@ $(TEXCOMPILER) $(basename $<) 
+	@ $(BIBCOMPILER) $(basename $<) 
+	@ $(TEXCOMPILER) $(basename $<) 
+	@ $(TEXCOMPILER) $(basename $<) 
+
 
 .PHONY: clean 
 clean: 
