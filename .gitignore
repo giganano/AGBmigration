@@ -1,4 +1,5 @@
 
+*.pyc 
 *.aux 
 *.bbl 
 *.blg 
