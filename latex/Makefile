@@ -25,6 +25,7 @@ clean:
 	@ rm -f *.blg 
 	@ rm -f *.log 
 	@ rm -f *.out 
-	@ rm -f *.pdf 
-	@ $(MAKE) -C yields/ clean 
-	@ $(MAKE) -C ssp/ clean  
+	@ rm -f notes.pdf 
+	@ for i in $(SUBDIRS) ; do \
+		$(MAKE) -C $$i clean ; \
+	done 

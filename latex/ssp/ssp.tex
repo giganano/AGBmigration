@@ -18,13 +18,15 @@ the FRUITY database~\citep{Cristallo2011}, and supernova yields of Fe as in
 production of N and Fe as a function of stellar population age and 
 metallicity?} 
 \par 
-Figure~\ref{fig:n_vs_fe_ssp} shows the net production of N and Fe as a function 
-of stellar population age and metallicity. Since Fe has metallicity-independent 
-yields under these assumptions, it's plotted with only one curve, whereas N has 
-different production timescales at different metallicities. In general, the 
-CCSN yields of N under these assumptions make up a substantially larger 
-fraction of the N production than the CCSN yields of Fe does for its 
-production. This means that the characteristic timescales for N production are 
+The left-hand panel of Figure~\ref{fig:n_vs_fe_ssp} shows the net production of 
+N and Fe as a function of stellar population age and metallicity. 
+Since Fe has metallicity-independent yields under these assumptions, it's 
+plotted with only one curve, whereas N has different production timescales at 
+different metallicities. 
+In general, the CCSN yields of N under these assumptions make up a 
+substantially larger fraction of the N production than the CCSN yields of Fe 
+does for its production. 
+This means that the characteristic timescales for N production are 
 significantly shorter than for Fe. 
 \par
 The AGB yields of N are also significantly weighted toward high masses such 
@@ -49,10 +51,17 @@ dm_\text{N}|_{m = m_1} &= dm_\text{N}|_{m = m_2} \\
 
 \begin{figure}[t] 
 \centering 
-\includegraphics[scale = 0.5]{\main/ssp/n_vs_fe_ssp.pdf} 
-\caption{Net mass of N (colored lines) and Fe (black) as a function of stellar 
-population age and metallicity (color-coded according to legend for N), in 
-units of the mass produced at~$\tau$~= 12.2 Gyr. } 
+\includegraphics[scale = 0.4]{\main/ssp/n_vs_fe_ssp.pdf} 
+\includegraphics[scale = 0.4]{\main/ssp/n_vs_fe_ssp_nocc.pdf} 
+\caption{
+\textbf{Left}: Net mass of N (colored lines) and Fe (black) as a function of 
+stellar population age and metallicity (color-coded according to legend for N), 
+in units of the mass produced at~$\tau$~= 12.2 Gyr. 
+\textbf{Right}: The same as the left, but with the core collapse supernova 
+yields of both N and Fe set to zero. 
+The points at the top denote the time at which 50\% of the yield at~$\tau$ = 
+13.2 Gyr has been produced. 
+} 
 \label{fig:n_vs_fe_ssp} 
 \end{figure} 
 
@@ -66,6 +75,18 @@ yields (see~\texttt{latex/yields/yields.pdf}), it appears
 that~$\gamma \approx$~-1 for nitrogen (if anything else, the~$y-m$ relation 
 appears to me that it might be slightly sub-linear), indicating that the 
 IMF-integrated production is marginally dominated by low-mass stars. 
+\par 
+\textbf{Isolating the AGB Star Contribution} 
+\par\noindent 
+To isolate the AGB star contribution to single stellar population production 
+of iron and nitrogen,~$y_\text{N}^\text{CC}$ and~$y_\text{Fe}^\text{CC}$ were 
+both set to zero, and~\vice's~\texttt{single\_stellar\_population} function 
+reran at the same metallicities as in the left-hand panel of 
+Figure~\ref{fig:n_vs_fe_ssp}; the results are shown in the right-hand panel. 
+Points are plotted at the top of the panel to denote when 50\% of the yield is 
+produced. 
+Clearly, nitrogen production occurs on average an order of magnitude 
+sooner than iron production - in most cases before the SN Ia DTD even begins. 
 
 \twolineskip 
 {\Large \textit{How can the production be dominated by high-mass stars if the 

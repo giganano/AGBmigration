@@ -9,6 +9,7 @@
 \usepackage{caption}
 \usepackage{float} 
 \usepackage{subfiles} 
+\usepackage{media9} 
 \usepackage[export]{adjustbox} 
 \usepackage[margin = 1in]{geometry} 
 \hypersetup{
@@ -18,14 +19,18 @@
 	citecolor 		= blue
 } 
 
-\newcommand\mnras{MNRAS} 
-\newcommand\apj{ApJ} 
-\newcommand\apjs{ApJS} 
-\newcommand\aap{A\&A} 
-\newcommand\araa{ARA\&A} 
-\newcommand\twolineskip{\par\noindent\null\par\noindent} 
+\newcommand{\mnras}{MNRAS} 
+\newcommand{\apj}{ApJ} 
+\newcommand{\apjs}{ApJS} 
+\newcommand{\aap}{A\&A} 
+\newcommand{\araa}{ARA\&A} 
+\newcommand{\apss}{Ap\&SS} 
+\newcommand{\twolineskip}{\par\noindent\null\par\noindent} 
 \newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}} 
 \newcommand{\msun}{\ensuremath{M_\odot}} 
+\newcommand{\mto}{\ensuremath{m_\text{to}}} 
+\newcommand{\rgal}{\ensuremath{R_\text{gal}}} 
+\newcommand{\vice}{\texttt{VICE}} 
 
 \newcommand{\biblio}{
 	\bibliographystyle{mnras}
@@ -36,8 +41,7 @@
 \renewcommand{\biblio}{} 
 
 \begin{center} 
-\textbf{{\Large Stellar Migration and Chemical Enrichment in the Milky Way Disc: 
-The Impact on Enrichment from Asymptotic Giant Branch Stars}} 
+\textbf{{\Large On the Nucleosynthesis of Nitrogen}} 
 \\ 
 James W. Johnson 
 \end{center}
@@ -47,6 +51,8 @@ James W. Johnson
 \subfile{ssp/ssp.tex} 
 \newpage 
 \subfile{onezone/onezone.tex} 
+\newpage 
+\subfile{multizone/multizone.tex} 
 
 \bibliographystyle{mnras} 
 \bibliography{\main/notes} 
