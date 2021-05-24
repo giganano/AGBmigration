@@ -1,17 +1,16 @@
 
-TEXCOMPILER := pdflatex 
-BIBCOMPILER := bibtex 
-TEXSOURCES = $(wildcard *.tex) 
-TARGETS := $(TEXSOURCES:.tex=.pdf) 
+TEXCOMPILER 		:= pdflatex 
+BIBCOMPILER 		:= bibtex 
+TEXSOURCES 			:= $(wildcard *.tex) 
+TEXOUTPUTS 			:= $(TEXSOURCES:.tex=.pdf) 
 
-all: $(TARGETS) 
+all: $(TEXOUTPUTS) 
 
-%.pdf: $(TEXSOURCES) ../notes.bib 
+%.pdf: %.tex ../notes.bib 
 	@ $(TEXCOMPILER) $(basename $<) 
 	@ $(BIBCOMPILER) $(basename $<) 
 	@ $(TEXCOMPILER) $(basename $<) 
 	@ $(TEXCOMPILER) $(basename $<) 
-
 
 .PHONY: clean 
 clean: 
@@ -20,4 +19,7 @@ clean:
 	@ rm -f *.blg 
 	@ rm -f *.log 
 	@ rm -f *.out 
-	@ rm -f ssp.pdf 
+	@ for i in $(TEXOUTPUTS) ; do \
+		rm -f $$i ; \
+	done 
+

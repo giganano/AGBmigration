@@ -57,6 +57,7 @@ Observational results on the gas-phase [N/O]-[O/H] relation in comparison with
 a fiducial model at the present day (solid, thick black line). 
 For the fiducial model, each individual ring at a radius of~$\rgal~\geq$ 2 kpc 
 is plotted as a point on the line. 
+The sun (at (0, 0) by definition) is plotted in a large red star. 
 The fit to an analytic chemical evolution model using data from Galactic HII 
 regions, main sequence and halo stars, and damped lyman alpha systems 
 from~\citet{Henry2000} is shown in a dotted black line. 
@@ -65,8 +66,8 @@ galaxies at shown in grey X's~\citep*{Pilyugin2010}.
 Measurements from blue, star forming diffuse dwarf galaxies probing the low 
 metallicity regime are shown in red triangles~\citep{Berg2012}, green 
 stars~\citep*{Izotov2012}, and blue diamonds~\citep{James2015}. 
-Emission line measurements from high-redshift HII regions are shown in purple 
-circles~\citep{Dopita2016}. 
+The N/O vs. O/H calibration derived from local stars and HII regions 
+from~\citet{Dopita2016} is shown in purple circles. 
 A sample of star-forming galaxies from MaNGA are shown in black 
 squares~\citep{Belfiore2017}. 
 The~\citet*{Pilyugin2010},~\citet{Berg2012},~\citet*{Izotov2012}, 
@@ -78,33 +79,88 @@ Error bars are omitted for visual clarity.
 \label{fig:no_oh_observed} 
 \end{figure*} 
 
-\textbf{Is the resultant [N/O]-[O/H] relation the result of the metallicity 
-dependence of the yields only, or is the time-delay sufficiently important 
-that it is instead a superposition of endpoints?} 
-This question is addressed in Fig.~\ref{fig:no_oh_tracks}, which plots the 
-present-day [N/O]-[O/H] relation in the gas-phase (parameterized by radius) 
-as well as the evolutionary tracks (parameterized by time) for a selction of 
-radii in the model. 
-Since the evolutionary tracks show a noticeable dependence on~\rgal~at all 
-times, it's quite clear from this that the time-dependence of AGB star 
-nucleosynthesis is playing an important role in shaping the relation. 
-The metallicity dependence is important as well, but this suggests that the 
-time-dependence is strong enough that at least in this model,~\textbf{the 
-[N/O]-[O/H] relation is arising out a superposition of endpoints}. 
-This further suggests that these gas-phase abundance correlations should not be 
-described by one-zone models reproducing the trend. 
-
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.5]{\main/multizone/no_oh_tracks.pdf} 
+\includegraphics[scale = 0.3]{\main/multizone/no_oh_tracks.pdf} 
+\includegraphics[scale = 0.3]{\main/multizone/no_oh_tracks_karakas10.pdf} 
+\includegraphics[scale = 0.3]{\main/multizone/no_oh_tracks_ventura13.pdf} 
 \caption{
 The present-day gas-phase [N/O] relation as a function of [O/H] in the fiducial 
 model for~$\rgal~\geq$ 2 kpc (solid), shown alongside the gas-phase 
 evolutionary tracks (i.e. parameterized by time) for~\rgal~= 2, 3, 4, ... , 13, 
 14, and 15 kpc rings. 
+Each panel shows a different set of AGB star yields:~\citet{Cristallo2011} on 
+the left,~\citet{Karakas2010} in the middle, and~\citet{Ventura2013} on the 
+right. 
 } 
 \label{fig:no_oh_tracks} 
 \end{figure*} 
+
+\begin{figure*} 
+\centering 
+\includegraphics[scale = 0.5]{\main/multizone/no_oh_yields_comparison.pdf} 
+\caption{
+The present-day gas-phase [N/O]-[O/H] relation in the fiducial model 
+for~$\rgal~\geq$ 2 kpc assuming three different AGB star yield prescriptions 
+for N: the~\citet{Cristallo2011, Cristallo2015} sample amplified by a factor 
+of 4 (black), the~\citet{Karakas2010} sample (un-amplified, red), and 
+the~\citet{Ventura2013} sample amplified by a factor of 2 (blue). 
+For reference, the~\citet{Dopita2016} calibration is plotted in purple points. 
+} 
+\label{fig:no_oh_yields_comparison} 
+\end{figure*} 
+
+\textbf{Is the resultant [N/O]-[O/H] relation a superposition of endpoints?} 
+This question is addressed in Fig.~\ref{fig:no_oh_tracks}, which plots the 
+present-day [N/O]-[O/H] relation in the gas-phase (parameterized by radius) 
+as well as the evolutionary tracks (parameterized by time) for a selection of 
+radii in the model. 
+This is shown for the~\citet{Cristallo2011} (left),~\citet{Karakas2010} 
+(middle), and~\citet{Ventura2013} (right) AGB star yields. 
+As in previous versions of this model, the~\citet{Cristallo2011} yields have 
+been amplified by a factor of 5 to improve agreement with the observed 
+abundances; although this isn't the case for the~\citet{Ventura2013} yields, 
+it's likely they'll need amplified as well. 
+In the~\citet{Cristallo2011} and~\citet{Ventura2013} models, the relation 
+arises out of a series of end-points, having a slightly shallower slope than 
+the relation predicted by the evolutionary track of a one-zone model. 
+The~\citet{Karakas2010} yields disagree with this prediction; in that model, 
+the trend arises out of the metallicity dependence of the yields alone - the 
+evolutionary tracks for individual annuli nearly overlap. 
+However, the~\citet{Karakas2010} model fails to reproduce the observed trend. 
+Instead, it predicts a trend which is nearly flat at low [O/H], then decreases 
+monotonically at [O/H]~$\gtrsim$ 0. 
+This is in tension with the observed trend, with the [N/O] abundances at low 
+[O/H] in tension with the observations at the~$\sim$0.5 dex level. 
+
+\textbf{Can we distinguish between the different AGB star yield sets?} 
+In Fig.~\ref{fig:no_oh_yields_comparison}, we compare the predicted present-day 
+gas-phase [N/O]-[O/H] relation in the inside-out SFH model ran with a few 
+different prescriptions for the AGB star yield. 
+Both the~\citet{Cristallo2011, Cristallo2015} and~\citet{Ventura2013} sets can 
+reproduce the observed trend within the scatter to a reasonable accuracy, 
+though a multiplicative prefactor is required to do so, suggesting that these 
+models under-predict nitrogen production. 
+The~\citet{Karakas2010} model, however, fails to reproduce the trend, instead 
+predicting an [N/O]-[O/H] relation which is montonically~\textit{decreasing}. 
+There is no multiplicative prefactor which can be added to this yield set to 
+reproduce the observed relation. 
+
+% \textbf{Is the resultant [N/O]-[O/H] relation the result of the metallicity 
+% dependence of the yields only, or is the time-delay sufficiently important 
+% that it is instead a superposition of endpoints?} 
+% This question is addressed in Fig.~\ref{fig:no_oh_tracks}, which plots the 
+% present-day [N/O]-[O/H] relation in the gas-phase (parameterized by radius) 
+% as well as the evolutionary tracks (parameterized by time) for a selction of 
+% radii in the model. 
+% Since the evolutionary tracks show a noticeable dependence on~\rgal~at all 
+% times, it's quite clear from this that the time-dependence of AGB star 
+% nucleosynthesis is playing an important role in shaping the relation. 
+% The metallicity dependence is important as well, but this suggests that the 
+% time-dependence is strong enough that at least in this model,~\textbf{the 
+% [N/O]-[O/H] relation is arising out a superposition of endpoints}. 
+% This further suggests that these gas-phase abundance correlations should not be 
+% described by one-zone models reproducing the trend. 
 
 \biblio 
 \end{document} 

@@ -138,62 +138,127 @@ the~\citet{Asplund2009} solar photospheric composition of~$Z_{\text{N},\odot}$
 
 \begin{figure*}
 \centering 
-\includegraphics[scale = 0.45]{\main/yields/n_agb_yields.pdf} 
-\caption{Fractional yields of N as a function of progenitor zero age main 
-sequence mass at the metallicities at which~\citet{Cristallo2011} (left) and 
-\citet{Karakas2010} report yields.} 
+\includegraphics[scale = 0.3]{\main/yields/n_agb_yields.pdf} 
+\caption{
+Fractional yields of N as a function of progenitor zero age main sequence mass 
+at the metallicities at which~\citet{Cristallo2011} (left),~\citet{Karakas2010} 
+(middle), and~\citet{Ventura2013} (right) report yields. 
+} 
 \label{fig:n_agb_yields} 
 \end{figure*} 
 
 \begin{figure*} 
 \centering 
 \includegraphics[scale = 0.5]{\main/yields/n_agb_yields_comp.pdf} 
-\caption{The same as figure~\ref{fig:n_agb_yields}, but with the 
-\citet{Cristallo2011} (solid) and~\citet{Karakas2010} yields plotted on the 
-same set of axes for comparison. } 
+\caption{
+The same as figure~\ref{fig:n_agb_yields}, but with the~\citet{Cristallo2011} 
+(solid) and~\citet{Karakas2010} (dotted) yields plotted on the same set of axes 
+for comparison. 
+} 
 \label{fig:n_agb_yields_comp} 
 \end{figure*} 
 
 Figure~\ref{fig:n_agb_yields} presents the fractional yields of N as a function 
 of progenitor zero age main sequence (ZAMS) mass and metallicity as reported in 
-the FRUITY database~\citep{Cristallo2011} and by~\citet{Karakas2010}. Both 
-models show the metallicity-dependent nature of seconday nitrogen production, 
-whose fractional yields increase with progenitor mass at fixed metallicity. 
-Secondary nitrogen production refers to the production of~$^{14}$N at the 
-expense of C and O in the CNO cycle; the nuclear reaction network of the CNO 
-cycle: 
+the FRUITY database~\citep[][left]{Cristallo2011, Cristallo2015}, 
+by~\citet{Karakas2010} (middle), and by~\citet{Ventura2013} (right). 
+All models predict a metallicity dependence to the nitrogen yields, though with 
+noticeably different dependencies; both~\citet{Cristallo2011, Cristallo2015} 
+and~\citet{Ventura2013} predict the yields to increase more or less linearly 
+with progenitor metallicity, whereas the~\citet{Karakas2010} yields predict 
+higher N yields at lower metallicities for higher mass AGB stars. 
+This is a consequence of the interplay between third dredge up (TDU) and 
+hot bottom burning (HBB) in these models. 
+\par 
+TDU refers to the repeated penetrations of the convective envelope 
+into the hydrogen depleted core during the thermal pulses associated with AGB 
+star evolution. 
+This process is particularly important in low mass AGB stars whose main source 
+of neutrons is the~$^{13}$C($\alpha$, n)$^{16}$O reaction, which can occur at 
+substantial rates when C is mixed with material from the He-rich shell during 
+each TDU episode. 
+At solar metallicity,~\citet{Karakas2010} suggests that only stars with 
+$M_\text{ZAMS}\gtrsim$2.5~\msun~are massive enough to experience TDU, though 
+the threshold is as low as~$\sim$1~\msun~at~$Z \approx 10^{-4}Z_\odot$; lower 
+mass stars instead experience only a core helium flash. 
+HBB refers to proton captures at the base of the convective envelope, which 
+activates the CNO cycle, producing large amounts of~$^{13}$C and~$^{14}$N. 
+It requires temperatures of at least 30-40 MK according to~\citet{Ventura2013}, 
+but 80 MK according to~\citet{Cristallo2015}. 
+HBB requires a higher mass AGB progenitor ($\sim$4 - 5~\msun), but like TDU, 
+the minimum mass also decreases at lower progenitor metallicity. 
+The CNO cycle: 
 
 \twolineskip 
-$^{12}$C(p,$\gamma$)$^{13}$N(,$\beta^+$)$^{13}$C(p,$\gamma$)$^{14}$N(p,$\gamma$)
-$^{15}$O(,$\beta^+$)$^{15}$N(p,$\alpha$)$^{12}$C 
+$^{12}$C(p,$\gamma$)$^{13}$N($\beta^+$,~$\nu_e$)$^{13}$C(p,$\gamma$)\null 
+$^{14}$N(p,$\gamma$)$^{15}$O($\beta^+$,~$\nu_e$)$^{15}$N(p,$\alpha$)$^{12}$C 
 
 \twolineskip 
-In this chain, the~$^{14}$N(p,$\gamma$)$^{15}$O reaction is particularly slow, 
-and for this reason, the net effect of the CNO cycle is to turn all of the C 
-and O into~$^{14}$N at their expense. 
+The most efficient N production thus occurs when an AGB star 
+experiences~\textit{both} TDU and HBB, because each TDU episode adds more 
+C and N seed nuclei with which to conduct p-capture nucleosynthesis. 
+This is the reason the~\citet{Karakas2010} N yields are so high at high masses: 
+every massive star in their model experiences both TDU and HBB, whereas 
+the~\citet{Ventura2013} models have both only in the~$\sim$3 - 4~\msun~range 
+(hence the enhanced N yields there). 
+The~\citet{Cristallo2011} paper makes no mention of HBB, but my impression 
+from~\citet{Cristallo2015} is that their $M > 4$~\msun~models all have both 
+TDU and HBB implemented, though in most cases one is much more efficient than 
+the other. 
+The metallicity dependence of the N yields reported by~\citet{Karakas2010} 
+therefore reflect the fact that low-$Z$ models experience deeper TDU and 
+stronger HBB~\citep[see discussion in~\S~4.1 of][]{Ventura2013}. 
+Beyond this, a direct comparison of the models is significantly challenging 
+(and even avoided by mose of the papers which publish them) owing to the 
+laundry list of assumptions that go into the stellar models: the treatment of 
+convection and convective boundaries, the mass-loss rate, opacities, the 
+equation of state, the nuclear reaction network, etc. 
+
+% All models show the metallicity-dependent nature of seconday nitrogen 
+% production, whose fractional yields increase with progenitor mass at fixed 
+% metallicity. 
+% Secondary nitrogen production refers to the production of~$^{14}$N at the 
+% expense of C and O in the CNO cycle; the nuclear reaction network of the CNO 
+% cycle: 
+
+% \twolineskip 
+% In this chain, the~$^{14}$N(p,$\gamma$)$^{15}$O reaction is particularly slow, 
+% and for this reason, to first order the net effect of the CNO cycle is to turn 
+% all of the C and O into~$^{14}$N at their expense. 
+% \par 
+% By comparing the three panels of Fig.~\ref{fig:n_agb_yields}, it's clear that 
+% the~\citet{Karakas2010} yields predict the secondary nitrogen production in 
+% high mass stars to be a much stronger effect than both~\citet{Cristallo2011} 
+% and~\citet{Ventura2013}. 
+% The mass-dependence is also the most complicated in~\citet{Karakas2010}. 
+% Intuitively, one would expect the secondary N yields to increase monotonically 
+% with metallicity as the higher abundances of C and O provide more seed nuclei 
+% to make~$^{14}$N via the CNO cycle. 
+% This is not the case in the~\citet{Karakas2010} yields, where the highest 
+% yields are actually at low metallicity.  
+% By omparing the left and middle panels of Fig.~\ref{fig:n_agb_yields}, 
+% it's clear that the~\citet{Karakas2010} predicts secondary nitrogen production 
+% to be a much stronger effect than~\citet{Cristallo2011}; the yields from high 
+% mass stars are over an order magnitude larger in~\citet{Karakas2010} than in 
+% \citet{Cristallo2011} at all reported metallicities except solar. 
+% \citet{Karakas2010} also predicts a much more complicated mass-dependence than 
+% does~\citet{Cristallo2011}. {\color{red} Intuitively, I would think that 
+% secondary N yields should be nothing but monotonic with metallicity. Rotation 
+% may induce some interesting effects, but unfortunately the~\citet{Karakas2010} 
+% paper makes no mention of rotation. They were primarily interested in the 
+% effect of updates to the~$^{13}$C($\alpha$,n)$^{16}$O reaction on light-element 
+% nucleosynthesis. I'm assuming this means they were using non-rotating models, 
+% but if this ends up being discussed in a paper I should email Amanda Karakas 
+% to verify. } 
 \par 
-By omparing the left- and right-hand panels of Fig.~\ref{fig:n_agb_yields}, 
-it's clear that the~\citet{Karakas2010} predicts secondary nitrogen production 
-to be a much stronger effect than~\citet{Cristallo2011}; the yields from high 
-mass stars are over an order magnitude larger in~\citet{Karakas2010} than in 
-\citet{Cristallo2011} at all reported metallicities except solar. 
-\citet{Karakas2010} also predicts a much more complicated mass-dependence than 
-does~\citet{Cristallo2011}. {\color{red} Intuitively, I would think that 
-secondary N yields should be nothing but monotonic with metallicity. Rotation 
-may induce some interesting effects, but unfortunately the~\citet{Karakas2010} 
-paper makes no mention of rotation. They were primarily interested in the 
-effect of updates to the~$^{13}$C($\alpha$,n)$^{16}$O reaction on light-element 
-nucleosynthesis. I'm assuming this means they were using non-rotating models, 
-but if this ends up being discussed in a paper I should email Amanda Karakas 
-to verify. } 
-\par 
-\textbf{How consistent are the two studies up to~$\sim$3-4~\msun?} 
+\textbf{How consistent are~\citet{Cristallo2011, Cristallo2015} 
+and~\citet{Karakas2010} up to~$\sim$3 - 4~\msun?} 
 Figure~\ref{fig:n_agb_yields_comp} compares the two sets of yields on the same 
-plot, with the~\citet{Cristallo2011} set shown in solid lines and the 
-\citet{Karakas2010} set in dotted lines. 
-The two are broadly consistent with one another up this threshold mass, at 
-which point the secondary nitrogen yields as reported by~\citet{Karakas2010} 
-become considerably large in comparison. 
+plot, with the~\citet{Cristallo2011, Cristallo2015} set shown in solid lines 
+and the~\citet{Karakas2010} set in dotted lines. 
+The two are broadly consistent with one another up to this threshold mass, at 
+which point HBB takes hold in the~\citet{Karakas2010} model, significantly 
+enhancing the N yields for higher mass progenitors. 
 
 
 

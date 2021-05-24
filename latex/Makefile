@@ -1,22 +1,20 @@
 
-TEXCOMPILER := pdflatex 
-BIBCOMPILER := bibtex 
-TEXSOURCES := $(wildcard *.tex) 
-SUBSOURCES := $(wildcard */*.tex) 
-TARGETS := $(TEXSOURCES:.tex=.pdf) 
-SUBDIRS := $(wildcard */) 
+TEXCOMPILER 		:= pdflatex 
+BIBCOMPILER 		:= bibtex 
+TEXSOURCES 			:= $(wildcard *.tex */*.tex) 
+SUBDIRS 			:= $(wildcard */) 
 
-all: $(TARGETS) $(SUBDIRS) 
+all: notes.pdf $(SUBDIRS) 
 
-%.pdf: $(TEXSOURCES) $(SUBSOURCES) notes.bib 
-	@ $(TEXCOMPILER) $(basename $<) 
-	@ $(BIBCOMPILER) $(basename $<) 
-	@ $(TEXCOMPILER) $(basename $<) 
-	@ $(TEXCOMPILER) $(basename $<) 
+notes.pdf: notes.tex notes.bib $(TEXSOURCES) 
+	@ $(TEXCOMPILER) notes 
+	@ $(BIBCOMPILER) notes 
+	@ $(TEXCOMPILER) notes 
+	@ $(TEXCOMPILER) notes 
 
 .PHONY: $(SUBDIRS) 
 $(SUBDIRS): 
-	$(MAKE) -C $@ 
+	@ $(MAKE) -C $@ 
 
 .PHONY: clean 
 clean: 
