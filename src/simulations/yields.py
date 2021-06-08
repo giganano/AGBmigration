@@ -152,7 +152,7 @@ vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13", 
 # 	prefactor = 2) 
 # vice.yields.agb.settings['n'] = "karakas10" 
-# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 0.05) 
+# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 0.08) 
 
 # set with no time-dependence to the AGB yield 
 # vice.yields.sneia.settings['n'] = 0 

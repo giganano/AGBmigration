@@ -148,7 +148,8 @@ class star_formation_history:
 					"static": 		models.static, 
 					"insideout": 	models.insideout, 
 					"lateburst": 	models.lateburst, 
-					"outerburst": 	models.outerburst 
+					"outerburst": 	models.outerburst, 
+					"modulated": 	models.modulated 
 				}[spec.lower()]((i + 0.5) * zone_width)) 
 			i += 1 
 

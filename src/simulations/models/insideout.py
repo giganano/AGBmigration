@@ -34,10 +34,11 @@ class insideout(modified_exponential):
 	``modified_exponential`` declared in ``src/simulations/models/utils.py``. 
 	""" 
 
-	def __init__(self, radius, dt = 0.01, dr = 0.1): 
+	def __init__(self, radius, dt = 0.01, dr = 0.1, norm = True): 
 		super().__init__(timescale = insideout.timescale(radius), 
 			rise = _TAU_RISE_) 
-		self.norm *= normalize(self, gradient, radius, dt = dt, dr = dr) 
+		if norm: self.norm *= normalize(self, gradient, radius, dt = dt, 
+			dr = dr) 
 
 	@staticmethod 
 	def timescale(radius, Re = 5): 

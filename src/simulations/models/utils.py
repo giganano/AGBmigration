@@ -16,6 +16,8 @@ modified_exponential : object
 	Exponential growth/decay with a limited exponential growth prefactor. 
 gaussian : object 
 	A Gaussian in an arbitrary x-coordinate. 
+sinusoid : object 
+	A sinusoidal function in an arbitrary x-coordinate. 
 """ 
 
 import math as m 
@@ -355,4 +357,97 @@ class gaussian:
 		else: 
 			raise TypeError("Std must be a real number. Got: %s" % (
 				type(value))) 
+
+
+class sinusoid: 
+
+	r""" 
+	A function describing a sinusoid in an arbitrary x-coordinate. 
+
+	Parameters 
+	----------
+	\*\*kwargs : varying types 
+		All attributes can be assigned via keyword argument. See below. 
+
+	Attributes 
+	----------
+	amplitude : real number 
+		The amplitude of the sinusoid in arbitrary units. 
+	frequency : real number 
+		The frequency of the sinusoid in the same units as the x-coordinate. 
+	phase : real number 
+		The phase offset of the sinusoid in radians. 
+
+	Calling 
+	-------
+	Call this object with an x-coordinate in the same units as the attribute 
+	``frequency`` and the value of the sinusoid will be calculated 
+	automatically. 
+	""" 
+
+	def __init__(self, amplitude = 1, frequency = 1, phase = 0): 
+		self.amplitude = amplitude 
+		self.frequency = frequency 
+		self.phase = phase 
+
+	def __call__(self, x): 
+		return self._amplitude * m.sin(2 * m.pi * self._frequency * x + 
+			self._phase) 
+
+	@property 
+	def amplitude(self): 
+		r""" 
+		Type : float 
+
+		The amplitude of the sinusoid in arbitrary units. 
+		""" 
+		return self._amplitude 
+
+	@amplitude.setter 
+	def amplitude(self, value): 
+		if isinstance(value, numbers.Number): 
+			if value >= 0: 
+				self._amplitude = float(value) 
+			else: 
+				raise ValueError("Attribute 'amplitude' must be non-negative.") 
+		else: 
+			raise TypeError("""Attribute 'amplitude' must be a numerical \
+value. Got: %s""" % (type(value))) 
+
+	@property 
+	def frequency(self): 
+		r""" 
+		Type : float 
+
+		The frequency of the sinusoid in the same units as the x-coordinate. 
+		""" 
+		return self._frequency 
+
+	@frequency.setter 
+	def frequency(self, value): 
+		if isinstance(value, numbers.Number): 
+			if value > 0: 
+				self._frequency = float(value) 
+			else: 
+				raise ValueError("Attribute 'frequency' must be positive.") 
+		else: 
+			raise TypeError("""Attribute 'frequency' must be a numerical \
+value. Got: %s""" % (type(value))) 
+
+	@property 
+	def phase(self): 
+		r""" 
+		Type : float 
+
+		The phase offset the sinusoid in radians. 
+		""" 
+		return self._phase 
+
+	@phase.setter 
+	def phase(self, value): 
+		if isinstance(value, numbers.Number): 
+			self._phase = float(value) 
+		else: 
+			raise TypeError("""Attribute 'phase' must be a numerical value. \
+Got: %s""" % (type(value))) 
 
