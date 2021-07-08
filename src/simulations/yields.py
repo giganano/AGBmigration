@@ -114,7 +114,7 @@ class linear_agb_yield:
 
 	.. math:: y = \xi m_\text{to}Z 
 
-	where :math:`\xi` is the slope of the linear relation.  
+	where :math:`\xi` is the slope of the linear relation. 
 	""" 
 
 	def __init__(self, slope = 0.05): 
@@ -147,11 +147,12 @@ Got: %s""" % (type(value)))
 # fiducial set of yields 
 vice.yields.sneia.settings['n'] = 0 
 vice.yields.ccsne.settings['n'] = 4.15e-4 
-vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
-	prefactor = 4) 
+# vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
+# 	prefactor = 4) 
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13", 
 # 	prefactor = 2) 
 # vice.yields.agb.settings['n'] = "karakas10" 
+vice.yields.agb.settings['n'] = "karakas16" 
 # vice.yields.agb.settings['n'] = linear_agb_yield(slope = 0.08) 
 
 # set with no time-dependence to the AGB yield 
