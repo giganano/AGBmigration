@@ -117,16 +117,19 @@ class linear_agb_yield:
 	where :math:`\xi` is the slope of the linear relation. 
 	""" 
 
-	def __init__(self, slope = 0.05): 
+	def __init__(self, slope = 3.0e-4, Zsun = 0.014): 
 		self.slope = slope 
+		self.Zsun = Zsun 
 
 	def __call__(self, mass, metallicity): 
-		return self._slope * mass * metallicity 
+		return self._slope * mass * (metallicity / self.Zsun) 
 
 	@property 
 	def slope(self): 
 		r""" 
 		Type : float 
+
+		Default : 3.0e-4
 
 		The slope of the linear dependence, in units of :math:`M_\odot^{-1}`. 
 		""" 
@@ -143,17 +146,51 @@ class linear_agb_yield:
 			raise TypeError("""Attribute 'slope' must be a numerical value. \
 Got: %s""" % (type(value))) 
 
+	@property 
+	def Zsun(self): 
+		r""" 
+		Type : float 
+
+		Default : 0.014 
+
+		The metallicity by mass of the sun :math:`Z_\odot`. 
+		""" 
+		return self._Zsun 
+
+	@Zsun.setter 
+	def Zsun(self, value): 
+		if isinstance(value, numbers.Number): 
+			if value > 0: 
+				self._Zsun = float(value) 
+			else: 
+				raise ValueError("Attribute 'Zsun' must be positive.") 
+		else: 
+			raise TypeError("""Attribute 'Zsun' must be a numerical value. \
+Got: %s""" % (type(value))) 
+
+
+def broken_cc_yield(z): 
+	y = 3.6e-4 
+	if z >= 0.007: y += 2.e-4 * ((z - 0.007) / 0.014) 
+	return y 
+
+
+def linear_cc_yield(z): 
+	return 3.6e-4 * (z / 0.014) 
+
 
 # fiducial set of yields 
 vice.yields.sneia.settings['n'] = 0 
 vice.yields.ccsne.settings['n'] = 4.15e-4 
+# vice.yields.ccsne.settings['n'] = broken_cc_yield 
+# vice.yields.ccsne.settings['n'] = linear_cc_yield 
 vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
-	prefactor = 4) 
+	prefactor = 3) 
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13", 
 # 	prefactor = 2) 
 # vice.yields.agb.settings['n'] = "karakas10" 
 # vice.yields.agb.settings['n'] = "karakas16" 
-# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 0.08) 
+# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4) 
 
 # set with no time-dependence to the AGB yield 
 # vice.yields.sneia.settings['n'] = 0 

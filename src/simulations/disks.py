@@ -21,6 +21,7 @@ from . import migration
 from . import models 
 from .models.utils import get_bin_number, interpolate 
 from .models.gradient import gradient 
+from .sfe import sfe 
 import math as m 
 import sys 
 
@@ -77,6 +78,9 @@ class diskmodel(vice.milkyway):
 			filename = "%s_analogdata.out" % (name)) 
 		self.evolution = star_formation_history(spec = spec, 
 			zone_width = zone_width) 
+		for i in range(self.n_zones): 
+			self.zones[i].tau_star = sfe(
+				m.pi * ((zone_width * (i + 1))**2 - (zone_width * i)**2)) 
 		self.mode = "sfr" 
 
 
