@@ -10,5 +10,6 @@
 *.vice/* 
 *.sublime-workspace 
 */.ipynb_checkpoints/* 
+./src/data/Schaefer2020_spaxel_data.fits 
 
 
