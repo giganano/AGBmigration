@@ -1,6 +1,7 @@
 
 from ..utils import logplus12_bracket_conversion, logNO_bracket_conversion 
 import astropy.table as table 
+from astropy.io import fits 
 import numpy as np 
 import pickle 
 import vice 
@@ -23,7 +24,8 @@ def read(which):
 			- "james2015" : James et al. (2015) [4]_ 
 			- "dopita2016" : Dopita, Kewley, Sutherland & Nicholls (2016) [5]_ 
 			- "belfiore2017" : Belfiore et al. (2017) [6]_ 
-			- "vincenzo2021" : Vincenzo et al. (2021) [7]_ 
+			- "schaefer2020" : Schaefer et al. (2020) [7]_ 
+			- "vincenzo2021" : Vincenzo et al. (2021) [8]_ 
 
 	.. [1] Pilyugin, Vilchez & Thuan (2010), ApJ, 720, 1738 
 	.. [2] Berg et al. (2012), ApJ, 754, 98 
@@ -31,7 +33,8 @@ def read(which):
 	.. [4] James et al. (2015), MNRAS, 448, 2687 
 	.. [5] Dopita, Kewley, Sutherland & Nicholls (2016), Ap&SS, 361, 61 
 	.. [6] Belfiore et al. (2017), MNRAS, 469, 151 
-	.. [7] Vincenzo et al. (2021), arxiv:2106.03912 
+	.. [7] Schaefer et al. (2020), ApJ, 890, 3 
+	.. [8] Vincenzo et al. (2021), arxiv:2106.03912 
 	""" 
 	return {
 		"pilyugin2010": 	pilyugin2010, 
@@ -40,6 +43,7 @@ def read(which):
 		"james2015": 		james2015, 
 		"dopita2016": 		dopita2016, 
 		"belfiore2017": 	belfiore2017, 
+		"schaefer2020": 	schaefer2020, 
 		"vincenzo2021": 	vincenzo2021 
 	}[which.lower()]() 
 
@@ -185,4 +189,22 @@ def vincenzo2021():
 		"[o/h]", "<=", 10).filter(
 		"[n/o]", ">=", -10).filter(
 		"[n/o]", "<=", 10) 
+
+
+def schaefer2020(): 
+	r""" 
+	Reads the data from Schaefer et al. (2020) [1]_ 
+
+	.. [1] Schaefer et al. (2020), ApJ, 890, 3 
+	""" 
+	raw = fits.open("%s/Schaefer2020_spaxel_data.fits" % (PATHROOT))[1].data 
+	return vice.dataframe({
+		"[o/h]": [logplus12_bracket_conversion(_) for _ in raw["r23_met"]], 
+		"err_[o/h]": [logplus12_bracket_conversion(_) for _ in 
+			raw["r23_met_err"]], 
+		"[n/o]": [logNO_bracket_conversion(_) for _ in raw["n_o"]], 
+		"err_[n/o]": [logNO_bracket_conversion(_) for _ in raw["n_o_err"]], 
+		"logmstar": raw["all_totmass"], 
+		"manga_plate_id": raw["plateifu"] 
+	}) 
 

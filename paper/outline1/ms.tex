@@ -31,6 +31,9 @@
 	citecolor 		= blue 
 } 
 
+% control over bibtex's alphabetizing 
+\providecommand{\noopsort}[1]{} 
+
 %%% useful commands %%% 
 \newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}} 
 \newcommand{\Ctwelve}{\ensuremath{^{12}\text{C}}} 
@@ -43,7 +46,11 @@
 \newcommand{\vice}{\texttt{VICE}} 
 \newcommand{\no}{\ensuremath{\text{[N/O]}}} 
 \newcommand{\msun}{\ensuremath{\text{M}_\odot}} 
+\newcommand{\persqkpc}{\ensuremath{\text{kpc}^{-2}}} 
 \newcommand{\refp}[1]{(\ref{#1})} 
+\newcommand{\rgal}{\ensuremath{R_\text{gal}}} 
+\newcommand{\hsim}{\texttt{h277}} 
+\newcommand{\subcc}{\ensuremath{_\text{cc}}} 
 
 \defcitealias{Cristallo2011}{C11} 
 \defcitealias{Cristallo2015}{C15} 
@@ -57,8 +64,7 @@
 \newcommand{\karakas}{\citetalias{Karakas2016}+\citetalias{Karakas2018}} 
 \newcommand{\ventura}{\citetalias{Ventura2013}} 
 
-\title[On the Nucleosynthesis of Nitrogen]{Stellar Migration and Chemical 
-Enrichment in the Milky Way Disc: On the Nucleosynthesis of Nitrogen} 
+\title[On the Nucleosynthesis of Nitrogen]{On the Nucleosynthesis of Nitrogen} 
 
 \author[J.W. Johnson et al.]{James W. Johnson,$^{1}$\thanks{
 	Contanct e-mail: \href{mailto:
@@ -93,12 +99,15 @@ Enrichment in the Milky Way Disc: On the Nucleosynthesis of Nitrogen}
 \subfile{abstract.tex} 
 
 \begin{keywords} 
-Awesomeness 
+methods: numerical -- galaxies: abundances, evolution, star formation, stellar 
+content 
 \end{keywords} 
 
 \subfile{intro.tex} 
 \subfile{methods.tex} 
 \subfile{results.tex} 
+\subfile{conclusions.tex} 
+\subfile{acknowledgements.tex} 
 
 \bibliographystyle{mnras} 
 \bibliography{ms} 

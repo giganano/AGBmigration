@@ -3,42 +3,38 @@
 \begin{document} 
 
 \section{Introduction} 
+\label{sec:intro} 
 \begin{itemize} 
-	\item Nitrogen (N) is an element that traces slow neutron capture 
-	(s-process) nucleosynthesis. To first order it's produced only in core 
-	collapse supernovae (CCSNe) and asymptotic giant branch (AGB) stars 
-	\citep{Johnson2019}. 
-
-	\item The observed [N/O]-[O/H] relation in the gas phase is more or less 
-	the same between different environments. 
-	We demonstrate this in Fig.~\ref{fig:no_oh_observed} where we compile 
-	measurements from previous studies interested in various astrophysical 
-	systems. 
-
-	\item Qualitatively, the rise in N abundances with increasing [O/H] can be 
-	attributed to the metallicity-dependent nature of N yields from AGB stars 
-	(\citealp{Vincenzo2016}; see also discussion in~\S~X). 
-
-	\item How well do chemical evolution models for the Milky Way with various 
-	``off-the-shelf'' yield models perform at reproducing this trend? 
-
-	\item Nitrogen has considerable yields through~\textit{secondary} channels: 
-	the processing of already produced metals into nitrogen. 
+	\item In terms of astrophysical nucleosynthesis, nitrogen (N) is a unique 
+	element. 
 	\begin{itemize} 
-		\item First and foremost is the CNO cycle, in which carbon (C), N, and 
-		oxygen (O) catalyze the fusion of four protons into helium-4. The 
-		reactions of the CNO cycle: 
-		\begin{equation} 
-		\Ctwelve(p,\gamma)\Nthirteen(\beta^+,\nu_e)\Cthirteen 
-		(p,\gamma)\Nfourteen(p,\gamma)\Ofifteen(\beta^+,\nu_e)
-		\Nfifteen(p,\alpha)\Ctwelve 
-		\end{equation} 
-		Due to a small cross section for proton capture, the 
-		$\Nfourteen(p,\gamma)\Ofifteen$ reaction is particularly slow. 
-		As a result, to first order the effect of the CNO cycle is to process 
-		all of the available C and O into~\Nfourteen. 
+		\item It's one of only a few elements lighter than strontium (Z = 38) 
+		with significant nucleosynthetic yields from asymptotic giant branch 
+		(AGB) stars~\citep{Johnson2019}. 
+
+		\item Alongside helium, it is one of the primary nuclear fusion 
+		products of main sequence stars more massive than the sun with nonzero 
+		metallicity. 
+		The CNO cycle catalyses the proton-proton chain of nuclear 
+		reactions~\citep*[e.g.][]{Suliga2020} using carbon (C), N, and oxygen 
+		(O) target nuclei,\footnote{
+			\Ctwelve(p,$\gamma$)\Nthirteen($\beta^+$,$\nu_e$)\Cthirteen 
+			(p,$\gamma$)\Nfourteen(p,$\gamma$)\Ofifteen
+			($\beta^+$,$\nu_e$)\Nfifteen(p,$\alpha$)\Ctwelve 
+		} the slowest component of which is 
+		the~\Nfourteen(p,$\gamma$)\Ofifteen~reaction. 
+		This bottleneck is strong enough that to first order, the effect of the 
+		CNO cycle is to convert all C and O isotopes in a star into~\Nfourteen. 
+
+		\item It's among a select group of elements whose observed abundances 
+		in stellar spectra often do not reflect the star's birth abundances. 
+		The effect of internal mixing processes changes the atmospheric 
+		composition of red giants, a phenomenon both expected from theoretical 
+		models and observed in open and globular clusters~\citep{Gilroy1989, 
+		Korn2007, Lind2008, Souto2018, Souto2019}. 
 	\end{itemize} 
-\end{itemize} 
+
+\end{itemize}
 
 \begin{figure*} 
 \centering 
@@ -59,8 +55,10 @@ We omit the uncertainties for visual clarity.
 \end{figure*} 
 
 \begin{itemize} 
-	\item Fig.~\ref{fig:no_oh_observed} presents a compilation of observed 
-	abundances of N and O in the gas phase: 
+	\item Both observationally and theoretically, N is among the more well 
+	studied elements. 
+	Fig.~\ref{fig:no_oh_observed} presents a compilation of observed abundances 
+	of N and O in the gas phase: 
 	\begin{itemize} 
 		\item HII regions in nearby NGC spirals~\citep{Pilyugin2010} 
 
@@ -81,14 +79,50 @@ We omit the uncertainties for visual clarity.
 	\item In this paper, we're interested in the origin of both the shape and 
 	scatter in this trend. 
 
+	\item N is not unique in that perhaps the largest source of uncertainty in 
+	modeling its abundances is that accurate and precise nucleosynthetic yields 
+	remain elusive. 
+	Presently, no combination of core collapse supernova explosion model and 
+	black hole landscape has been able to reproduce the observed abundance 
+	pattern of the elements, and nitrogen is no exception~\citep{Griffith2021}. 
+	Furthermore, theoretical models of AGB stars predict different N yields as 
+	a function of progenitor mass and metallicity (see discussion in, 
+	e.g.~\S~5 of~\citealp{Karakas2016} comparing their models to that 
+	of~\citealp{Cristallo2011, Cristallo2015}). 
+
+	\item In this paper, we aim to constrain N yields from AGB stars 
+	empirically by assessing their ability to reproduce the observed abundance 
+	correlations between N and O, such as that illustrated in 
+	Fig.~\ref{fig:no_oh_observed}. 
+	\citet{Vincenzo2021} demonstrate that when N abundances are corrected for 
+	internal mixing processes, the correlations with stellar age and other 
+	elemental abundances are affected; whether or not these estimates of the 
+	birth abundances can be reproduced in galactic chemical evolution (GCE) 
+	models is also of central interest to this paper. 
+
 	\item In a sample of 6,507 galaxies from the Mapping Galaxies at Apache 
 	Point Observatory survey~\citep[MaNGA;][]{Bundy2015},~\citet{Schaefer2020} 
-	recently argued that intrinsic scatter in the [N/O]-[O/H] relation 
-	near and above solar metallicity is a consequence of variations in the 
-	local star formation efficiency. In regions of slower star formation, the 
-	[N/O] ratio tends to be slightly higher at fixed [O/H] (see their Fig. 4), 
-	as expected from chemical evolution models~\citep[e.g.][]{Molla2006, 
-	Vincenzo2016}. 
+	recently argued that intrinsic scatter in the [N/O]-[O/H] relation is a 
+	consequence of variations in the local star formation efficiency. 
+	In regions of slower star formation, the [N/O] ratio tends to be slightly 
+	higher at fixed [O/H] (see their Fig. 4), as expected from GCE 
+	models~\citep[e.g.][]{Molla2006, Vincenzo2016}. 
+	However,~\citet{Schaefer2020} could not rule out radial migration as an 
+	additional source of scatter in the gas phase [N/O]-[O/H] relation. 
+	Investigating GCE models for O and iron (Fe) abundances in the Milky Way 
+	which track the positions of stars as they migrate within the 
+	disc,~\citet{Johnson2021} found that the characteristic delay time of type 
+	Ia supernovae (SNe Ia) is sufficiently long such that stellar migration 
+	has a noticeable impact on the Fe abundance in the ISM at a given 
+	Galactocentric radius and time. 
+	Since N is produced in significant quantities by AGB stars, which like SNe 
+	Ia are delayed nucleosynthetic sources, it's possible that its gas phase 
+	abundance could be affected by a deficit or surplus of AGB stars induced 
+	by radial migration; in a sufficiently large sample of galaxies like MaNGA 
+	this would present observationally as scatter in the gas phase abundances. 
+	The question of whether one of radial migration or star formation 
+	efficiency dominates over the other in driving this scatter is also of 
+	central interest in this paper. 
 \end{itemize} 
 
 \end{document} 
