@@ -171,25 +171,33 @@ Got: %s""" % (type(value)))
 
 def broken_cc_yield(z): 
 	y = 3.6e-4 
-	if z >= 0.007: y += 2.e-4 * ((z - 0.007) / 0.014) 
-	return y 
+	return max(y, linear_cc_yield(z)) 
 
 
 def linear_cc_yield(z): 
 	return 3.6e-4 * (z / 0.014) 
 
 
+# The mass-lifetime relation to adopt 
+vice.mlr.setting = "ka1997" 
+
+
 # fiducial set of yields 
 vice.yields.sneia.settings['n'] = 0 
-vice.yields.ccsne.settings['n'] = 4.15e-4 
+vice.yields.ccsne.settings['n'] = 3.6e-4 
 # vice.yields.ccsne.settings['n'] = broken_cc_yield 
 # vice.yields.ccsne.settings['n'] = linear_cc_yield 
 vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
 	prefactor = 3) 
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13", 
-# 	prefactor = 2) 
+#	prefactor = 2) 
+# vice.yields.agb.settings['o'] = "ventura13" 
 # vice.yields.agb.settings['n'] = "karakas10" 
+# vice.yields.agb.settings['o'] = "karakas10" 
+# vice.yields.agb.settings['fe'] = "karakas10" 
 # vice.yields.agb.settings['n'] = "karakas16" 
+# vice.yields.agb.settings['o'] = "karakas16" 
+# vice.yields.agb.settings['fe'] = "karakas16" 
 # vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4) 
 
 # set with no time-dependence to the AGB yield 
