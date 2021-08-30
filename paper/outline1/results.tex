@@ -10,28 +10,26 @@
 
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.45]{no_oh_predictions.pdf} 
-\includegraphics[scale = 0.45]{no_oh_predictions_karakas.pdf} 
-\caption{
-\textbf{Left}: The present day gas-phase [N/O]-[O/H] relation predicted by our 
-fiducial model with each of the yield sets described 
-in~\S~\ref{sec:methods:yields:agb}. 
-The~\cristallo~and~\ventura~yields are artificially amplified by factors of 
-3 and 2, respectively, and we take the linear model with~$\xi = 9\times10^{-4}$. 
-For observational reference, we plot the population-averaged trend for local 
-stars and HII regions reported by~\citet{Dopita2016}. 
-\textbf{Right}: The same as the left-hand panel, but comparing the predictions 
-made by the~\karakasten~and~\karakas~yields with our fiducial value 
-of~$y_\text{N}^\text{CC}$ (dotted lines, same as left-hand panel) to those with 
-the alternate forms of~$y_\text{N}^\text{CC}$ (solid lines) given by equation X 
-for the~\karakasten~yields and equation Y for the~\karakas~yields. 
+\includegraphics[scale = 0.45]{ssp_production_modelcomp.pdf} 
+\includegraphics[scale = 0.45]{agb_yield_models_imfweighted.pdf} 
+\caption{ 
+\textbf{Left}: The net mass of N produced by AGB stars from a single stellar 
+population for each of our yield models at solar metallicity 
+($Z = 0.02$ in~\karakasten,~$Z = 0.014$ otherwise). 
+The purple line denotes the same for Fe assuming our~$t^{-1.1}$ delay time 
+distribution. 
+All values are normalized to the total mass produced at an age of 13.2 Gyr. 
+Points at the top of the panel denote the ages at which 50\% of the total mass 
+yield has been produced. 
+\textbf{Right}: The IMF-weighted mass yield of N from AGB stars as a function 
+of progenitor mass at the same metallicities as in the left panel. 
 } 
-\label{fig:no_oh_predictions} 
+\label{fig:ssp} 
 \end{figure*} 
 
 \begin{itemize} 
 	\item Our fiducial model adopts, together with the supernova yields 
-	of~\citet[][see discussion in~\S~\ref{sec:methods:yields}]{Johnson2021}, 
+	of~\citet[][see discussion in~\S~\ref{sec:methods}]{Johnson2021}, 
 	$y_\text{N}^\text{CC} = 3.6\times10^{-4}$ and the~\cristallo~AGB star yield 
 	tables. 
 
@@ -40,7 +38,7 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	each~$\delta\rgal$ = 100 pc ring at~$\rgal >$ 2 kpc and plot them as a 
 	line.
 	We show the results at five output times in the left hand panel of 
-	Fig.~\ref{fig:no_oh_timeevol_ssp}. 
+	Fig.~\ref{fig:no_oh_timeevol}. 
 	The relation is generally time-independent after~$T \gtrsim 5$ Gyr, though 
 	there is some evolution toward higher [N/O]. 
 
@@ -59,7 +57,7 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	\item In our models, the [N/O]-[O/H] relation arises as a superposition of 
 	endpoints rather than an evolutionary phase. 
 	We demonstrate this in the middle panel of 
-	Fig.~\ref{fig:no_oh_timeevol_ssp}, where we plot the time-evolution of 
+	Fig.~\ref{fig:no_oh_timeevol}, where we plot the time-evolution of 
 	[N/O] and [O/H] at~$\rgal = 4$, 6, 8, 10, and 12 kpc in relation to the 
 	predicted [N/O]-[O/H] relation at the present day. 
 	Rather than each annulus's track passing through some well-defined region 
@@ -69,7 +67,33 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	metallicity gradient more so than different evolutionary states. 
 	Similar arguments have been made regarding the low [$\alpha$/Fe] stars in 
 	the Galaxy~\citep[see, e.g.,][]{Schoenrich2009, Sharma2020}. 
+\end{itemize} 
 
+\subsection{Alternate Yield Models} 
+\label{sec:results:yields} 
+
+\begin{figure*} 
+\centering 
+\includegraphics[scale = 0.45]{no_oh_predictions.pdf} 
+\includegraphics[scale = 0.45]{no_oh_predictions_karakas.pdf} 
+\caption{
+\textbf{Left}: The present day gas-phase [N/O]-[O/H] relation predicted by our 
+fiducial model with each of the yield sets described 
+in~\S~\ref{sec:methods:agb}. 
+The~\cristallo~and~\ventura~yields are artificially amplified by factors of 
+3 and 2, respectively, and we take the linear model with~$\xi = 9\times10^{-4}$. 
+For observational reference, we plot the population-averaged trend for local 
+stars and HII regions reported by~\citet{Dopita2016}. 
+\textbf{Right}: The same as the left-hand panel, but comparing the predictions 
+made by the~\karakasten~and~\karakas~yields with our fiducial value 
+of~$y_\text{N}^\text{CC}$ (dotted lines, same as left-hand panel) to those with 
+the alternate forms of~$y_\text{N}^\text{CC}$ (solid lines) given by equation X 
+for the~\karakasten~yields and equation Y for the~\karakas~yields. 
+} 
+\label{fig:no_oh_predictions} 
+\end{figure*} 
+
+\begin{itemize} 
 	\item The smaller impact of stellar migration on N than Fe abundances can 
 	be understood by their timescales for production from single stellar 
 	populations. 
@@ -78,11 +102,12 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	computes the mass yield of a given element as a function of time from a 
 	star cluster of known metallicity. 
 	For the sake of this calculation, we set~$y_\text{N}^\text{CC}$ and 
-	$y_\text{Fe}^\text{CC}$ both to zero in order to highlight only the delayed 
-	nucleosynthetic sources. 
-	We plot the results of this procedure in the right hand panel of 
-	Fig.~\ref{fig:no_oh_timeevol_ssp}. 
-	Under our fiducial yield model, it takes~$\sim$100 Myr for a single stellar 
+	$y_\text{Fe}^\text{CC}$ both to zero in order to highlight only the 
+	delayed nucleosynthetic sources. 
+	We plot the results of this procedure in the left panel of 
+	Fig.~\ref{fig:ssp} for each of our AGB star yield models at solar 
+	metallicity ($Z = 0.02$ for~\karakasten,~$Z = 0.014$ otherwise). 
+	Under our fiducial model, it takes~$\sim$250 Myr for a single stellar 
 	population to produce~$\sim$50\% of its N from AGB stars. 
 	For Fe, this characteristic delay time is near~$\sim$1 Gyr, an order of 
 	magnitude larger.\footnote{
@@ -98,35 +123,36 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	timescales for SN Ia explosions, but the same is not true for N. 
 	Instead, N is produced on shorter timescales, meaning that single stellar 
 	populations generally eject most of their yield to the ISM before their 
-	orbit can change significantly. 
-\end{itemize} 
+	orbits can change significantly. 
+	\begin{itemize} 
+		\item Despite minor differences in the details of the predicted delay 
+		time distributions, there is good qualitative agreement between our 
+		different AGB star yield models. 
+		Our fiducial model with~\cristallo~yields is the slowest, owing to the 
+		larger N production in~$\gtrsim3\ \msun$ stars in the alternate 
+		models. 
+		As a consequence, the alternate models predict even less variability 
+		in the gas phase N abundances due to stellar migration. 
+	\end{itemize} 
 
-\subsection{Different Yield Models} 
-\label{sec:results:yields} 
+	\item In the right hand panel of Fig.~\ref{fig:ssp}, we plot the 
+	IMF-weighted mass yield of nitrogen for each of our yield models at the 
+	same metallicities as in the left hand panel. 
+	Since our yields are fractional (or rather, in units of the progenitor 
+	star's mass; see discussion in~\S~\ref{sec:methods:agb}), the mass 
+	yield is given by M$y_\text{N}^\text{AGB}$. 
+	With an additional weight of M$^{-2.3}$ from the IMF in this mass 
+	range~\citep{Kroupa2001}, we thus multiply each yield 
+	by (M$/\msun)^{-1.3}$. 
+	Compared to the fiducial model, the contribution of higher mass AGB stars 
+	to the total N production is quite substantial. 
+	The difference can be understood by the interaction between TDU and HBB 
+	discussed in~\S~\ref{sec:methods:agb} which effects the evolution 
+	of stars at these masses. 
 
-\begin{figure*} 
-\centering 
-\includegraphics[scale = 0.3]{no_vs_age.pdf} 
-\includegraphics[scale = 0.3]{no_vs_ofe.pdf} 
-\includegraphics[scale = 0.3]{no_feh_vs_lookback.pdf} 
-\caption{
-\textbf{Left}: [N/O] as a function of stellar age for 5000 stars randomly 
-sampled from our model stellar populations in three bins of [Fe/H] (colored 
-points). 
-Stars quantify the median trend of [N/O] with age corrected for internal mixing 
-in the same bins of [Fe/H] from the~\citet{Vincenzo2021} sample. 
-\textbf{Middle}: The same as the left hand panel, instead showing [N/O] as a 
-function of [O/Fe] in bins of [O/H]. 
-\textbf{Right}: [N/O] (solid) and [Fe/H] (dashed) in the gas phase as a 
-function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc (blue). 
-} 
-\label{fig:vincenzo_comp} 
-\end{figure*} 
-
-\begin{itemize} 
 	\item The left hand panel of Fig.~\ref{fig:no_oh_predictions} compares the 
 	predictions of our model made with each of the AGB star yield models 
-	discussed in~\S~\ref{sec:methods:yields:agb} and visualized in 
+	discussed in~\S~\ref{sec:methods:agb} and visualized in 
 	Fig.~\ref{fig:agb_yield_models}. 
 	For observational reference, we include the~\citet{Dopita2016} measurements 
 	also plotted in Fig.~\ref{fig:no_oh_observed}. 
@@ -140,6 +166,9 @@ function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc (blue).
 	Although these models predict an [N/O]-[O/H] relation that is slightly 
 	shallower than the~\citet{Dopita2016} measurements, the predictions are 
 	reasonably within the scatter seen in Fig.~\ref{fig:no_oh_observed}. 
+	{\color{red} To do: Alternatively, can this be explained by a lowering of 
+	the O yields and~$\eta$, or a differential wind which preferentially 
+	removes oxygen~\citep{Vincenzo2016}}? 
 
 	\item We are unable to reproduce the observed trend with either 
 	the~\karakasten~or~\karakas~yield models. 
@@ -213,13 +242,14 @@ function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc (blue).
 			exact reason. 
 
 			\item At low [O/H], the~\karakas~yields are actually the only ones 
-			that can explain the observed N abundances without any modification. 
-			The~\karakasten~yields, however, without modification overpredict 
-			the N abundances at low metallicity. 
+			that can explain the observed N abundances without any 
+			modification. 
+			The~\karakasten~yields, however, overpredict the N abundances at 
+			low metallicity. 
 
 			\item The inverse dependence of [N/O] with [O/H] when taking 
 			the~\karakasten~yields can be understood by the interaction between 
-			TDU and HBB (see discussion in~\S~\ref{sec:methods:yields:agb}). 
+			TDU and HBB (see discussion in~\S~\ref{sec:methods:agb}). 
 			Both effects are stronger at low metallicity, and since all of 
 			the~\karakasten~models experiencing HBB also experience TDU (see 
 			their Table 1), such a result is not surprising. 
@@ -233,8 +263,7 @@ function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc (blue).
 			monotonic increase in [N/O] with increasing [O/H]. 
 			On the other hand, such strong N production at low metallicity in 
 			the~\karakas~yields is what allows them to explain the N abundances 
-			at low [O/H] with no modification, although such yields may be the 
-			result of different physics than the TDU-HBB interplay. 
+			at low [O/H] with no modification. 
 		\end{itemize} 
 
 		\item We believe these results are independent of the choice of the 
@@ -251,34 +280,31 @@ function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc (blue).
 		Our model would thus compute similar AGB star yields for N in such a 
 		scenario. 
 
-		\end{itemize} 
+	\end{itemize} 
 \end{itemize} 
-
-\subsection{The Stellar Abundances}  
-\label{sec:results:vincenzo_comp} 
 
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.31]{no_oh_sfevar.pdf} 
-\includegraphics[scale = 0.33]{delta_no_schaefercomp.pdf} 
+\includegraphics[scale = 0.3]{no_vs_age.pdf} 
+\includegraphics[scale = 0.3]{no_vs_ofe.pdf} 
+\includegraphics[scale = 0.3]{nh_feh_vs_lookback.pdf} 
 \caption{
-\textbf{Left}: One cycle of oscillations in the [N/O]-[O/H] relation at high 
-[O/H] induced by 25\% sinusoidal variability in~$\tau_\star$ (solid coloured 
-lines). 
-Dotted lines show the [N/O]-[O/H] relation at the same five snapshots in the 
-fiducial model with no variability in~$\tau_\star$. 
-\textbf{Middle and Right}: For the same five snapshots in the left hand panel, 
-the deviation in [N/O] at fixed [O/H] relative to the fiducial model for the 
-case with 25\% variability in~$\tau_\star$ (middle) and in~$\dot{\Sigma}_\star$ 
-(right). 
-The shaded regions in both panels quantify the width of the [N/O] distribution 
-in~$10^{10.5} - 10^{11}$~\msun~galaxies in MaNGA taken 
-from~\citet{Schaefer2020}. 
-The median [N/O] is placed at~$\Delta$[N/O] = 0, and the lower (upper) envelope 
-denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H]. 
+\textbf{Left}: [N/O] as a function of stellar age for 5000 stars randomly 
+sampled from our model stellar populations in three bins of [Fe/H] (colored 
+points). 
+Stars quantify the median trend of [N/O] with age corrected for internal mixing 
+in the same bins of [Fe/H] from the~\citet{Vincenzo2021} sample. 
+\textbf{Middle}: The same as the left hand panel, instead showing [N/O] as a 
+function of [O/Fe] in bins of [O/H]. 
+\textbf{Right}: [N/O] (solid), [Fe/H] (dashed), and [O/H] (dotted) in the gas 
+phase as a function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc 
+(blue). 
 } 
-\label{fig:schaefer_comp} 
+\label{fig:vincenzo_comp} 
 \end{figure*} 
+
+\subsection{The Stellar Abundances}  
+\label{sec:results:vincenzo_comp} 
 
 \begin{itemize} 
 	\item Before comparing the predictions of GCE models to observational data, 
@@ -312,7 +338,7 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	the~\citet{Vincenzo2021} measurements, suggesting that our yields scale 
 	with metallicity slightly too strongly. 
 
-	\item In the right hand panel of Fig.~\ref{fig:vincenzo_comp}, we compare 
+	\item In the middle panel of Fig.~\ref{fig:vincenzo_comp}, we compare 
 	our model predicted [N/O]-[O/Fe] relation to their calculations. 
 	As in the left hand panel, our model predicted stellar populations occupy a 
 	wider range of [N/O] than the data, but the agreement is otherwise good. 
@@ -321,24 +347,62 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	highest [O/H] bin at approximately the correct value of [O/Fe]. 
 
 	\item These results can generally be understood with the notion that 
-	N and Fe abundances are increasing on similar timescales in our model. 
+	N and Fe abundances change on similar timescales in our model. 
 	In the right hand panel of Fig.~\ref{fig:vincenzo_comp}, we show the time 
-	evolution of [N/O] and [Fe/H] in the gas phase in our models at three 
-	different radii. 
-	At lookback times of~$\tau \gtrsim$ 7 Gyr, [N/O] and [Fe/H] are 
-	approximately parallel. 
-	As a result, a bin in [Fe/H] is also approximately a bin in [N/O], and at 
-	fixed [O/H], [N/O] will increase as [O/Fe] decreases because of the N-Fe 
-	correlation. 
+	evolution of [N/H], [Fe/H], and [O/H] in the gas phase at three different 
+	radii. 
+	[N/H] is more correlated with [Fe/H] than [O/H] at all radii, and the 
+	relation persists up to lookback times of~$\sim$10 Gyr. 
+	This arises largely because N and Fe are both produced in significant 
+	quantities by delayed enrichment sources while O is produced almost 
+	entirely on short timescales by CCSNe (see discussion 
+	in~\S~\ref{sec:yields}). 
+	As a consequence of its single dominant nucleosynthetic source, O reaches 
+	an equilibrium abundance on much shorter timescales than elements like N 
+	and Fe which have significant contributions from delayed 
+	sources~\citep{Weinberg2017}; because of this, [O/H] is nearly 
+	independent of lookback time as far back as~$\sim$10 Gyr ago while [N/H] 
+	and [Fe/H] are not. 
+	Therefore, a bin in [Fe/H] is also approximately a bin in [N/H], and with 
+	[O/H] more or less constant, the [N/O]-age relation at fixed [Fe/H] is 
+	relatively flat up to ages of~$\sim$10 Gyr. 
+	The anti-correlation between [N/O] and [O/Fe] at fixed [O/H] is also a 
+	direct consequence of the N-Fe correlation. 
 
 	\item We thus conclude that when a viable model for the AGB star yields of 
 	N is adopted, our GCE models are in good agreement with observed abundances 
 	of N when corrected for internal mixing processes known to affect the 
-	photospheric abundances in red giants. 
+	photospheric abundances in red giant stars. 
 \end{itemize} 
 
 \subsection{The Sources of Scatter in the [N/O]-[O/H] Relation} 
 \label{sec:results:schaefer_comp} 
+
+\begin{figure*} 
+\centering 
+\includegraphics[scale = 0.31]{no_oh_sfevar.pdf} 
+\includegraphics[scale = 0.33]{delta_no_schaefercomp.pdf} 
+\caption{
+\textbf{Left}: One cycle of oscillations in the [N/O]-[O/H] relation at high 
+[O/H] induced by 25\% sinusoidal variability in~$\tau_\star$ (solid coloured 
+lines). 
+Dotted lines show the [N/O]-[O/H] relation at the same five snapshots in the 
+fiducial model with no variability in~$\tau_\star$. 
+The black dashed line shows the time evolution of the abundances in 
+the~\rgal = 5 kpc ring, with the times of each of the five snapshots marked by 
+a coloured point. 
+\textbf{Middle and Right}: For the same five snapshots in the left hand panel, 
+the deviation in [N/O] at fixed [O/H] relative to the fiducial model for the 
+case with 25\% variability in~$\tau_\star$ (middle) and in~$\dot{\Sigma}_\star$ 
+(right). 
+The shaded regions in both panels quantify the width of the [N/O] distribution 
+in~$10^{10.5} - 10^{11}$~\msun~galaxies in MaNGA taken 
+from~\citet{Schaefer2020}. 
+The median [N/O] is placed at~$\Delta$[N/O] = 0, and the lower (upper) envelope 
+denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H]. 
+} 
+\label{fig:schaefer_comp} 
+\end{figure*} 
 
 \begin{itemize} 
 	\item What is the dominant source of variance in the observed [N/O]-[O/H] 
@@ -399,14 +463,20 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	overall abundance. 
 	The variations in the [N/O]-[O/H] relation that the model predicts are 
 	therefore more of a consequence of variability in [O/H] than in [N/O]. 
+	We demonstrate this with the black dashed line in the left hand panel of 
+	Fig.~\ref{fig:schaefer_comp}, which traces out the evolution of the 
+	abundances at~\rgal~= 5 kpc over the same time interval. 
+	In general, [N/O] is affected only at the~$\sim$0.05-dex level while 
+	[O/H] varies with an amplitude of~$\sim$0.25-dex. 
 	As the gas supply falls off, enrichment proceeds in a gas-starved ISM, 
-	which increases [O/H], but [N/O] to a lesser extent for similar reasons. 
+	which increases [O/H] once more, but [N/O] to a lesser extent for similar 
+	reasons, and the cycle repeats itself. 
 
 	\item When~$\dot{\Sigma}_\star$ varies,~$\Sigma_\text{gas}$ and 
 	consequently the abundances vary instead at a value of~$\tau_\star$ that 
 	varies only as much as the adopted~$\dot{\Sigma}_\star - \Sigma_\text{gas}$ 
 	relation from~\citet{Johnson2021} dictates it should (see discussion in 
-	\S~\ref{sec:methods:multizone}), with no additional variations in time. 
+	\S~\ref{sec:methods}), with no additional variations in time. 
 
 	\item In the middle and right hand panels of Fig.~\ref{fig:schaefer_comp}, 
 	we plot the difference in [N/O] at fixed [O/H] between the fiducial model 
@@ -417,7 +487,7 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	variations in~$\dot{\Sigma}_\star$ does not predict any significant 
 	fluctuations in the abundances at [O/H]~$\lesssim -0.2$. 
 	This is a consequence of the mathematical form of~$\tau_{\star,\text{J21}}$ 
-	(see discussion in~\S~\ref{sec:methods:multizone}) and the fact that we 
+	(see discussion in~\S~\ref{sec:methods}) and the fact that we 
 	have run these models in star formation mode with~\vice. 
 	The low [O/H] end of the relation comes from the outer Galaxy at lower 
 	$\Sigma_\text{gas}$ than the inner regions at higher [O/H], and the surface 
