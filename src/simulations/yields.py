@@ -211,3 +211,8 @@ vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
 # vice.yields.agb.settings['n'] = agb_no_zdep('n', study = "cristallo11", 
 # 	prefactor = 5)  
 
+
+vice.yields.ccsne.settings["mg"] = 0.0015 # 0.000497 
+vice.yields.ccsne.settings["ba"] = 2.5e-8 # 2.83-9 
+vice.yields.ccsne.settings["y"] = 1.5e-8 # 2.47e-9 
+
