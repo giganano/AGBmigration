@@ -1,0 +1,135 @@
+
+\documentclass[ms.tex]{subfiles} 
+\begin{document} 
+
+\section{Introduction} 
+\label{sec:intro} 
+\begin{itemize} 
+	\item In terms of astrophysical nucleosynthesis, nitrogen (N) is a unique 
+	element. 
+	\begin{itemize} 
+		\item It's one of only a few elements lighter than strontium (Z = 38) 
+		with significant nucleosynthetic yields from asymptotic giant branch 
+		(AGB) stars~\citep{Johnson2019}. 
+
+		\item Alongside helium, it is one of the primary nuclear fusion 
+		products of main sequence stars more massive than the sun with nonzero 
+		metallicity. 
+		The CNO cycle catalyses the proton-proton chain of nuclear 
+		reactions~\citep*[e.g.][]{Suliga2020} using carbon (C), N, and oxygen 
+		(O) target nuclei,\footnote{
+			\Ctwelve(p,$\gamma$)\Nthirteen($\beta^+$,$\nu_e$)\Cthirteen 
+			(p,$\gamma$)\Nfourteen(p,$\gamma$)\Ofifteen
+			($\beta^+$,$\nu_e$)\Nfifteen(p,$\alpha$)\Ctwelve 
+		} the slowest component of which is 
+		the~\Nfourteen(p,$\gamma$)\Ofifteen~reaction. 
+		This bottleneck is strong enough that to first order, the effect of the 
+		CNO cycle is to convert all C and O isotopes in a star into~\Nfourteen. 
+
+		\item It's among a select group of elements whose observed abundances 
+		in stellar spectra often do not reflect the star's birth abundances. 
+		The effect of internal mixing processes changes the atmospheric 
+		composition of red giants, a phenomenon both expected from theoretical 
+		models and observed in open and globular clusters~\citep{Gilroy1989, 
+		Korn2007, Lind2008, Souto2018, Souto2019}. 
+	\end{itemize} 
+
+\end{itemize}
+
+\begin{figure*} 
+\centering 
+\includegraphics[scale = 0.5]{no_oh_observed.pdf} 
+\caption{ 
+The [N/O]-[O/H] relation observed in HII regions in nearby NGC spiral galaxies 
+(grey X's:~\citealp*{Pilyugin2010}), in HII regions in blue, diffuse star 
+forming dwarf galaxies (red triangles:~\citealp{Berg2012}; 
+green stars:~\citealp*{Izotov2012}; blue diamonds:~\citealp{James2015}), in 
+local stars and HII regions (purple circles:~\citealp{Dopita2016}), and in the 
+MaNGA IFU survey (black squares:~\citealp{Belfiore2017}). 
+The fit to [N/O] as a function of [O/H] in Galactic and extragalactic HII 
+regions by~\citet*{Henry2000} is shown in a black dotted line. 
+The Sun, at (0, 0) on this plot by definition, is marked by a red star. 
+We omit the uncertainties for visual clarity. 
+{\color{red} To do: Pull the data for CHAOS galaxies from Danielle Berg's 
+and Noah Rogers's papers and add them to this figure. 
+} 
+} 
+\label{fig:no_oh_observed} 
+\end{figure*} 
+
+\begin{itemize} 
+	\item Both observationally and theoretically, N is among the more well 
+	studied elements. 
+	Fig.~\ref{fig:no_oh_observed} presents a compilation of observed abundances 
+	of N and O in the gas phase: 
+	\begin{itemize} 
+		\item HII regions in nearby NGC spirals~\citep{Pilyugin2010} 
+
+		\item HII regions in blue, diffuse star forming dwarf 
+		galaxies~\citep{Berg2012, Izotov2012, James2015} 
+
+		\item Local stars and HII regions~\citep{Dopita2016} 
+
+		\item Galactic and extragalactic HII regions~\citep{Henry2000} 
+
+		\item Star-forming regions in 550 nearby galaxies in the MaNGA IFU 
+		survey~\citep{Belfiore2017} 
+	\end{itemize} 
+	Despite intrinsic scatter and some systematic variation in how the 
+	abundances are determined, the [N/O]-[O/H]\footnote{
+		We follow the standard notation where 
+		[X/Y]~$\equiv \log_{10}(X/Y) - \log_{10}(X/Y)_\odot$. 
+	} relation is more or less the same across a wide range of physical 
+	enrivonments. 
+
+	\item In this paper, we're interested in the origin of both the shape and 
+	scatter in this trend. 
+
+	\item N is not unique in that perhaps the largest source of uncertainty in 
+	modeling its abundances is that accurate and precise nucleosynthetic yields 
+	remain elusive. 
+	Presently, no combination of core collapse supernova explosion model and 
+	black hole landscape has been able to reproduce the observed abundance 
+	pattern of the elements, and nitrogen is no exception~\citep{Griffith2021}. 
+	Furthermore, theoretical models of AGB stars predict different N yields as 
+	a function of progenitor mass and metallicity (see discussion in, 
+	e.g.~\S~5 of~\citealp{Karakas2016} comparing their models to that 
+	of~\citealp{Cristallo2011, Cristallo2015}). 
+
+	\item In this paper, we aim to constrain N yields from AGB stars 
+	empirically by assessing their ability to reproduce the observed abundance 
+	correlations between N and O, such as that illustrated in 
+	Fig.~\ref{fig:no_oh_observed}. 
+	\citet{Vincenzo2021} demonstrate that when N abundances are corrected for 
+	internal mixing processes, the correlations with stellar age and other 
+	elemental abundances are affected; whether or not these estimates of the 
+	birth abundances can be reproduced in galactic chemical evolution (GCE) 
+	models is also of central interest to this paper. 
+
+	\item In a sample of 6,507 galaxies from the Mapping Galaxies at Apache 
+	Point Observatory survey~\citep[MaNGA;][]{Bundy2015},~\citet{Schaefer2020} 
+	recently argued that intrinsic scatter in the [N/O]-[O/H] relation is a 
+	consequence of variations in the local star formation efficiency. 
+	In regions of slower star formation, the [N/O] ratio tends to be slightly 
+	higher at fixed [O/H] (see their Fig. 4), as expected from GCE 
+	models~\citep[e.g.][]{Molla2006, Vincenzo2016a}. 
+	However,~\citet{Schaefer2020} could not rule out radial migration as an 
+	additional source of scatter in the gas phase [N/O]-[O/H] relation. 
+	Investigating GCE models for O and iron (Fe) abundances in the Milky Way 
+	which track the positions of stars as they migrate within the 
+	disc,~\citet{Johnson2021} found that the characteristic delay time of type 
+	Ia supernovae (SNe Ia) is sufficiently long such that stellar migration 
+	has a noticeable impact on the Fe abundance in the ISM at a given 
+	Galactocentric radius and time. 
+	Since N is produced in significant quantities by AGB stars, which like SNe 
+	Ia are delayed nucleosynthetic sources, it's possible that its gas phase 
+	abundance could be affected by a deficit or surplus of AGB stars induced 
+	by radial migration; in a sufficiently large sample of galaxies like MaNGA 
+	this would present observationally as scatter in the gas phase abundances. 
+	The question of whether one of radial migration or star formation 
+	efficiency dominates over the other in driving this scatter is also of 
+	central interest in this paper. 
+\end{itemize} 
+
+\end{document} 
+
