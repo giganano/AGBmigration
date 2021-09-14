@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  13 SEP 2021 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  14 SEP 2021 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -887,7 +887,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 24.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 25.
-<no_oh_observed.pdf, id=69, 867.24pt x 505.89pt>
+<no_oh_observed.pdf, id=73, 867.24pt x 505.89pt>
 File: no_oh_observed.pdf Graphic file (type pdf)
 <use no_oh_observed.pdf>
 Package pdftex.def Info: no_oh_observed.pdf  used on input line 41.
@@ -915,7 +915,7 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (./nucleosynthesis.tex
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 12.
-<n_cc_yields.pdf, id=186, 1011.78pt x 505.89pt>
+<n_cc_yields.pdf, id=190, 1011.78pt x 505.89pt>
 File: n_cc_yields.pdf Graphic file (type pdf)
 <use n_cc_yields.pdf>
 Package pdftex.def Info: n_cc_yields.pdf  used on input line 39.
@@ -962,7 +962,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.86 
       <./no_oh_observed.pdf>]
-<agb_yield_models.pdf, id=307, 1445.4pt x 1084.05pt>
+<agb_yield_models.pdf, id=311, 1445.4pt x 1084.05pt>
 File: agb_yield_models.pdf Graphic file (type pdf)
 <use agb_yield_models.pdf>
 Package pdftex.def Info: agb_yield_models.pdf  used on input line 173.
@@ -972,132 +972,163 @@ Package pdftex.def Info: agb_yield_models.pdf  used on input line 173.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.211 
-       <./n_cc_yields.pdf>]
-<no_oh_timeevol.pdf, id=420, 505.89pt x 505.89pt>
-File: no_oh_timeevol.pdf Graphic file (type pdf)
-<use no_oh_timeevol.pdf>
-Package pdftex.def Info: no_oh_timeevol.pdf  used on input line 263.
-(pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_oh_superposition.pdf, id=421, 505.89pt x 505.89pt>
-File: no_oh_superposition.pdf Graphic file (type pdf)
-<use no_oh_superposition.pdf>
-Package pdftex.def Info: no_oh_superposition.pdf  used on input line 264.
-(pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
- has been already used, duplicate ignored
+       <./n_cc_yields.pdf>] [4pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.315 
+l.295 
        <./agb_yield_models.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
+Underfull \hbox (badness 10000) in paragraph at lines 342--344
 []\T1/ntxtlf/m/n/9 To do: Com-ment on the dif-fer-ences be-tween
  []
 
-) (./methods.tex [5pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.41 
-      <./no_oh_timeevol.pdf> <./no_oh_superposition.pdf
 
-pdfTeX warning: pdflatex (file ./no_oh_superposition.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 1661) in paragraph at lines 54--62
+Package natbib Warning: Citation `Kroupa20001' on page 5 undefined on input lin
+e 369.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--388
+[]\T1/ntxtlf/m/n/9 Even with the ad-di-tional weight-ing of $\OML/ntxmi/m/it/9 
+M[]$\T1/ntxtlf/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 374--388
+\T1/ntxtlf/m/n/9 the [][]C11[][]+[][]C15[][] yields are rel-a-tively mass-indep
+endent. Be-
+ []
+
+) (./methods.tex
+<agb_yield_models_imfweighted.pdf, id=555, 505.89pt x 505.89pt>
+File: agb_yield_models_imfweighted.pdf Graphic file (type pdf)
+<use agb_yield_models_imfweighted.pdf>
+Package pdftex.def Info: agb_yield_models_imfweighted.pdf  used on input line 1
+0.
+(pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
+<ssp_production_modelcomp.pdf, id=556, 505.89pt x 505.89pt>
+File: ssp_production_modelcomp.pdf Graphic file (type pdf)
+<use ssp_production_modelcomp.pdf>
+Package pdftex.def Info: ssp_production_modelcomp.pdf  used on input line 11.
+(pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
+<ssp_production_metdep.pdf, id=557, 505.89pt x 505.89pt>
+File: ssp_production_metdep.pdf Graphic file (type pdf)
+<use ssp_production_metdep.pdf>
+Package pdftex.def Info: ssp_production_metdep.pdf  used on input line 12.
+(pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
+ [5]
+Underfull \hbox (badness 1661) in paragraph at lines 79--87
 []\T1/ntxtlf/m/n/9 Despite this, there are some in-ter-est-ing dif-fer-ences be
 -
  []
 
-) (./results.tex
-<ssp_production_modelcomp.pdf, id=684, 505.89pt x 505.89pt>
-File: ssp_production_modelcomp.pdf Graphic file (type pdf)
-<use ssp_production_modelcomp.pdf>
-Package pdftex.def Info: ssp_production_modelcomp.pdf  used on input line 13.
-(pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<agb_yield_models_imfweighted.pdf, id=685, 505.89pt x 505.89pt>
-File: agb_yield_models_imfweighted.pdf Graphic file (type pdf)
-<use agb_yield_models_imfweighted.pdf>
-Package pdftex.def Info: agb_yield_models_imfweighted.pdf  used on input line 1
-4.
-(pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-<no_oh_predictions.pdf, id=757, 505.89pt x 505.89pt>
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.158 
+       <./agb_yield_models_imfweighted.pdf> <./ssp_production_modelcomp.pdf
+
+pdfTeX warning: pdflatex (file ./ssp_production_modelcomp.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./ssp_production_metdep.pdf
+
+pdfTeX warning: pdflatex (file ./ssp_production_metdep.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>]) (./results.tex
+<no_oh_timeevol.pdf, id=779, 505.89pt x 505.89pt>
+File: no_oh_timeevol.pdf Graphic file (type pdf)
+<use no_oh_timeevol.pdf>
+Package pdftex.def Info: no_oh_timeevol.pdf  used on input line 10.
+(pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
+<no_oh_superposition.pdf, id=780, 505.89pt x 505.89pt>
+File: no_oh_superposition.pdf Graphic file (type pdf)
+<use no_oh_superposition.pdf>
+Package pdftex.def Info: no_oh_superposition.pdf  used on input line 11.
+(pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
+<no_oh_predictions.pdf, id=800, 505.89pt x 505.89pt>
 File: no_oh_predictions.pdf Graphic file (type pdf)
 <use no_oh_predictions.pdf>
-Package pdftex.def Info: no_oh_predictions.pdf  used on input line 77.
+Package pdftex.def Info: no_oh_predictions.pdf  used on input line 78.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_oh_predictions_karakas.pdf, id=758, 505.89pt x 505.89pt>
+<no_oh_predictions_karakas.pdf, id=801, 505.89pt x 505.89pt>
 File: no_oh_predictions_karakas.pdf Graphic file (type pdf)
 <use no_oh_predictions_karakas.pdf>
-Package pdftex.def Info: no_oh_predictions_karakas.pdf  used on input line 78.
+Package pdftex.def Info: no_oh_predictions_karakas.pdf  used on input line 79.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
-has been already used, duplicate ignored
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.5})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.160 	\item I
-              n order to successfully reproduce the observations, we find th...
- <./ssp_production_modelcomp.pdf> <./agb_yield_models_imfweighted.pdf
-
-pdfTeX warning: pdflatex (file ./agb_yield_models_imfweighted.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
->] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.6
-}) has been already used, duplicate ignored
+l.194 		\item I
+               f the~\karakasten~yields are to reproduce the observations, thep
+dfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
+ been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.267 		\end{itemize}
-                      <./no_oh_predictions.pdf> <./no_oh_predictions_karakas.pd
-f
+l.194 		\item I
+               f the~\karakasten~yields are to reproduce the observations, the 
+<./no_oh_timeevol.pdf> <./no_oh_superposition.pdf
+
+pdfTeX warning: pdflatex (file ./no_oh_superposition.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+> <./no_oh_predictions.pdf
+
+pdfTeX warning: pdflatex (file ./no_oh_predictions.pdf): PDF inclusion: multipl
+e pdfs with page group included in a single page
+> <./no_oh_predictions_karakas.pdf
 
 pdfTeX warning: pdflatex (file ./no_oh_predictions_karakas.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<no_vs_age.pdf, id=949, 505.89pt x 505.89pt>
+<no_vs_age.pdf, id=999, 505.89pt x 505.89pt>
 File: no_vs_age.pdf Graphic file (type pdf)
 <use no_vs_age.pdf>
-Package pdftex.def Info: no_vs_age.pdf  used on input line 288.
+Package pdftex.def Info: no_vs_age.pdf  used on input line 289.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<no_vs_ofe.pdf, id=950, 505.89pt x 505.89pt>
+<no_vs_ofe.pdf, id=1000, 505.89pt x 505.89pt>
 File: no_vs_ofe.pdf Graphic file (type pdf)
 <use no_vs_ofe.pdf>
-Package pdftex.def Info: no_vs_ofe.pdf  used on input line 289.
+Package pdftex.def Info: no_vs_ofe.pdf  used on input line 290.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<nh_feh_vs_lookback.pdf, id=951, 505.89pt x 505.89pt>
+<nh_feh_vs_lookback.pdf, id=1001, 505.89pt x 505.89pt>
 File: nh_feh_vs_lookback.pdf Graphic file (type pdf)
 <use nh_feh_vs_lookback.pdf>
-Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 290.
+Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 291.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<no_oh_sfevar.pdf, id=975, 505.89pt x 505.89pt>
+<no_oh_sfevar.pdf, id=1025, 505.89pt x 505.89pt>
 File: no_oh_sfevar.pdf Graphic file (type pdf)
 <use no_oh_sfevar.pdf>
-Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 383.
+Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 384.
 (pdftex.def)             Requested size: 156.82426pt x 156.82426pt.
-<delta_no_schaefercomp.pdf, id=976, 1011.78pt x 505.89pt>
+<delta_no_schaefercomp.pdf, id=1026, 1011.78pt x 505.89pt>
 File: delta_no_schaefercomp.pdf Graphic file (type pdf)
 <use delta_no_schaefercomp.pdf>
-Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 384.
+Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 385.
 (pdftex.def)             Requested size: 333.88843pt x 166.9442pt.
- [9]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
-) has been already used, duplicate ignored
+ [9]
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.555 \end{itemize}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.8}) has been already used, duplicate ignored
+l.475 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.555 \end{itemize}
-                    <./no_vs_age.pdf> <./no_vs_ofe.pdf
+l.475 
+       <./no_vs_age.pdf> <./no_vs_ofe.pdf
 
 pdfTeX warning: pdflatex (file ./no_vs_ofe.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
@@ -1113,34 +1144,50 @@ s with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./delta_no_schaefercomp.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->]) (./conclusions.tex) (./acknowledgements.tex) (./ms.bbl [11]
+>]) (./conclusions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11])
+(./acknowledgements.tex) (./ms.bbl
 Underfull \hbox (badness 3919) in paragraph at lines 214--216
 []\T1/ntxtlf/m/n/8 Grisoni V., Mat-teucci F., Ro-mano D., 2021, arXiv e-prints,
  [][]p.
  []
 
 
+Underfull \vbox (badness 3884) has occurred while \output is active []
+
+ [12]
 Underfull \hbox (badness 1642) in paragraph at lines 554--556
 []\T1/ntxtlf/m/n/8 Suliga A. M., Shal-gar S., Fuller G. M., 2020, arXiv e-print
 s, [][]p.
  []
 
-) [12] (./ms.aux)
+)
+
+Package natbib Warning: There were undefined citations.
+
+[13
+
+] (./ms.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
 Package rerunfilecheck Info: File `ms.out' has not changed.
-(rerunfilecheck)             Checksum: 59899BB7F296886477F7473BB336D22C;2169.
+(rerunfilecheck)             Checksum: 94C3765CC55B6873F03B422FE2CB76B1;2477.
  ) 
 Here is how much of TeX's memory you used:
- 16255 strings out of 478599
- 234234 string characters out of 5853099
- 702885 words of memory out of 5000000
- 33623 multiletter control sequences out of 15000+600000
+ 16266 strings out of 478599
+ 234519 string characters out of 5853099
+ 696628 words of memory out of 5000000
+ 33631 multiletter control sequences out of 15000+600000
  524526 words of font info for 204 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,81p,1453b,673s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,15n,81p,1452b,654s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1163,10 +1210,10 @@ exmf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf-
 dist/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/f
 onts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/t
 ype1/public/newtx/ztmri.pfb>
-Output written on ms.pdf (12 pages, 1150480 bytes).
+Output written on ms.pdf (13 pages, 1169893 bytes).
 PDF statistics:
- 1483 PDF objects out of 1728 (max. 8388607)
- 1306 compressed objects within 14 object streams
- 155 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1544 PDF objects out of 1728 (max. 8388607)
+ 1365 compressed objects within 14 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 

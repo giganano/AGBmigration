@@ -32,7 +32,7 @@
 \end{itemize} 
 
 \subsection{Core Collapse Supernovae and Massive Star Winds} 
-\label{sec:methods:ccsn} 
+\label{sec:yields:ccsn} 
 
 \begin{figure*} 
 \centering 
@@ -166,7 +166,7 @@ Fig.~\ref{fig:no_oh_observed}.
 \end{itemize} 
 
 \subsection{Asymptotic Giant Branch Stars} 
-\label{sec:methods:agb} 
+\label{sec:yields:agb} 
 
 \begin{figure*} 
 \centering 
@@ -257,26 +257,6 @@ the~\citet{Cristallo2011, Cristallo2015} predictions (colored X's).
 	Fig.~\ref{fig:agb_yield_models} for~$\xi = 3\times10^{-4}$ in comparison to 
 	the~\cristallo~yields shown by the coloured X's. 
 \end{itemize}
-
-\begin{figure*} 
-\centering 
-\includegraphics[scale = 0.45]{no_oh_timeevol.pdf} 
-\includegraphics[scale = 0.45]{no_oh_superposition.pdf} 
-% \includegraphics[scale = 0.3]{ssp_production.pdf} 
-\caption{
-\textbf{Left}: The gas-phase [N/O]-[O/H] relation parameterized by radius at 
-various snapshots (solid coloured lines) in our fiducial model with 
-the~\cristallo~yields. 
-Dotted lines denote the resulting relation at~$T$ = 2 and 5 Gyr in the model 
-where we neglect stellar migration. 
-\textbf{Right}: The gas-phase [N/O]-[O/H] relation parameterized by time at 
-fixed radius (solid coloured lines) in the fiducial model. 
-X's denote the abundances at~$T$ = 2, 4, 6, 8, 10, 12, and 13.2 Gyr (the 
-present day) at these radii. 
-The dotted line is the same as the solid black line in the left hand panel. 
-} 
-\label{fig:no_oh_timeevol} 
-\end{figure*} 
 
 \begin{itemize} 
 	\item Despite reporting values of the same physical quantities, the N 
@@ -370,5 +350,94 @@ The dotted line is the same as the solid black line in the left hand panel.
 	However, the AGB star yields of these elements are negligible compared to 
 	their supernova yields. 
 \end{itemize} 
+
+\subsection{IMF-Averaged AGB Yields: Metallicity and Time Dependence} 
+\label{sec:yields:imf_agb} 
+
+\begin{itemize} 
+	\item To more directly compare these AGB star yield tables to one another, 
+	in the right hand panel of Fig.~\ref{fig:ssp} we plot the IMF-weighted mass 
+	yields of N reported by the~\cristallo,~\ventura,~\karakasten, 
+	and~\karakas~models at solar metallicity (i.e. $Z = 0.02$ for~\karakasten, 
+	$Z = 0.014$ otherwise). 
+	\begin{itemize} 
+		\item As mentioned in~\S~\ref{sec:yields:agb}, the AGB star yield of 
+		N~$y_\text{N}^\text{AGB}$ is in units of the progenitor star's ZAMS 
+		mass, and consequently the~\textit{mass yield} of N is given 
+		by~$M_\star y_\text{N}^\text{AGB}$. 
+		With an additional weight of~$M_\star^{-2.3}$ from the IMF in this 
+		mass range~\citep{Kroupa20001}, we therefore multiply the values 
+		of~$y_\text{N}^\text{AGB}$ by~$(M_\star/M_\odot)^{-1.3}$ to quantify 
+		the total mass yield of N taking into account the intrinsic mass 
+		distribution of stars. 
+
+		\item Even with the additional weighting of~$M_\star^{-1.3}$, 
+		the~\cristallo~yields are relatively mass-independent. 
+		Because of the steep nature of the stellar mass-lifetime relation 
+		\citep[e.g.][]{Larson1974, Maeder1989, Padovani1993, Hurley2000}, the 
+		N produced by single stellar populations is still dominated by higher 
+		mass ($\gtrsim 2 M_\odot$) AGB stars; in other words, the enrichment 
+		rates will inevitably slow down considerably for old stellar 
+		populations once the mass of its AGB stars depends only weakly on age. 
+		For other studies, the contributions from higher mass AGB stars is yet 
+		more pronounced due to the effects of TDU and HBB discussed 
+		in~\S~\ref{sec:yields:agb}. 
+		For these yield models, the characteristic delay times of N will be 
+		even shorter due to the enhanced contributions of shorter-lifetime 
+		stars. 
+	\end{itemize} 
+
+	\item In the middle panel of Fig.~\ref{fig:ssp}, we plot the fractional AGB 
+	star production of N as a function of stellar population age. 
+	\begin{itemize} 
+		\item We use~\vice's~\texttt{vice.single\_stellar\_population} 
+		function, which computes the mass yield of a given element as a 
+		function of age from a star cluster of known metallicity. 
+		For the sake of this calculation, we set~$y_\text{N}^\text{CC}$ 
+		to zero in order to highlight the AGB star production. 
+		We show the results of this procedure for solar metallicity only 
+		($Z = 0.02$ for~\karakasten,~$Z = 0.014$ otherwise), and we normalize 
+		by the total mass produced at~$T = 13.2$ Gyr. 
+
+		\item Under the~\cristallo~yields, it takes~$\sim$250 Myr for a single 
+		stellar population to produce~$\sim$50\% of its N from AGB stars, as 
+		noted by the colored points at the top of the panel. 
+		The alternate yield models, with larger contributions from higher mass 
+		AGB stars, have shorter characteristic delay times. 
+
+		\item For comparison, we plot the enrichment of Fe by our~$t^{-1.1}$ 
+		power-law DTD, also with the CCSN yield set to zero to highlight the 
+		SN Ia contribution. 
+		The characteristic delay time for Fe production is longer than that of 
+		N by nearly an order of magnitude, and by exactly how much depends 
+		slightly on which AGB star yield model is selected. 
+		As noted in~\citet{Johnson2021}, a delay-time of~$\sim$1 Gyr is exactly 
+		as expected for a~$\sim t^{-1}$ DTD because half of the SNe Ia occur 
+		between 100 Myr and 1 Gyr and the other half between 1 and 10 Gyr. 
+	\end{itemize} 
+
+	\item In the right panel of Fig.~\ref{fig:ssp}, we plot the total amount of 
+	N produced by a 13.2 Gyr old single stellar population as a function of 
+	its metallicity according to all four of the AGB star yield models; we have 
+	normalized these values by the initial mass of the stellar population. 
+	\begin{itemize} 
+		\item In general, there is good qualitative agreement between 
+		the~\cristallo~and the~\ventura~models, the only major difference being 
+		the normalization. 
+		Up to~$\log_{10}(Z/Z_\odot) \approx -0.2$, the~\karakas~yields predict 
+		a similar trend as~\cristallo~and~\ventura, also with a difference in 
+		normalization, but at higher metallicities the predict N yields are 
+		much more metallicity-independent than others. 
+		The~\karakasten~yields, on the other hand, do not agree with any of the 
+		others. 
+		Instead, they predict the N yields to~\textit{decrease} monotonically 
+		with increaasing~$Z$. 
+		The predictions with the linear model are nearly identical to 
+		the~\cristallo~model, though this is unsurprising given their 
+		similarity in Fig.~\ref{fig:agb_yield_models}. 
+		{\color{red} Remove linear model from this panel/discussion?} 
+	\end{itemize} 
+\end{itemize} 
+
 
 \end{document} 

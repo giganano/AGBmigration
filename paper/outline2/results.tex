@@ -5,27 +5,28 @@
 \section{Results} 
 \label{sec:results} 
 
-\subsection{The Fiducial Model} 
-\label{sec:results:fiducial} 
-
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.45]{ssp_production_modelcomp.pdf} 
-\includegraphics[scale = 0.45]{agb_yield_models_imfweighted.pdf} 
-\caption{ 
-\textbf{Left}: The net mass of N produced by AGB stars from a single stellar 
-population for each of our yield models at solar metallicity 
-($Z = 0.02$ in~\karakasten,~$Z = 0.014$ otherwise). 
-The purple line denotes the same for Fe assuming our~$t^{-1.1}$ delay time 
-distribution. 
-All values are normalized to the total mass produced at an age of 13.2 Gyr. 
-Points at the top of the panel denote the ages at which 50\% of the total mass 
-yield has been produced. 
-\textbf{Right}: The IMF-weighted mass yield of N from AGB stars as a function 
-of progenitor mass at the same metallicities as in the left panel. 
+\includegraphics[scale = 0.45]{no_oh_timeevol.pdf} 
+\includegraphics[scale = 0.45]{no_oh_superposition.pdf} 
+% \includegraphics[scale = 0.3]{ssp_production.pdf} 
+\caption{
+\textbf{Left}: The gas-phase [N/O]-[O/H] relation parameterized by radius at 
+various snapshots (solid coloured lines) in our fiducial model with 
+the~\cristallo~yields. 
+Dotted lines denote the resulting relation at~$T$ = 2 and 5 Gyr in the model 
+where we neglect stellar migration. 
+\textbf{Right}: The gas-phase [N/O]-[O/H] relation parameterized by time at 
+fixed radius (solid coloured lines) in the fiducial model. 
+X's denote the abundances at~$T$ = 2, 4, 6, 8, 10, 12, and 13.2 Gyr (the 
+present day) at these radii. 
+The dotted line is the same as the solid black line in the left hand panel. 
 } 
-\label{fig:ssp} 
+\label{fig:no_oh_timeevol} 
 \end{figure*} 
+
+\subsection{The Fiducial Model} 
+\label{sec:results:fiducial} 
 
 \begin{itemize} 
 	\item Our fiducial model adopts, together with the supernova yields 
@@ -79,7 +80,7 @@ of progenitor mass at the same metallicities as in the left panel.
 \caption{
 \textbf{Left}: The present day gas-phase [N/O]-[O/H] relation predicted by our 
 fiducial model with each of the yield sets described 
-in~\S~\ref{sec:methods:agb}. 
+in~\S~\ref{sec:yields:agb}. 
 The~\cristallo~and~\ventura~yields are artificially amplified by factors of 
 3 and 2, respectively, and we take the linear model with~$\xi = 9\times10^{-4}$. 
 For observational reference, we plot the population-averaged trend for local 
@@ -139,7 +140,7 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	IMF-weighted mass yield of nitrogen for each of our yield models at the 
 	same metallicities as in the left hand panel. 
 	Since our yields are fractional (or rather, in units of the progenitor 
-	star's mass; see discussion in~\S~\ref{sec:methods:agb}), the mass 
+	star's mass; see discussion in~\S~\ref{sec:yields:agb}), the mass 
 	yield is given by M$y_\text{N}^\text{AGB}$. 
 	With an additional weight of M$^{-2.3}$ from the IMF in this mass 
 	range~\citep{Kroupa2001}, we thus multiply each yield 
@@ -147,12 +148,12 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	Compared to the fiducial model, the contribution of higher mass AGB stars 
 	to the total N production is quite substantial. 
 	The difference can be understood by the interaction between TDU and HBB 
-	discussed in~\S~\ref{sec:methods:agb} which effects the evolution 
+	discussed in~\S~\ref{sec:yields:agb} which effects the evolution 
 	of stars at these masses. 
 
 	\item The left hand panel of Fig.~\ref{fig:no_oh_predictions} compares the 
 	predictions of our model made with each of the AGB star yield models 
-	discussed in~\S~\ref{sec:methods:agb} and visualized in 
+	discussed in~\S~\ref{sec:yields:agb} and visualized in 
 	Fig.~\ref{fig:agb_yield_models}. 
 	For observational reference, we include the~\citet{Dopita2016} measurements 
 	also plotted in Fig.~\ref{fig:no_oh_observed}. 
@@ -249,7 +250,7 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 
 			\item The inverse dependence of [N/O] with [O/H] when taking 
 			the~\karakasten~yields can be understood by the interaction between 
-			TDU and HBB (see discussion in~\S~\ref{sec:methods:agb}). 
+			TDU and HBB (see discussion in~\S~\ref{sec:yields:agb}). 
 			Both effects are stronger at low metallicity, and since all of 
 			the~\karakasten~models experiencing HBB also experience TDU (see 
 			their Table 1), such a result is not surprising. 
