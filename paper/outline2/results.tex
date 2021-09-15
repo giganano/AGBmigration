@@ -7,25 +7,26 @@
 
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.45]{no_oh_timeevol.pdf} 
 \includegraphics[scale = 0.45]{no_oh_superposition.pdf} 
-% \includegraphics[scale = 0.3]{ssp_production.pdf} 
+\includegraphics[scale = 0.45]{no_oh_timeevol.pdf} 
 \caption{
-\textbf{Left}: The gas-phase [N/O]-[O/H] relation parameterized by radius at 
-various snapshots (solid coloured lines) in our fiducial model with 
-the~\cristallo~yields. 
-Dotted lines denote the resulting relation at~$T$ = 2 and 5 Gyr in the model 
-where we neglect stellar migration. 
-\textbf{Right}: The gas-phase [N/O]-[O/H] relation parameterized by time at 
+\textbf{Left}: The gas-phase [N/O]-[O/H] relation parameterized by time at 
 fixed radius (solid coloured lines) in the fiducial model. 
 X's denote the abundances at~$T$ = 2, 4, 6, 8, 10, 12, and 13.2 Gyr (the 
 present day) at these radii. 
-The dotted line is the same as the solid black line in the left hand panel. 
+The dotted blackcline is the same as the solid black line in the right panel. 
+Coloured dotted lines mark the evolution of our model at~\rgal~= 10 and 12 kpc 
+when stellar migration is neglected. 
+\textbf{Right}: The gas-phase [N/O]-[O/H] relation parameterized by radius at 
+various snapshots (solid coloured lines) in our fiducial model with 
+the~\cristallo~yields. 
+Similar to the left hand panel, coloured dotted lines denote the resulting 
+relation at~$T$ = 2 and 5 Gyr when we neglect stellar migration. 
 } 
 \label{fig:no_oh_timeevol} 
 \end{figure*} 
 
-\subsection{The Fiducial Model} 
+\subsection{Evolution of a Fiducial Model} 
 \label{sec:results:fiducial} 
 
 \begin{itemize} 
@@ -34,43 +35,101 @@ The dotted line is the same as the solid black line in the left hand panel.
 	$y_\text{N}^\text{CC} = 3.6\times10^{-4}$ and the~\cristallo~AGB star yield 
 	tables. 
 
-	\item To obtain the [N/O]-[O/H] relation predicted by the model, we simply 
-	take the N and O abundances in the gas-phase at a given time for 
-	each~$\delta\rgal$ = 100 pc ring at~$\rgal >$ 2 kpc and plot them as a 
-	line.
-	We show the results at five output times in the left hand panel of 
-	Fig.~\ref{fig:no_oh_timeevol}. 
-	The relation is generally time-independent after~$T \gtrsim 5$ Gyr, though 
-	there is some evolution toward higher [N/O]. 
+	\item In the left panel of Fig.~\ref{fig:no_oh_timeevol}, we plot the 
+	evolution of the N and O abundances in the gas phase in five rings at 
+	a range of Galactocentric radii. 
+	At early times, [O/H] is low and [N/O] reflects the ratio of the CCSN 
+	yields ([N/O]~$\approx -0.7$). 
+	As the Galaxy evolves, AGB stars begin enriching the ISM with their N 
+	yields, and [N/O] increases. 
+	Being an element produced primarily by CCSNe on short delay times, O 
+	reaches an equilibrium abundance on timescales of a~$\sim$few 
+	Gyr~\citep{Weinberg2017}, and consequently the metallicity gradient in 
+	[O/H] is established soon after AGB stars begin producing N. 
+	[N/O] then continues to increase at an approximately fixed [O/H] due to the 
+	ongoing N production in AGB stars. 
+	As a consequence, the gas phase tracks in the [N/O]-[O/H] plane are unique 
+	from one another at different radii. 
 
-	\item The small bumpy features in the relation are caused by stellar 
-	migration; in comparison, the dotted lines plotted at~$T = 2$ and 5 Gyr 
-	quantify the prediction when migration is neglected (i.e. the 
-	``post-processing'' model from~\citealt{Johnson2021}). 
-	At a given time, the movements of stars between rings induce a slight 
-	surplus or deficit in the number of AGB stars enriching some annulus. 
+	\item Because there is a delay between a stellar population's formation and 
+	N production from its AGB stars ($\sim$250 Myr in this model; see 
+	Fig.~\ref{fig:ssp}), stellar migration can occur in this time interval. 
+	Although the bulk of migration occurs on longer timescales, this 
+	characteristic delay time is comparable to the dynamical time of the Milky 
+	Way and is thus an adequate amount of time for kinematic heating to at 
+	least begin. 
+	As a consequence, there may be a slight deficit or surplus of N-producing 
+	AGB stars in a given ring at some time induced by stellar migration. 
+	These tracks can thus move vertically in this plane in response to stars 
+	moving between rings as the Galaxy evolves, entirely independent of the 
+	SFH and the nucleosynthetic yields of stars that formed in any given ring. 
+	We demonstrate this effect by comparing the solid blue and purple lines to 
+	their dotted counterparts, which denote the tracks when we neglect stellar 
+	migration entirely (i.e. the ``post-processing'' model 
+	from~\citealt{Johnson2021}). 
 	This is similar to what~\citet{Johnson2021} found for SN Ia enrichment of 
 	Fe (see discussion in their~\S\S~3.2 and 3.4). 
-	Generally the effect is small for N ($<$0.1 dex), but there are some 
-	instances at early times where the impact of stellar migration is more 
-	substantial. \tabularnewline
-	
-	\item In our models, the [N/O]-[O/H] relation arises as a superposition of 
-	endpoints rather than an evolutionary phase. 
-	We demonstrate this in the middle panel of 
-	Fig.~\ref{fig:no_oh_timeevol}, where we plot the time-evolution of 
-	[N/O] and [O/H] at~$\rgal = 4$, 6, 8, 10, and 12 kpc in relation to the 
-	predicted [N/O]-[O/H] relation at the present day. 
-	Rather than each annulus's track passing through some well-defined region 
-	of this parameter space, they instead each evolve upward more or less 
-	parallel to one another. 
-	The result is an [N/O]-[O/H] relation that reflects the Galaxy's 
-	metallicity gradient more so than different evolutionary states. 
+
+	\item This panel also suggests that the [N/O]-[O/H] relation arises as a 
+	superposition of endpoints rather than an evolutionary sequence. 
+	Rather than each ring's track passing through a well-defined region of 
+	abundance space, they instead evolve upward more or less parallel to one 
+	another (modulo the effect of stellar migration). 
+	This is a direct consequence of the fact that the [O/H] abundances approach 
+	equilibrium quickly, and changes in the [N/O] ratio thereafter almost 
+	entirely reflect changes in the N abundances; the result is an [N/O]-[O/H] 
+	relation that reflects the Galaxy's metallicity gradient more so than 
+	different evolutionary states. 
 	Similar arguments have been made regarding the low [$\alpha$/Fe] stars in 
-	the Galaxy~\citep[see, e.g.,][]{Schoenrich2009, Sharma2020}. 
+	the Galaxy~\citep[e.g.][]{Schoenrich2009, Sharma2020}. 
+
+	\item In the right panel of Fig.~\ref{fig:no_oh_timeevol}, we plot the 
+	gas-phase [N/O]-[O/H] relation predicted by the model at various snapshots. 
+	To obtain this, we simply take the N and O abundances in the ISM at a given 
+	snapshot for each~$\delta\rgal = 100$ pc ring at~$\rgal >$ 2 kpc and 
+	plot them as a line. 
+	The relation is generally time-independent after~$T \gtrsim 5$ Gyr, though 
+	there is some evolution toward higher [N/O]. 
+	We again demonstrate the impact of stellar migration by comparing the solid 
+	blue and purple lines to their dotted counterparts, which quantify the 
+	relation when we neglect migration. 
+	This indicates that the complex features seen in the relation at all times 
+	is an effect of stellar migration as discussed above. 
+
+	\item \citet{Johnson2021} found that the SN Ia rate in this model can vary 
+	by as much as a factor of~$\sim$3 at large radii ($\rgal\gtrsim 9$ kpc), 
+	also as a consequence of stellar migration (see their Fig. 8 and discussion 
+	in their~\S~3.4). 
+	They demonstrate that this is a sufficiently large effect such that the 
+	resultant stellar populations are Fe-poor enough to explain the 
+	intrinsically young sub-component of the young~$\alpha$-rich stars observed 
+	in the solar neighbourhood with APOGEE\footnote{
+		Apache Point Observatory Galaxy Evolution 
+		Experiment~\citep{Majewski2017} 
+	}~\citep[see discussion in their~\S\S~3.2 and 3.4;][]{Chiappini2015, 
+	Martig2015, Martig2016, Jofre2016, Yong2016, Izzard2018, SilvaAguirre2018, 
+	Warfield2021}. 
+	For N, the effect is much smaller ($\lesssim 0.1$ dex), but there are some 
+	instances at early times where the impact of stellar migration is more 
+	substantial. 
+	The smaller effect on N enrichment rates can be understood from the 
+	relative timescales of their production (see Fig.~\ref{fig:ssp} and 
+	discussion in~\S~\ref{sec:yields:imf_agb}). 
+	Produced on timescales of a~$\sim$couple hundred Myr, N yields are ejected 
+	from stellar populations~$\sim$5 times faster than Fe (even faster in our 
+	alternate AGB star yield models). 
+	Consequently, there is much less time for stellar migration to occur within 
+	the timescale of N production than there is within the timescale of Fe 
+	production, and as a result, migration has only a small impact on the gas 
+	phase N abundances. 
+	This underscores the argument from~\citet{Johnson2021} that in order for 
+	nucleosynthetic yields to migrate significant distances along with their 
+	progenitor stellar populations, the timescale for production needs to be 
+	at least comparable to the migration timescale. 
+
 \end{itemize} 
 
-\subsection{Alternate Yield Models} 
+\subsection{Comparison to Observed Gas Phase Trends} 
 \label{sec:results:yields} 
 
 \begin{figure*} 
@@ -95,68 +154,16 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 \end{figure*} 
 
 \begin{itemize} 
-	\item The smaller impact of stellar migration on N than Fe abundances can 
-	be understood by their timescales for production from single stellar 
-	populations. 
-	To demonstrate this, we make use 
-	of~\vice's~\texttt{vice.single\_stellar\_population} function, which 
-	computes the mass yield of a given element as a function of time from a 
-	star cluster of known metallicity. 
-	For the sake of this calculation, we set~$y_\text{N}^\text{CC}$ and 
-	$y_\text{Fe}^\text{CC}$ both to zero in order to highlight only the 
-	delayed nucleosynthetic sources. 
-	We plot the results of this procedure in the left panel of 
-	Fig.~\ref{fig:ssp} for each of our AGB star yield models at solar 
-	metallicity ($Z = 0.02$ for~\karakasten,~$Z = 0.014$ otherwise). 
-	Under our fiducial model, it takes~$\sim$250 Myr for a single stellar 
-	population to produce~$\sim$50\% of its N from AGB stars. 
-	For Fe, this characteristic delay time is near~$\sim$1 Gyr, an order of 
-	magnitude larger.\footnote{
-		This is exactly as expected with a~$\sim t^{-1}$ DTD as adopted 
-		in~\citet{Johnson2021}. 
-		Half of the SNe Ia occur between 100 Myr and 1 Gyr, and the other half 
-		between 1 and 10 Gyr. 
-	} 
-	\citet{Johnson2021} find that the Fe enrichment rate can vary by as much 
-	as a factor of~$\sim$3 due only to stellar migration (see their Fig. 8 and 
-	discussion in their~\S~3.4). 
-	This is largely because the timescales for migration are comparable to the 
-	timescales for SN Ia explosions, but the same is not true for N. 
-	Instead, N is produced on shorter timescales, meaning that single stellar 
-	populations generally eject most of their yield to the ISM before their 
-	orbits can change significantly. 
-	\begin{itemize} 
-		\item Despite minor differences in the details of the predicted delay 
-		time distributions, there is good qualitative agreement between our 
-		different AGB star yield models. 
-		Our fiducial model with~\cristallo~yields is the slowest, owing to the 
-		larger N production in~$\gtrsim3\ \msun$ stars in the alternate 
-		models. 
-		As a consequence, the alternate models predict even less variability 
-		in the gas phase N abundances due to stellar migration. 
-	\end{itemize} 
-
-	\item In the right hand panel of Fig.~\ref{fig:ssp}, we plot the 
-	IMF-weighted mass yield of nitrogen for each of our yield models at the 
-	same metallicities as in the left hand panel. 
-	Since our yields are fractional (or rather, in units of the progenitor 
-	star's mass; see discussion in~\S~\ref{sec:yields:agb}), the mass 
-	yield is given by M$y_\text{N}^\text{AGB}$. 
-	With an additional weight of M$^{-2.3}$ from the IMF in this mass 
-	range~\citep{Kroupa2001}, we thus multiply each yield 
-	by (M$/\msun)^{-1.3}$. 
-	Compared to the fiducial model, the contribution of higher mass AGB stars 
-	to the total N production is quite substantial. 
-	The difference can be understood by the interaction between TDU and HBB 
-	discussed in~\S~\ref{sec:yields:agb} which effects the evolution 
-	of stars at these masses. 
+	\item We use the~\citet{Dopita2016} measurements as our observational 
+	baseline. 
+	They are a good representation of many results for gas phase N and O 
+	abundances, and they agree well with APOGEE stellar 
+	trends~\citep{Vincenzo2021}. 
 
 	\item The left hand panel of Fig.~\ref{fig:no_oh_predictions} compares the 
 	predictions of our model made with each of the AGB star yield models 
 	discussed in~\S~\ref{sec:yields:agb} and visualized in 
 	Fig.~\ref{fig:agb_yield_models}. 
-	For observational reference, we include the~\citet{Dopita2016} measurements 
-	also plotted in Fig.~\ref{fig:no_oh_observed}. 
 
 	\item In order to successfully reproduce the observations, we find that we 
 	need to artificially amplify the~\cristallo~and~\ventura~yields by factors 
@@ -267,7 +274,8 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 			at low [O/H] with no modification. 
 		\end{itemize} 
 
-		\item We believe these results are independent of the choice of the 
+		\item {\color{red} 
+		We believe these results are independent of the choice of the 
 		CCSN yield of O~$y_\text{O}^\text{CC}$. 
 		Our value of~$y_\text{O}^\text{CC}$ = 0.015 is based on models in which 
 		all stars with a ZAMS mass above 8~\msun~explode as a 
@@ -280,15 +288,29 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 		similar overall abundances~\citep{Weinberg2017}. 
 		Our model would thus compute similar AGB star yields for N in such a 
 		scenario. 
+		} 
 
 	\end{itemize} 
 \end{itemize} 
 
+\subsection{Comparison to Stellar Abundances in the Milky Way Disc} 
+\label{sec:results:vincenzo_comp} 
+
+\begin{figure} 
+\centering 
+\includegraphics[scale = 0.45]{nh_feh_vs_lookback.pdf} 
+\caption{
+[N/H] (solid), [Fe/H] (dashed), and [O/H] (dotted) in the gas phase as a 
+function of lookback time in the fiducial model at~\rgal~= 4 (black), 8 (red), 
+and 12 kpc (blue). 
+}
+\label{fig:xh_lookback} 
+\end{figure} 
+
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.3]{no_vs_age.pdf} 
-\includegraphics[scale = 0.3]{no_vs_ofe.pdf} 
-\includegraphics[scale = 0.3]{nh_feh_vs_lookback.pdf} 
+\includegraphics[scale = 0.45]{no_vs_age.pdf} 
+\includegraphics[scale = 0.45]{no_vs_ofe.pdf} 
 \caption{
 \textbf{Left}: [N/O] as a function of stellar age for 5000 stars randomly 
 sampled from our model stellar populations in three bins of [Fe/H] (colored 
@@ -297,15 +319,9 @@ Stars quantify the median trend of [N/O] with age corrected for internal mixing
 in the same bins of [Fe/H] from the~\citet{Vincenzo2021} sample. 
 \textbf{Middle}: The same as the left hand panel, instead showing [N/O] as a 
 function of [O/Fe] in bins of [O/H]. 
-\textbf{Right}: [N/O] (solid), [Fe/H] (dashed), and [O/H] (dotted) in the gas 
-phase as a function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc 
-(blue). 
 } 
 \label{fig:vincenzo_comp} 
 \end{figure*} 
-
-\subsection{The Stellar Abundances}  
-\label{sec:results:vincenzo_comp} 
 
 \begin{itemize} 
 	\item Before comparing the predictions of GCE models to observational data, 
@@ -315,21 +331,56 @@ phase as a function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc
 	observational data, because GCE models predict the birth abundances of 
 	stars, and N abundances in evolved stars do not reflect their birth 
 	abundance. 
-	After the CNO cycle has processed much of the C and O nuclei into~\Nfourteen 
-	during a star's main sequence lifetime, this N-rich material from the core 
-	is mixed with the outer convective layers, increasing the N abundance in 
-	the photosphere. 
+	After the CNO cycle has processed much of the C and O nuclei 
+	into~\Nfourteen~during a star's main sequence lifetime, this N-rich 
+	material from the core is mixed with the outer convective layers, 
+	increasing the N abundance in the photosphere. 
 	Using~\texttt{MESA} stellar evolution models~\citep{Paxton2011, Paxton2013, 
 	Paxton2015, Paxton2018} with standard mixing prescriptions, 
 	\citet{Vincenzo2021} developed a prescription to approximate the birth 
 	abundances of C, N, and O and apply it to a sample of APOGEE/Kepler red 
 	giants. 
+	They find good agreement between the APOGEE abundances and 
+	the~\citet{Dopita2016} measurements, so the fiducial model's successful 
+	reproduction of the~\citet{Dopita2016} trend is an indication that it also 
+	successfully reproduces the overall trend of [N/O] vs. [O/H] found for 
+	APOGEE disc stars. 
+	In this section we focus on the stellar abundances, with which we can 
+	investigate trends with age and [O/Fe]. 
+
+	\item In Fig.~\ref{fig:xh_lookback}, we plot the evolution of the N, O, and 
+	Fe abundances in the gas phase at the~\rgal~= 4, 8, and 12 kpc rings in our 
+	fiducial model. 
+	[N/H] is more correlated with [Fe/H] than [O/H] at all radii, and the 
+	relation persists up to lookback times of~$\sim$10 Gyr. 
+	This arises in part because N and Fe are both produced in significant 
+	quantities by delayed enrichment sources while O is produced almost 
+	entirely on short timescales by CCSNe (see discussion 
+	in~\S~\ref{sec:yields}). 
+	Although the production timescale of N from single stellar populations is 
+	short compared to Fe (see discussion in~\S~\ref{sec:yields:imf_agb}), 
+	metallicity dependent yields require more abundant species such as O and Fe 
+	to be produced and reach an equilibrium before N yields stabilize. 
+	When many stellar populations are present, N abundances are thus somewhat 
+	limited in how fast they can increase due to the metallicity dependent 
+	nature of AGB star yields;~\citet{Johnson2020} found similar results 
+	regarding Fe and strontium (Sr). 
+	As a consequence of its single dominant nucleosynthetic source with a 
+	metallicity-independent yield, O reaches an equilibrium abundance on much 
+	shorter timescales than elements like N and Fe which have significant 
+	contributions from delayed sources~\citep{Weinberg2017}; because of this, 
+	[O/H] is nearly independent of lookback time as far back as~$\sim$10 Gyr 
+	ago while [N/H] and [Fe/H] are not. 
 
 	\item In the left hand panel of Fig.~\ref{fig:vincenzo_comp}, we compare 
 	our model predictions to their [N/O] abundances with the ages taken 
 	from~\citet{Miglio2021}. 
 	The model correctly predicts that the [N/O]-age relation is relatively flat 
 	in bins of [Fe/H]. 
+	This arises as a consequence of the N-Fe correlation described in 
+	Fig.~\ref{fig:xh_lookback}: a bin in [Fe/H] is also approximately a bin in 
+	[N/H], and with [O/H] more or less constant, the [N/O]-age relation at 
+	fixed [Fe/H] is relatively flat up to ages of~$\sim$10 Gyr. 
 	This is an important success of the model, because with uncorrected N 
 	abundances, [N/O] vs. age exhibits a significant negative slope at fixed 
 	[Fe/H] (see Fig. 7 of~\citealp{Vincenzo2021}). 
@@ -339,41 +390,24 @@ phase as a function of lookback time at~\rgal~= 4 (black), 8 (red), and 12 kpc
 	the~\citet{Vincenzo2021} measurements, suggesting that our yields scale 
 	with metallicity slightly too strongly. 
 
-	\item In the middle panel of Fig.~\ref{fig:vincenzo_comp}, we compare 
+	\item In the right panel of Fig.~\ref{fig:vincenzo_comp}, we compare 
 	our model predicted [N/O]-[O/Fe] relation to their calculations. 
 	As in the left hand panel, our model predicted stellar populations occupy a 
 	wider range of [N/O] than the data, but the agreement is otherwise good. 
 	The model correctly predicts that [N/O] should increase with decreasing 
-	[O/Fe] at all metallicities, and places the increase in [N/O] in the 
-	highest [O/H] bin at approximately the correct value of [O/Fe]. 
+	[O/Fe] at all metallicities. 
+	This anti-correlation is also a direct consequence of the N-Fe correlation: 
+	as the two abundances increase together in the ISM, [N/O] increases and 
+	[O/Fe] decreases. 
+	This is also an important success of the model;~\citet{Vincenzo2021} 
+	demonstrate that when stellar N abundances are corrected for internal 
+	mixing process, the dichotomy between the chemical thin and thick discs 
+	persists for this element. 
 
-	\item These results can generally be understood with the notion that 
-	N and Fe abundances change on similar timescales in our model. 
-	In the right hand panel of Fig.~\ref{fig:vincenzo_comp}, we show the time 
-	evolution of [N/H], [Fe/H], and [O/H] in the gas phase at three different 
-	radii. 
-	[N/H] is more correlated with [Fe/H] than [O/H] at all radii, and the 
-	relation persists up to lookback times of~$\sim$10 Gyr. 
-	This arises largely because N and Fe are both produced in significant 
-	quantities by delayed enrichment sources while O is produced almost 
-	entirely on short timescales by CCSNe (see discussion 
-	in~\S~\ref{sec:yields}). 
-	As a consequence of its single dominant nucleosynthetic source, O reaches 
-	an equilibrium abundance on much shorter timescales than elements like N 
-	and Fe which have significant contributions from delayed 
-	sources~\citep{Weinberg2017}; because of this, [O/H] is nearly 
-	independent of lookback time as far back as~$\sim$10 Gyr ago while [N/H] 
-	and [Fe/H] are not. 
-	Therefore, a bin in [Fe/H] is also approximately a bin in [N/H], and with 
-	[O/H] more or less constant, the [N/O]-age relation at fixed [Fe/H] is 
-	relatively flat up to ages of~$\sim$10 Gyr. 
-	The anti-correlation between [N/O] and [O/Fe] at fixed [O/H] is also a 
-	direct consequence of the N-Fe correlation. 
-
-	\item We thus conclude that when a viable model for the AGB star yields of 
-	N is adopted, our GCE models are in good agreement with observed abundances 
-	of N when corrected for internal mixing processes known to affect the 
-	photospheric abundances in red giant stars. 
+	% \item We thus conclude that when a viable model for the AGB star yields 
+	% of N is adopted, our GCE models are in good agreement with observed 
+	% abundances of N when corrected for internal mixing processes known to 
+	% affect the photospheric abundances in red giant stars. 
 \end{itemize} 
 
 \subsection{The Sources of Scatter in the [N/O]-[O/H] Relation} 
@@ -406,24 +440,23 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 \end{figure*} 
 
 \begin{itemize} 
-	\item What is the dominant source of variance in the observed [N/O]-[O/H] 
-	relation? 
-	\citet{Schaefer2020} demonstrate that intrinsic scatter is driven by 
-	variations in the local SFE - with slower star formation, more AGB stars 
-	enrich the ISM by the time it reaches a given abundance, causing a higher 
-	[N/O] at fixed [O/H]. 
-	However, they did not rule out radial migration as another source of 
-	scatter. 
-	Can the radial migration of nucleosynthetic yields drive enough variation 
-	in the gas-phase [N/O]-[O/H] relation to explain these results too? 
+	\item \citet{Schaefer2020} demonstrate that intrinsic scatter in the gas 
+	phase [N/O]-[O/H] relation in MaNGA galaxies is correlated with variations 
+	in the local SFE. 
+	This is as expected from simple GCE models: with slower star formation, 
+	more AGB stars enrich the ISM by the time it reaches a give abundance, 
+	causing a higher [N/O] at fixed [O/H]. 
+	However, they do not rule out radial migration as another potential source 
+	of scatter in this relation. 
 	Our models, taking into account the effects of radial migration on the 
-	enrichment rates, are the ideal tool with which to answer this question. 
+	enrichment rates and thus the gas phase abundances, are the ideal tool 
+	with which to address this question. 
 
-	\item We construct two additional models based on our fiducial model, one 
+	\item We construct two additional extensions of our fiducial model, one 
 	in which the SFE exhibits 25\% sinusoidal variations in time, and the other 
 	with the same 25\% variations in the SFR. 
-	In these models, the SFE timescale~$\tau_\star$ and SFH~$\dot{\Sigma}_\star$ 
-	are modified from the fiducial case in the following manner: 
+	We modify the SFE timescale~$\tau_\star$ and SFH~$\dot{\Sigma}_\star$ from 
+	the fiducial case in the following manner: 
 	\begin{equation} 
 	\tau_\star(\rgal, t) = \tau_{\star,\text{J21}}(\rgal, t)\left(1 + 0.25\sin 
 	\left(\frac{2\pi t}{2\text{ Gyr}}\right)\right)
@@ -436,30 +469,39 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	to the SFE timescale and SFH in the fiducial model taken 
 	from~\citet{Johnson2021}. 
 
-	\item In a real galaxy, the variability in the SFE and the SFR are likely 
+	\item In a real galaxy, variability in the SFE and the SFR are likely 
 	non-sinusoidal and not with constant amplitude. 
-	This, however, at least quantifies how much variation in [N/O] can be 
-	expected by variations of a fixed amplitude in these quantities. 
+	However, when observing a sample of galaxies, they will have different 
+	amplitudes and be seen at different phases in their variability, and the 
+	impact of this on their N and O abundances will present as intrinsic 
+	scatter in the inferred trend. 
+	By comparing models with radial migration with and without reasonable 
+	amounts of variability in these quantities will provide insight into which 
+	of the two is more likely to drive scatter in the abundances. 
 
-	\item We find that 25\% variations in these quantities generally induce 
-	larger variability than does stellar migration. 
-	In the left hand panel of Fig.~\ref{fig:schaefer_comp}, we plot the 
+	\item In the left panel of Fig.~\ref{fig:schaefer_comp}, we plot the 
 	predicted gas-phase [N/O]-[O/H] relation at high [O/H] for five snapshots 
 	covering one cycle of the fluctuations induced by variability 
 	in~$\tau_\star$. 
-	The model with no sinusoidal oscillations in~$\tau_\star$ predicts the 
-	relation to be nearly constant over this time interval, whereas the model 
-	with them predicts a~$\sim$0.15-dex dynamic range. 
+	This model predicts a~$\sim$0.15-dex dynamic range in [N/O] at fixed [O/H], 
+	where as the model with no variability in~$\tau_\star$, denoted by the 
+	dotted lines, predicts the relation to be nearly constant in comparison 
+	over this time interval. 
+	Because both models include the effects of stellar migration, we therefore 
+	argue that reasonable variability in the local SFE is a more likely source 
+	of intrinsic scatter in the gas phase [N/O]-[O/H] relation; we find 
+	similar results for varability in the SFR. 
 
 	\item Such behavior is driven by the constant tug-of-war between dilution 
 	and re-enrichment associated with oscillations in~$\tau_\star$. 
 	In this model,~$\dot{\Sigma}_\star$ is the same as it was 
-	in~\citet{Johnson2021}, so it is not~$\dot{\Sigma}_\star$ which is 
-	fluctuating, but rather~$\Sigma_\text{gas}$. 
+	in~\citet{Johnson2021}, so it is not the SFR which varies but rather the 
+	gas supply. 
 	When the gas supply increases, the ISM becomes diluted, decreasing [O/H]. 
 	Because the AGB star yields of N with our fiducial~\cristallo~model are 
 	roughly linear with metallicity, the decrease in the N abundance due to the 
-	now lowered yields are in direct proportion to the amount of dilution. 
+	now lowered yields are in direct proportion to the amount of dilution but 
+	with a slight delay. 
 	As a result, [N/O] is only marginally affected by the fluctuations in the 
 	overall abundance. 
 	The variations in the [N/O]-[O/H] relation that the model predicts are 
@@ -481,38 +523,36 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 
 	\item In the middle and right hand panels of Fig.~\ref{fig:schaefer_comp}, 
 	we plot the difference in [N/O] at fixed [O/H] between the fiducial model 
-	and those with variability as a function of [O/H] (i.e. the vertical 
-	offset between the solid and dotted curves in the left hand panel). 
+	and those with variability (i.e. the vertical offset between the solid and 
+	dotted curves in the left hand panel). 
 	Both scenarios produce offsets in [N/O] at high [O/H] (which as discussed 
-	above are truly offsets in [O/H] at fixed [N/O]), but the model with 
+	above are more offsets in [O/H] at fixed [N/O]), but the model with 
 	variations in~$\dot{\Sigma}_\star$ does not predict any significant 
 	fluctuations in the abundances at [O/H]~$\lesssim -0.2$. 
-	This is a consequence of the mathematical form of~$\tau_{\star,\text{J21}}$ 
-	(see discussion in~\S~\ref{sec:methods}) and the fact that we 
-	have run these models in star formation mode with~\vice. 
-	The low [O/H] end of the relation comes from the outer Galaxy at lower 
-	$\Sigma_\text{gas}$ than the inner regions at higher [O/H], and the surface 
-	densities are in the region where~$\Sigma_\text{gas} 
-	\sim \dot{\Sigma}_\star^{3.6}$. 
-	However, in these models,~$\dot{\Sigma}_\star$ is fixed, meaning that it is 
-	not a strong function of~$\Sigma_\text{gas}$ - rather~$\Sigma_\text{gas}$ 
-	is only a weak function of~$\dot{\Sigma}_\star$. 
-	25\% oscillations in~$\dot{\Sigma}_\star$ therefore have little impact on 
-	the ISM gas supply, and as a consequence the impact on abundances is 
-	minimal. 
+	This difference is a consequence of the mathematical form 
+	of~$\tau_{\star,\text{J21}}$ (see discussion in~\S~\ref{sec:methods}) and 
+	the fact that these models run~\vice~in star formation mode. 
+	The low [O/H] end of this relation arises from large~\rgal~due to the 
+	metallicity gradient, and the surface densities of gas our model predicts 
+	at these radii are in 
+	the~$\dot{\Sigma}_\star \propto \Sigma_\text{gas}^{3.6}$ portion of the 
+	adopted~$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation. 
+	However, since these models run from a specified SFH, it's not that the SFH 
+	is a strong function of the gas supply but rather that the gas supply is a 
+	weak function of the SFH. 
+	As a consequence, 25\% oscillation in~$\dot{\Sigma}_\star$ therefore have 
+	little impact on the ISM gas supply; there is then a minimal impact on 
+	abundances since the effect of dilution is greatly minimized. 
 	At smaller~\rgal~(i.e. higher [O/H]),~$\Sigma_\text{gas}$ varies more 
-	strongly with~$\dot{\Sigma}_\star$, and thus there is a stronger effect on 
-	the abundances there. 
-	In the model with oscillations in~$\tau_\star$,~$\Sigma_\text{gas}$ always 
-	varies with a~25\% amplitude, so the oscillations are seen at all 
-	abundances. 
-	If we were to adopt an alternate form of the~$\dot{\Sigma}_\star - 
-	\Sigma_\text{gas}$ relation in these models, such as a purely linear or 
-	single power-law formalism, then the impact on abundance would be seen at 
-	all [O/H] when~$\dot{\Sigma}_\star$ oscillates. 
-	Alternatively, we expect a similar result if we were to run an equivalent 
-	model in infall mode (i.e. specifying the infall history and initial gas 
-	supply rather than the star formation history). 
+	strongly with~$\dot{\Sigma}_\star$, and as expected the impact on 
+	abundances is more significant. 
+	If we were to adopt an alternate form of 
+	the~$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation, such as a purely 
+	linear or single power-law formalism as in many GCE studies, then this 
+	effect would be seen at all [O/H] when~$\dot{\Sigma}_\star$ oscillates. 
+	Alternatively, we expect similar results if we were to run an equivalent 
+	model with~\vice~in infall mode (i.e. specifying the infall history and 
+	initial gas supply rather than the SFH). 
 
 	\item The shaded regions in the left and middle panels of 
 	Fig.~\ref{fig:schaefer_comp} quantify the scatter in the gas-phase 
@@ -537,38 +577,23 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	Stellar migration, on the other hand, induces only small variations, as can 
 	be seen in the left-hand panel of Fig.~\ref{fig:schaefer_comp}. 
 	This traces back to the timescales of N production from single stellar 
-	populations (see Fig.~\ref{fig:no_oh_predictions} and discussion 
-	in~\S~\ref{sec:results:fiducial}): most N production occurs quickly 
+	populations (see Fig.~\ref{fig:ssp} and discussion 
+	in~\S~\ref{sec:yields:imf_agb}): most N production occurs quickly 
 	following a stellar population's formation ($\sim$few hundred Myr), meaning 
 	that most stars will not migrate far from their birth radius by the time 
 	they produce their N, and the resulting impact on the gas phase abundances 
 	is minimal. 
 
-	\item In general, galaxies will not have perfectly sinusoidal variations in 
-	their SFR or SFE, and they will also not be of a constant amplitude. 
-	Nonetheless, these models clearly demonstrate that the expected differences 
-	in N and O abundances in the gas phase is larger than that caused by radial 
-	migration as conjectured by~\citet{Schaefer2020}. 
-	Such variations will present as scatter in the gas phase abundances by 
-	observing many galaxies at different phases and with different amplitudes 
-	in their variability, which may be much more complicated that the sinusoids 
-	modeled here. 
+	% \item In general, galaxies will not have perfectly sinusoidal variations 
+	% in their SFR or SFE, and they will also not be of a constant amplitude. 
+	% Nonetheless, these models clearly demonstrate that the expected 
+	% differences in N and O abundances in the gas phase is larger than that 
+	% caused by radial migration as conjectured by~\citet{Schaefer2020}. 
+	% Such variations will present as scatter in the gas phase abundances by 
+	% observing many galaxies at different phases and with different 
+	% amplitudes in their variability, which may be much more complicated 
+	% that the sinusoids modeled here. 
 \end{itemize} 
-
-% \begin{figure*} 
-% \centering 
-% \includegraphics[scale = 0.45]{no_oh_modsfr.pdf} 
-% \includegraphics[scale = 0.45]{no_oh_modsfe.pdf} 
-% \caption{
-% One cycle of variability in the gas-phase [N/O]-[O/H] relation at low [O/H] 
-% (left) and high [O/H] (right) induced by 25\% sinusoidal variations in the SFR 
-% (top) and in the SFE (bottom). 
-% Solid lines denote the models with some source of variability, and dotted lines 
-% denote the fiducial model with no variability; all models take into account the 
-% effects of stellar migration. 
-% } 
-% \label{fig:no_oh_mods} 
-% \end{figure*} 
 
 \end{document} 
 

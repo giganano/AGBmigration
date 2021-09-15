@@ -7,45 +7,45 @@ Warning--I didn't find a database entry for "Kroupa20001"
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty publisher in Mihalas1981
-You've used 106 entries,
+You've used 107 entries,
             2881 wiz_defined-function locations,
-            1666 strings with 43097 characters,
-and the built_in function-call counts, 52922 in all, are:
-= -- 4456
-> -- 3791
+            1675 strings with 45178 characters,
+and the built_in function-call counts, 53279 in all, are:
+= -- 4488
+> -- 3809
 < -- 234
-+ -- 1609
++ -- 1619
 - -- 596
-* -- 6593
-:= -- 8098
+* -- 6646
+:= -- 8147
 add.period$ -- 0
-call.type$ -- 106
-change.case$ -- 212
-chr.to.int$ -- 104
-cite$ -- 107
-duplicate$ -- 2572
-empty$ -- 2451
-format.name$ -- 954
-if$ -- 9306
+call.type$ -- 107
+change.case$ -- 214
+chr.to.int$ -- 105
+cite$ -- 108
+duplicate$ -- 2593
+empty$ -- 2473
+format.name$ -- 958
+if$ -- 9366
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 107
-newline$ -- 331
-num.names$ -- 730
-pop$ -- 441
+missing$ -- 108
+newline$ -- 334
+num.names$ -- 734
+pop$ -- 445
 preamble$ -- 1
-purify$ -- 424
+purify$ -- 428
 quote$ -- 0
-skip$ -- 1725
+skip$ -- 1737
 stack$ -- 0
-substring$ -- 3152
-swap$ -- 1570
-text.length$ -- 430
+substring$ -- 3172
+swap$ -- 1576
+text.length$ -- 434
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 951
+type$ -- 960
 warning$ -- 1
-while$ -- 796
+while$ -- 802
 width$ -- 0
-write$ -- 1071
+write$ -- 1081
 (There were 2 warnings)
