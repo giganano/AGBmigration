@@ -15,23 +15,24 @@
 		\item Alongside helium, it is one of the primary nuclear fusion 
 		products of main sequence stars more massive than the sun with nonzero 
 		metallicity. 
-		The CNO cycle catalyses the proton-proton chain of nuclear 
-		reactions~\citep*[e.g.][]{Suliga2020} using carbon (C), N, and oxygen 
-		(O) target nuclei,\footnote{
+		The CNO cycle\footnote{
 			\Ctwelve(p,$\gamma$)\Nthirteen($\beta^+$,$\nu_e$)\Cthirteen 
 			(p,$\gamma$)\Nfourteen(p,$\gamma$)\Ofifteen
 			($\beta^+$,$\nu_e$)\Nfifteen(p,$\alpha$)\Ctwelve 
-		} the slowest component of which is 
+		} catalyses the proton-proton chain of nuclear 
+		reactions~\citep*[e.g.][]{Suliga2020} using carbon (C), N, and oxygen 
+		(O) target nuclei, the slowest component of which is 
 		the~\Nfourteen(p,$\gamma$)\Ofifteen~reaction. 
-		This bottleneck is strong enough that to first order, the effect of the 
-		CNO cycle is to convert all C and O isotopes in a star into~\Nfourteen. 
+		This bottleneck is a sufficiently strong effect such that, to first 
+		order, the effect of the CNO cycle is to convert all of the C and O 
+		isotopes in a star into~\Nfourteen. 
 
 		\item It's among a select group of elements whose observed abundances 
 		in stellar spectra often do not reflect the star's birth abundances. 
-		The effect of internal mixing processes changes the atmospheric 
-		composition of red giants, a phenomenon both expected from theoretical 
-		models and observed in open and globular clusters~\citep{Gilroy1989, 
-		Korn2007, Lind2008, Souto2018, Souto2019}. 
+		Internal mixing processes (particularly dredge-up) changes the 
+		surface abundances of C and N in red giants, a phenomenon both expected 
+		from theoretical models and observed in open and globular 
+		clusters~\citep{Gilroy1989, Korn2007, Lind2008, Souto2018, Souto2019}. 
 	\end{itemize} 
 
 \end{itemize}
@@ -88,13 +89,46 @@ and Noah Rogers's papers and add them to this figure.
 	\item N is not unique in that perhaps the largest source of uncertainty in 
 	modeling its abundances is that accurate and precise nucleosynthetic yields 
 	remain elusive. 
-	Presently, no combination of core collapse supernova explosion model and 
-	black hole landscape has been able to reproduce the observed abundance 
-	pattern of the elements, and nitrogen is no exception~\citep{Griffith2021}. 
-	Furthermore, theoretical models of AGB stars predict different N yields as 
-	a function of progenitor mass and metallicity (see discussion in, 
-	e.g.~\S~5 of~\citealp{Karakas2016} comparing their models to that 
-	of~\citealp{Cristallo2011, Cristallo2015}). 
+	\begin{itemize} 
+		\item Presently, no combination of core collapse supernova explosion 
+		model and black hole landscape has been able to reproduce the observed 
+		abundance pattern of the elements, and nitrogen is no 
+		exception~\citep{Griffith2021}. 
+		Recently,~\citet*{Grisoni2021} argued that rotating massive stars play 
+		a key role in establishing the N abundances seen in metal-poor stars in 
+		the Milky Way. 
+		Rotation has a considerable impact on the N yields of massive stars, 
+		particularly at low metallicity, because the internal mixing that it 
+		causes~\citep{Zahn1992, Maeder1998, Lagarde2012} brings internally 
+		produced C and O nuclei into the hydrogen burning shell where they can 
+		be processed into~\Nfourteen~via the CNO cycle~\citep{Heger2010, 
+		Frischknecht2016, Andrews2017}. 
+		We find similar results here comparing theoretical models of CCSN 
+		nucleosynthesis (see discussion in~\S~\ref{sec:yields:ccsne}). 
+	
+		\item Theoretical models of AGB star nucleosynthesis predict N yields 
+		to vary as a function of both progenitor mass and 
+		metallicity~\citep{Cristallo2011, Cristallo2015, Karakas2010, 
+		Karakas2016, Karakas2018, Ventura2013}. 
+		In sufficiently massive AGB stars, the base of the convective envelope 
+		is hot enough to activate proton capture reactions, allowing the CNO 
+		cycle to convert C and O isotopes into~\Nfourteen: a process known as 
+		hot bottom burning (HBB). 
+		If the AGB star is also experiencing thermal pulsations, then with each 
+		pulse the convective envelope penetrates into the CO-rich core and 
+		brings some of this material into the hydrogen burning region: a 
+		process known as third dredge-up (TDU). 
+		When both processes are active, each TDU episode adds new seed nuclei 
+		for HBB to turn into~\Nfourteen, substantially increasing N yields. 
+		We demonstrate in~\S\S~\ref{sec:yields:agb} and~\ref{sec:yields:imf_agb} 
+		that various theoretical models predict significantly different N 
+		yields for high mass AGB stars as a consequence of how TDU and HBB 
+		occur in the models. 
+		The differences in these processes are in turn a consequence of the 
+		microphysical assumptions built into the stellar evolution models 
+		(e.g. mass loss, convection and convective boundaries, nuclear reaction 
+		networks). 
+	\end{itemize} 
 
 	\item In this paper, we aim to constrain N yields from AGB stars 
 	empirically by assessing their ability to reproduce the observed abundance 
@@ -102,9 +136,9 @@ and Noah Rogers's papers and add them to this figure.
 	Fig.~\ref{fig:no_oh_observed}. 
 	\citet{Vincenzo2021} demonstrate that when N abundances are corrected for 
 	internal mixing processes, the correlations with stellar age and other 
-	elemental abundances are affected; whether or not these estimates of the 
-	birth abundances can be reproduced in galactic chemical evolution (GCE) 
-	models is also of central interest to this paper. 
+	elemental abundances are affected; whether or not these correlations can be 
+	reproduced in galactic chemical evolution (GCE) models is also of central 
+	interest to this paper. 
 
 	\item In a sample of 6,507 galaxies from the Mapping Galaxies at Apache 
 	Point Observatory survey~\citep[MaNGA;][]{Bundy2015},~\citet{Schaefer2020} 
