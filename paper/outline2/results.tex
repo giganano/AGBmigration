@@ -134,21 +134,29 @@ relation at~$T$ = 2 and 5 Gyr when we neglect stellar migration.
 
 \begin{figure*} 
 \centering 
-\includegraphics[scale = 0.45]{no_oh_predictions.pdf} 
-\includegraphics[scale = 0.45]{no_oh_predictions_karakas.pdf} 
+\includegraphics[scale = 0.3]{no_oh_predictions_unmodified.pdf} 
+\includegraphics[scale = 0.3]{no_oh_predictions.pdf} 
+\includegraphics[scale = 0.3]{no_oh_predictions_karakas.pdf} 
 \caption{
 \textbf{Left}: The present day gas-phase [N/O]-[O/H] relation predicted by our 
-fiducial model with each of the yield sets described 
-in~\S~\ref{sec:yields:agb}. 
-The~\cristallo~and~\ventura~yields are artificially amplified by factors of 
-3 and 2, respectively, and we take the linear model with~$\xi = 9\times10^{-4}$. 
-For observational reference, we plot the population-averaged trend for local 
-stars and HII regions reported by~\citet{Dopita2016}. 
-\textbf{Right}: The same as the left-hand panel, but comparing the predictions 
+model with each of the four yield models based on stellar evolution models 
+discussed in~\S~\ref{sec:yields:agb}, colour-coded according to the legend. 
+We include the~\citet{Dopita2016} measurements of this relation for local stars 
+and HII regions (duplicated from Fig.~\ref{fig:no_oh_observed}) as the 
+observational benchmark. 
+\textbf{Middle}: The same as the left panel, but for a case where we 
+artificially amplify the~\cristallo~yields by a factor of 3 and 
+the~\ventura~yields by a factor of 2. 
+Since our linear model is also based on the~\cristallo~yields, we in turn 
+amplify the slope from~$\xi=3\times10^{-4}$ as shown in 
+Fig.~\ref{fig:agb_yield_models} to~$\xi=9\times10^{-4}$ and include it here 
+as well. 
+\textbf{Right}: The same as the left panel, but comparing the predictions 
 made by the~\karakasten~and~\karakas~yields with our fiducial value 
 of~$y_\text{N}^\text{CC}$ (dotted lines, same as left-hand panel) to those with 
-the alternate forms of~$y_\text{N}^\text{CC}$ (solid lines) given by equation X 
-for the~\karakasten~yields and equation Y for the~\karakas~yields. 
+the alternate forms of~$y_\text{N}^\text{CC}$ (solid lines) given by 
+equation~\refp{eq:linear_yncc} for the~\karakasten~yields and 
+equation~\refp{eq:broken_yncc} for the~\karakas~yields. 
 } 
 \label{fig:no_oh_predictions} 
 \end{figure*} 
@@ -165,21 +173,12 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 	discussed in~\S~\ref{sec:yields:agb} and visualized in 
 	Fig.~\ref{fig:agb_yield_models}. 
 
-	\item In order to successfully reproduce the observations, we find that we 
-	need to artificially amplify the~\cristallo~and~\ventura~yields by factors 
-	of~$\sim$3 and~$\sim$2, respectively. 
-	Having originally comparing our linear model to the~\cristallo~yields in 
-	Fig.~\ref{fig:agb_yield_models} with~$\xi = 3\times10^{-4}$, we amplify the 
-	value of~$\xi$ by a factor of 3 here as well. 
-	Although these models predict an [N/O]-[O/H] relation that is slightly 
-	shallower than the~\citet{Dopita2016} measurements, the predictions are 
-	reasonably within the scatter seen in Fig.~\ref{fig:no_oh_observed}. 
-	{\color{red} To do: Alternatively, can this be explained by a lowering of 
-	the O yields and~$\eta$, or a differential wind which preferentially 
-	removes oxygen~\citep{Vincenzo2016a}}? 
-
-	\item We are unable to reproduce the observed trend with either 
-	the~\karakasten~or~\karakas~yield models. 
+	\item The model fails to reproduce the gas phase [N/O]-[O/H] relation as 
+	observed with all published yield tables. 
+	The~\cristallo~and~\ventura~yields are able to reproduce the qualitative 
+	trend, but with an incorrect normalization. 
+	The~\karakasten~and~\karakas~yields, on the other hand, fail to reproduce 
+	the steadily sloped increase of [N/O] with [O/H]. 
 	\begin{itemize} 
 		\item In the case of~\karakasten, the model overpredicts [N/O] at low 
 		[O/H] and predicts [N/O] to~\textit{decrease} monotonically with 
@@ -194,6 +193,22 @@ for the~\karakasten~yields and equation Y for the~\karakas~yields.
 		predicts a relatively flat trend of [N/O] above [O/H]~$\gtrsim -0.2$, 
 		leading still to an underprediction of [N/O] at high [O/H]. 
 	\end{itemize} 
+
+	\item In order to successfully reproduce the observations, we find that we 
+	need to artificially amplify the~\cristallo~and~\ventura~yields by factors 
+	of~$\sim$3 and~$\sim$2, respectively. 
+	Having originally comparing our linear model to the~\cristallo~yields in 
+	Fig.~\ref{fig:agb_yield_models} with~$\xi = 3\times10^{-4}$, we amplify the 
+	value of~$\xi$ by a factor of 3 here as well. 
+	We show the results of these modified yield models in the middle panel of 
+	Fig.~\ref{fig:no_oh_predictions}. 
+	Although the~\ventura~model predict an [N/O]-[O/H] relation that is 
+	slightly shallower than the~\citet{Dopita2016} measurements, the 
+	predictions are reasonably within the scatter seen in 
+	Fig.~\ref{fig:no_oh_observed}. 
+	{\color{red} To do: Alternatively, can this be explained by a lowering of 
+	the O yields and~$\eta$, or a differential wind which preferentially 
+	removes oxygen~\citep{Vincenzo2016a}}? 
 
 	\item Can an alternate parameterization of~$y_\text{N}^\text{CC}$ reproduce 
 	the observations with the~\karakasten~and~\karakas~AGB star yield models? 
@@ -317,7 +332,7 @@ sampled from our model stellar populations in three bins of [Fe/H] (colored
 points). 
 Stars quantify the median trend of [N/O] with age corrected for internal mixing 
 in the same bins of [Fe/H] from the~\citet{Vincenzo2021} sample. 
-\textbf{Middle}: The same as the left hand panel, instead showing [N/O] as a 
+\textbf{Right}: The same as the left hand panel, instead showing [N/O] as a 
 function of [O/Fe] in bins of [O/H]. 
 } 
 \label{fig:vincenzo_comp} 
