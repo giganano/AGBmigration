@@ -179,16 +179,18 @@ def linear_cc_yield(z):
 
 
 # The mass-lifetime relation to adopt 
-vice.mlr.setting = "ka1997" 
+# vice.mlr.setting = "ka1997" 
+vice.mlr.setting = "larson1974"
 
 
 # fiducial set of yields 
 vice.yields.sneia.settings['n'] = 0 
-vice.yields.ccsne.settings['n'] = 3.6e-4 
+vice.yields.ccsne.settings['n'] = 3.6e-4
 # vice.yields.ccsne.settings['n'] = broken_cc_yield 
 # vice.yields.ccsne.settings['n'] = linear_cc_yield 
-vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
-	prefactor = 3) 
+# vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
+# 	prefactor = 3) 
+vice.yields.agb.settings['n'] = "cristallo11"
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13", 
 #	prefactor = 2) 
 # vice.yields.agb.settings['o'] = "ventura13" 
@@ -211,8 +213,31 @@ vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
 # vice.yields.agb.settings['n'] = agb_no_zdep('n', study = "cristallo11", 
 # 	prefactor = 5)  
 
+# halved set of yields 
+# vice.yields.ccsne.settings['o'] = 0.0075
+# vice.yields.sneia.settings['o'] = 0.
 
-vice.yields.ccsne.settings["mg"] = 0.0015 # 0.000497 
-vice.yields.ccsne.settings["ba"] = 2.5e-8 # 2.83-9 
-vice.yields.ccsne.settings["y"] = 1.5e-8 # 2.47e-9 
+# vice.yields.ccsne.settings['fe'] = 0.0006
+# vice.yields.sneia.settings['fe'] = 0.00107
+
+# vice.yields.ccsne.settings['n'] = 1.8e-4
+# vice.yields.sneia.settings['n'] = 0
+# vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
+# 	prefactor = 1.5)
+
+# doubled set of yields
+# vice.yields.ccsne.settings['o'] = 0.03
+# vice.yields.sneia.settings['o'] = 0.
+
+# vice.yields.ccsne.settings['fe'] = 0.0024
+# vice.yields.sneia.settings['fe'] = 0.00428
+
+# vice.yields.ccsne.settings['n'] = 7.3e-4
+# vice.yields.sneia.settings['n'] = 0
+# vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
+# 	prefactor = 6)
+
+# vice.yields.ccsne.settings["mg"] = 0.0015 # 0.000497 
+# vice.yields.ccsne.settings["ba"] = 2.5e-8 # 2.83-9 
+# vice.yields.ccsne.settings["y"] = 1.5e-8 # 2.47e-9 
 

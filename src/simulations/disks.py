@@ -81,6 +81,15 @@ class diskmodel(vice.milkyway):
 		# for i in range(self.n_zones): 
 		# 	self.zones[i].tau_star = sfe(
 		# 		m.pi * ((zone_width * (i + 1))**2 - (zone_width * i)**2)) 
+		# self.mass_loading = halved_mass_loading
+		# self.mass_loading = doubled_mass_loading
+		self.mass_loading = third_mass_loading
+		for i in range(self.n_zones):
+			for elem in self.zones[i].elements:
+				if zone_width * (i + 0.5) < 15.5:
+					self.zones[i].entrainment.ccsne[elem] = 1. / 3
+					self.zones[i].entrainment.sneia[elem] = 1. / 3
+				else: pass
 		self.mode = "sfr" 
 
 
@@ -116,6 +125,30 @@ class diskmodel(vice.milkyway):
 		model.bins = config.bins 
 		model.elements = config.elements 
 		return model 
+
+
+def halved_mass_loading(radius): 
+	r""" 
+	Takes the default mass loading factor as a function of galactocentric 
+	radius provided with vice.milkyway and halves it. 
+	""" 
+	return vice.milkyway.default_mass_loading(radius) / 2.
+
+
+def third_mass_loading(radius):
+	r"""
+	Takes the default mass loading factor as a function of galactocentric
+	radius provided with vice.milkyway and divides it by three.
+	"""
+	return vice.milkyway.default_mass_loading(radius) / 3.
+
+
+def doubled_mass_loading(radius): 
+	r""" 
+	Takes the default mass loading factor as a function of galactocentric 
+	radius provided with vice.milkyway and doubles it.
+	"""
+	return vice.milkyway.default_mass_loading(radius) * 2.
 
 
 class star_formation_history: 
