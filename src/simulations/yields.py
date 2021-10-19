@@ -184,15 +184,15 @@ vice.mlr.setting = "larson1974"
 
 
 # fiducial set of yields 
-vice.yields.sneia.settings['n'] = 0 
-vice.yields.ccsne.settings['n'] = 3.6e-4
+# vice.yields.sneia.settings['n'] = 0 
+# vice.yields.ccsne.settings['n'] = 3.6e-4
 # vice.yields.ccsne.settings['n'] = broken_cc_yield 
 # vice.yields.ccsne.settings['n'] = linear_cc_yield 
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
-# 	prefactor = 3) 
-vice.yields.agb.settings['n'] = "cristallo11"
+	# prefactor = 3) 
+# vice.yields.agb.settings['n'] = "cristallo11"
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13", 
-#	prefactor = 2) 
+# 	prefactor = 2) 
 # vice.yields.agb.settings['o'] = "ventura13" 
 # vice.yields.agb.settings['n'] = "karakas10" 
 # vice.yields.agb.settings['o'] = "karakas10" 
@@ -236,6 +236,20 @@ vice.yields.agb.settings['n'] = "cristallo11"
 # vice.yields.sneia.settings['n'] = 0
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
 # 	prefactor = 6)
+
+# one-third set of yields
+vice.yields.ccsne.settings['o'] = 0.005
+vice.yields.sneia.settings['o'] = 0.
+vice.yields.agb.settings['n'] = "cristallo11"
+
+vice.yields.ccsne.settings['fe'] = 0.0004
+vice.yields.sneia.settings['fe'] = 0.000713
+vice.yields.agb.settings['n'] = "cristallo11"
+
+vice.yields.ccsne.settings['n'] = 1.2e-4
+vice.yields.sneia.settings['n'] = 0.
+vice.yields.agb.settings['n'] = "cristallo11"
+
 
 # vice.yields.ccsne.settings["mg"] = 0.0015 # 0.000497 
 # vice.yields.ccsne.settings["ba"] = 2.5e-8 # 2.83-9 
