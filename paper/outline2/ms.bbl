@@ -17,6 +17,12 @@
   {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
   mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
 
+\bibitem[\protect\citeauthoryear{{Adams}, {Kochanek}, {Gerke}, {Stanek}  \&
+  {Dai}}{{Adams} et~al.}{2017}]{Adams2017}
+{Adams} S.~M.,  {Kochanek} C.~S.,  {Gerke} J.~R.,  {Stanek} K.~Z.,   {Dai} X.,
+  2017, \mn@doi [\mnras] {10.1093/mnras/stx816}, \href
+  {https://ui.adsabs.harvard.edu/abs/2017MNRAS.468.4968A} {468, 4968}
+
 \bibitem[\protect\citeauthoryear{{Andrews}, {Weinberg}, {Sch{\"o}nrich}  \&
   {Johnson}}{{Andrews} et~al.}{2017}]{Andrews2017}
 {Andrews} B.~H.,  {Weinberg} D.~H.,  {Sch{\"o}nrich} R.,   {Johnson} J.~A.,
@@ -28,6 +34,12 @@
 {Asplund} M.,  {Grevesse} N.,  {Sauval} A.~J.,   {Scott} P.,  2009, \mn@doi
   [\araa] {10.1146/annurev.astro.46.060407.145222}, \href
   {https://ui.adsabs.harvard.edu/abs/2009ARA&A..47..481A} {47, 481}
+
+\bibitem[\protect\citeauthoryear{{Basinger}, {Kochanek}, {Adams}, {Dai}  \&
+  {Stanek}}{{Basinger} et~al.}{2021}]{Basinger2021}
+{Basinger} C.~M.,  {Kochanek} C.~S.,  {Adams} S.~M.,  {Dai} X.,   {Stanek}
+  K.~Z.,  2021, \mn@doi [\mnras] {10.1093/mnras/stab2620}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1156B} {508, 1156}
 
 \bibitem[\protect\citeauthoryear{{Belfiore} et~al.,}{{Belfiore}
   et~al.}{2017}]{Belfiore2017}
@@ -110,6 +122,11 @@
   \href {https://ui.adsabs.harvard.edu/abs/2015A&A...576L..12C} {576, L12}
 
 \bibitem[\protect\citeauthoryear{{Chieffi} \& {Limongi}}{{Chieffi} \&
+  {Limongi}}{2004}]{Chieffi2004}
+{Chieffi} A.,  {Limongi} M.,  2004, \mn@doi [\apj] {10.1086/392523}, \href
+  {https://ui.adsabs.harvard.edu/abs/2004ApJ...608..405C} {608, 405}
+
+\bibitem[\protect\citeauthoryear{{Chieffi} \& {Limongi}}{{Chieffi} \&
   {Limongi}}{2013}]{Chieffi2013}
 {Chieffi} A.,  {Limongi} M.,  2013, \mn@doi [\apj]
   {10.1088/0004-637X/764/1/21}, \href
@@ -176,6 +193,12 @@
   [\mnras] {10.1093/mnras/staa3822}, \href
   {https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.4777E} {501, 4777}
 
+\bibitem[\protect\citeauthoryear{{Ertl}, {Janka}, {Woosley}, {Sukhbold}  \&
+  {Ugliano}}{{Ertl} et~al.}{2016}]{Ertl2016}
+{Ertl} T.,  {Janka} H.~T.,  {Woosley} S.~E.,  {Sukhbold} T.,   {Ugliano} M.,
+  2016, \mn@doi [\apj] {10.3847/0004-637X/818/2/124}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016ApJ...818..124E} {818, 124}
+
 \bibitem[\protect\citeauthoryear{{Frankel}, {Rix}, {Ting}, {Ness}  \&
   {Hogg}}{{Frankel} et~al.}{2018}]{Frankel2018}
 {Frankel} N.,  {Rix} H.-W.,  {Ting} Y.-S.,  {Ness} M.,   {Hogg} D.~W.,  2018,
@@ -192,6 +215,12 @@
   et~al.}{2016}]{Frischknecht2016}
 {Frischknecht} U.,  et~al., 2016, \mn@doi [\mnras] {10.1093/mnras/stv2723},
   \href {https://ui.adsabs.harvard.edu/abs/2016MNRAS.456.1803F} {456, 1803}
+
+\bibitem[\protect\citeauthoryear{{Gerke}, {Kochanek}  \& {Stanek}}{{Gerke}
+  et~al.}{2015}]{Gerke2015}
+{Gerke} J.~R.,  {Kochanek} C.~S.,   {Stanek} K.~Z.,  2015, \mn@doi [\mnras]
+  {10.1093/mnras/stv776}, \href
+  {https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.3289G} {450, 3289}
 
 \bibitem[\protect\citeauthoryear{{Gilroy}}{{Gilroy}}{1989}]{Gilroy1989}
 {Gilroy} K.~K.,  1989, \mn@doi [\apj] {10.1086/168173}, \href
@@ -372,6 +401,11 @@
   {https://ui.adsabs.harvard.edu/abs/2015ApJ...806...96L} {806, 96}
 
 \bibitem[\protect\citeauthoryear{{Limongi} \& {Chieffi}}{{Limongi} \&
+  {Chieffi}}{2006}]{Limongi2006}
+{Limongi} M.,  {Chieffi} A.,  2006, \mn@doi [\apj] {10.1086/505164}, \href
+  {https://ui.adsabs.harvard.edu/abs/2006ApJ...647..483L} {647, 483}
+
+\bibitem[\protect\citeauthoryear{{Limongi} \& {Chieffi}}{{Limongi} \&
   {Chieffi}}{2018}]{Limongi2018}
 {Limongi} M.,  {Chieffi} A.,  2018, \mn@doi [\apjs] {10.3847/1538-4365/aacb24},
   \href {https://ui.adsabs.harvard.edu/abs/2018ApJS..237...13L} {237, 13}
@@ -496,6 +530,12 @@
   et~al.}{2018}]{Paxton2018}
 {Paxton} B.,  et~al., 2018, \mn@doi [\apjs] {10.3847/1538-4365/aaa5a8}, \href
   {https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P} {234, 34}
+
+\bibitem[\protect\citeauthoryear{{Pejcha} \& {Thompson}}{{Pejcha} \&
+  {Thompson}}{2015}]{Pejcha2015}
+{Pejcha} O.,  {Thompson} T.~A.,  2015, \mn@doi [\apj]
+  {10.1088/0004-637X/801/2/90}, \href
+  {https://ui.adsabs.harvard.edu/abs/2015ApJ...801...90P} {801, 90}
 
 \bibitem[\protect\citeauthoryear{{Pilyugin}, {V{\'\i}lchez}  \&
   {Thuan}}{{Pilyugin} et~al.}{2010}]{Pilyugin2010}
