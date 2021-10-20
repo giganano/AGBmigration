@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  19 OCT 2021 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  19 OCT 2021 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,51 +656,51 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 32.
  (./ms.aux)
 \openout1 = `ms.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 98.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 99.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 98.
+ 99.
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-98.
+99.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 98.
+ 99.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 99.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 98.
+e 99.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    ... okay on input line 99.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -736,7 +736,7 @@ LaTeX Font Info:    ... okay on input line 98.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 98.
+Package hyperref Info: Link coloring ON on input line 99.
 (/home/modules/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -749,9 +749,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
  (./ms.out) (./ms.out)
 \@outlinefile=\write3
 \openout3 = `ms.out'.
@@ -782,99 +782,99 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 16.0pt on input line 101.
+(Font)              scaled to size 16.0pt on input line 102.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 16.0pt on input line 101.
+(Font)              scaled to size 16.0pt on input line 102.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 101.
+(Font)              scaled to size 12.0pt on input line 102.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 101.
+e 102.
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 101.
+(Font)              scaled to size 12.0pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 101.
+(Font)              scaled to size 8.8pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 101.
+(Font)              scaled to size 6.6pt on input line 102.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-101.
+102.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-101.
+102.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-101.
+102.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 101.
+(Font)              scaled to size 12.0pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 101.
+(Font)              scaled to size 8.8pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.6pt on input line 101.
+(Font)              scaled to size 6.6pt on input line 102.
 LaTeX Font Info:    Trying to load font information for T1+ntxsups on input lin
-e 101.
+e 102.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/t1ntxsups.fd
 File: t1ntxsups.fd 2015/01/17 v1.0
 )
 LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 101.
+(Font)              scaled to size 12.0pt on input line 102.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 101.
+(Font)              scaled to size 8.0pt on input line 102.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 101.
+(Font)              scaled to size 8.0pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 101.
+(Font)              scaled to size 8.0pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.2pt on input line 101.
+(Font)              scaled to size 6.2pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 101.
+(Font)              scaled to size 5.5pt on input line 102.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 101.
+(Font)              size <5> substituted on input line 102.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.0pt on input line 101.
+(Font)              scaled to size 8.0pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.2pt on input line 101.
+(Font)              scaled to size 6.2pt on input line 102.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 101.
+(Font)              scaled to size 5.5pt on input line 102.
 (./abstract.tex
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 5.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 5.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 15.
+(Font)              scaled to size 10.0pt on input line 16.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 15.
+(Font)              scaled to size 7.3pt on input line 16.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 15.
+(Font)              scaled to size 10.0pt on input line 16.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 15.
+(Font)              scaled to size 7.3pt on input line 16.
 LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 
-27.
+29.
 
 (/home/modules/texlive/2021/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 27.
+(Font)              scaled to size 10.0pt on input line 29.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 105.
+(Font)              scaled to size 10.0pt on input line 106.
 
 (./intro.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -887,7 +887,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 22.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 25.
-<no_oh_observed.pdf, id=73, 867.24pt x 505.89pt>
+<no_oh_observed.pdf, id=81, 867.24pt x 505.89pt>
 File: no_oh_observed.pdf Graphic file (type pdf)
 <use no_oh_observed.pdf>
 Package pdftex.def Info: no_oh_observed.pdf  used on input line 42.
@@ -900,10 +900,6 @@ $[]$ [][]\T1/ntxtlf/m/n/8 We fol-low the stan-dard no-ta-tion where [X/Y] $\LMS
 /ntxsy/m/n/8 ^^Q [][]π\OML/ntxmi/m/it/8 X\LMS/ntxsy/m/n/8 ù\OML/ntxmi/m/it/8 Y\
 LMS/ntxsy/m/n/8 ∫ ^^@
  []
-
-
-LaTeX Warning: Reference `sec:yields:ccsne' on page 1 undefined on input line 1
-07.
 
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
 e 108.
@@ -930,7 +926,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
                                                   \__shipout_drop_firstpage_...
 l.32 \end{itemize}
                    <./no_oh_observed.pdf>]
-<n_cc_yields.pdf, id=261, 1011.78pt x 505.89pt>
+<n_cc_yields.pdf, id=271, 1011.78pt x 505.89pt>
 File: n_cc_yields.pdf Graphic file (type pdf)
 <use n_cc_yields.pdf>
 Package pdftex.def Info: n_cc_yields.pdf  used on input line 39.
@@ -969,7 +965,7 @@ Underfull \hbox (badness 1286) in paragraph at lines 83--93
 u-la-tions can be found in ü 4
  []
 
-<agb_yield_models.pdf, id=345, 1445.4pt x 1084.05pt>
+<agb_yield_models.pdf, id=355, 1445.4pt x 1084.05pt>
 File: agb_yield_models.pdf Graphic file (type pdf)
 <use agb_yield_models.pdf>
 Package pdftex.def Info: agb_yield_models.pdf  used on input line 180.
@@ -994,18 +990,18 @@ Underfull \hbox (badness 1132) in paragraph at lines 353--360
 mary dif-fer-ence in
  []
 
-<agb_yield_models_imfweighted.pdf, id=524, 505.89pt x 505.89pt>
+<agb_yield_models_imfweighted.pdf, id=534, 505.89pt x 505.89pt>
 File: agb_yield_models_imfweighted.pdf Graphic file (type pdf)
 <use agb_yield_models_imfweighted.pdf>
 Package pdftex.def Info: agb_yield_models_imfweighted.pdf  used on input line 3
 75.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<ssp_production_modelcomp.pdf, id=525, 505.89pt x 505.89pt>
+<ssp_production_modelcomp.pdf, id=535, 505.89pt x 505.89pt>
 File: ssp_production_modelcomp.pdf Graphic file (type pdf)
 <use ssp_production_modelcomp.pdf>
 Package pdftex.def Info: ssp_production_modelcomp.pdf  used on input line 376.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<ssp_production_metdep.pdf, id=526, 505.89pt x 505.89pt>
+<ssp_production_metdep.pdf, id=536, 505.89pt x 505.89pt>
 File: ssp_production_metdep.pdf Graphic file (type pdf)
 <use ssp_production_metdep.pdf>
 Package pdftex.def Info: ssp_production_metdep.pdf  used on input line 377.
@@ -1054,29 +1050,29 @@ multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./ssp_production_metdep.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
 >]) (./results.tex
-<no_oh_superposition.pdf, id=805, 505.89pt x 505.89pt>
+<no_oh_superposition.pdf, id=815, 505.89pt x 505.89pt>
 File: no_oh_superposition.pdf Graphic file (type pdf)
 <use no_oh_superposition.pdf>
 Package pdftex.def Info: no_oh_superposition.pdf  used on input line 10.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_oh_timeevol.pdf, id=806, 505.89pt x 505.89pt>
+<no_oh_timeevol.pdf, id=816, 505.89pt x 505.89pt>
 File: no_oh_timeevol.pdf Graphic file (type pdf)
 <use no_oh_timeevol.pdf>
 Package pdftex.def Info: no_oh_timeevol.pdf  used on input line 11.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
  [7]
-<no_oh_predictions_unmodified.pdf, id=894, 505.89pt x 505.89pt>
+<no_oh_predictions_unmodified.pdf, id=904, 505.89pt x 505.89pt>
 File: no_oh_predictions_unmodified.pdf Graphic file (type pdf)
 <use no_oh_predictions_unmodified.pdf>
 Package pdftex.def Info: no_oh_predictions_unmodified.pdf  used on input line 1
 37.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<no_oh_predictions.pdf, id=895, 505.89pt x 505.89pt>
+<no_oh_predictions.pdf, id=905, 505.89pt x 505.89pt>
 File: no_oh_predictions.pdf Graphic file (type pdf)
 <use no_oh_predictions.pdf>
 Package pdftex.def Info: no_oh_predictions.pdf  used on input line 138.
 (pdftex.def)             Requested size: 151.76816pt x 151.76816pt.
-<no_oh_predictions_karakas.pdf, id=896, 505.89pt x 505.89pt>
+<no_oh_predictions_karakas.pdf, id=906, 505.89pt x 505.89pt>
 File: no_oh_predictions_karakas.pdf Graphic file (type pdf)
 <use no_oh_predictions_karakas.pdf>
 Package pdftex.def Info: no_oh_predictions_karakas.pdf  used on input line 139.
@@ -1121,9 +1117,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.325 			\item T
-                he inverse dependence of [N/O] with [O/H] when taking <./no_oh_
-predictions_unmodified.pdf> <./no_oh_predictions.pdf
+l.338 			\item D
+                espite these results, we cannot say with any confidence <./no_o
+h_predictions_unmodified.pdf> <./no_oh_predictions.pdf
 
 pdfTeX warning: pdflatex (file ./no_oh_predictions.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -1132,50 +1128,52 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./no_oh_predictions_karakas.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<nh_feh_vs_lookback.pdf, id=1152, 505.89pt x 505.89pt>
+<nh_feh_vs_lookback.pdf, id=1140, 505.89pt x 505.89pt>
 File: nh_feh_vs_lookback.pdf Graphic file (type pdf)
 <use nh_feh_vs_lookback.pdf>
-Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 368.
+Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 355.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_vs_age.pdf, id=1153, 505.89pt x 505.89pt>
+<no_vs_age.pdf, id=1141, 505.89pt x 505.89pt>
 File: no_vs_age.pdf Graphic file (type pdf)
 <use no_vs_age.pdf>
-Package pdftex.def Info: no_vs_age.pdf  used on input line 379.
+Package pdftex.def Info: no_vs_age.pdf  used on input line 366.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_vs_ofe.pdf, id=1154, 505.89pt x 505.89pt>
+<no_vs_ofe.pdf, id=1142, 505.89pt x 505.89pt>
 File: no_vs_ofe.pdf Graphic file (type pdf)
 <use no_vs_ofe.pdf>
-Package pdftex.def Info: no_vs_ofe.pdf  used on input line 380.
+Package pdftex.def Info: no_vs_ofe.pdf  used on input line 367.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_oh_sfevar.pdf, id=1188, 505.89pt x 505.89pt>
+<no_oh_sfevar.pdf, id=1176, 505.89pt x 505.89pt>
 File: no_oh_sfevar.pdf Graphic file (type pdf)
 <use no_oh_sfevar.pdf>
-Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 485.
+Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 472.
 (pdftex.def)             Requested size: 156.82426pt x 156.82426pt.
-<delta_no_schaefercomp.pdf, id=1189, 1011.78pt x 505.89pt>
+<delta_no_schaefercomp.pdf, id=1177, 1011.78pt x 505.89pt>
 File: delta_no_schaefercomp.pdf Graphic file (type pdf)
 <use delta_no_schaefercomp.pdf>
-Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 486.
+Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 473.
 (pdftex.def)             Requested size: 333.88843pt x 166.9442pt.
  [10pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.522 	\item W
-              e construct two additional extensions of our fiducial model, one 
-<./nh_feh_vs_lookback.pdf>]
+l.550 
+       <./nh_feh_vs_lookback.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.573 
+l.597 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.573 
+l.597 
        <./no_vs_age.pdf> <./no_vs_ofe.pdf
 
 pdfTeX warning: pdflatex (file ./no_vs_ofe.pdf): PDF inclusion: multiple pdfs w
@@ -1202,37 +1200,50 @@ Underfull \hbox (badness 1005) in paragraph at lines 28--41
 Underfull \vbox (badness 3601) has occurred while \output is active []
 
 )
-(./acknowledgements.tex) (./ms.bbl [13]
+(./acknowledgements.tex) (./ms.bbl
 Underfull \hbox (badness 3919) in paragraph at lines 243--245
 []\T1/ntxtlf/m/n/8 Grisoni V., Mat-teucci F., Ro-mano D., 2021, arXiv e-prints,
  [][]p.
  []
 
-
-Underfull \hbox (badness 1642) in paragraph at lines 599--601
+[13]
+Underfull \hbox (badness 1642) in paragraph at lines 611--613
 []\T1/ntxtlf/m/n/8 Suliga A. M., Shal-gar S., Fuller G. M., 2020, arXiv e-print
 s, [][]p.
  []
 
-) [14] (./ms.aux)
+) (./vice.tex
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 5
+.
+
+(/home/modules/texlive/2021/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <9> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 5.
+
+Underfull \hbox (badness 2837) in paragraph at lines 33--37
+[]\T1/ntxtlf/m/n/9 We have added two ad-di-tional ta-bles of AGB star
+ []
+
+[14]) [15
+
+] (./ms.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `ms.out' has not changed.
-(rerunfilecheck)             Checksum: 9CB97A6814B363F403B00EE0380D8F50;2810.
+(rerunfilecheck)             Checksum: 4D3522E5FAB3167C3A3C46F182E4E964;2972.
  ) 
 Here is how much of TeX's memory you used:
- 16309 strings out of 478599
- 235408 string characters out of 5853099
- 696936 words of memory out of 5000000
- 33663 multiletter control sequences out of 15000+600000
- 524526 words of font info for 204 fonts, out of 8000000 for 9000
+ 16362 strings out of 478599
+ 236190 string characters out of 5853099
+ 702513 words of memory out of 5000000
+ 33700 multiletter control sequences out of 15000+600000
+ 524861 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,81p,2005b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,15n,81p,2005b,666s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1247,18 +1258,19 @@ texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/modules
 /texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/module
 s/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/modu
 les/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></home/modules
-/texlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></home/modules/te
-xlive/2021/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/modules/texlive
-/2021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/modules/texlive/202
-1/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></home/modules/texlive/2021/t
-exmf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf-
-dist/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/f
-onts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/t
-ype1/public/newtx/ztmri.pfb>
-Output written on ms.pdf (14 pages, 1167190 bytes).
+/texlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></home/modules/t
+exlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></home/modules/texl
+ive/2021/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/modules/texlive/2
+021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/modules/texlive/2021/
+texmf-dist/fonts/type1/public/txfonts/txsya.pfb></home/modules/texlive/2021/tex
+mf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf-di
+st/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/fon
+ts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/typ
+e1/public/newtx/ztmri.pfb>
+Output written on ms.pdf (15 pages, 1174085 bytes).
 PDF statistics:
- 1727 PDF objects out of 1728 (max. 8388607)
- 1535 compressed objects within 16 object streams
- 167 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1760 PDF objects out of 2073 (max. 8388607)
+ 1565 compressed objects within 16 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

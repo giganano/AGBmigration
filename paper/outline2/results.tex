@@ -257,10 +257,13 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 		alternate explanation for the failure of our fiducial model to
 		reproduce the observed [N/O]-[O/H] relation with
 		the~\cristallo~and~\ventura~yield models.
+
+		\item In short, in order to reproduce the gas-phase [N/O]-[O/H] 
+		relation as observed with the~\cristallo~and~\ventura~AGB star yield
+		models, our model requires extensive black hole formation for massive
+		stars, an artificial amplification of N yields from AGB stars, or some
+		mix of the two.
 	\end{itemize}
-	% {\color{red} To do: Alternatively, can this be explained by a lowering of 
-	% the O yields and~$\eta$, or a differential wind which preferentially 
-	% removes oxygen~\citep{Vincenzo2016a}}? 
 
 	\item Can an alternate parameterization of~$y_\text{N}^\text{CC}$ reproduce 
 	the observations with the~\karakasten~and~\karakas~AGB star yield models? 
@@ -304,23 +307,23 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 		\item We compare our model predictions with these alternate CCSN yields 
 		for the~\karakasten~and~\karakas~AGB star yields in the right hand 
 		panel of Fig.~\ref{fig:no_oh_predictions}. 
-		These modifications were able to make up some of the difference, but 
+		These modifications are able to make up some of the difference, but 
 		both models still predict an [N/O]-[O/H] relation that is simply too 
 		shallow to explain the observations. 
-		Although we cannot reproduce the data with either the~\karakasten~or 
-		\karakas~yield models, they suffer from similar issues as 
-		the~\cristallo~and~\ventura~yields. 
+		% Although we cannot reproduce the data with either the~\karakasten~or 
+		% \karakas~yield models, they suffer from similar issues as 
+		% the~\cristallo~and~\ventura~yields. 
 		\begin{itemize} 
-			\item The underprediction of N yields at high metallicity is not 
-			unique to~\karakasten~and~\karakas; we have to amplify 
-			the~\cristallo~and~\ventura~yields by factors of a few for this 
-			exact reason. 
+			% \item The underprediction of N yields at high metallicity is not 
+			% unique to~\karakasten~and~\karakas; we have to amplify 
+			% the~\cristallo~and~\ventura~yields by factors of a few for this 
+			% exact reason. 
 
-			\item At low [O/H], the~\karakas~yields are actually the only ones 
-			that can explain the observed N abundances without any 
-			modification. 
-			The~\karakasten~yields, however, overpredict the N abundances at 
-			low metallicity. 
+			% \item At low [O/H], the~\karakas~yields are actually the only ones 
+			% that can explain the observed N abundances without any 
+			% modification. 
+			% The~\karakasten~yields, however, overpredict the N abundances at 
+			% low metallicity. 
 
 			\item The inverse dependence of [N/O] with [O/H] when taking 
 			the~\karakasten~yields can be understood by the interaction between 
@@ -330,32 +333,16 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 			their Table 1), such a result is not surprising. 
 			This is also true for the~\karakas~yields, but that model predicts 
 			a relatively flat [N/O]-[O/H] relation. 
+			{\color{red} Why?}
 			
-			\item We cannot say with any confidence based on our GCE models 
-			whether or not such a wide mass range of stars should experience 
-			both TDU and HBB. 
-			On the one hand, this makes it difficult for the model to predict a 
-			monotonic increase in [N/O] with increasing [O/H]. 
-			On the other hand, such strong N production at low metallicity in 
-			the~\karakas~yields is what allows them to explain the N abundances 
-			at low [O/H] with no modification. 
-		\end{itemize} 
-
-		\item {\color{red} 
-		We believe these results are independent of the choice of the 
-		CCSN yield of O~$y_\text{O}^\text{CC}$. 
-		Our value of~$y_\text{O}^\text{CC}$ = 0.015 is based on models in which 
-		all stars with a ZAMS mass above 8~\msun~explode as a 
-		CCSN~\citep[e.g.][]{Chieffi2013}, but the~\citet{Johnson2021} models 
-		assume substantial outflows such that the equilibrium abundance 
-		corresponds to a reasonable metallicity gradient within the Galaxy. 
-		If we were to lower all of our CCSN yields by a factor of 3 to account 
-		for failed supernovae~\citep[e.g.][]{Sukhbold2016}, then we would have 
-		to also lower our mass loading factors by a factor of 3 to predict 
-		similar overall abundances~\citep{Weinberg2017}. 
-		Our model would thus compute similar AGB star yields for N in such a 
-		scenario. 
-		} 
+			\item Despite these results, we cannot say with any confidence
+			whether or not such a wide mass range of stars should experience
+			both TDU and HBB.
+			Although this makes it difficult for the model to predict a
+			monotonic increase in [N/O] with [O/H], there are many uncertain
+			parameters required to predict yields with stellar evolution
+			models, and we have only investigated a few of them here.
+			\end{itemize} 
 
 	\end{itemize} 
 \end{itemize} 
@@ -510,8 +497,8 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	\item \citet{Schaefer2020} demonstrate that intrinsic scatter in the gas 
 	phase [N/O]-[O/H] relation in MaNGA galaxies is correlated with variations 
 	in the local SFE. 
-	This is as expected from simple GCE models: with slower star formation, 
-	more AGB stars enrich the ISM by the time it reaches a give abundance, 
+	This is expected from simple GCE models: with slower star formation, 
+	more AGB stars enrich the ISM by the time it reaches a given abundance, 
 	causing a higher [N/O] at fixed [O/H]. 
 	However, they do not rule out radial migration as another potential source 
 	of scatter in this relation. 
@@ -535,28 +522,42 @@ denotes the 16th (84th) percentile of the [N/O] distribution at a given [O/H].
 	where~$\tau_{\star,\text{J21}}$ and~$\dot{\Sigma}_{\star,\text{J21}}$ refer 
 	to the SFE timescale and SFH in the fiducial model taken 
 	from~\citet{Johnson2021}. 
-	{\color{red} 
-	It'd be good to have a comment about what kind of variability is seen in 
-	the SFRs of hydrodynamical simulations so that we can motivate this choice. 
-	The last time she joined one of our telecons, I vaguely remember Sarah 
-	Loebman mentioning a paper by Charlotte Christensen (if I recall correctly) 
-	that makes a case for factor of~$\sim$2 variability in the SFR. 
-	If I can track down that paper (or another one) it'd be a good reference to 
-	add here so that we can attach one of either ``modest'' or ``typical'' to 
-	the 25\% choice. 
-	Otherwise I can also look at the age distribution of the~\hsim~star 
-	particles to get a sense of how much its SFR varies and comment on it here. 
-	}
+	In~\hsim, the simulation from which the migration history for our model is
+	drawn, we find that the overall SFE declines by a factor of~$\sim$2 over
+	the past~$\sim$9 Gyr, an effect which is already built into
+	$\tau_{\star,\text{J21}}$.
+	Additionally, there are variations in the SFE at the~$\sim$25\% level
+	between similar radii in the same snapshot as well as at fixed radii 
+	between successive snapshots.
+	Based on this, an amplitude of 25\% should capture typical variations seen
+	in these quantities in hydrodynamical simulations.
+	However, since~\hsim~has a remarkably quiescent merger history 
+	\citep{Zolotov2012}, this may change in reponse to a major accretion event.
+	{\color{red} (If it's worth it, we could add a sentence here with a couple
+	of observational references.)}
+	% {\color{red} 
+	% It'd be good to have a comment about what kind of variability is seen in 
+	% the SFRs of hydrodynamical simulations so that we can motivate this choice. 
+	% The last time she joined one of our telecons, I vaguely remember Sarah 
+	% Loebman mentioning a paper by Charlotte Christensen (if I recall correctly) 
+	% that makes a case for factor of~$\sim$2 variability in the SFR. 
+	% If I can track down that paper (or another one) it'd be a good reference to 
+	% add here so that we can attach one of either ``modest'' or ``typical'' to 
+	% the 25\% choice. 
+	% Otherwise I can also look at the age distribution of the~\hsim~star 
+	% particles to get a sense of how much its SFR varies and comment on it here. 
+	% }
 
-	\item In a real galaxy, variability in the SFE and the SFR are likely 
+	\item In a real galaxy, variability in the SFE and the SFR is likely 
 	non-sinusoidal and not with constant amplitude. 
-	However, when observing a sample of galaxies, they will have different 
-	amplitudes and be seen at different phases in their variability, and the 
-	impact of this on their N and O abundances will present as intrinsic 
-	scatter in the inferred trend. 
-	By comparing models with radial migration with and without reasonable 
-	amounts of variability in these quantities will provide insight into which 
-	of the two is more likely to drive scatter in the abundances. 
+	When observing a sample of galaxies, they will have different amplitudes
+	and be seen at different phases in their variability, and the impact of
+	this on their N and O abundances will present as intrinsic scatter in the
+	inferred trend. 
+	By comparing models with and without reasonable amounts of variability
+	while taking into account stellar migration, we can assess which quantities
+	impact abundances more strongly and are thus the more likely causes of
+	intrinsic scatter in the observed [N/O]-[O/H] relation.
 
 	\item In the left panel of Fig.~\ref{fig:schaefer_comp}, we plot the 
 	predicted gas-phase [N/O]-[O/H] relation at high [O/H] for five snapshots 
