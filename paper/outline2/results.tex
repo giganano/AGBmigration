@@ -257,12 +257,6 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 		alternate explanation for the failure of our fiducial model to
 		reproduce the observed [N/O]-[O/H] relation with
 		the~\cristallo~and~\ventura~yield models.
-
-		\item In short, in order to reproduce the gas-phase [N/O]-[O/H] 
-		relation as observed with the~\cristallo~and~\ventura~AGB star yield
-		models, our model requires extensive black hole formation for massive
-		stars, an artificial amplification of N yields from AGB stars, or some
-		mix of the two.
 	\end{itemize}
 
 	\item Can an alternate parameterization of~$y_\text{N}^\text{CC}$ reproduce 
@@ -280,9 +274,9 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 		We illustrate this model with the slanted black dotted in 
 		Fig.~\ref{fig:n_cc_yields}. 
 		While our fiducial model best describes the rotating CCSN models 
-		of~\citet{Limongi2018}, this alternate parameterization better 
-		characterizes the non-rotating models of~\citet{Limongi2018}, 
-		\citet{Sukhbold2016}, \citet{Nomoto2013}, and~\citet{Woosley1995} while 
+		of~\citet{Limongi2018}, this alternate parameterization follows the
+		non-rotating models published in~\citet{Limongi2018},
+		\citet{Sukhbold2016},~\citet{Nomoto2013}, and~\citet{Woosley1995} while 
 		maintaining the same base-line value of~$3.6\times10^{-4}$ at solar 
 		metallicity. 
 
@@ -310,21 +304,7 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 		These modifications are able to make up some of the difference, but 
 		both models still predict an [N/O]-[O/H] relation that is simply too 
 		shallow to explain the observations. 
-		% Although we cannot reproduce the data with either the~\karakasten~or 
-		% \karakas~yield models, they suffer from similar issues as 
-		% the~\cristallo~and~\ventura~yields. 
 		\begin{itemize} 
-			% \item The underprediction of N yields at high metallicity is not 
-			% unique to~\karakasten~and~\karakas; we have to amplify 
-			% the~\cristallo~and~\ventura~yields by factors of a few for this 
-			% exact reason. 
-
-			% \item At low [O/H], the~\karakas~yields are actually the only ones 
-			% that can explain the observed N abundances without any 
-			% modification. 
-			% The~\karakasten~yields, however, overpredict the N abundances at 
-			% low metallicity. 
-
 			\item The inverse dependence of [N/O] with [O/H] when taking 
 			the~\karakasten~yields can be understood by the interaction between 
 			TDU and HBB (see discussion in~\S~\ref{sec:yields:agb}). 
@@ -332,8 +312,9 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 			the~\karakasten~models experiencing HBB also experience TDU (see 
 			their Table 1), such a result is not surprising. 
 			This is also true for the~\karakas~yields, but that model predicts 
-			a relatively flat [N/O]-[O/H] relation. 
-			{\color{red} Why?}
+			a relatively flat [N/O]-[O/H] relation owing to differences in
+			the~\Nfourteen~yields as a consequence of updated model inputs
+			(see discussion in~\S~\ref{sec:yields:agb}).
 			
 			\item Despite these results, we cannot say with any confidence
 			whether or not such a wide mass range of stars should experience
@@ -345,7 +326,106 @@ equation~\refp{eq:broken_yncc} for the~\karakas~yields.
 			\end{itemize} 
 
 	\end{itemize} 
+
+	\item In short, in order to reproduce the gas-phase [N/O]-[O/H]
+	relation as observed, our model requires N yields which increase
+	monotonically with metallicity in a manner similar to what we illustrate
+	in the right panel of Fig.~\ref{fig:ssp} for the~\cristallo,~\ventura,
+	and linear models.
+	With the~\cristallo~and~\ventura~models specifically, our results
+	suggest that these yields must increase by factors of~$2 - 3$ or that
+	many massive stars must collapse directly to black holes; it may also
+	be a mix of the two.
+	With our models, the only other way to achieve good agreement would be to
+	adopt a metallicity-dependent CCSN yield of O.
+	Supernova nucleosynthesis models, however, would dispute such an assumption
+	\citep[e.g.][]{Woosley1995, Nomoto2013, Limongi2018}, and there is some
+	empirical evidence that the metallicity dependence of the O yield is minimal
+	at most~\citep{Weinberg2019, Weinberg2021}.
+
 \end{itemize} 
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.45]{t_z_dep_comp.pdf}
+\caption{
+A comparison between our fiducial model with post-processing migration (black)
+and variations with the time dependence (red) and metallicity dependence (blue)
+removed.
+To remove the time dependence, we pre-compute the yields of N from 13.2 Gyr old
+single stellar populations as a function of metallicity as in the right panel
+of Fig.~\ref{fig:ssp}, then incorporate this into the prompt CCSN yields and
+set the delayed AGB star contribution to zero.
+To remove the metallicity dependence, we evaluate the yields at our assumed
+solar metallicity of~$Z = 0.014$ at all timesteps.
+}
+\label{fig:t_z_dep_comp}
+\end{figure}
+
+\begin{itemize}
+	\item Despite predicting a different mass dependence for 
+	$y_\text{N}^\text{AGB}$ (see Fig.~\ref{fig:agb_yield_models}), the
+	\cristallo~and~\ventura~yield models both reproduce the slope of the
+	[N/O]-[O/H] relation reasonably well.
+	This is an indication that perhaps the metallicity dependence plays a much
+	more important role then the time dependence in establishing this
+	correlation.
+	To investigate this further, we consider two variations of our fiducial
+	model: one with the time dependence removed from the enrichment rate
+	calculations, and the other with the metallicity dependence removed.
+
+	\item To remove the time dependence, we make use of~\vice's capability to
+	let the user specify functional forms for nucleosynthetic yields.
+	We pre-compute the N yield from all AGB stars associated with a 13.2 Gyr
+	old stellar population as a function of progenitor metallicity in the same
+	fashion as in the right panel of Fig.~\ref{fig:ssp}.
+	Since~\vice~works from IMF-averaged CCSN yields assumed to be injected
+	instantaneously following a single stellar population's formation, we simply
+	add this N yield to $y_\text{N}^\text{CC}$ and set~$y_\text{N}^\text{AGB}$
+	equal to zero.
+	In this model,~$y_\text{N}^\text{CC}$ inherits a metallicity-dependence
+	from the AGB star yields and has the exact shape as the curves in the
+	right hand panel of Fig.~\ref{fig:ssp}.
+
+	\item To remove the metallicity dependence, the procedure is much simpler:
+	we simply evaluate~$y_\text{N}^\text{AGB}$ at our assumed solar metallicity
+	of~$Z = 0.014$ at all timesteps.
+	In this model, there is still a delay-time distribution to AGB star N
+	production inherited from the stellar mass-lifetime relation.
+
+	\item We illustrate the results of this process in Fig.
+	\ref{fig:t_z_dep_comp}.
+	The model with no time-dependence is nearly identical to the [N/O]-[O/H]
+	relation found in our fiducial model, while the model with no
+	metallicity-dependence is considerably different.
+	This suggests that the metallicity dependence indeed plays a much larger
+	role than the DTD in establishing the overall shape of the [N/O]-[O/H]
+	relation.
+	This is rather unsurprising given the short characteristic timescales of N
+	production by AGB stars ($\lesssim$200 Myr, see the middle panel of
+	Fig.~\ref{fig:ssp}).
+	Mathematically, there is little difference in the enrichment rates if all
+	of a stellar population's N is produced immediately as opposed to with a
+	sharply declining DTD.
+	The metallicity dependence, however, is paramount to the [N/O]-[O/H]
+	relation, which is expected given the results in
+	Fig.~\ref{fig:agb_yield_models}.
+
+	\item We clarify that we are making this claim~\textit{only} for N and not
+	for any other elements produced in AGB stars.
+	The time-dependence of AGB star enrichment is dictated by both the stellar
+	mass-lifetime relation and the mass-dependence of the yields from AGB
+	stars.
+	Because different elements are produced in different amounts by AGB stars
+	of different masses, the AGB star DTD is generally different from element
+	to element.
+	N is somewhat unique in that its yields are dominated by high mass
+	AGB stars (see, e.g., Fig~\ref{fig:ssp} here for N in comparison to Fig. 5
+	of~\citealp{Johnson2020} for strontium).
+	We caution against interpretations of AGB star nucleosynthesis which
+	attribute a single characteristic delay-time to this enrichment channel as
+	it may lead to spurrious conclusions.
+\end{itemize}
 
 \subsection{Comparison to Stellar Abundances in the Milky Way Disc} 
 \label{sec:results:vincenzo_comp} 

@@ -83,7 +83,7 @@ class diskmodel(vice.milkyway):
 		# 		m.pi * ((zone_width * (i + 1))**2 - (zone_width * i)**2)) 
 		# self.mass_loading = halved_mass_loading
 		# self.mass_loading = doubled_mass_loading
-		self.mass_loading = third_mass_loading
+		# self.mass_loading = third_mass_loading
 		# for i in range(self.n_zones):
 		# 	for elem in vice.elements.recognized:
 		# 		if zone_width * (i + 0.5) < 15.5:

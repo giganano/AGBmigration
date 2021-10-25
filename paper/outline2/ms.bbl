@@ -51,6 +51,13 @@
 {Berg} D.~A.,  et~al., 2012, \mn@doi [\apj] {10.1088/0004-637X/754/2/98}, \href
   {https://ui.adsabs.harvard.edu/abs/2012ApJ...754...98B} {754, 98}
 
+\bibitem[\protect\citeauthoryear{{Berg}, {Pogge}, {Skillman}, {Croxall},
+  {Moustakas}, {Rogers}  \& {Sun}}{{Berg} et~al.}{2020}]{Berg2020}
+{Berg} D.~A.,  {Pogge} R.~W.,  {Skillman} E.~D.,  {Croxall} K.~V.,  {Moustakas}
+  J.,  {Rogers} N. S.~J.,   {Sun} J.,  2020, \mn@doi [\apj]
+  {10.3847/1538-4357/ab7eab}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020ApJ...893...96B} {893, 96}
+
 \bibitem[\protect\citeauthoryear{{Bigiel}, {Leroy}, {Walter}, {Blitz},
   {Brinks}, {de Blok}  \& {Madore}}{{Bigiel} et~al.}{2010}]{Bigiel2010}
 {Bigiel} F.,  {Leroy} A.,  {Walter} F.,  {Blitz} L.,  {Brinks} E.,  {de Blok}
@@ -88,6 +95,10 @@
 {Bland-Hawthorn} J.,  {Gerhard} O.,  2016, \mn@doi [\araa]
   {10.1146/annurev-astro-081915-023441}, \href
   {https://ui.adsabs.harvard.edu/abs/2016ARA&A..54..529B} {54, 529}
+
+\bibitem[\protect\citeauthoryear{{Bloecker}}{{Bloecker}}{1995}]{Bloecker1995}
+{Bloecker} T.,  1995, \aap, \href
+  {https://ui.adsabs.harvard.edu/abs/1995A&A...297..727B} {297, 727}
 
 \bibitem[\protect\citeauthoryear{{Bovy}, {Leung}, {Hunt}, {Mackereth},
   {Garc{\'\i}a-Hern{\'a}ndez}  \& {Roman-Lopes}}{{Bovy}
@@ -449,6 +460,10 @@
 {Majewski} S.~R.,  et~al., 2017, \mn@doi [\aj] {10.3847/1538-3881/aa784d},
   \href {https://ui.adsabs.harvard.edu/abs/2017AJ....154...94M} {154, 94}
 
+\bibitem[\protect\citeauthoryear{{Marigo}}{{Marigo}}{2002}]{Marigo2002}
+{Marigo} P.,  2002, \mn@doi [\aap] {10.1051/0004-6361:20020304}, \href
+  {https://ui.adsabs.harvard.edu/abs/2002A&A...387..507M} {387, 507}
+
 \bibitem[\protect\citeauthoryear{{Martig} et~al.,}{{Martig}
   et~al.}{2015}]{Martig2015}
 {Martig} M.,  et~al., 2015, \mn@doi [\mnras] {10.1093/mnras/stv1071}, \href
@@ -555,6 +570,13 @@
   {10.1088/0004-637X/720/2/1738}, \href
   {https://ui.adsabs.harvard.edu/abs/2010ApJ...720.1738P} {720, 1738}
 
+\bibitem[\protect\citeauthoryear{{Rogers}, {Skillman}, {Pogge}, {Berg},
+  {Moustakas}, {Croxall}  \& {Sun}}{{Rogers} et~al.}{2021}]{Rogers2021}
+{Rogers} N. S.~J.,  {Skillman} E.~D.,  {Pogge} R.~W.,  {Berg} D.~A.,
+  {Moustakas} J.,  {Croxall} K.~V.,   {Sun} J.,  2021, \mn@doi [\apj]
+  {10.3847/1538-4357/abf8b9}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021ApJ...915...21R} {915, 21}
+
 \bibitem[\protect\citeauthoryear{{S{\'a}nchez}}{{S{\'a}nchez}}{2020}]{Sanchez2020}
 {S{\'a}nchez} S.~F.,  2020, \mn@doi [\araa]
   {10.1146/annurev-astro-012120-013326}, \href
@@ -590,6 +612,12 @@
 {Silva Aguirre} V.,  et~al., 2018, \mn@doi [\mnras] {10.1093/mnras/sty150},
   \href {https://ui.adsabs.harvard.edu/abs/2018MNRAS.475.5487S} {475, 5487}
 
+\bibitem[\protect\citeauthoryear{{Skillman}, {Berg}, {Pogge}, {Moustakas},
+  {Rogers}  \& {Croxall}}{{Skillman} et~al.}{2020}]{Skillman2020}
+{Skillman} E.~D.,  {Berg} D.~A.,  {Pogge} R.~W.,  {Moustakas} J.,  {Rogers} N.
+  S.~J.,   {Croxall} K.~V.,  2020, \mn@doi [\apj] {10.3847/1538-4357/ab86ae},
+  \href {https://ui.adsabs.harvard.edu/abs/2020ApJ...894..138S} {894, 138}
+
 \bibitem[\protect\citeauthoryear{{Souto} et~al.,}{{Souto}
   et~al.}{2018}]{Souto2018}
 {Souto} D.,  et~al., 2018, \mn@doi [\apj] {10.3847/1538-4357/aab612}, \href
@@ -616,11 +644,38 @@
 {Tacconi} L.~J.,  et~al., 2018, \mn@doi [\apj] {10.3847/1538-4357/aaa4b4},
   \href {https://ui.adsabs.harvard.edu/abs/2018ApJ...853..179T} {853, 179}
 
+\bibitem[\protect\citeauthoryear{{Vassiliadis} \& {Wood}}{{Vassiliadis} \&
+  {Wood}}{1993}]{Vassiliadis1993}
+{Vassiliadis} E.,  {Wood} P.~R.,  1993, \mn@doi [\apj] {10.1086/173033}, \href
+  {https://ui.adsabs.harvard.edu/abs/1993ApJ...413..641V} {413, 641}
+
 \bibitem[\protect\citeauthoryear{{Ventura}, {Di Criscienzo}, {Carini}  \&
   {D'Antona}}{{Ventura} et~al.}{2013}]{Ventura2013}
 {Ventura} P.,  {Di Criscienzo} M.,  {Carini} R.,   {D'Antona} F.,  2013,
   \mn@doi [\mnras] {10.1093/mnras/stt444}, \href
   {https://ui.adsabs.harvard.edu/abs/2013MNRAS.431.3642V} {431, 3642}
+
+\bibitem[\protect\citeauthoryear{{Ventura}, {di Criscienzo}, {D'Antona},
+  {Vesperini}, {Tailo}, {Dell'Agli}  \& {D'Ercole}}{{Ventura}
+  et~al.}{2014}]{Ventura2014}
+{Ventura} P.,  {di Criscienzo} M.,  {D'Antona} F.,  {Vesperini} E.,  {Tailo}
+  M.,  {Dell'Agli} F.,   {D'Ercole} A.,  2014, \mn@doi [\mnras]
+  {10.1093/mnras/stt2126}, \href
+  {https://ui.adsabs.harvard.edu/abs/2014MNRAS.437.3274V} {437, 3274}
+
+\bibitem[\protect\citeauthoryear{{Ventura}, {Karakas}, {Dell'Agli},
+  {Garc{\'\i}a-Hern{\'a}ndez}  \& {Guzman-Ramirez}}{{Ventura}
+  et~al.}{2018}]{Ventura2018}
+{Ventura} P.,  {Karakas} A.,  {Dell'Agli} F.,  {Garc{\'\i}a-Hern{\'a}ndez}
+  D.~A.,   {Guzman-Ramirez} L.,  2018, \mn@doi [\mnras]
+  {10.1093/mnras/stx3338}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018MNRAS.475.2282V} {475, 2282}
+
+\bibitem[\protect\citeauthoryear{{Ventura}, {Dell'Agli}, {Lugaro}, {Romano},
+  {Tailo}  \& {Yag{\"u}e}}{{Ventura} et~al.}{2020}]{Ventura2020}
+{Ventura} P.,  {Dell'Agli} F.,  {Lugaro} M.,  {Romano} D.,  {Tailo} M.,
+  {Yag{\"u}e} A.,  2020, \mn@doi [\aap] {10.1051/0004-6361/202038289}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020A&A...641A.103V} {641, A103}
 
 \bibitem[\protect\citeauthoryear{{Vincenzo} \& {Kobayashi}}{{Vincenzo} \&
   {Kobayashi}}{2020}]{Vincenzo2020}
@@ -661,6 +716,16 @@
 {Weinberg} D.~H.,  {Andrews} B.~H.,   {Freudenburg} J.,  2017, \mn@doi [\apj]
   {10.3847/1538-4357/837/2/183}, \href
   {https://ui.adsabs.harvard.edu/abs/2017ApJ...837..183W} {837, 183}
+
+\bibitem[\protect\citeauthoryear{{Weinberg} et~al.,}{{Weinberg}
+  et~al.}{2019}]{Weinberg2019}
+{Weinberg} D.~H.,  et~al., 2019, \mn@doi [\apj] {10.3847/1538-4357/ab07c7},
+  \href {https://ui.adsabs.harvard.edu/abs/2019ApJ...874..102W} {874, 102}
+
+\bibitem[\protect\citeauthoryear{{Weinberg} et~al.,}{{Weinberg}
+  et~al.}{2021}]{Weinberg2021}
+{Weinberg} D.~H.,  et~al., 2021, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2021arXiv210808860W} {p. arXiv:2108.08860}
 
 \bibitem[\protect\citeauthoryear{{Woosley} \& {Weaver}}{{Woosley} \&
   {Weaver}}{1995}]{Woosley1995}

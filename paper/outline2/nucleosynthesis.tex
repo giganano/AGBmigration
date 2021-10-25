@@ -237,20 +237,22 @@ the~\citet{Cristallo2011, Cristallo2015} predictions (coloured X's).
 		\item The~\citet[][hereafter~\karakasten]{Karakas2010} is plotted in 
 		the upper left panel of Fig.~\ref{fig:agb_yield_models}. 
 
-		\item The~\citet[][hereafter~\ventura]{Ventura2013} yields are 
-		illustrated in the bottom middle panel of 
-		Fig.~\ref{fig:agb_yield_models}. 
-
 		\item We combine the yields published in~\citet{Karakas2016} 
 		at~$Z = 0.007$, 0.014, and 0.03 with those published 
 		in~\citet{Karakas2018} at~$Z = 0.0028$; we hereafter refer to these 
 		tables as the~\karakas~set of yields. 
 		We plot them in the upper middle panel of 
 		Fig.~\ref{fig:agb_yield_models}. 
-	\end{itemize} 
 
-	\item {\color{red} To do: Add an appendix on all of the stuff that's new 
-	to~\vice~with this paper?} 
+		\item We combine the yields for~$Z = 0.0003$ and~$Z = 0.008$
+		progenitors from~\citet{Ventura2013} with those at~$Z = 0.004$ from
+		\citet{Ventura2014}, at~$Z = 0.014$ from~\citet{Ventura2018}, and
+		at~$Z = 0.04$ from~\citet{Ventura2020} into a single table of yields.
+		We also include a set of un-published yields at~$Z = 0.001$ and
+		$Z = 0.002$ (provided by P. Ventura, private communication).
+		We hereafter refer to this model as the~\ventura~yield set, and we
+		illustrate it in the top right panel of Fig.~\ref{fig:agb_yield_models}.
+	\end{itemize} 
 
 	\item \vice~also allows users to construct their own functions of 
 	progenitor mass and metallicity to describe the AGB star yield. 
@@ -350,13 +352,46 @@ the~\citet{Cristallo2011, Cristallo2015} predictions (coloured X's).
 	a qualitative explanation into why the~\cristallo~yields are so much 
 	smaller than the~\karakasten~and~\karakas~yields at higher masses. 
 
-	\item {\color{red} To do: Comment on the differences between 
-	the~\karakasten~and~\karakas~models. 
-	The primary difference in their N yields is in the metallicity dependence. 
-	In~\karakasten, they're the lowest at solar metallicity, whereas 
-	in~\karakas~they're much more metallicity independent. 
-	What is the physical reason for this? 
-	} 
+	\item Although both the~\karakas~and~\karakasten~yield models show a
+	considerable increase in N yields above~$\sim 4 M_\odot$, there are some
+	notable differences between the two.
+	\begin{itemize}
+		\item In particular, the yields at solar metallicity ($Z$ = 0.014 in
+		the~\karakas~models, but~$Z$ = 0.02 in~\karakasten) are somewhat
+		higher in the newer version.
+		Although some of this can be attributed to the now-lowered solar
+		metallicity, it does not account for the entirety of the effect.
+		Furthermore, the yields at sub-solar metallicities decreased slightly,
+		particularly for the highest mass stars in these models.
+
+		\item These differences can be understood by slight variations in the
+		input physics (A. Karakas, private communication).
+		Based on updated opacity tables, the newer models are slightly hotter
+		and more compact; as a consequence, they experience hotter HBB and
+		deeper TDU.
+		Experiencing more thermal pulses overall and consequently a longer
+		AGB lifetime, the~\karakas~stars have more time for HBB to
+		convert~\Ctwelve~into~\Nfourteen.
+		At lower metallicity,~\karakas~use low-temperature opacities based on
+		\citet{Marigo2002} that follow the surface composition of the star.
+		These opacities are higher, making the stars larger and increasing
+		the mass-loss rate.
+		The~$Z = 0.0028$ model from~\citet{Karakas2018} uses the
+		\citet{Bloecker1995} mass-loss prescription as opposed to that of
+		\citet{Vassiliadis1993} as in both~\citet{Karakas2010} and
+		\citet{Karakas2016}.
+		This choice results in fewer thermal pulses and a shorter AGB lifetime.
+		Each of these effects at low metallicity act to decrease the overall
+		yield of~\Nfourteen.
+	\end{itemize}
+
+	% \item {\color{red} To do: Comment on the differences between 
+	% the~\karakasten~and~\karakas~models. 
+	% The primary difference in their N yields is in the metallicity dependence. 
+	% In~\karakasten, they're the lowest at solar metallicity, whereas 
+	% in~\karakas~they're much more metallicity independent. 
+	% What is the physical reason for this? 
+	% } 
 
 	\item In the interest of consistency, when we adopt a particular AGB star 
 	yield model for N, we also adopt it for O and Fe when possible.\footnote{
@@ -476,7 +511,6 @@ Points mark metallicities at which the published tables report yields.
 		The predictions with the linear model are nearly identical to 
 		the~\cristallo~model, though this is unsurprising given their 
 		similarity in Fig.~\ref{fig:agb_yield_models}. 
-		{\color{red} Remove linear model from this panel/discussion?} 
 	\end{itemize} 
 \end{itemize} 
 
