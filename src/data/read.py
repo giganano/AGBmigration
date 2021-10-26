@@ -221,15 +221,17 @@ def chaos_reader():
 	"""
 	oh = []
 	no = []
-	with open("%s/chaos_ngc3184.dat" % (PATHROOT), 'r') as f:
-		while True:
-			line = f.readline()
-			if line == "": break
-			if line[0] == '#': continue
-			line = [float(_) for _ in line.split()]
-			oh.append(line[0])
-			no.append(line[2])
-		f.close()
+	files = ["chaos_ngc3184.dat", "chaos_ngc2403.dat"]
+	for item in files:
+		with open("%s/%s" % (PATHROOT, item), 'r') as f:
+			while True:
+				line = f.readline()
+				if line == "": break
+				if line[0] == '#': continue
+				line = [float(_) for _ in line.split()]
+				oh.append(line[0])
+				no.append(line[2])
+			f.close()
 	with open("%s/chaos_m101.dat" % (PATHROOT), 'r') as f:
 		while True:
 			if line == "": break
