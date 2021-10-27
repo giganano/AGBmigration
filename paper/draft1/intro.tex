@@ -1,0 +1,163 @@
+
+\documentclass[ms.tex]{subfiles}
+\begin{document}
+
+\section{Introduction}
+\label{sec:intro}
+
+From a nucleosynthesis perspective, nitrogen (N) is a unique element.
+Along with carbon (C) and helium (He), it is one of only three elements produced
+in asymptotic giant branch (AGB) stars that are lighter than iron peak nuclei
+\citep{Johnson2019}.
+N is also a by-product of the nuclear fusion reactions converting hydrogen (H)
+into He in stars more massive than the sun with nonzero metallicity.
+The CNO cycle\footnote{
+	\Ctwelve(p, $\gamma$)\Nthirteen($\beta^+$, $\nu_e$)\Cthirteen(p, $\gamma$)
+	\Nfourteen(p, $\gamma$)\Ofifteen($\beta^+$, $\nu_e$)\Nfifteen(p, $\alpha$)
+	\Ctwelve
+} catalyses the proton-proton chain of nuclear reactions
+\citep*[e.g.][]{Suliga2020} using C, N, and oxygen (O) target nuclei.
+The slowest component of this chain reaction by far is the
+\Nfourteen(p,$\gamma$)\Ofifteen~component.
+As a consequence of this bottleneck, to first order the effect of the CNO cycle
+is to convert all of the C and O isotopes present in a star's core into
+\Nfourteen.
+Furthermore, N is among a select group of elements whose observed abundances
+in stellar spectra often do not reflect the star's birth abundances.
+Because N is produced in main sequence stars via the CNO cycle, its abundances
+in a star's core become enhanced relative to what the star was born with.
+Upon becoming a red giant, internal mixing processes (i.e. dredge-up) bring this
+N-enhanced material to the photosphere.
+This phenomenon is both expected from theoretical models and observed in open
+and globular clusters~\citep{Gilroy1989, Korn2007, Lind2008, Souto2018,
+Souto2019, Vincenzo2021}.
+
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.45]{no_oh_observed.pdf}
+\caption{
+	The [N/O]-[O/H] relation as observed in different galactic environments:
+	HII regions from the first six CHAOS galaxies (golden +'s: NGC 3184, NGC
+	628, NGC 5194, NGC 5457, M101, and NGC 2403;~\citealp{Berg2020,
+	Skillman2020, Rogers2021}) and other nearby NGC spiral galaxies (grey X's;
+	\citealp{Pilyugin2010}), HII regions in blue diffuse star forming dwarf
+	galaxies (red triangles:~\citealp{Berg2012}; green stars:
+	\citealp{Izotov2012}; blue diamonds:~\citealp{James2015}), in local stars
+	and HII regions (purple circles:~\citealp{Dopita2016}), and in the MaNGA
+	IFU survey (black squares:~\citealp{Belfiore2017}).
+	The fit to [N/O] as a function of [O/H] in Galactic and extragalactic HII
+	regions by~\citet{Henry2000} is shown in a black dotted line.
+	We omit all uncertainties for visual clarity.
+	The Sun, at (0, 0) on this plot by definition, is marked by a large red
+	star. 
+}
+\label{fig:no_oh_observed}
+\end{figure*}
+
+Both observationally and theoretically, N is among the more well-studied
+elements.
+Of particular interest in this paper is the correlation between the abundances
+of N and O, usually observed in the gas phase.
+In Fig.~\ref{fig:no_oh_observed}, we present a compilation of such measurements:
+\begin{enumerate}
+	\item[\textbf{1.}] HII regions in the first six CHAOS\footnote{
+		CHAOS: CHemical Abundances of Spirals~\citep{Berg2015}
+	} galaxies (NGC 3184, NGC 628, NGC 5194, NGC 5457, M101, NGC 2403;
+	\citealp{Berg2020, Skillman2020, Rogers2021}).
+
+	\item[\textbf{2.}] HII regions in nearby NGC spirals~\citep*{Pilyugin2010}.
+
+	\item[\textbf{3.}] HII regions in blue, diffuse star forming dwarf galaxies
+	(\citealp{Berg2012};~\citealp*{Izotov2012};~\citealp{James2015}).
+
+	\item[\textbf{4.}] Local stars and HII regions~\citep{Dopita2016}.
+
+	\item[\textbf{5.}] Galactic and extragalactic HII regions
+	\citep*{Henry2000}.
+
+	\item[\textbf{6.}] Star-forming regions in 550  nearby galaxies in the
+	MaNGA IFU\footnote{
+		MaNGA: Mapping Nearby Galaxies at Apache Point Observatory
+		\citep{Bundy2015}.
+		IFU: Integral Field Unit.
+	} survey~\citep{Belfiore2017}.
+\end{enumerate}
+Despite intrinsic scatter and some systematic variation in how the abundances
+are determined, this [N/O]-[O/H]\footnote{
+	We follow standard notation where [X/Y]
+	$\equiv \log_{10}(X/Y) - \log_{10}(X/Y)_\odot$.
+} relation is more or less the same across a wide range of astrophysical
+environments.
+Here we are interested in the origin of both the shape and scatter in this
+trend.
+\par
+N is not unique in that perhaps the largest source of uncertainty in
+understanding its abundances is that accurate and precise nucleosynthetic yields
+from various enrichment channels remain elusive.
+Presently, no combination of models for nucleosynthesis in and explosions of
+massive stars is able to reproduce the observed abundance pattern of the
+elements, and N is no exception~\citep{Griffith2021}.
+Recently,~\citep*{Grisoni2021} argued that rotating massive stars play a key
+role in establishing the N abundances seen in metal-poor stars in the Milky Way.
+Rotation has a considerable impact on the N yields of massive stars, because the
+internal mixing that it causes~\citep{Zahn1992, Maeder1998, Lagarde2012} brings
+internally produced C and O nuclei into the H-burning shell where they can be
+processed into~\Nfourteen~via the CNO cycle~\citep{Heger2010, Frischknecht2016,
+Andrews2017}.
+We find similar results here comparing various theoretical models for
+massive star nucleosynthesis (see discussion in~\S~\ref{sec:yields:ccsne}).
+\par
+Theoretical models for AGB star nucleosynthesis predict N yields to vary as a
+function of progenitor mass and metallicity~\citep{Cristallo2011, Cristallo2015,
+Karakas2010, Karakas2016, Karakas2018, Ventura2013, Ventura2014, Ventura2018,
+Ventura2020}.
+In sufficiently massive AGB stars, the base of the convective envelope is hot
+enough to activate proton capture reactions, allowing the CNO cycle to convert
+C and O isotopes in~\Nfourteen: a process known as hot bottom burning (HBB).
+AGB stars are also known to experience thermal pulsations, and with each pulse
+the convective envelope penetrates into the CO-rich core, bringing some of this
+material into the envelope: a process known as third dredge-up (TDU)\footnote{
+	Here the time adverbial ``third'' refers only to the fact that these
+	dredge-up episodes are occurring while the star is on the asymptotic giant
+	branch. There is a first TDU, a second TDU, a third TDU, and so on.
+}.
+When both processes are active, each TDU episode adds new seed nuclei for HBB to
+turn into~\Nfourteen, substantially increasing the N yields.
+We demonstrate in~\S\S~\ref{sec:yields:agb} and~\ref{sec:yields:imf_agb} that
+various theoretical models predict significantly different N yields for high
+mass AGB stars as a consequence of how TDU and HBB occur in the models.
+The differences in these processes are in turn a consequence of the
+microphysical assumptions built into the stellar evolution models (e.g. mass
+loss, opacity, convection and convective boundaries, nuclear reaction networks).
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
