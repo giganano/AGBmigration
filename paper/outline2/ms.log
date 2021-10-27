@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.13)  27 OCT 2021 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.13)  27 OCT 2021 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,12 +1249,8 @@ Underfull \vbox (badness 6380) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-
-Package natbib Warning: Citation `Molla20016' on page 16 undefined on input lin
-e 175.
-
-) (./acknowledgements.tex) (./ms.bbl
+ [15])
+(./acknowledgements.tex) (./ms.bbl
 Underfull \hbox (badness 3590) in paragraph at lines 260--262
 []\T1/ntxtlf/m/n/8 Grisoni V., Mat-teucci F., Ro-mano D., 2021, arXiv e-prints,
  [][]p.
@@ -1281,11 +1277,8 @@ Underfull \hbox (badness 2582) in paragraph at lines 44--48
  []
 
 [17])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-[18
+ [18
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
@@ -1302,10 +1295,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 11928 strings out of 493013
- 169085 string characters out of 6133343
- 409049 words of memory out of 5000000
- 14980 multiletter control sequences out of 15000+600000
+ 11927 strings out of 493013
+ 169073 string characters out of 6133343
+ 409006 words of memory out of 5000000
+ 14979 multiletter control sequences out of 15000+600000
  125952 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,15n,37p,1982b,615s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1336,10 +1329,10 @@ ype1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
 ublic/txfonts/txsya.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
 newtx/txsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on ms.pdf (18 pages, 1129720 bytes).
+Output written on ms.pdf (18 pages, 1129555 bytes).
 PDF statistics:
- 1941 PDF objects out of 2073 (max. 8388607)
- 1742 compressed objects within 18 object streams
+ 1943 PDF objects out of 2073 (max. 8388607)
+ 1744 compressed objects within 18 object streams
  194 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
