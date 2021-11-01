@@ -48,12 +48,16 @@ metallicity~\citep{Christensen2016}, dwarf satellite population
 age-velocity relation~\citep{Bird2021}.
 Despite this, there are some interesting differences between~\hsim~and the
 Milky Way.
-The last major merger in~\hsim~was at a redshift of~$z \approx 3$, making it an
-interesting case study for its quiescent merger history
-\citep[e.g.][]{Zolotov2012}.
-The Milky Way is also known to have a strong, long-lived central bar
-\citep[e.g.][]{Bovy2019}, while~\hsim~had only a weak and transient bar and
-lacks one at the present day.
+First and foremost,~\hsim~had only a weak and transient bar, lacking one at the
+present day, while the Milky Way is known to have a strong, long-lived central
+bar~\citep[e.g.][]{Bovy2019}.
+This could indicate that the dynamical history of~\hsim~and its star particles
+differs significantly from that of the Milky Way.
+Furthermore, the last major merger in~\hsim~was at a redshift of~$z \approx 3$,
+making it an interesting case study for its quiescent merger history
+\citep[e.g.][]{Zolotov2012}, while the Sagitarrius dwarf galaxy, a relatively
+massive satellite, is believed to have made pericentric passages around the
+Milky Way at~$1 - 2$ Gyr intervals~\citep{Law2010}.
 With this in mind, a dynamical history such as that of~\hsim~in this GCE model
 can be thought of as capturing purely secular galaxy evolution.
 Although these differences between~\hsim~and the Milky Way are well understood,
@@ -66,21 +70,26 @@ Radial migration of stars proceeds from the~\hsim~star particles in a simple
 manner; for a stellar population in our model born at a radius~\rgal~and a
 time~$T$,~\vice~searches for star particles born at~$\rgal \pm 250$ pc and
 $T \pm 250$ Myr.
-From the star particles that make this cut, it then randomly selects on to act
+From the star particles that make this cut, it then randomly selects one to act
 as that stellar population's~\textit{analogue}.
 The stellar population then assumes the present day midplane distance~$z$ and
 the change in orbital radius~$\Delta\rgal$ of its analogue.
 In the~\citet{Johnson2021} fiducial model, stellar populations move to their
 implied final radii with a~$\sqrt{\text{age}}$ dependence, similar to the
 assumption made by~\citet{Frankel2018, Frankel2019}.
-Although they investigate the impact of variations in this assumption, in the
-present paper we make use of only this model and one in which stellar migration
-is only a post-processing prescription.
+Although they investigate other assumptions for this time-dependence, in the
+present paper we make use of only this model (hereafter referred to as the
+``diffusion'' model) and an idealized one in which stars remain at their birth
+radius and then instantaneously migrate at the present day (hereafter referred
+to as the ``post-processing'' model).
 If~\vice~does not find any star particles from~\hsim~in its initial
 $\rgal \pm 250$ pc and~$T \pm 250$ Myr search, it widens it to
 $\rgal \pm 500$ pc and~$T \pm 500$ Myr; if still no candidate analogues are
 found,~\vice~maintains the~$T \pm 500$ Myr requirement, but assigns the star
 particle with the smallest difference in birth radius as the analogue.
+This procedure can be thought of as ``injecting'' the dynamics of
+the~\hsim~galaxy into our multi-zone chemical evolution model, and can in
+principle be repeated for any hydrodynamical simulation of a disc galaxy.
 As in~\citet{Johnson2021}, we neglect radial gas flows
 \citep[e.g.][]{Lacey1985, Bilitewski2012, Vincenzo2020}, instead focusing on
 the impact of stellar migration.
@@ -203,7 +212,7 @@ discussion in, e.g.,~\citealp{Griffith2021}), and some authors argue that
 outflows do not significantly alter the chemical evolution of the Galaxy disc
 and neglect them entirely~\citep[e.g.][]{Spitoni2019, Spitoni2021}.
 We investigate the impact of simultaneous variations in our yields and the
-efficiency of outflows in our models in~\S~\ref{sec:results} below.
+efficiency of outflows in our models in~\S~\ref{sec:results:yields} below.
 
 \end{document}
 
