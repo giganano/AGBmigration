@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  2 NOV 2021 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  2 NOV 2021 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1086,27 +1086,27 @@ Package pdftex.def Info: t_z_dep_comp.pdf  used on input line 357.
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 
+l.443 
        <./t_z_dep_comp.pdf>]
-<nh_feh_vs_lookback.pdf, id=1482, 505.89pt x 505.89pt>
+<nh_feh_vs_lookback.pdf, id=1490, 505.89pt x 505.89pt>
 File: nh_feh_vs_lookback.pdf Graphic file (type pdf)
 <use nh_feh_vs_lookback.pdf>
-Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 439.
+Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 450.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_vs_age.pdf, id=1483, 505.89pt x 505.89pt>
+<no_vs_age.pdf, id=1491, 505.89pt x 505.89pt>
 File: no_vs_age.pdf Graphic file (type pdf)
 <use no_vs_age.pdf>
-Package pdftex.def Info: no_vs_age.pdf  used on input line 450.
+Package pdftex.def Info: no_vs_age.pdf  used on input line 461.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_vs_ofe.pdf, id=1484, 505.89pt x 505.89pt>
+<no_vs_ofe.pdf, id=1492, 505.89pt x 505.89pt>
 File: no_vs_ofe.pdf Graphic file (type pdf)
 <use no_vs_ofe.pdf>
-Package pdftex.def Info: no_vs_ofe.pdf  used on input line 451.
+Package pdftex.def Info: no_vs_ofe.pdf  used on input line 462.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 520.
+(Font)              scaled to size 7.3pt on input line 531.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 520.
+(Font)              scaled to size 5.5pt on input line 531.
 ) (./conclusions.tex [13pdfTeX warning (ext4): destination with the same identi
 fier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1168,7 +1168,7 @@ Package rerunfilecheck Info: File `ms.out' has not changed.
 Here is how much of TeX's memory you used:
  16495 strings out of 478599
  238484 string characters out of 5853099
- 716151 words of memory out of 5000000
+ 716183 words of memory out of 5000000
  33797 multiletter control sequences out of 15000+600000
  529890 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1196,10 +1196,10 @@ mf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf-di
 st/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/fon
 ts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/typ
 e1/public/newtx/ztmri.pfb>
-Output written on ms.pdf (16 pages, 1153446 bytes).
+Output written on ms.pdf (16 pages, 1154422 bytes).
 PDF statistics:
- 2026 PDF objects out of 2073 (max. 8388607)
- 1819 compressed objects within 19 object streams
+ 2035 PDF objects out of 2073 (max. 8388607)
+ 1828 compressed objects within 19 object streams
  215 named destinations out of 1000 (max. 500000)
  204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
