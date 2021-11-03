@@ -8,7 +8,7 @@
 In this paper we make use of the chemical evolution model for the Milky Way
 presented in~\citet{Johnson2021}.
 This model runs using the publicly available~\texttt{Versatile Integrator for
-Chemical Evolution} (\vice;~\citealp{Johnson2020, Griffith2021, Johnson2021}),
+Chemical Evolution} (\vice;~\citealp{Johnson2020, Griffith2021a, Johnson2021}),
 an open-source~\python~package designed for GCE modeling.
 \citet{Johnson2021} focus their discussion of the model predictions on O and
 Fe, and we retain their yields of these elements here.
@@ -56,7 +56,7 @@ approximation is valid will be associated with massive stars and/or their
 supernovae.
 In the case of N specifically, a substantial amount emerges in winds before the
 actual supernova itself, allowing massive stars to produce a lot N even if they
-collapse directly to a black hole~\citep{Griffith2021}.
+collapse directly to a black hole~\citep{Griffith2021a}.
 
 % fig 2
 \begin{figure*}
@@ -88,7 +88,7 @@ in Fig.~\ref{fig:no_oh_observed}.
 We compute theoretically predicted values of~\ycc{N}~using
 \vice's~\texttt{vice.yields.ccsne.fractional} function assuming a
 \citet{Kroupa2001} IMF; details on how~\vice~handles these calculations can be
-found in~\S~4 of~\citet{Griffith2021} and in the~\vice~science 
+found in~\S~4 of~\citet{Griffith2021a} and in the~\vice~science 
 documentation\footnote{
 \url{https://vice-astro.readthedocs.io/en/latest/science_documentation/yields}
 }.
@@ -275,10 +275,11 @@ Despite reporting values of the same physical quantities, the N yields
 reported by each of these studies show substantial differences between one
 another.
 Unfortunately, ascertaining the origins of these differences is difficult
-because each study employs different assumptions for opacity, mass loss,
-nuclear reaction networks, and convection and convective boundaries within
-stars, all of which have a significant impact on stellar evolution and thus
-the predicted yields (see discussion in, e.g.,~\S~5 of~\citealp{Karakas2016}).
+because each study employs different assumptions for important evolutionary
+parameters such as opacity, mass loss, nuclear reaction networks, and
+convection and convective boundaries within stars, all of which have a
+significant impact on stellar evolution and thus the predicted yields (see
+discussion in, e.g.,~\S~5 of~\citealp{Karakas2016}).
 However, the differences can largely be understood by considering two important
 phenomena known to occur within AGB stars: third dredge-up (TDU) and hot bottom
 burning (HBB).
@@ -289,7 +290,7 @@ stellar evolution models.
 TDU refers to the repeated penetrations of the convected envelope into the
 hydrogen-depleted core during the thermal pulses associated with AGB star
 evolution.
-This process doesn't affect N abundances much because at this evolutionary
+This process does not affect N abundances much because at this evolutionary
 phase, the core is mostly composed of C and O.
 However, the~\Cthirteen($\alpha$, n)\Osixteen~reaction can occur at substantial
 rates when the core material is mixed with the He-rich shell during each TDU
@@ -345,10 +346,11 @@ between the two.
 In particular, the yields at solar metallicity are somewhat higher in the
 newer version.
 Some of this can be attributed to the now-lowered solar metallicity\footnote{
-Changes in the adopted solar metallicity trace back to the canonical value of
-$\sim$2\%~\citep*{Anders1989, Grevesse1993, Grevesse1998} later being revised
-to~$\sim$1.4\% (\citealp*{Lodders2003, Asplund2005, Lodders2009};
-\citealp{Asplund2009};~\citealp*{Asplund2021}).
+	Changes in the accepted value of the metallicity of the sun trace back to
+	the canonical value of~$\sim$2\% derived by~\citet{Anders1989},
+	\citet{Grevesse1993}, and~\citet{Grevesse1998} later being revised
+	to~$\sim$1.4\% by~\citet{Lodders2003},~\citet*{Asplund2005},
+	\citet*{Lodders2009},~\citet{Asplund2009}, and~\citet*{Asplund2021}.
 } ($Z = 0.014$ in~\karakas~compared to~$Z = 0.02$ in~\karakasten) and the
 effect that has on TDU and HBB, but this does not account for all of the
 differences.

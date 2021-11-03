@@ -298,15 +298,22 @@
   {https://ui.adsabs.harvard.edu/abs/1998SSRv...85..161G} {85, 161}
 
 \bibitem[\protect\citeauthoryear{{Griffith}, {Sukhbold}, {Weinberg}, {Johnson},
-  {Johnson}  \& {Vincenzo}}{{Griffith} et~al.}{2021}]{Griffith2021}
+  {Johnson}  \& {Vincenzo}}{{Griffith} et~al.}{2021a}]{Griffith2021a}
 {Griffith} E.~J.,  {Sukhbold} T.,  {Weinberg} D.~H.,  {Johnson} J.~A.,
-  {Johnson} J.~W.,   {Vincenzo} F.,  2021, arXiv e-prints, \href
+  {Johnson} J.~W.,   {Vincenzo} F.,  2021a, arXiv e-prints, \href
   {https://ui.adsabs.harvard.edu/abs/2021arXiv210309837G} {p. arXiv:2103.09837}
+
+\bibitem[\protect\citeauthoryear{{Griffith}, {Weinberg}, {Buder}, {Johnson},
+  {Johnson}  \& {Vincenzo}}{{Griffith} et~al.}{2021b}]{Griffith2021b}
+{Griffith} E.~J.,  {Weinberg} D.~H.,  {Buder} S.,  {Johnson} J.~A.,  {Johnson}
+  J.~W.,   {Vincenzo} F.,  2021b, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2021arXiv211006240G} {p. arXiv:2110.06240}
 
 \bibitem[\protect\citeauthoryear{{Grisoni}, {Matteucci}  \& {Romano}}{{Grisoni}
   et~al.}{2021}]{Grisoni2021}
-{Grisoni} V.,  {Matteucci} F.,   {Romano} D.,  2021, arXiv e-prints, \href
-  {https://ui.adsabs.harvard.edu/abs/2021arXiv210903642G} {p. arXiv:2109.03642}
+{Grisoni} V.,  {Matteucci} F.,   {Romano} D.,  2021, \mn@doi [\mnras]
+  {10.1093/mnras/stab2579}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.508..719G} {508, 719}
 
 \bibitem[\protect\citeauthoryear{{Gronow}, {Cote}, {Lach}, {Seitenzahl},
   {Collins}, {Sim}  \& {Roepke}}{{Gronow} et~al.}{2021a}]{Gronow2021b}
@@ -324,6 +331,11 @@
   et~al.}{2021}]{HaydenPawson2021}
 {Hayden-Pawson} C.,  et~al., 2021, arXiv e-prints, \href
   {https://ui.adsabs.harvard.edu/abs/2021arXiv211000033H} {p. arXiv:2110.00033}
+
+\bibitem[\protect\citeauthoryear{{Hayden} et~al.,}{{Hayden}
+  et~al.}{2015}]{Hayden2015}
+{Hayden} M.~R.,  et~al., 2015, \mn@doi [\apj] {10.1088/0004-637X/808/2/132},
+  \href {https://ui.adsabs.harvard.edu/abs/2015ApJ...808..132H} {808, 132}
 
 \bibitem[\protect\citeauthoryear{{Heger} \& {Woosley}}{{Heger} \&
   {Woosley}}{2010}]{Heger2010}
@@ -703,10 +715,10 @@
   {https://ui.adsabs.harvard.edu/abs/2002MNRAS.336..785S} {336, 785}
 
 \bibitem[\protect\citeauthoryear{{Sharma}, {Hayden}  \&
-  {Bland-Hawthorn}}{{Sharma} et~al.}{2020}]{Sharma2020}
-{Sharma} S.,  {Hayden} M.~R.,   {Bland-Hawthorn} J.,  2020, arXiv e-prints,
-  \href {https://ui.adsabs.harvard.edu/abs/2020arXiv200503646S} {p.
-  arXiv:2005.03646}
+  {Bland-Hawthorn}}{{Sharma} et~al.}{2021}]{Sharma2021}
+{Sharma} S.,  {Hayden} M.~R.,   {Bland-Hawthorn} J.,  2021, \mn@doi [\mnras]
+  {10.1093/mnras/stab2015}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.5882S} {507, 5882}
 
 \bibitem[\protect\citeauthoryear{{Silva Aguirre} et~al.,}{{Silva Aguirre}
   et~al.}{2018}]{SilvaAguirre2018}
@@ -846,6 +858,16 @@
 {Weinberg} D.~H.,  {Andrews} B.~H.,   {Freudenburg} J.,  2017, \mn@doi [\apj]
   {10.3847/1538-4357/837/2/183}, \href
   {https://ui.adsabs.harvard.edu/abs/2017ApJ...837..183W} {837, 183}
+
+\bibitem[\protect\citeauthoryear{{Weinberg} et~al.,}{{Weinberg}
+  et~al.}{2019}]{Weinberg2019}
+{Weinberg} D.~H.,  et~al., 2019, \mn@doi [\apj] {10.3847/1538-4357/ab07c7},
+  \href {https://ui.adsabs.harvard.edu/abs/2019ApJ...874..102W} {874, 102}
+
+\bibitem[\protect\citeauthoryear{{Weinberg} et~al.,}{{Weinberg}
+  et~al.}{2021}]{Weinberg2021}
+{Weinberg} D.~H.,  et~al., 2021, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2021arXiv210808860W} {p. arXiv:2108.08860}
 
 \bibitem[\protect\citeauthoryear{{Woosley} \& {Weaver}}{{Woosley} \&
   {Weaver}}{1995}]{Woosley1995}

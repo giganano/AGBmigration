@@ -7,7 +7,7 @@
 
 We use the fiducial chemical evolution model for the Milky Way published in
 \citet{Johnson2021}, which runs using the~\vice~chemical evolution code
-(\citealp{Johnson2020, Griffith2021}; see Appendix~\ref{sec:vice}).
+(\citealp{Johnson2020, Griffith2021a}; see Appendix~\ref{sec:vice}).
 \citet{Johnson2021} focus their discussion on the predicted O and Fe
 abundances, but because~\vice~recognizes most elements on the periodic table,
 computing N abundances with this model is easy.
@@ -21,7 +21,7 @@ We provide a brief summary of the model here, but a full breakdown can be found
 in~\S~2 of~\citet{Johnson2021}.
 \par
 As in previous models for the Milky Way~\citep[e.g.][]{Matteucci1989,
-Schoenrich2009, Minchev2013, Minchev2014, Minchev2017, Sharma2020}, this model
+Schoenrich2009, Minchev2013, Minchev2014, Minchev2017, Sharma2021}, this model
 parameterizes the Galaxy disc as a series of concentric rings of uniform width
 $\delta\rgal = 100$ pc.
 Each ring is assigned its own star formation history (SFH), and with
@@ -105,7 +105,7 @@ disc rather than an inner disc dynamical history.
 \par
 Rather than using a hydrodynamical simulation, some previous studies have
 implemented stellar migration using dynamical arguments
-\citep[e.g.][]{Schoenrich2009, Sharma2020}.
+\citep[e.g.][]{Schoenrich2009, Sharma2021}.
 An advantage of our approach over this is that these dynamical arguments
 introduce free parameters into the modelw hich then require fitting to data.
 It is also unclear the extent to which fitting to observed data biases the
@@ -182,6 +182,7 @@ N =
 2\times10^7~\msun~\persqkpc) \\
 1.7 & (\Sigma_\text{gas} \leq 5\times10^6~\msun~\persqkpc).
 \end{cases}
+\label{eq:sflaw_indeces}
 \end{equation}
 The normalization of the star formation law is then set by letting the SFE
 timescale~$\tau_\star \equiv \Sigma_\text{gas} / \dot{\Sigma}_\star$ be given
@@ -208,7 +209,7 @@ Nonetheless, one can lower all yields and~$\eta$ at all~\rgal~by similar
 factors, and with all other model parameters held fixed, GCE models in general
 make similar predictions.
 The absolute scale of nucleosynthetic yields is a topic of debate (see
-discussion in, e.g.,~\citealp{Griffith2021}), and some authors argue that
+discussion in, e.g.,~\citealp{Griffith2021a}), and some authors argue that
 outflows do not significantly alter the chemical evolution of the Galaxy disc
 and neglect them entirely~\citep[e.g.][]{Spitoni2019, Spitoni2021}.
 We investigate the impact of simultaneous variations in our yields and the

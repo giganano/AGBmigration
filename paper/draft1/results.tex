@@ -36,7 +36,8 @@ $y_\text{N}^\text{CC} = 3.6\times10^{-4}$ and our linear AGB star yield model
 with~$\xi = 9\times10^{-4}$.
 Although we presented this model in comparison to the~\cristallo~yields with
 $\xi = 3\times10^{-4}$ in~\S~\ref{sec:yields:agb}, we find that a
-renormalization of this model is necessary to reproduce the~\ohno~relation as observed with the~\citet{Johnson2021} GCE model.
+renormalization of this model is necessary to reproduce the~\ohno~relation as
+observed with the~\citet{Johnson2021} GCE model.
 We discuss this point further in~\S~\ref{sec:results:yields}.
 To demonstrate the impact of stellar migration on N enrichment rates, we make
 use of the ``diffusion'' migration model in this section (see discussion
@@ -65,7 +66,7 @@ taking the N and O abundances at the present day from all rings (shown by the
 dotted black line; see discussion below) does not reflect the N and O
 abundances of the Galaxy in the past.
 Similar arguments have been made regarding low [$\alpha$/Fe] disc stars
-\citep[e.g.][]{Schoenrich2009, Sharma2020}.
+\citep[e.g.][]{Schoenrich2009, Sharma2021}.
 \par
 Because there is a delay between a stellar population's formation and N
 production from its AGB stars ($\sim$250 Myr in this model; see Fig.
@@ -83,8 +84,6 @@ We demonstrate this effect by comparing the solid blue and purple lines to
 their dotted counterparts, which denote the tracks when we neglect the impact
 of stellar migration on enrichment rates (i.e. the ``post-processing'' model
 from~\citealp{Johnson2021}).
-% This is qualitatively similar to what~\citet{Johnson2021} find for SN Ia
-% enrichment of Fe (see discussion in their~\S\S~3.1 and 3.4).
 \par
 In the right panel of Fig.~\ref{fig:no_oh_timeevol}, we plot the
 gas-phase~\ohno~relation predicted by the model at various snapshots.
@@ -242,14 +241,14 @@ observational perspectives (e.g.~\citealp*{Gerke2015};~\citealp{Adams2017,
 Basinger2021}).
 At present, no combination of a SN nucleosynthesis model with a physically
 motivated black hole landscape is able to reproduce the observed abundance
-patterns~\citep{Griffith2021}.
+patterns~\citep{Griffith2021a}.
 Despite this, black hole formation still lowers SN yields by simply not
 producing explosive nucleosynthetic products and is thus an alternate
 explanation for the failure of our fiducial model to reproduce the
 observed~\ohno~relation with the~\cristallo~and~\ventura~yield models.
 With~\vice's~\texttt{vice.yields.ccsne.fractional} function, designed to
 calculate values of~\ycc{X}~for various elements (see discussion in~\S
-\ref{sec:yields:ccsne} here and in~\S~4 of~\citealp{Griffith2021}), we indeed
+\ref{sec:yields:ccsne} here and in~\S~4 of~\citealp{Griffith2021a}), we indeed
 find a value of~$\ycc{O} = 0.0056$ using the W18 explosion model from
 \citet{Sukhbold2016} compared to our fiducial value of~$\ycc{O} = 0.015$.
 \par
@@ -421,25 +420,27 @@ not to other elements produced in AGB stars.
 The DTD of AGB star enrichment is dictated by both the stellar mass-lifetime
 relation and the mass dependence of the yields from AGB stars.
 In general, various elements have a different mass dependence to their AGB
-star yield, and consequently, the AGB star DTD differs from element to
+star yield, and consequently, the associated DTD differs from element to
 element.
 N is somewhat unique in that its yields are dominated by high mass AGB stars,
-whereas heavier elements produced by the s-process typically have the highest
-yields from~$M_\text{ZAMS} \approx 2 - 3~\msun$ AGB star progenitors (e.g.
-strontium; see Fig. 5 of~\citealp{Johnson2020}).
-This arises because the total mass of dredged-up material from the CO-rich
-core is largest in this mass range~\citep[][{\color{red} There is probably a
-better reference here}]{Cristallo2011, Cristallo2015}.
-These stars consequently produce the most free neutrons via
-the~\Cthirteen($\alpha$, n)\Osixteen~reaction and therefore have particularly
-high s-process yields.
-Although solar mass stars live~$\sim$10 Gyr, 2~\msun~stars live only~$\sim$1
-Gyr~\citep{Larson1974, Maeder1989, Padovani1993}, which makes the DTD for these
-s-process elements rather prompt even when compared to the SN Ia DTD.
+and generally these yields are at the expense of C and O isotopes consumed
+during HBB~\citep{Ventura2013}.
+Other elements produced by the s-process often have the highest yields from
+lower mass AGB stars (e.g. strontium, for which the yields as reported by
+\citealp{Cristallo2011, Cristallo2015} are dominated by
+$M_\text{ZAMS} = 2 - 3~\msun$ progenitors; see Fig. 5 of
+\citealp{Johnson2020}).
+The characteristic delay time of AGB star production will be as long as 10 Gyr
+if and only if the yields are dominated by~$\sim$1~\msun stars.
+Due to the steep nature of the mass-lifetime relation~\citep{Larson1974,
+Maeder1989, Padovani1993}, elements whose yields are dominated by slightly more
+massive AGB stars will be produced on significantly shorter timescales (e.g.
+2~\msun~stars live only~$\sim$1 Gyr).
 Since the AGB star DTD should in principle differ from element to element, we
-nonetheless caution against interpretations of AGB star nucleosynthesis which
-attribute a single characteristic delay time to this enrichment channel as it
-could lead to potentially spurrious conclusions.
+caution against interpretations of AGB star nucleosynthesis which attribute
+a single characteristic delay time to this enrichment channel as that is likely
+only accurate for order of magnitude estimates and could lead to potentially
+spurrious conclusions.
 
 
 \subsection{Comparison to Stellar Abundances in the Milky Way Disc}
@@ -526,10 +527,251 @@ of the~\citet{Dopita2016} trend is an indication that it also successfully
 reproduces the overall trend of~\no~with~\oh~found for APOGEE disc stars.
 In this section, we focus on the stellar abundances, with which we can
 investigate trends with age and~\ofe.
-
+\par
+Combining the~\citet{Vincenzo2021}~\no~ratios with the APOGEE stellar ages
+taken from~\citet{Miglio2021}, we illustrate the~\no-age relation in bins
+of~\feh~as predicted by our model in the left panel of Fig.
+\ref{fig:vincenzo_comp}.
+In good agreement with the observational measurements, the model predicts
+the~\no-age relation to be relatively flat in bins of~\feh.
+This arises as a consequence of the N-Fe correlation and the fast approach to
+equilibrium in~\oh~as discussed above (see Fig.~\ref{fig:nh_feh_vs_lookback}):
+a bin in~\feh~approximately corresponds to a bin in~\nh, and with~\oh~more or
+less constant up to a lookback time of~$\sim$10 Gyr, these bins in~\feh~also
+approximately correspond to bins in~\no.
+This is an important success of the model, because with uncorrected N
+abundances,~\citet{Vincenzo2021} demonstrate that the~\no-age relation exhibits
+a significant negative slope at fixed~\feh~(see their Fig. 7).
+\par
+In the right panel of Fig.~\ref{fig:vincenzo_comp}, we compare our model
+predictions to the~\no-\ofe~relation reported by~\citet{Vincenzo2021} at
+fixed~\oh.
+The model correctly predicts a significant inverse relationship
+between~\no~and~\ofe.
+This is again a consequence of the N-Fe correlation demonstrated in
+Fig.~\ref{fig:nh_feh_vs_lookback}:~\nh~increases with~\feh, so at
+fixed~\oh,~\no~increases as~\ofe~decreases.
+This is another important success of our model;~\citet{Vincenzo2021}
+demonstrate that even when stellar N abundances are corrected for internal
+mixing processes, the chemical dichotomy in~\no~between the high [$\alpha$/Fe]
+and low [$\alpha$/Fe] stars in the disc persists (for discussion of the
+Galaxy's two distinct chemical populations see, e.g.,~\citealp{Hayden2015,
+Weinberg2019, Weinberg2021, Griffith2021b}).
+Although the~\citet{Johnson2021} model does not reproduce this infamous
+$\alpha$ bimodality in detail, a future iteration which does should also
+reproduce it for N based on these results.
+\par
+Quantitatively, our model slightly overpredicts~\no~in the lower metallicity
+bins in both panels of Fig.~\ref{fig:vincenzo_comp}.
+In general, our model occupies a noticeably wider range in~\no~than do the
+\citet{Vincenzo2021} measurements at all ages and all~\ofe.
+This could be a sign that the AGB star yields of N in our fiducial model scale
+slightly too strongly with the total metallicity~$Z$.
+Since our fiducial model assumes an exactly linear scaling of the N yield
+with~$Z$, this suggests that perhaps a slightly sub-linear scaling would be
+more accurate, but only barely because the discrepancies in Fig.
+\ref{fig:vincenzo_comp} are at the~$\lesssim 0.1$ dex level.
 
 \subsection{The Sources of Scatter in the~\ohno~Relation}
 \label{sec:results:schaefer_comp}
+
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.31]{no_oh_sfevar.pdf}
+\includegraphics[scale = 0.33]{delta_no_schaefercomp.pdf}
+\caption{
+\textbf{Left}: One cycle of oscillations in the~\ohno~relation at
+high~\oh~induced by 25\% sinusoidal variability in~$\tau_\star$ (solid coloured
+lines).
+Dotted lines show the~\ohno~relation at the same five snapshots in the fiducial
+model with no variability in~$\tau_\star$ but still with diffusion migration
+(see discussion in~\S~\ref{sec:multizone}).
+The black dashed line shows the time evolution the abundances at~$\rgal = 5$
+kpc, with the times of each of the five snapshots marked by a coloured point.
+\textbf{Middle and Right}: For the same five snapshots in the left hand panel,
+the deviation in~\no~at fixed~\oh~relative to the fiducial model for the case
+with 25\% variability in~$\tau_\star$ (middle) and in~$\dot{\Sigma}_\star$
+(right).
+The shaded regions in both panels quantify the widht of the [N/O] distribution
+in~$10^{10.5} - 10^{11}~\msun$ galaxies in MaNGA taken from
+\citet{Schaefer2020}.
+In bins of~\oh, we place the median~\no~at~$\Delta\no = 0$, and the lower
+(upper) envelope denotes the 16th (84th) percentile of~\no.
+}
+\label{fig:schaefer_comp}
+\end{figure*}
+
+\citet{Schaefer2020} demonstrate that intrinsic scatter in the
+gas-phase~\ohno~relation is correlated with variations in the local SFE.
+This is expected from simple GCE models: with slower star formation, more AGB
+stars enrich the ISM by the time it reaches a given abundance, hence a
+higher~\no~at a given~\oh~\citep[e.g.][]{Molla2006, Vincenzo2016a}.
+However,~\citet{Schaefer2020} do not rule out radial migration as another
+potential source of scatter in this relation.
+Our models, taking into account the effects of stellar migration on the
+enrichment rates while allowing full control over the SFH and the SFE
+through~\vice, are the ideal tool with which to address this question.
+\par
+To this end we construct two variants of our fiducial model, one in which the
+SFE exhibits 25\% sinusoidal oscillations with time, and the other with the
+same 25\% oscillations in the SFR.
+We modify the SFE timescale~$\tau_\star$ and the SFH~$\dot{\Sigma}_\star$ from
+the fiducial case in the following manner:
+\begin{equation}
+\tau_\star(\rgal, t) = \tau_{\star,\text{J21}}(\rgal, t)
+\left(1 + 0.25\sin\left(\frac{2\pi t}{2~\text{Gyr}}\right)\right)
+\label{eq:sfe_var}
+\end{equation}
+\begin{equation}
+\dot{\Sigma}_\star(\rgal, t) = \dot{\Sigma}_{\star,\text{J21}}(\rgal, t)
+\left(1 + 0.25\sin\left(\frac{2\pi t}{2~\text{Gyr}}\right)\right),
+\label{eq:sfr_var}
+\end{equation}
+where~$\tau_{\star,\text{J21}}$ and~$\dot{\Sigma}_{\star,\text{J21}}$ refer to
+the SFE timescale and the SFH in the fiducial model taken from
+\citet{Johnson2021}.
+In~\hsim, the simulation from which the migration history of our model is drawn,
+we find that the overall SFE declines by a factor of~$\sim$ over the past
+$\sim$9 Gyr, an effect which is already built into~$\tau_{\star,\text{J21}}$.
+Additionally, there are variations in the SFE at the~$\sim$25\% level between
+similar radii in the same snapshot as well as at fixed radii between successive
+snapshots.
+Based on this, an amplitude of 25\% should capture typical variations seen in
+these quantities in hydrodynamical simulations.
+However, since~\hsim~has a remarkably quiescent merger history
+\citep{Zolotov2012}, this may change in response to a major accretion event.
+{\color{red} We can revise these few sentences with some observational
+references.}
+\par
+In a real galaxy, variability in the SFE and the SFR is likely non-sinusoidal
+and not with constant amplitude.
+A sample of galaxies will have different amplitudes and be seen at different
+phases in their variability, and the impact of this on their N and O abundances
+will present as intrinsic scatter in the inferred trend.
+By comparing models with and without reasonable amounts of variability in these
+quantities while taking into account radial migration, we can nonetheless
+assess which quantities impact abundances more strongly and are thus the more
+likely causes of intrinsic scatter in the observed~\ohno~relation.
+\par
+In the left panel of Fig.~\ref{fig:schaefer_comp}, we plot the predicted
+gas-phase~\ohno~relation at high~\oh~for five snapshots covering one cycle of
+fluctuations induced by variability in~$\tau_\star$ according to
+equation~\refp{eq:sfe_var}.
+This model predicts a~$\sim$0.15 dex dynamic range in~\no~at fixed~\oh, whereas
+the fiducial model with no variability in~$\tau_\star$, shown in the dotted
+lines, predicts the relation to be nearly constant over this time interval.
+While this suggests that stellar migration, present in both the fiducial model
+and these oscillatory variants, does not induce significant variability in
+the~\ohno~plane, we demonstrate below that the effects are nonetheless
+non-negligible.
+The minimal impact of stellar migration traces back to the timescales of N
+production from single stellar populations (see Fig.~\ref{fig:ssp} and
+discussion in~\S~\ref{sec:yields:imf_agb}): with most N production occurring
+within~$\sim$250 Myr of a stellar population's formation, most stars will not
+migrate far from their birth radius by the time they produce most of their N,
+and the resulting impact on abundances is small.
+\par
+The behavior in the~\ohno~plane predicted by our variant with oscillatory SFE
+is driven by the constant tug-of-war between dilution and re-enrichment
+associated with oscillations in~$\tau_\star$.
+In this model,~$\dot{\Sigma}_\star$ is the same as in~\citet{Johnson2021}, so
+it is not the SFR which varies but rather the gas supply.
+When the accretion rate increases, the ISM becomes diluted by gas at a
+primordial abundance, decreasing~\oh.
+Because the AGB star yields of N in these models scale exactly linearly with
+metallicity~$Z$ (see discussion in~\S~\ref{sec:yields:agb}), the decrease in
+the N abundance due to the now lowered yields is in direct proportion to the
+amount of dilution, but with a slight delay.
+As a result,~\no~is only marginally affected by the fluctuations in the overall
+abundance.
+The variations in the~\ohno~relation that the model predicts are much more of a
+consequence of variability in~\oh~than in~\no.
+We demonstrate this with the black dashed line in the left panel of
+Fig.~\ref{fig:schaefer_comp}, which traces the evolution of the abundances at
+$\rgal = 5$ kpc over the same time interval.
+In general,~\no~is affected only at the~$\sim$0.05 dex level while~\oh~varies
+with an amplitude closer to~$\sim$0.25 dex.
+As the gas supply falls off when~$\tau_\star$ decreases, enrichment proceeds
+in a gas-starved ISM, which increases~\oh~once more, but~\no~to a lesser
+extent for similar reasons, and the cycle repeats itself.
+We find similar results when we vary the SFH~$\dot{\Sigma}_\star$.
+In this variant of our model,~$\Sigma_\text{gas}$ and consequently the
+abundances vary instead at a value of~$\tau_\star$ that varies only as much as
+the adopted~$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation from
+\citet{Johnson2021} dictates it should (see discussion
+in~\S~\ref{sec:multizone}).
+\par
+In the middle and right panels of Fig.~\ref{fig:schaefer_comp}, we plot the
+scatter in the gas-phase~\ohno~relation inferred observationally by
+\citet{Schaefer2020}.
+Using data from the MaNGA IFU survey~\citep{Bundy2015}, they measure N and O
+abundances in 709,541 spaxels across 6,507 unique galaxies spanning
+$10^9 - 10^{11}~\msun$ in stellar mass.
+Since our model is appropriate for Milky Way mass galaxies, we focus our
+comparison on the~$M_\star = 10^{10.5} - 10^{11}~\msun$ mass range
+\citep{Licquia2015}, which cuts our sample sample to 197,787 individual N and O
+measurements from the MaNGA IFU spaxels.
+In narrow bins of~\oh, we then compute the median~\no~as well as the 16th and
+84th percentiles of the~\no~distribution.
+Placing the median~\no~at~$\Delta\no = 0$, the shaded regions above and below
+0 in Fig.~\ref{fig:schaefer_comp} denote the difference between 16th and 84th
+percentiles of the distribution in each bin.
+\par
+We then compare both of our oscillatory variants to the width of
+the~\no~distribution by plotting the difference in~\no~at fixed~\oh~between
+each variant and the fiducial model (i.e. the vertical offset between the solid
+and dotted lines in the left panel, and the equivalent thereof for the model
+with oscillations in~$\dot{\Sigma}_\star$).
+Both models produce offsets in~\no~at fixed~\oh which, as discussed above, are
+better characterized as offsets in~\oh~at an approximately fixed~\no, but the
+model with oscillations in~$\dot{\Sigma}_\star$ does not predict much of an
+effect at low~\oh.
+This arises out of details in how we have parameterized these models (see
+discussion below).
+Fig.~\ref{fig:schaefer_comp} suggests that our oscillatory models have an
+effect in the~\ohno~plane with an amplitude comparable to the width of the
+relation derived observationally by~\citet{Schaefer2020}.
+This is consistent with their argument that variations in the local SFE are
+the primary source of intrinsic scatter.
+However, our models suggest that the effects of stellar migration are still
+non-negligible.
+These effects are illustrated in the complex features on the curves in
+Fig.~\ref{fig:schaefer_comp}; without migration, they would be smooth and
+featureless as in Fig.~\ref{fig:no_oh_predictions} where we made use of the
+post-processing migration model.
+Fig.~\ref{fig:schaefer_comp} suggests that an amplitude of~$\sim$0.05 dex is
+not uncommon, as shown in Fig.~\ref{fig:no_oh_timeevol} and discussed
+in~\S~\ref{sec:results:fiducial}.
+With our oscillatory models inducing~$\Delta\no \approx 0.1$ dex, migration is
+a smaller but nonetheless non-negligible effect.
+\par
+The difference in predictions by our two oscillatory models at low~\oh~is a
+consequence of the mathematical form of~$\tau_{\star,\text{J21}}$ and the fact
+that we have specified our SFH a priori as opposed to the gas supply or the
+infall history.
+The low~\oh~end of the~\ohno~relation arises at large~\rgal due to the
+metallicity gradient.
+At these radii, our model predicts gas surface densities that are in the
+$\dot{\Sigma}_\star \propto \Sigma_\text{gas}^{3.6}$ portion of our adopted
+$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation (see equation
+\ref{eq:sflaw_indeces} and discussion in~\S~\ref{sec:multizone}).
+However, since these models run from a specified SFH, it is not that the SFH is
+a strong function of the gas supply but rather that the gas supply is a weak
+function of the SFH.
+As a consequence, 25\% oscillations in~$\dot{\Sigma}_\star$ have minimal impact
+on the ISM gas supply and thus the predicted abundances with how we have
+parameterized this model.
+At smaller~\rgal~(i.e. higher~\oh),~$\Sigma_\text{gas}$ varies more strongly
+with~$\dot{\Sigma}_\star$, and as expected the impact on abundances is more
+substantial.
+If we were to adopt an alternate form of the
+$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation, such as a purely linear or
+single power-law formalism as in many other GCE models
+\citep[e.g.][]{Spitoni2019, Spitoni2021, Grisoni2021}, then this effect would
+be seen at all~\oh~when~$\dot{\Sigma}_\star$ oscillates.
+Alternatively, we expect similar results if we were to run an equivalent model
+through~\vice~where we specify the infall history a priori as it would allow
+more direct specification of the amount of dilution during each oscillation.
 
 \end{document}
 
