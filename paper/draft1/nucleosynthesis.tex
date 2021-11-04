@@ -15,10 +15,13 @@ Fe, and we retain their yields of these elements here.
 As required by~\vice, the SN yields are defined as the net mass of some element
 X produced over all explosion events in units of the progenitor cluster's
 mass.
-For example, with a yield of~$y_\text{X} = 0.001$, a hypothetical~$1000 M_\odot$
-star cluster would produce~$1 M_\odot$ of the element X instantaneously in the
+For example, with a yield of~$y_\text{X} = 0.001$, a hypothetical~$1000~\msun$
+star cluster would produce~$1~\msun$ of the element X instantaneously in the
 case of core collapse supernovae (CCSNe) or over the delay-time distribution
 (DTD) in the case of SNe Ia.
+These yields are net yields in that they do not quantify the metal mass
+ejected to the interstellar medium (ISM) that was initially present within a
+star; in the previous example, the~$1~\msun$ yield is all newly produced nuclei.
 We adopt the following values from~\citet{Johnson2021}, who in turn base them
 off of~\citet*{Weinberg2017} and~\citet{Johnson2020}:
 \begin{itemize}
@@ -28,8 +31,10 @@ off of~\citet*{Weinberg2017} and~\citet{Johnson2020}:
 
 	\item $\yia{O} = 0$
 
-	\item $\yia{Fe} = 0.00214$
+	\item $\yia{Fe} = 0.00214$,
 \end{itemize}
+where the subscripts and superscripts differentiate between the element and the
+SN type.
 We also assume that N is not produced in significant amounts by SNe Ia
 \citep{Johnson2019}, and set~$\yia{N} = 0$ throughout this paper
 accordingly.
@@ -51,11 +56,10 @@ CCSN production rate and the star formation rate (SFR):
 \end{equation}
 More generally,~\ycc{X}~quantifies~\textit{all} of the nucleosynthetic material
 approximated to be produced instantaneously following a single stellar
-population's formation, though the majority of such events for which this
-approximation is valid will be associated with massive stars and/or their
-supernovae.
+population's formation, though the majority of such events should be associated
+with massive stars or their SNe.
 In the case of N specifically, a substantial amount emerges in winds before the
-actual supernova itself, allowing massive stars to produce a lot N even if they
+actual SN itself, allowing massive stars to produce a lot N even if they
 collapse directly to a black hole~\citep{Griffith2021a}.
 
 % fig 2
