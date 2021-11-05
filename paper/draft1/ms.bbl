@@ -227,6 +227,12 @@
   \mn@doi [\apjs] {10.1088/0067-0049/219/2/40}, \href
   {https://ui.adsabs.harvard.edu/abs/2015ApJS..219...40C} {219, 40}
 
+\bibitem[\protect\citeauthoryear{{David}, {Forman}  \& {Jones}}{{David}
+  et~al.}{1990}]{David1990}
+{David} L.~P.,  {Forman} W.,   {Jones} C.,  1990, \mn@doi [\apj]
+  {10.1086/169030}, \href
+  {https://ui.adsabs.harvard.edu/abs/1990ApJ...359...29D} {359, 29}
+
 \bibitem[\protect\citeauthoryear{{\noopsort{Delosreyes}{de los Reyes}} \&
   {Kennicutt}}{{\noopsort{Delosreyes}{de los Reyes}} \&
   {Kennicutt}}{2019}]{delosReyes2019}
@@ -285,11 +291,6 @@
 {Governato} F.,  et~al., 2012, \mn@doi [\mnras]
   {10.1111/j.1365-2966.2012.20696.x}, \href
   {https://ui.adsabs.harvard.edu/abs/2012MNRAS.422.1231G} {422, 1231}
-
-\bibitem[\protect\citeauthoryear{{Grevesse} \& {Noels}}{{Grevesse} \&
-  {Noels}}{1993}]{Grevesse1993}
-{Grevesse} N.,  {Noels} A.,  1993, in {Prantzos} N.,  {Vangioni-Flam} E.,
-  {Casse} M.,  eds, Origin and Evolution of the Elements. pp 15--25
 
 \bibitem[\protect\citeauthoryear{{Grevesse} \& {Sauval}}{{Grevesse} \&
   {Sauval}}{1998}]{Grevesse1998}
@@ -450,6 +451,10 @@
   {10.3847/1538-4357/abd3a2}, \href
   {https://ui.adsabs.harvard.edu/abs/2021ApJ...908...61K} {908, 61}
 
+\bibitem[\protect\citeauthoryear{{Kobayashi}}{{Kobayashi}}{2004}]{Kobayashi2004}
+{Kobayashi} C.,  2004, \mn@doi [\mnras] {10.1111/j.1365-2966.2004.07258.x},
+  \href {https://ui.adsabs.harvard.edu/abs/2004MNRAS.347..740K} {347, 740}
+
 \bibitem[\protect\citeauthoryear{{Kodama} \& {Arimoto}}{{Kodama} \&
   {Arimoto}}{1997}]{Kodama1997}
 {Kodama} T.,  {Arimoto} N.,  1997, \aap, \href
@@ -534,12 +539,6 @@
 \bibitem[\protect\citeauthoryear{{Lodders}}{{Lodders}}{2003}]{Lodders2003}
 {Lodders} K.,  2003, \mn@doi [\apj] {10.1086/375492}, \href
   {https://ui.adsabs.harvard.edu/abs/2003ApJ...591.1220L} {591, 1220}
-
-\bibitem[\protect\citeauthoryear{{Lodders}, {Palme}  \& {Gail}}{{Lodders}
-  et~al.}{2009}]{Lodders2009}
-{Lodders} K.,  {Palme} H.,   {Gail} H.~P.,  2009, \mn@doi [Landolt
-  B{\"o}rnstein] {10.1007/978-3-540-88055-4\_34}, \href
-  {https://ui.adsabs.harvard.edu/abs/2009LanB...4B..712L} {4B, 712}
 
 \bibitem[\protect\citeauthoryear{{Maeder} \& {Meynet}}{{Maeder} \&
   {Meynet}}{1989}]{Maeder1989}

@@ -8,43 +8,43 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty publisher in Mihalas1981
 You've used 153 entries,
             2881 wiz_defined-function locations,
-            2068 strings with 60127 characters,
-and the built_in function-call counts, 76661 in all, are:
-= -- 6403
-> -- 5547
-< -- 361
-+ -- 2337
-- -- 883
-* -- 9549
-:= -- 11799
+            2066 strings with 60134 characters,
+and the built_in function-call counts, 76374 in all, are:
+= -- 6387
+> -- 5522
+< -- 359
++ -- 2327
+- -- 878
+* -- 9532
+:= -- 11762
 add.period$ -- 0
 call.type$ -- 153
 change.case$ -- 306
 chr.to.int$ -- 149
 cite$ -- 154
-duplicate$ -- 3693
-empty$ -- 3545
-format.name$ -- 1407
-if$ -- 13454
+duplicate$ -- 3677
+empty$ -- 3522
+format.name$ -- 1398
+if$ -- 13386
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 154
 newline$ -- 472
-num.names$ -- 1082
-pop$ -- 636
+num.names$ -- 1076
+pop$ -- 629
 preamble$ -- 1
 purify$ -- 612
 quote$ -- 0
-skip$ -- 2449
+skip$ -- 2437
 stack$ -- 0
-substring$ -- 4525
-swap$ -- 2283
-text.length$ -- 623
+substring$ -- 4512
+swap$ -- 2265
+text.length$ -- 622
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1374
 warning$ -- 1
-while$ -- 1163
+while$ -- 1161
 width$ -- 0
 write$ -- 1541
 (There was 1 warning)
