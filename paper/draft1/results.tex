@@ -451,9 +451,8 @@ function of~\ofe~in bins of~\oh.
 \end{figure*}
 
 In Fig.~\ref{fig:nh_feh_vs_lookback}, we plot the evolution of N, O, and Fe
-abundances in the gas-phase in the~$\rgal = 4$, 8, and 12 kpc rings in our
-fiducial model with diffusion migration (see discussion
-in~\S~\ref{sec:multizone}).
+abundances in the gas phase at~$\rgal = 4$, 8, and 12 kpc in our fiducial model
+with diffusion migration (see discussion in~\S~\ref{sec:multizone}).
 \nh~is more correlated with~\feh~than~\oh~at all radii, and the relation
 persists up to lookback times of~$\sim$10 Gyr.
 This arises in part because N and Fe are both produced in significant
@@ -461,16 +460,14 @@ quantities by delayed enrichment sources while O is produced almost entirely on
 short timescales by CCSNe (see discussion in~\S~\ref{sec:yields}).
 Although the production timescale of N from single stellar populations is
 short (see discussion in~\S~\ref{sec:yields:imf_agb}), metallicity dependent
-yields require more abundance species such as O to be produced and reach an
+yields require more abundant species such as O to be produced and reach an
 equilibrium before N yields stabilize.
-When many stellar populations are present, N abundances are somewhat limited
-in how fast they can increase due to the metallicity dependent nature of AGB
-star yields.
+When many stellar populations are present, N abundances are thus somewhat
+limited in how fast they can increase.
 \citet{Johnson2020} found similar results regarding Fe and strontium; although
-strontium production timescales from single stellar populations are shorter
-than Fe, the bulk of the strontium production followed the bulk of the Fe
-production in one-zone models because of the metallicity dependence of the
-yields.
+strontium production from single stellar populations is quicker than Fe
+production, the bulk of the strontium followed the bulk of the Fe in one-zone
+models because of the metallicity dependence nature of AGB star yields.
 As a consequence of both its slight delay and its metallicity-dependent
 yields, N reaches its equilibrium abundance on timescales similar to Fe rather
 than O~\citep{Weinberg2017}.
@@ -495,15 +492,15 @@ taken into account.
 \par
 Using~\texttt{MESA} stellar evolution models~\citep{Paxton2011, Paxton2013,
 Paxton2015, Paxton2018} with standard mixing prescriptions,~\citet{Vincenzo2021}
-developed a prescription to approximate the birth abundances of C, N and O
-and apply it to a sample of APOGEE/Kepler red giants.
-They find good agreement between the APOGEE abundances and the
+developed a recipe to approximate birth abundances of C, N and O and applied it
+to a sample of APOGEE/Kepler red giants.
+They found good agreement between the APOGEE abundances and the
 \citet{Dopita2016} measurements, so our fiducial model's successful reproduction
-of the~\citet{Dopita2016} trend is an indication that it also successfully
-reproduces the overall trend of~\no~with~\oh~found for APOGEE disc stars.
-In this section, we focus on the stellar abundances, with which we can
-investigate trends with age and~\ofe.
-\par
+of the~\citet{Dopita2016} trend is an indication that it also reproduces
+the~\ohno~relation for APOGEE disc stars.
+% In this section, we focus on the stellar abundances, with which we can
+% investigate trends with age and~\ofe.
+% \par
 Combining the~\citet{Vincenzo2021}~\no~ratios with the APOGEE stellar ages
 taken from~\citet{Miglio2021}, we illustrate the~\no-age relation in bins
 of~\feh~as predicted by our model in the left panel of Fig.
@@ -511,17 +508,16 @@ of~\feh~as predicted by our model in the left panel of Fig.
 In good agreement with the observational measurements, the model predicts
 the~\no-age relation to be relatively flat in bins of~\feh.
 This arises as a consequence of the N-Fe correlation and the fast approach to
-equilibrium in~\oh~as discussed above (see Fig.~\ref{fig:nh_feh_vs_lookback}):
-a bin in~\feh~approximately corresponds to a bin in~\nh, and with~\oh~more or
-less constant up to a lookback time of~$\sim$10 Gyr, these bins in~\feh~also
-approximately correspond to bins in~\no.
+equilibrium in~\oh~as discussed above (see Fig.~\ref{fig:nh_feh_vs_lookback}).
+A bin in~\feh~approximately corresponds to a bin in~\nh, and by extension a bin
+in~\no~as well since~\oh~is nearly constant up to~$\sim$10 Gyr ago.
 This is an important success of the model, because with uncorrected N
 abundances,~\citet{Vincenzo2021} demonstrate that the~\no-age relation exhibits
 a significant negative slope at fixed~\feh~(see their Fig. 7).
 \par
 In the right panel of Fig.~\ref{fig:vincenzo_comp}, we compare our model
-predictions to the~\no-\ofe~relation reported by~\citet{Vincenzo2021} at
-fixed~\oh.
+predictions to the~\no-\ofe~relation at fixed~\oh~reported by
+\citet{Vincenzo2021}.
 The model correctly predicts a significant inverse relationship
 between~\no~and~\ofe.
 This is again a consequence of the N-Fe correlation demonstrated in
@@ -534,8 +530,8 @@ and low [$\alpha$/Fe] stars in the disc persists (for discussion of the
 Galaxy's two distinct chemical populations see, e.g.,~\citealp{Hayden2015,
 Weinberg2019, Weinberg2021, Griffith2021b}).
 Although the~\citet{Johnson2021} model does not reproduce this infamous
-$\alpha$ bimodality in detail, a future iteration which does should also
-reproduce it for N based on these results.
+$\alpha$ bimodality in detail (see discussion in their~\S~3.3), a future
+iteration which does should also reproduce it for N based on these results.
 \par
 Quantitatively, our model slightly overpredicts~\no~in the lower metallicity
 bins in both panels of Fig.~\ref{fig:vincenzo_comp}.
@@ -546,7 +542,7 @@ slightly too strongly with the total metallicity~$Z$.
 Since our fiducial model assumes an exactly linear scaling of the N yield
 with~$Z$, this suggests that perhaps a slightly sub-linear scaling would be
 more accurate, but only barely because the discrepancies in Fig.
-\ref{fig:vincenzo_comp} are at the~$\lesssim 0.1$ dex level.
+\ref{fig:vincenzo_comp} are at the~$\sim$0.1 dex level.
 
 \subsection{The Sources of Scatter in the~\ohno~Relation}
 \label{sec:results:schaefer_comp}
@@ -607,13 +603,12 @@ where~$\tau_{\star,\text{J21}}$ and~$\dot{\Sigma}_{\star,\text{J21}}$ refer to
 the SFE timescale and the SFH in the fiducial model taken from
 \citet{Johnson2021}.
 In~\hsim, the simulation from which the migration history of our model is drawn,
-we find that the overall SFE declines by a factor of~$\sim$ over the past
+we find that the overall SFE declines by a factor of~$\sim$2 over the past
 $\sim$9 Gyr, an effect which is already built into~$\tau_{\star,\text{J21}}$.
 Additionally, there are variations in the SFE at the~$\sim$25\% level between
-similar radii in the same snapshot as well as at fixed radii between successive
-snapshots.
-Based on this, an amplitude of 25\% should capture typical variations seen in
-these quantities in hydrodynamical simulations.
+similar radii and output times.
+If~\hsim~is a representative example, an amplitude of 25\% should capture
+typical variations seen in these quantities in hydrodynamical simulations.
 However, since~\hsim~has a remarkably quiescent merger history
 \citep{Zolotov2012}, this may change in response to a major accretion event.
 {\color{red} We can revise these few sentences with some observational
@@ -623,7 +618,7 @@ In a real galaxy, variability in the SFE and the SFR is likely non-sinusoidal
 and not with constant amplitude.
 A sample of galaxies will have different amplitudes and be seen at different
 phases in their variability, and the impact of this on their N and O abundances
-will present as intrinsic scatter in the inferred trend.
+will present as intrinsic scatter in a sufficiently large sample.
 By comparing models with and without reasonable amounts of variability in these
 quantities while taking into account radial migration, we can nonetheless
 assess which quantities impact abundances more strongly and are thus the more
@@ -636,9 +631,9 @@ equation~\refp{eq:sfe_var}.
 This model predicts a~$\sim$0.15 dex dynamic range in~\no~at fixed~\oh, whereas
 the fiducial model with no variability in~$\tau_\star$, shown in the dotted
 lines, predicts the relation to be nearly constant over this time interval.
-While this suggests that stellar migration, present in both the fiducial model
-and these oscillatory variants, does not induce significant variability in
-the~\ohno~plane, we demonstrate below that the effects are nonetheless
+This suggests that stellar migration, present in both the fiducial model and
+these oscillatory variants, does not induce significant variability in
+the~\ohno~plane; however, we demonstrate below that its effects are nonetheless
 non-negligible.
 The minimal impact of stellar migration traces back to the timescales of N
 production from single stellar populations (see Fig.~\ref{fig:ssp} and
@@ -647,13 +642,13 @@ within~$\sim$250 Myr of a stellar population's formation, most stars will not
 migrate far from their birth radius by the time they produce most of their N,
 and the resulting impact on abundances is small.
 \par
-The behavior in the~\ohno~plane predicted by our variant with oscillatory SFE
+The behavior in the~\ohno~plane predicted by oscillatory SFE variant
 is driven by the constant tug-of-war between dilution and re-enrichment
 associated with oscillations in~$\tau_\star$.
 In this model,~$\dot{\Sigma}_\star$ is the same as in~\citet{Johnson2021}, so
 it is not the SFR which varies but rather the gas supply.
-When the accretion rate increases, the ISM becomes diluted by gas at a
-primordial abundance, decreasing~\oh.
+When the accretion rate increases, the ISM becomes diluted by low metallicity
+gas, decreasing~\oh.
 Because the AGB star yields of N in these models scale exactly linearly with
 metallicity~$Z$ (see discussion in~\S~\ref{sec:yields:agb}), the decrease in
 the N abundance due to the now lowered yields is in direct proportion to the
@@ -670,12 +665,12 @@ with an amplitude closer to~$\sim$0.25 dex.
 As the gas supply falls off when~$\tau_\star$ decreases, enrichment proceeds
 in a gas-starved ISM, which increases~\oh~once more, but~\no~to a lesser
 extent for similar reasons, and the cycle repeats itself.
-We find similar results when we vary the SFH~$\dot{\Sigma}_\star$.
-In this variant of our model,~$\Sigma_\text{gas}$ and consequently the
-abundances vary instead at a value of~$\tau_\star$ that varies only as much as
-the adopted~$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation from
-\citet{Johnson2021} dictates it should (see discussion
-in~\S~\ref{sec:multizone}).
+We find similar results when we vary the SFH.
+In that variant of our model,~$\Sigma_\text{gas}$ varies instead at a value of
+$\tau_\star$ that varies only as much as the adopted
+$\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation from~\citet{Johnson2021}
+dictates it should (see discussion in~\S~\ref{sec:multizone}), but this
+difference does not significantly impact the predicted abundances.
 \par
 In the middle and right panels of Fig.~\ref{fig:schaefer_comp}, we plot the
 scatter in the gas-phase~\ohno~relation inferred observationally by
@@ -687,8 +682,8 @@ Since our model is appropriate for Milky Way mass galaxies, we focus our
 comparison on the~$M_\star = 10^{10.5} - 10^{11}~\msun$ mass range
 \citep{Licquia2015}, which cuts our sample sample to 197,787 individual N and O
 measurements from the MaNGA IFU spaxels.
-In narrow bins of~\oh, we then compute the median~\no~as well as the 16th and
-84th percentiles of the~\no~distribution.
+In narrow bins of~\oh, we then compute the 16th, 50th, and 84th percentiles of
+the~\no~distribution.
 Placing the median~\no~at~$\Delta\no = 0$, the shaded regions above and below
 0 in Fig.~\ref{fig:schaefer_comp} denote the difference between 16th and 84th
 percentiles of the distribution in each bin.
@@ -698,7 +693,7 @@ the~\no~distribution by plotting the difference in~\no~at fixed~\oh~between
 each variant and the fiducial model (i.e. the vertical offset between the solid
 and dotted lines in the left panel, and the equivalent thereof for the model
 with oscillations in~$\dot{\Sigma}_\star$).
-Both models produce offsets in~\no~at fixed~\oh which, as discussed above, are
+Both models produce offsets in~\no~at fixed~\oh~which, as discussed above, are
 better characterized as offsets in~\oh~at an approximately fixed~\no, but the
 model with oscillations in~$\dot{\Sigma}_\star$ does not predict much of an
 effect at low~\oh.
@@ -715,9 +710,10 @@ These effects are illustrated in the complex features on the curves in
 Fig.~\ref{fig:schaefer_comp}; without migration, they would be smooth and
 featureless as in Fig.~\ref{fig:no_oh_predictions} where we made use of the
 post-processing migration model.
-Fig.~\ref{fig:schaefer_comp} suggests that an amplitude of~$\sim$0.05 dex is
-not uncommon, as shown in Fig.~\ref{fig:no_oh_timeevol} and discussed
-in~\S~\ref{sec:results:fiducial}.
+As shown in Fig.~\ref{fig:no_oh_timeevol} and discussed
+in~\S~\ref{sec:results:fiducial}, stellar migration effects~\no~ratios with
+an amplitude of~$\sim$0.05 dex, and this is apparent in
+Fig.~\ref{fig:schaefer_comp} as well.
 With our oscillatory models inducing~$\Delta\no \approx 0.1$ dex, migration is
 a smaller but nonetheless non-negligible effect.
 \par
@@ -725,7 +721,7 @@ The difference in predictions by our two oscillatory models at low~\oh~is a
 consequence of the mathematical form of~$\tau_{\star,\text{J21}}$ and the fact
 that we have specified our SFH a priori as opposed to the gas supply or the
 infall history.
-The low~\oh~end of the~\ohno~relation arises at large~\rgal due to the
+The low~\oh~end of the~\ohno~relation arises at large~\rgal~due to the
 metallicity gradient.
 At these radii, our model predicts gas surface densities that are in the
 $\dot{\Sigma}_\star \propto \Sigma_\text{gas}^{3.6}$ portion of our adopted
@@ -734,9 +730,9 @@ $\dot{\Sigma}_\star - \Sigma_\text{gas}$ relation (see equation
 However, since these models run from a specified SFH, it is not that the SFH is
 a strong function of the gas supply but rather that the gas supply is a weak
 function of the SFH.
-As a consequence, 25\% oscillations in~$\dot{\Sigma}_\star$ have minimal impact
-on the ISM gas supply and thus the predicted abundances with how we have
-parameterized this model.
+As a consequence, 25\% variability in~$\dot{\Sigma}_\star$ has minimal impact
+on the ISM gas supply and by extension the predicted abundances at these radii
+whereas 25\% variability in~$\tau_\star$ does.
 At smaller~\rgal~(i.e. higher~\oh),~$\Sigma_\text{gas}$ varies more strongly
 with~$\dot{\Sigma}_\star$, and as expected the impact on abundances is more
 substantial.

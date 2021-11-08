@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  8 NOV 2021 12:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  8 NOV 2021 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,43 +1109,42 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.540 Q
-       uantitatively, our model slightly overpredicts~\no~in the lower metal...
- <./nh_feh_vs_lookback.pdf>]
+l.546 
+       <./nh_feh_vs_lookback.pdf>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 551.
+(Font)              scaled to size 7.3pt on input line 547.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 551.
+(Font)              scaled to size 5.5pt on input line 547.
 <no_oh_sfevar.pdf, id=1595, 505.89pt x 505.89pt>
 File: no_oh_sfevar.pdf Graphic file (type pdf)
 <use no_oh_sfevar.pdf>
-Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 556.
+Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 552.
 (pdftex.def)             Requested size: 156.82426pt x 156.82426pt.
 <delta_no_schaefercomp.pdf, id=1596, 1011.78pt x 505.89pt>
 File: delta_no_schaefercomp.pdf Graphic file (type pdf)
 <use delta_no_schaefercomp.pdf>
-Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 557.
+Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 553.
 (pdftex.def)             Requested size: 333.88843pt x 166.9442pt.
 
-Underfull \vbox (badness 1460) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.649 \par
+l.674 \par
            <./no_vs_age.pdf> <./no_vs_ofe.pdf
 
 pdfTeX warning: pdflatex (file ./no_vs_ofe.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3386) has occurred while \output is active []
 
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.10
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.751 
+l.747 
        <./no_oh_sfevar.pdf> <./delta_no_schaefercomp.pdf
 
 pdfTeX warning: pdflatex (file ./delta_no_schaefercomp.pdf): PDF inclusion: mul
@@ -1157,17 +1156,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./acknowledgements.tex) (./ms.bbl [17] [18]
+(./acknowledgements.tex) (./ms.bbl [17]
+Underfull \vbox (badness 1655) has occurred while \output is active []
+
+
 Underfull \hbox (badness 1490) in paragraph at lines 764--766
 []\T1/ntxtlf/m/n/8 Suliga A. M., Shal-gar S., Fuller G. M., 2020, arXiv e-print
 s, [][]p.
  []
 
-) (./vice.tex
+
+Underfull \vbox (badness 1389) has occurred while \output is active []
+
+ [18])
+(./vice.tex
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 5
 .
-
-(/home/modules/texlive/2021/texmf-dist/tex/latex/txfonts/t1txtt.fd
+ (/home/modules/texlive/2021/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <9> not available
@@ -1194,11 +1199,11 @@ Package rerunfilecheck Info: File `ms.out' has not changed.
 Here is how much of TeX's memory you used:
  16535 strings out of 478599
  239319 string characters out of 5853099
- 721467 words of memory out of 5000000
+ 718369 words of memory out of 5000000
  33828 multiletter control sequences out of 15000+600000
  528779 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,81p,1953b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,15n,81p,1953b,774s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1222,10 +1227,10 @@ mf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf-di
 st/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/fon
 ts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/typ
 e1/public/newtx/ztmri.pfb>
-Output written on ms.pdf (19 pages, 1227029 bytes).
+Output written on ms.pdf (19 pages, 1226395 bytes).
 PDF statistics:
- 2351 PDF objects out of 2487 (max. 8388607)
- 2133 compressed objects within 22 object streams
+ 2348 PDF objects out of 2487 (max. 8388607)
+ 2130 compressed objects within 22 object streams
  224 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
