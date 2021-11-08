@@ -5,15 +5,15 @@
 \section{The Multi-Zone Chemical Evolution Model}
 \label{sec:multizone}
 
-We use the fiducial chemical evolution model for the Milky Way published in
-\citet{Johnson2021}, which runs using the~\vice~chemical evolution code
-(\citealp{Johnson2020, Griffith2021a}; see Appendix~\ref{sec:vice}).
+We use the fiducial model for the Milky Way published in
+\citet{Johnson2021}, which runs using the~\vice~GCE code (see Appendix
+\ref{sec:vice};~\citealp{Johnson2020, Griffith2021a}).
 \citet{Johnson2021} focus their discussion on the predicted O and Fe
 abundances, but because~\vice~recognizes most elements on the periodic table,
 computing N abundances with this model is easy.
-Multi-zone models allow simultaneous calculations of enrichment rates and
-abundances for multiple Galactic regions, making them a more appealing option
-than classical one-zone models for a system like the Milky Way.
+Multi-zone models allow simultaneous calculations of abundances for multiple
+Galactic regions, making them a more realistic option than classical one-zone
+models for a system like the Milky Way.
 Furthermore, they can take into account stellar migration in a framework that
 is much less computationally expensive than hydrodynamical simulations, making
 them the ideal experiments for our purposes.
@@ -22,27 +22,28 @@ in~\S~2 of~\citet{Johnson2021}.
 \par
 As in previous models for the Milky Way~\citep[e.g.][]{Matteucci1989,
 Schoenrich2009, Minchev2013, Minchev2014, Minchev2017, Sharma2021}, this model
-parameterizes the Galaxy disc as a series of concentric rings of uniform width
-$\delta\rgal = 100$ pc.
-Each ring is assigned its own star formation history (SFH), and with
-assumptions about the~$\Sigma_\text{gas}-\dot{\Sigma}_\star$ and outflows (see
-discussion below),~\vice~computes the implied amounts of gas and infall at each
-timestep automatically.
-Under the caveat that stellar populations can move between rings and place
-their nucleosynthetic products in a ring other than the one they were born in,
-each ring is otherwise described by a conventional one-zone GCE model.
-Tracking enrichment as stars migrate was a novel addition by the
-\citet{Johnson2021} model which they demonstrate to have a significant impact
-on the enrichment rates from delayed sources such as SNe Ia.
+parameterizes the Galaxy disc as a series of concentric rings.
+With a uniform width of~$\delta\rgal = 100$ pc, each ring is assigned its own
+star formation history (SFH), and with assumptions about outflows and the
+$\Sigma_\text{gas}-\dot{\Sigma}_\star$ relation (see discussion
+below),~\vice~computes the implied amounts of gas and infall at each timestep
+automatically.
+Under the caveat that stellar populations can move and place some of their
+nucleosynthetic products in a ring other than the one they were born in, each
+ring is otherwise described by a conventional one-zone GCE model.
+Allowing stars to enrich a distribution of radii was a novel addition to these
+models, and~\citet{Johnson2021} demonstrated that this has a significant impact
+on enrichment rates from delayed sources such as SNe Ia.
 \par
 To drive stellar migration, the model makes use of star particles from a
 hydrodynamical simulation, for which~\citet{Johnson2021} select the~\hsim~galaxy
 from the~\citet{Christensen2012} suite evolved with the N-body+SPH code
 \texttt{GASOLINE}~\citep[][SPH: Smoothed Particle Hydrodynamics]{Wadsley2004};
 we retain this decision here.
-The star particles with reliable birth radii from~\hsim~span a range of 13.2
-Gyr in age, so our model places the onset of star formation~$\sim$500 Myr
-after the big bang and integrates up to the present day.
+\hsim~spans 13.7 Gyr of evolution, but the sample of star particles with
+reliable birth radii span 13.2 Gyr in age; the model thus places the onset of
+star formation~$\sim$500 Myr after the big bang and integrates up to the
+present day.
 Previous studies have shown that~\hsim, among other disc galaxies evolved with
 similar physics, has a realistic rotation curve~\citep{Governato2012,
 Christensen2014a, Christensen2014b}, stellar mass~\citep{Munshi2013},
@@ -51,23 +52,23 @@ metallicity~\citep{Christensen2016}, dwarf satellite population
 age-velocity relation~\citep{Bird2021}.
 Despite this, there are some interesting differences between~\hsim~and the
 Milky Way.
-First and foremost,~\hsim~had only a weak and transient bar, lacking one at the
-present day, while the Milky Way is known to have a strong, long-lived central
-bar~\citep[e.g.][]{Bovy2019}.
+First and foremost,~\hsim~had only a weak and transient bar and lacks one at
+the present day, while the Milky Way is known to have a strong, long-lived
+central bar~\citep[e.g.][]{Bovy2019}.
 This could indicate that the dynamical history of~\hsim~and its star particles
 differs significantly from that of the Milky Way.
 Furthermore, the last major merger in~\hsim~was at a redshift of~$z \approx 3$,
 making it an interesting case study for its quiescent merger history
-\citep[e.g.][]{Zolotov2012}, while the Sagitarrius dwarf galaxy, a relatively
-massive satellite, is believed to have made pericentric passages around the
-Milky Way at~$1 - 2$ Gyr intervals~\citep{Law2010}.
+\citep[e.g.][]{Zolotov2012}, while the Sagitarrius dwarf galaxy is believed to
+have made pericentric passages around the Milky Way at~$1 - 2$ Gyr
+intervals~\citep{Law2010}.
 With this in mind, a dynamical history such as that of~\hsim~in this GCE model
 can be thought of as capturing purely secular galaxy evolution.
 Although these differences between~\hsim~and the Milky Way are well understood,
 their impact on chemical evolution is not.
 We are unaware of any studies which investigate the impact of different
 assumptions regarding the Galaxy's dynamical history and the subsequent effects
-on predicted abundances; this would be an interesting direction for future work.
+on predicted abundances; we plan to pursue this question in future work.
 \par
 Radial migration of stars proceeds from the~\hsim~star particles in a simple
 manner; for a stellar population in our model born at a radius~\rgal~and a
@@ -80,11 +81,11 @@ the change in orbital radius~$\Delta\rgal$ of its analogue.
 In the~\citet{Johnson2021} fiducial model, stellar populations move to their
 implied final radii with a~$\sqrt{\text{age}}$ dependence, similar to the
 assumption made by~\citet{Frankel2018, Frankel2019}.
-Although they investigate other assumptions for this time-dependence, in the
-present paper we make use of only this model (hereafter referred to as the
-``diffusion'' model) and an idealized one in which stars remain at their birth
-radius and then instantaneously migrate at the present day (hereafter referred
-to as the ``post-processing'' model).
+Although~\citet{Johnson2021} investigated other assumptions for this
+time-dependence, in the present paper we only use this parameterization
+(hereafter referred to as the ``diffusion'' model) and an idealized one in
+which stars remain at their birth radius until they instantaneously migrate at
+the present day (hereafter referred to as the ``post-processing'' model).
 If~\vice~does not find any star particles from~\hsim~in its initial
 $\rgal \pm 250$ pc and~$T \pm 250$ Myr search, it widens it to
 $\rgal \pm 500$ pc and~$T \pm 500$ Myr; if still no candidate analogues are
@@ -97,36 +98,38 @@ As in~\citet{Johnson2021}, we neglect radial gas flows
 \citep[e.g.][]{Lacey1985, Bilitewski2012, Vincenzo2020}, instead focusing on
 the impact of stellar migration.
 \par
-Although this model does impose some small but nonzero level of star formation
-at early times in the outer disc, the sample of star particles from~\hsim~is
-sufficiently large such that stellar populations that form there are typically
-assigned analogues which formed within~$\sim$2 kpc of their birth radius.
-While ignoring effects such as the radial growth of the Galaxy (e.g.
-\citealp*{Bird2012};~\citealp{Bird2013}), this at least ensures that these old,
-outer disc populations are assigned star particles which given them an outer
-disc rather than an inner disc dynamical history.
-\par
+% Although this model does impose some small but nonzero level of star formation
+% at early times in the outer disc, the sample of star particles from~\hsim~is
+% sufficiently large such that stellar populations that form there are typically
+% assigned analogues which formed within~$\sim$2 kpc of their birth radius.
+% While ignoring effects such as the radial growth of the Galaxy (e.g.
+% \citealp*{Bird2012};~\citealp{Bird2013}), this at least ensures that these old,
+% outer disc populations are assigned star particles which given them an outer
+% disc rather than an inner disc dynamical history.
+% \par
 Rather than using a hydrodynamical simulation, some previous studies have
 implemented stellar migration using dynamical arguments
 \citep[e.g.][]{Schoenrich2009, Sharma2021}.
 An advantage of our approach over this is that these dynamical arguments
-introduce free parameters into the modelw hich then require fitting to data.
-It is also unclear the extent to which fitting to observed data biases the
-model into agreement with parts of the sample not involved in the fit.
-A disadvantage is that we are restricted to one realization of our dynamical
-history; slight variations are not possible.
-We do not distinguish between ``blurring'' and ``churning'': terms often used
+introduce free parameters which then require fitting to data.
+It is also unclear to what extent the fit might bias the model into agreement
+with quantities in the sample not involved in the fit.
+A disadvantage of our approach is that we are restricted to one realization of
+our dynamical history; slight variations are not possible.
+We do not distinguish between ``blurring'' and ``churning,'' terms often used
 to refer to the epicyclic motions of stars and changes in their guiding centre
 radii, respectively.
 These effects are induced by a variety of physical interactions such as
 molecular cloud scattering~\citep{Mihalas1981, Jenkins1990, Jenkins1992},
 orbital resonances with spiral arms or bars~\citep{Sellwood2002, Minchev2011},
-and satellite perturbations~\citep{Bird2012}.
-All of these effects are present in~\hsim~and should therefore be inherited to
-some extent by the stellar populations in our GCE model.
+and satellite perturbations~\citep*{Bird2012}.
+Although our model neglects the effects of blurring by assuming smooth
+migration with a~$\sqrt{\text{age}}$ dependence (see discussion above), all of
+these effects are present in~\hsim, and consequently realistic churning should
+simply be inherited by the stellar populations in our model.
 \par
-Our fiducial model here has the same SFH as that of~\citet{Johnson2021}, where
-the time-dependence at a given~\rgal~is given by
+We assume the SFH of the ``inside-out'' model from~\citet{Johnson2021}.
+The time-dependence at a known~\rgal~is given by
 \begin{equation}
 \dot{\Sigma}_\star \propto (1 - e^{-t / \tau_\text{rise}})
 e^{-t/\tau_\text{sfh}},
@@ -134,7 +137,7 @@ e^{-t/\tau_\text{sfh}},
 where~$\tau_\text{rise}$ approximately controls the amount of time the SFR is
 rising at early times; we set this parameter equal to 2 Gyr at all radii as in
 \citet{Johnson2021}.
-Our e-folding timescales of~$\tau_\text{sfh}$ are taken from a fit to this
+Our e-folding timescales of~$\tau_\text{sfh}$ are taken from a fit of this
 functional form to the~$\Sigma_\star$-age relation in bins of~$R / R_\text{e}$
 for~$10^{10.5} - 10^{11}~M_\odot$ Sa/Sb Hubble type spiral galaxies reported
 by~\citet{Sanchez2020}.
@@ -145,9 +148,9 @@ This is a consequence of flat nature of the~$\Sigma_\star$-age relation
 reported by~\citet{Sanchez2020}.
 \par
 Within each~$\delta\rgal = 100$ pc ring, the normalization of the SFH is set by
-the total stellar mass of the Milky Way disc and the present-day surface
-density gradient assuming it is unaffected by stellar migration (see Appendix
-B of~\citealp{Johnson2021}).
+the total stellar mass of the Milky Way disc and the present-day stellar
+surface density gradient, assuming that it is unaffected by migration (see
+Appendix B of~\citealp{Johnson2021}).
 For the former, we neglect the contribution from the bulge and adopt the total
 disc stellar mass of~$5.17\times10^{10}~M_\odot$ from~\citet{Licquia2015}.
 For the latter, we adopt a double exponential form describing the thin- and
@@ -157,26 +160,28 @@ kpc and~$R_\text{T} = 2.0$ kpc, respectively, with a surface density ratio
 at~\rgal~= 0 of~$\Sigma_\text{T} / \Sigma_\text{t} = 0.27$ based on the
 findings of~\citet{Bland-Hawthorn2016}.
 \par
-The~\citet{Johnson2021} models run~\vice~in star formation mode, meaning that
-the user specifies the SFH and the amount of gas and infall at each timestep
-are calculated automatically by the code.
-Determining the gas supply requires an assumption about the star formation 
+% The~\citet{Johnson2021} models run~\vice~in star formation mode, meaning that
+% the user specifies the SFH and the amount of gas and infall at each timestep
+% are calculated automatically by the code.
+Since the~\citet{Johnson2021} models run~\vice~with the SFH specified a priori,
+determining the gas supply requires an assumption about the star formation 
 law (often referred to as ``star formation efficiency'' in the chemical
 evolution literature, though this term often has other meanings in, e.g., the
 star formation and feedback community).
-GCE models have and often still do adopt a single power-law relating the
-surface density of gas~$\Sigma_\text{gas}$ to the surface density of star
-formation~$\dot{\Sigma}_\star$ based on the findings of~\citet{Kennicutt1998}.
+GCE models often adopt a single power-law relating the surface density of gas
+$\Sigma_\text{gas}$ to the surface density of star formation
+$\dot{\Sigma}_\star$ based on the findings of~\citet{Kennicutt1998}.
 Recent studies, however, have revealed that the star formation law on a
 galaxy-by-galaxy basis is much more nuanced~\citep{delosReyes2019, Ellison2021,
 Kennicutt2021}.
-Some of the uncertainty regarding its details can be tracked back to the
+Some of the uncertainty regarding its details can be traced back to the
 ongoing debate about the CO-to-H$_2$ conversion factor (\citealp{Kennicutt2012};
 \citealp*{Liu2015}).
 Based on a compilation of the~\citet{Bigiel2010} and~\citet{Leroy2013} data
 shown in comparison to the theoretically motivated star formation laws of
 \citet[][see their Fig. 2]{Krumholz2018},~\citet{Johnson2021} take a
-three-component power-law as their star formation law with index given by:
+three-component power-law as their $\dot{\Sigma}_\star - \Sigma_\text{gas}$
+relation with index given by:
 \begin{equation}
 N =
 \begin{cases}
@@ -187,36 +192,33 @@ N =
 \end{cases}
 \label{eq:sflaw_indeces}
 \end{equation}
-The normalization of the star formation law is then set by letting the SFE
-timescale~$\tau_\star \equiv \Sigma_\text{gas} / \dot{\Sigma}_\star$ be given
-by the value derived observationally for molecular gas at surface densities
-where~$N = 1$.
-The value of~$\tau_\star$ for molecular gas at the present day is taken to be
-$\tau_{\text{mol},0} = 2$ Gyr based on~\citet{Leroy2008, Leroy2013} with a
-$t^{1/2}$ time-dependence based on the findings of~\citet{Tacconi2018} studying
-the~$\Sigma_\text{gas} - \dot{\Sigma}_\star$ relation as a function of
-redshift.
+The normalization is set by letting the SFE timescale
+$\tau_\star \equiv \Sigma_\text{gas} / \dot{\Sigma}_\star$ at surface densities
+where~$N = 1$ be given by the value derived observationally for molecular gas,
+denoted by~$\tau_\text{mol}$.
+This value at the present day is taken to be~$\tau_{\text{mol},0} = 2$ Gyr
+\citep{Leroy2008, Leroy2013} with a~$t^{1/2}$ time-dependence based on the
+findings of~\citet{Tacconi2018} studying the redshift evolution of the
+$\Sigma_\text{gas} - \dot{\Sigma}_\star$ relation.
 \par
 Because of the yields adopted in the~\citet{Johnson2021} models, considerable
 outflows are required in order to predict plausible abundances.
-\citet{Weinberg2017} demonstrate analytically that to first order the
-equilibrium abunadnce of some element in the gas phase is determined by its
-yield and the mass loading factor
-$\eta = \dot{\Sigma}_\text{out} / \dot{\Sigma}_\star$ with a small correction
-for the SFH.
-\citet{Johnson2021} make use of this to select a scaling of~$\eta$
-with~\rgal~such that the equilibrium abundance as a function fo radius
-corresponds to a reasonable metallicity gradient within the Galaxy (see their
-Fig. 3 and discussion in their~\S~3.1).
-Nonetheless, one can lower all yields and~$\eta$ at all~\rgal~by similar
-factors, and with all other model parameters held fixed, GCE models in general
-make similar predictions.
+\citet{Weinberg2017} demonstrate analytically that the equilibrium abundance of
+some element in the gas phase is approximately determined by its yield and the
+mass loading factor~$\eta \equiv \dot{\Sigma}_\text{out} / \dot{\Sigma}_\star$
+with a small correction for the SFH.
+\citet{Johnson2021} select a scaling of~$\eta$ with~\rgal~such that the
+equilibrium abundance as a function of radius corresponds to a reasonable
+metallicity gradient within the Galaxy (see their Fig. 3 and discussion in
+their~\S~3.1).
+Nonetheless, these parameters are mutually degenerate since they act as source
+and sink terms in computing enrichment rates.
 The absolute scale of nucleosynthetic yields is a topic of debate (see
-discussion in, e.g.,~\citealp{Griffith2021a}), and some authors argue that
-outflows do not significantly alter the chemical evolution of the Galaxy disc
-and neglect them entirely~\citep[e.g.][]{Spitoni2019, Spitoni2021}.
+discussion in, e.g.,~\citealp{Griffith2021a}), and some authors even neglect
+outflows entirely, arguing that they do not significantly alter the chemical
+evolution of the Galaxy disc~\citep[e.g.][]{Spitoni2019, Spitoni2021}.
 We investigate the impact of simultaneous variations in our yields and the
-efficiency of outflows in our models in~\S~\ref{sec:results:yields} below.
+efficiency of outflows in~\S~\ref{sec:results:yields} below.
 
 \end{document}
 

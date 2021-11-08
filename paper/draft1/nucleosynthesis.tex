@@ -114,8 +114,8 @@ Lagarde2012}, could transport newly produced C and O into the hydrogen burning
 shell of the CCSN progenitor, facilitating~\Nfourteen~production
 (\citealp{Frischknecht2016}; see also discussion in~\S~4.2 of
 \citealp{Andrews2017}).
-For this reason, N yields at low metallicity are quite sensitive to these
-assumptions about stellar rotation and internal mixing processes
+Consequently, N yields at low metallicity are quite sensitive to model-dependent
+assumptions regarding stellar rotation and internal mixing processes
 \citep{Heger2010}.
 \par
 Based on the definition of the abundance ratio [X/Y], we can compute
@@ -150,16 +150,16 @@ being nucleosynthetic in origin, reflecting a ``primary'' yield which does not
 depend on a stellar population's initial metallicity and a ``secondary'' yield
 which does~\citep[e.g.][]{PerezMontero2009, Berg2012, Pilyugin2012,
 Andrews2013}.
-The metallicity independent nature of both~\ycc{N}~and~\no\subcc~as predicted
-by~\citet{Limongi2018} suggests that rotating massive stars make up the primary
-component of the yield (at least in part).
+The metallicity independent nature of~\ycc{N}~as predicted by
+\citet{Limongi2018} suggests that rotating massive stars contribute to the
+primary yield component.
 If we assume~\no\subcc~=~$-0.7$ as suggested by Fig.~\ref{fig:no_oh_observed}
 and our adopted O yield of~$\ycc{O} = 0.015$, equation~\refp{eq:no_subcc}
-suggests that~$\ycc{N} = 3.6\times10^{-4}$.
+suggests that~$\ycc{N} = 3.6\times10^{-4}$, which we adopt as our fiducial
+N yield.
 We highlight this value with the horizontal dashed black line in the left panel
 of Fig.~\ref{fig:n_cc_yields}, again finding good agreement with the rotating
-CCSN models of~\citet{Limongi2018}.
-We adopt this value as our fiducial value of~\ycc{N}.
+progenitor models of~\citet{Limongi2018}.
 \par
 The~\citet{Sukhbold2016} tables agree nearly perfectly with our empirical value
 of~$\ycc{N} = 3.6\times10^{-4}$, but they overpredict~\no\subcc~by~$\sim$0.2
@@ -176,13 +176,27 @@ of solar.
 This implies the need for an additional enrichment channel, which is expected
 because it is well understood that N is also produced in considerable amounts
 by AGB stars~\citep{Johnson2019}.
-Believed to depend on the metallicity of the progenitor, those yields likely
-make up the secondary componenent of N production (see discussion
-in~\S~\ref{sec:yields:agb} below and references therein).
 
 
 \subsection{Asymptotic Giant Branch Stars}
 \label{sec:yields:agb}
+
+Similar to our SN yields (see discussion in~\S~\ref{sec:yields:ccsne}), our
+AGB star yields are fractional net yields in that they quantify only the newly
+produced mass of an element X in units of the progenitor star's zero-age main
+sequence (ZAMS) mass.
+For a yield~$\yagb{X}$, the mass yield is given by~$M_\star \yagb{X}$.
+AGB star enrichment proceeds as it does in~\citet{Johnson2020} under the caveat
+that the yield is placed in the~$\delta\rgal = 100$ pc ring that a stellar
+population is in at a given time, allowing stars to enrich a distribution of
+radii as well as their birth ring.
+In short,~\vice~implements an algorithm which computes the mass in dying stars
+from each stellar population, and the ZAMS mass required to compute the
+fractional yield comes from a mass-lifetime relationship; for the latter, we
+adopt the parabola in~$\log\tau - \log m$ space from~\citet{Larson1974} with
+updated coefficients from~\citet{Kobayashi2004} and~\citet*{David1990} (see
+discussion of the mass-lifetime relationship in~\vice~in Appendix
+\ref{sec:vice}).
 
 % fig 3
 \begin{figure*}
@@ -207,23 +221,6 @@ the~\citet[][coloured X's]{Cristallo2011, Cristallo2015} predictions.
 \label{fig:agb_yield_models}
 \end{figure*}
 
-Similar to our SN yields (see discussion in~\S~\ref{sec:yields:ccsne}), our
-AGB star yields are fractional net yields in that they quantify only the newly
-produced mass of an element X in units of the progenitor star's zero-age main
-sequence (ZAMS) mass.
-For a yield~$\yagb{X}$, the mass yield is given by~$M_\star \yagb{X}$.
-AGB star enrichment proceeds as it does in~\citet{Johnson2020} under the caveat
-that the yield is placed in the~$\delta\rgal = 100$ pc ring that a stellar
-population is in at a given time, allowing stars to enrich a distribution of
-radii as well as their birth ring.
-In short,~\vice~implements an algorithm which computes the mass in dying stars
-from each stellar population, and the ZAMS mass required to compute the
-fractional yield comes from a mass-lifetime relationship; for the latter, we
-adopt the parabola in~$\log\tau - \log m$ space from~\citet{Larson1974} with
-updated coefficients from~\citet{Kobayashi2004} and~\citet*{David1990} (see
-discussion of the mass-lifetime relationship in~\vice~in Appendix
-\ref{sec:vice}).
-\par
 Here we make use of four previously published tables of AGB star yields
 calculated from stellar evolution models, each of which are sampled on a grid
 of progenitor masses and metallicities.
@@ -480,6 +477,33 @@ exactly as expected for a~$\sim t^{-1}$ DTD because half of the SNe Ia occur
 between 100 Myr and 1 Gyr and and the other half between 1 Gyr and 10 Gyr.
 Because of this, most of the N from single stellar populations is produced on
 much shorter timescales than Fe in our GCE model.
+\par
+We clarify that this characteristic AGB star delay time applies~\textit{only}
+to N.
+The DTD of AGB star enrichment is dictated by both the stellar mass-lifetime
+relation and the mass dependence of the yields from AGB stars.
+In general, various elements have a different mass dependence to their AGB
+star yield, and consequently, the associated DTD differs from element to
+element.
+N is somewhat unique in that its yields are dominated by high mass AGB stars,
+and generally these yields are at the expense of C and O isotopes consumed
+during HBB~\citep{Ventura2013}.
+Other elements produced by the s-process often have the highest yields from
+lower mass AGB stars (e.g. strontium, for which the yields as reported by
+\citealp{Cristallo2011, Cristallo2015} are dominated by
+$M_\text{ZAMS} = 2 - 3~\msun$ progenitors; see Fig. 5 of
+\citealp{Johnson2020}).
+The characteristic delay time of AGB star production will be as long as 10 Gyr
+if and only if the yields are dominated by~$\sim$1~\msun~stars.
+Due to the steep nature of the mass-lifetime relation~\citep[e.g.][]{Larson1974,
+Maeder1989, Padovani1993}, elements whose yields are dominated by slightly more
+massive AGB stars will be produced on significantly shorter timescales (e.g.
+2~\msun~stars live only~$\sim$1 Gyr).
+Since the AGB star DTD should in principle differ from element to element, we
+caution against interpretations of AGB star nucleosynthesis which attribute
+a single characteristic delay time to this enrichment channel as that is likely
+only accurate for order of magnitude estimates and could lead to potentially
+spurrious conclusions.
 \par
 In the right panel of Fig.~\ref{fig:ssp}, we plot the total amount of N
 produced by a 13.2 Gyr old single stellar population as a function of its

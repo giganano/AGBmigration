@@ -107,13 +107,6 @@
   {10.1111/j.1365-2966.2011.19728.x}, \href
   {https://ui.adsabs.harvard.edu/abs/2012MNRAS.420..913B} {420, 913}
 
-\bibitem[\protect\citeauthoryear{{Bird}, {Kazantzidis}, {Weinberg}, {Guedes},
-  {Callegari}, {Mayer}  \& {Madau}}{{Bird} et~al.}{2013}]{Bird2013}
-{Bird} J.~C.,  {Kazantzidis} S.,  {Weinberg} D.~H.,  {Guedes} J.,  {Callegari}
-  S.,  {Mayer} L.,   {Madau} P.,  2013, \mn@doi [\apj]
-  {10.1088/0004-637X/773/1/43}, \href
-  {https://ui.adsabs.harvard.edu/abs/2013ApJ...773...43B} {773, 43}
-
 \bibitem[\protect\citeauthoryear{{Bird}, {Loebman}, {Weinberg}, {Brooks},
   {Quinn}  \& {Christensen}}{{Bird} et~al.}{2021}]{Bird2021}
 {Bird} J.~C.,  {Loebman} S.~R.,  {Weinberg} D.~H.,  {Brooks} A.~M.,  {Quinn}
@@ -152,6 +145,10 @@
   {Stilp} A.,  {Quinn} T.~R.,   {Wadsley} J.,  2017, \mn@doi [\apj]
   {10.3847/1538-4357/aa9576}, \href
   {https://ui.adsabs.harvard.edu/abs/2017ApJ...850...97B} {850, 97}
+
+\bibitem[\protect\citeauthoryear{{Buck}}{{Buck}}{2020}]{Buck2020}
+{Buck} T.,  2020, \mn@doi [\mnras] {10.1093/mnras/stz3289}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.5435B} {491, 5435}
 
 \bibitem[\protect\citeauthoryear{{Bundy} et~al.,}{{Bundy}
   et~al.}{2015}]{Bundy2015}
@@ -620,6 +617,11 @@
   et~al.}{2013}]{Munshi2013}
 {Munshi} F.,  et~al., 2013, \mn@doi [\apj] {10.1088/0004-637X/766/1/56}, \href
   {https://ui.adsabs.harvard.edu/abs/2013ApJ...766...56M} {766, 56}
+
+\bibitem[\protect\citeauthoryear{{Nidever} et~al.,}{{Nidever}
+  et~al.}{2014}]{Nidever2014}
+{Nidever} D.~L.,  et~al., 2014, \mn@doi [\apj] {10.1088/0004-637X/796/1/38},
+  \href {https://ui.adsabs.harvard.edu/abs/2014ApJ...796...38N} {796, 38}
 
 \bibitem[\protect\citeauthoryear{{Nomoto}, {Kobayashi}  \& {Tominaga}}{{Nomoto}
   et~al.}{2013}]{Nomoto2013}
