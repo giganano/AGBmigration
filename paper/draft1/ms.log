@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  8 NOV 2021 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2021.9.1)  9 NOV 2021 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -887,11 +887,11 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 9.0pt on input line 14.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.2pt on input line 18.
-<no_oh_observed.pdf, id=87, 867.24pt x 505.89pt>
+<no_oh_observed.pdf, id=87, 650.43pt x 361.35pt>
 File: no_oh_observed.pdf Graphic file (type pdf)
 <use no_oh_observed.pdf>
 Package pdftex.def Info: no_oh_observed.pdf  used on input line 37.
-(pdftex.def)             Requested size: 390.2544pt x 227.64839pt.
+(pdftex.def)             Requested size: 409.77307pt x 227.6517pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
@@ -918,11 +918,11 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 61.
-<n_cc_yields.pdf, id=383, 1011.78pt x 505.89pt>
+<n_cc_yields.pdf, id=383, 722.7pt x 361.35pt>
 File: n_cc_yields.pdf Graphic file (type pdf)
 <use n_cc_yields.pdf>
 Package pdftex.def Info: n_cc_yields.pdf  used on input line 71.
-(pdftex.def)             Requested size: 455.2968pt x 227.64839pt.
+(pdftex.def)             Requested size: 455.3034pt x 227.6517pt.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 8.0pt on input line 91.
 
@@ -943,11 +943,11 @@ xmi/m/it/9 y[]$ \T1/ntxtlf/m/n/9 us-ing
                                                   \__shipout_drop_firstpage_...
 l.200 
        <./n_cc_yields.pdf>]
-<agb_yield_models.pdf, id=544, 1445.4pt x 1084.05pt>
+<agb_yield_models.pdf, id=549, 1084.05pt x 722.7pt>
 File: agb_yield_models.pdf Graphic file (type pdf)
 <use agb_yield_models.pdf>
 Package pdftex.def Info: agb_yield_models.pdf  used on input line 204.
-(pdftex.def)             Requested size: 462.53746pt x 346.90309pt.
+(pdftex.def)             Requested size: 487.818pt x 325.21199pt.
 
 Underfull \hbox (badness 3942) in paragraph at lines 243--243
 $[]$ [][]\T1/ntxtlf/m/n/8 We clar-ify that our ab-bre-vi-a-tions of these pa-pe
@@ -958,22 +958,22 @@ rs (i.e. [][]K10[][],
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-<agb_yield_models_imfweighted.pdf, id=741, 505.89pt x 505.89pt>
+<agb_yield_models_imfweighted.pdf, id=746, 361.35pt x 361.35pt>
 File: agb_yield_models_imfweighted.pdf Graphic file (type pdf)
 <use agb_yield_models_imfweighted.pdf>
 Package pdftex.def Info: agb_yield_models_imfweighted.pdf  used on input line 4
 03.
-(pdftex.def)             Requested size: 161.88809pt x 161.88809pt.
-<ssp_production_modelcomp.pdf, id=742, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
+<ssp_production_modelcomp.pdf, id=747, 361.35pt x 361.35pt>
 File: ssp_production_modelcomp.pdf Graphic file (type pdf)
 <use ssp_production_modelcomp.pdf>
 Package pdftex.def Info: ssp_production_modelcomp.pdf  used on input line 404.
-(pdftex.def)             Requested size: 161.88809pt x 161.88809pt.
-<ssp_production_metdep.pdf, id=743, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
+<ssp_production_metdep.pdf, id=748, 361.35pt x 361.35pt>
 File: ssp_production_metdep.pdf Graphic file (type pdf)
 <use ssp_production_metdep.pdf>
 Package pdftex.def Info: ssp_production_metdep.pdf  used on input line 405.
-(pdftex.def)             Requested size: 161.88809pt x 161.88809pt.
+(pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
 
 Underfull \hbox (badness 7012) in paragraph at lines 425--441
 \T1/ntxtlf/m/n/9 To more di-rectly com-pare the [][]K10[][], [][]KL16[][]+[][]K
@@ -986,7 +986,7 @@ has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.441 \par
            <./agb_yield_models.pdf>]
-Underfull \vbox (badness 7504) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1009,12 +1009,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8])
 (./results.tex
-<no_oh_superposition.pdf, id=1091, 505.89pt x 505.89pt>
+<no_oh_superposition.pdf, id=1103, 505.89pt x 505.89pt>
 File: no_oh_superposition.pdf Graphic file (type pdf)
 <use no_oh_superposition.pdf>
 Package pdftex.def Info: no_oh_superposition.pdf  used on input line 14.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_oh_timeevol.pdf, id=1092, 505.89pt x 505.89pt>
+<no_oh_timeevol.pdf, id=1104, 505.89pt x 505.89pt>
 File: no_oh_timeevol.pdf Graphic file (type pdf)
 <use no_oh_timeevol.pdf>
 Package pdftex.def Info: no_oh_timeevol.pdf  used on input line 15.
@@ -1022,23 +1022,23 @@ Package pdftex.def Info: no_oh_timeevol.pdf  used on input line 15.
  [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<no_oh_predictions_unmodified.pdf, id=1183, 505.89pt x 505.89pt>
+<no_oh_predictions_unmodified.pdf, id=1195, 361.35pt x 361.35pt>
 File: no_oh_predictions_unmodified.pdf Graphic file (type pdf)
 <use no_oh_predictions_unmodified.pdf>
 Package pdftex.def Info: no_oh_predictions_unmodified.pdf  used on input line 1
 55.
-(pdftex.def)             Requested size: 161.88809pt x 161.88809pt.
-<no_oh_predictions.pdf, id=1184, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
+<no_oh_predictions.pdf, id=1196, 361.35pt x 361.35pt>
 File: no_oh_predictions.pdf Graphic file (type pdf)
 <use no_oh_predictions.pdf>
 Package pdftex.def Info: no_oh_predictions.pdf  used on input line 156.
-(pdftex.def)             Requested size: 161.88809pt x 161.88809pt.
-<no_oh_predictions_karakas.pdf, id=1185, 505.89pt x 505.89pt>
+(pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
+<no_oh_predictions_karakas.pdf, id=1197, 361.35pt x 361.35pt>
 File: no_oh_predictions_karakas.pdf Graphic file (type pdf)
 <use no_oh_predictions_karakas.pdf>
 Package pdftex.def Info: no_oh_predictions_karakas.pdf  used on input line 157.
 
-(pdftex.def)             Requested size: 161.88809pt x 161.88809pt.
+(pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
  [10pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1064,9 +1064,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.280 I
-       f the~\karakasten~yields are to reproduce the observations, the overa...
- <./no_oh_predictions_unmodified.pdf> <./no_oh_predictions.pdf
+l.283 \begin{equation}
+                       <./no_oh_predictions_unmodified.pdf> <./no_oh_prediction
+s.pdf
 
 pdfTeX warning: pdflatex (file ./no_oh_predictions.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
@@ -1075,7 +1075,7 @@ e pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./no_oh_predictions_karakas.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<t_z_dep_comp.pdf, id=1449, 505.89pt x 505.89pt>
+<t_z_dep_comp.pdf, id=1467, 505.89pt x 505.89pt>
 File: t_z_dep_comp.pdf Graphic file (type pdf)
 <use t_z_dep_comp.pdf>
 Package pdftex.def Info: t_z_dep_comp.pdf  used on input line 358.
@@ -1084,20 +1084,19 @@ Package pdftex.def Info: t_z_dep_comp.pdf  used on input line 358.
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.404 W
-       e illustrate these model predictions in Fig.~\ref{fig:t_z_dep_comp}. <./
-t_z_dep_comp.pdf>]
-<nh_feh_vs_lookback.pdf, id=1502, 505.89pt x 505.89pt>
+l.420 
+       <./t_z_dep_comp.pdf>]
+<nh_feh_vs_lookback.pdf, id=1520, 505.89pt x 505.89pt>
 File: nh_feh_vs_lookback.pdf Graphic file (type pdf)
 <use nh_feh_vs_lookback.pdf>
 Package pdftex.def Info: nh_feh_vs_lookback.pdf  used on input line 427.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_vs_age.pdf, id=1503, 505.89pt x 505.89pt>
+<no_vs_age.pdf, id=1521, 505.89pt x 505.89pt>
 File: no_vs_age.pdf Graphic file (type pdf)
 <use no_vs_age.pdf>
 Package pdftex.def Info: no_vs_age.pdf  used on input line 438.
 (pdftex.def)             Requested size: 227.64839pt x 227.64839pt.
-<no_vs_ofe.pdf, id=1504, 505.89pt x 505.89pt>
+<no_vs_ofe.pdf, id=1522, 505.89pt x 505.89pt>
 File: no_vs_ofe.pdf Graphic file (type pdf)
 <use no_vs_ofe.pdf>
 Package pdftex.def Info: no_vs_ofe.pdf  used on input line 439.
@@ -1109,22 +1108,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.546 
-       <./nh_feh_vs_lookback.pdf>]
+l.547 \subsection
+                 {The Sources of Scatter in the~\ohno~Relation} <./nh_feh_vs_lo
+okback.pdf>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 547.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 5.5pt on input line 547.
-<no_oh_sfevar.pdf, id=1595, 505.89pt x 505.89pt>
+<no_oh_sfevar.pdf, id=1613, 361.35pt x 361.35pt>
 File: no_oh_sfevar.pdf Graphic file (type pdf)
 <use no_oh_sfevar.pdf>
 Package pdftex.def Info: no_oh_sfevar.pdf  used on input line 552.
-(pdftex.def)             Requested size: 156.82426pt x 156.82426pt.
-<delta_no_schaefercomp.pdf, id=1596, 1011.78pt x 505.89pt>
+(pdftex.def)             Requested size: 158.99449pt x 158.99449pt.
+<delta_no_schaefercomp.pdf, id=1614, 722.7pt x 361.35pt>
 File: delta_no_schaefercomp.pdf Graphic file (type pdf)
 <use delta_no_schaefercomp.pdf>
 Package pdftex.def Info: delta_no_schaefercomp.pdf  used on input line 553.
-(pdftex.def)             Requested size: 333.88843pt x 166.9442pt.
+(pdftex.def)             Requested size: 339.66904pt x 169.83452pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1138,7 +1138,10 @@ l.674 \par
 pdfTeX warning: pdflatex (file ./no_vs_ofe.pdf): PDF inclusion: multiple pdfs w
 ith page group included in a single page
 >]
-Underfull \vbox (badness 3386) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.10
 }) has been already used, duplicate ignored
@@ -1152,27 +1155,21 @@ tiple pdfs with page group included in a single page
 >]) (./conclusions.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [16])
+(./acknowledgements.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./acknowledgements.tex) (./ms.bbl [17]
-Underfull \vbox (badness 1655) has occurred while \output is active []
-
-
+) (./ms.bbl [17]
 Underfull \hbox (badness 1490) in paragraph at lines 764--766
 []\T1/ntxtlf/m/n/8 Suliga A. M., Shal-gar S., Fuller G. M., 2020, arXiv e-print
 s, [][]p.
  []
 
-
-Underfull \vbox (badness 1389) has occurred while \output is active []
-
- [18])
-(./vice.tex
+[18]) (./vice.tex
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 5
 .
- (/home/modules/texlive/2021/texmf-dist/tex/latex/txfonts/t1txtt.fd
+
+(/home/modules/texlive/2021/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <9> not available
@@ -1199,11 +1196,11 @@ Package rerunfilecheck Info: File `ms.out' has not changed.
 Here is how much of TeX's memory you used:
  16535 strings out of 478599
  239319 string characters out of 5853099
- 718369 words of memory out of 5000000
+ 719900 words of memory out of 5000000
  33828 multiletter control sequences out of 15000+600000
  528779 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,81p,1953b,774s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,15n,81p,1953b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1213,24 +1210,26 @@ odules/texlive/2021/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</home/mod
 ules/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></home/module
 s/texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI5.pfb></home/modules/
 texlive/2021/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></home/modules/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/modules/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/modules
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/module
-s/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/modu
-les/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></home/modules
-/texlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></home/modules/t
-exlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></home/modules/texl
-ive/2021/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/modules/texlive/2
-021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/modules/texlive/2021/
-texmf-dist/fonts/type1/public/txfonts/txsya.pfb></home/modules/texlive/2021/tex
-mf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf-di
-st/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/fon
-ts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/typ
-e1/public/newtx/ztmri.pfb>
-Output written on ms.pdf (19 pages, 1226395 bytes).
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/modules/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/module
+s/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/modul
+es/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/modu
+les/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/mod
+ules/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/m
+odules/texlive/2021/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></home/modu
+les/texlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></home/module
+s/texlive/2021/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></home/modules/t
+exlive/2021/texmf-dist/fonts/type1/public/newtx/txexs.pfb></home/modules/texliv
+e/2021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></home/modules/texlive/20
+21/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></home/modules/texlive/2021/
+texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/modules/texlive/2021/texmf
+-dist/fonts/type1/public/newtx/ztmb.pfb></home/modules/texlive/2021/texmf-dist/
+fonts/type1/public/newtx/ztmr.pfb></home/modules/texlive/2021/texmf-dist/fonts/
+type1/public/newtx/ztmri.pfb>
+Output written on ms.pdf (19 pages, 1218048 bytes).
 PDF statistics:
- 2348 PDF objects out of 2487 (max. 8388607)
- 2130 compressed objects within 22 object streams
+ 2376 PDF objects out of 2487 (max. 8388607)
+ 2156 compressed objects within 22 object streams
  224 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
