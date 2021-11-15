@@ -89,6 +89,10 @@
   {10.3847/1538-4357/ab7eab}, \href
   {https://ui.adsabs.harvard.edu/abs/2020ApJ...893...96B} {893, 96}
 
+\bibitem[\protect\citeauthoryear{{Bethe}}{{Bethe}}{1939}]{Bethe1939}
+{Bethe} H.~A.,  1939, \mn@doi [Physical Review] {10.1103/PhysRev.55.434}, \href
+  {https://ui.adsabs.harvard.edu/abs/1939PhRv...55..434B} {55, 434}
+
 \bibitem[\protect\citeauthoryear{{Bigiel}, {Leroy}, {Walter}, {Blitz},
   {Brinks}, {de Blok}  \& {Madore}}{{Bigiel} et~al.}{2010}]{Bigiel2010}
 {Bigiel} F.,  {Leroy} A.,  {Walter} F.,  {Blitz} L.,  {Brinks} E.,  {de Blok}
@@ -212,6 +216,16 @@
 {Christensen} C.~R.,  {Dav{\'e}} R.,  {Brooks} A.,  {Quinn} T.,   {Shen} S.,
   2018, \mn@doi [\apj] {10.3847/1538-4357/aae374}, \href
   {https://ui.adsabs.harvard.edu/abs/2018ApJ...867..142C} {867, 142}
+
+\bibitem[\protect\citeauthoryear{{Conroy}}{{Conroy}}{2013}]{Conroy2013}
+{Conroy} C.,  2013, \mn@doi [\araa] {10.1146/annurev-astro-082812-141017},
+  \href {https://ui.adsabs.harvard.edu/abs/2013ARA&A..51..393C} {51, 393}
+
+\bibitem[\protect\citeauthoryear{{Conroy}, {Graves}  \& {van Dokkum}}{{Conroy}
+  et~al.}{2014}]{Conroy2014}
+{Conroy} C.,  {Graves} G.~J.,   {van Dokkum} P.~G.,  2014, \mn@doi [\apj]
+  {10.1088/0004-637X/780/1/33}, \href
+  {https://ui.adsabs.harvard.edu/abs/2014ApJ...780...33C} {780, 33}
 
 \bibitem[\protect\citeauthoryear{{Cristallo} et~al.,}{{Cristallo}
   et~al.}{2011}]{Cristallo2011}
@@ -475,6 +489,12 @@
   \mn@doi [\mnras] {10.1093/mnras/sty852}, \href
   {https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.2716K} {477, 2716}
 
+\bibitem[\protect\citeauthoryear{{LUNA Collaboration} et~al.,}{{LUNA
+  Collaboration} et~al.}{2006}]{LUNA2006}
+{LUNA Collaboration} et~al., 2006, \mn@doi [Physics Letters B]
+  {10.1016/j.physletb.2006.02.021}, \href
+  {https://ui.adsabs.harvard.edu/abs/2006PhLB..634..483L} {634, 483}
+
 \bibitem[\protect\citeauthoryear{{Lacey} \& {Fall}}{{Lacey} \&
   {Fall}}{1985}]{Lacey1985}
 {Lacey} C.~G.,  {Fall} S.~M.,  1985, \mn@doi [\apj] {10.1086/162970}, \href
@@ -703,6 +723,11 @@
   {10.3847/2041-8213/ab6f06}, \href
   {https://ui.adsabs.harvard.edu/abs/2020ApJ...890L...3S} {890, L3}
 
+\bibitem[\protect\citeauthoryear{{Schiavon}}{{Schiavon}}{2010}]{Schiavon2010}
+{Schiavon} R.~P.,  2010, \mn@doi [Publication of Korean Astronomical Society]
+  {10.5303/PKAS.2010.25.3.083}, \href
+  {https://ui.adsabs.harvard.edu/abs/2010PKAS...25...83S} {25, 83}
+
 \bibitem[\protect\citeauthoryear{{Sch{\"o}nrich} \& {Binney}}{{Sch{\"o}nrich}
   \& {Binney}}{2009}]{Schoenrich2009}
 {Sch{\"o}nrich} R.,  {Binney} J.,  2009, \mn@doi [\mnras]
@@ -760,9 +785,10 @@
   {https://ui.adsabs.harvard.edu/abs/2016ApJ...821...38S} {821, 38}
 
 \bibitem[\protect\citeauthoryear{{Suliga}, {Shalgar}  \& {Fuller}}{{Suliga}
-  et~al.}{2020}]{Suliga2020}
-{Suliga} A.~M.,  {Shalgar} S.,   {Fuller} G.~M.,  2020, arXiv e-prints, \href
-  {https://ui.adsabs.harvard.edu/abs/2020arXiv201211620S} {p. arXiv:2012.11620}
+  et~al.}{2021}]{Suliga2021}
+{Suliga} A.~M.,  {Shalgar} S.,   {Fuller} G.~M.,  2021, \mn@doi [\jcap]
+  {10.1088/1475-7516/2021/07/042}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021JCAP...07..042S} {2021, 042}
 
 \bibitem[\protect\citeauthoryear{{Tacconi} et~al.,}{{Tacconi}
   et~al.}{2018}]{Tacconi2018}

@@ -5,7 +5,7 @@
 \section{Nucleosynthesis}
 \label{sec:yields}
 
-In this paper we make use of the chemical evolution model for the Milky Way
+Here we make use of the chemical evolution model for the Milky Way
 presented in~\citet{Johnson2021}, which runs using the publicly available
 \texttt{Versatile Integrator for Chemical Evolution}
 (\vice, see Appendix~\ref{sec:vice};~\citealp{Johnson2020, Griffith2021a,
@@ -36,14 +36,30 @@ off of~\citet*{Weinberg2017} and~\citet{Johnson2020}:
 \end{itemize}
 where the subscripts and superscripts differentiate between the element and the
 SN type.
-We also assume that N is not produced in significant amounts by SNe Ia
-\citep{Johnson2019}, and set~$\yia{N} = 0$ throughout this paper
-accordingly.
 We explore variations of these values in the context of the overall
 normalization of nucleosynthetic yields and Galactic outflows
 in~\S~\ref{sec:results:yields}.
-We spend the remainder of this section detailing the CCSN and AGB star yields
-of N in our fiducial model.
+We assume that N is not produced in significant amounts by SNe Ia
+\citep{Johnson2019}, seting~$\yia{N} = 0$ throughout this paper
+accordingly, and spend the remainder of this section discussing the CCSN and
+AGB star yields of N.
+\par
+A significant portion of N yields arise as a consequence of the CNO
+cycle.\footnote{
+	\Ctwelve(p,~$\gamma$)\Nthirteen($\beta^+~\nu_\text{e}$)\Cthirteen
+	(p,~$\gamma$)\Nfourteen(p,~$\gamma$)\Ofifteen($\beta^+~\nu_\text{e}$)
+	\Nfifteen(p,~$\alpha$)\Ctwelve
+}
+As the dominant source of pressure and energy in non-zero metallicity stars
+with initial masses of~$\gtrsim$1.3~\msun, this cyclic nuclear reaction
+catalyses the conversion of H into He that would otherwise be accomplished by
+the proton-proton chain~\citep*{Suliga2021}.
+Its slowest component by far is the~\Nfourteen(p,~$\gamma$)\Ofifteen~reaction
+\citep[e.g.][]{LUNA2006}.
+Consequently, the first order effect of the CNO cycle is to convert all of the
+C and O isotopes in stellar cores into~\Nfourteen.
+As we will discuss in this section, this plays an important role in shaping N
+yields from stars of all masses.
 
 \subsection{Core Collapse Supernovae and Massive Star Winds}
 \label{sec:yields:ccsne}
@@ -61,9 +77,6 @@ CCSN production rate and the star formation rate (SFR):
 More generally,~\ycc{X}~quantifies~\textit{all} of the nucleosynthetic material
 approximated to be produced instantaneously following a single stellar
 population's formation.
-% In the case of N specifically, a substantial amount emerges in winds before the
-% actual SN itself, allowing massive stars to produce a lot N even if they
-% collapse directly to a black hole~\citep{Griffith2021a}.
 
 % fig 2
 \begin{figure*}
@@ -96,19 +109,18 @@ We compute theoretically predicted values of~\ycc{N}~using
 \vice's~\texttt{vice.yields.ccsne.fractional} function assuming a
 \citet{Kroupa2001} IMF; details on how~\vice~handles these calculations can be
 found in~\S~4 of~\citet{Griffith2021a} and in the~\vice~science 
-documentation\footnote{
-\url{https://vice-astro.readthedocs.io/en/latest/science_documentation/yields}
+documentation\footnote{\url
+	{https://vice-astro.readthedocs.io/en/latest/science_documentation/yields}
 }.
 In the left panel of Fig.~\ref{fig:n_cc_yields}, we plot the results as a
 function of progenitor metallicity as predicted by the~\citet{Woosley1995},
 \citet*{Nomoto2013},~\citet{Sukhbold2016}, and~\citet{Limongi2018} tables.
 There is good agreement between the various non-rotating models, but only
 \citet{Limongi2018} report yields for progenitors with non-zero rotational
-velocities; these yields are substantially larger than that of their
-non-rotating counterparts.
-Most of the N production in CCSN progenitors occurs via the CNO cycle
-processing C and O isotopes into~\Nfourteen. 
-With few seed nuclei at low~$Z$, production of~\Nfourteen~is difficult.
+velocities; these yields are substantially larger than their non-rotating
+counterparts, especially at low metallicity.
+With few seed nuclei for the CNO cycle at low~$Z$, production of~\Nfourteen~is
+difficult.
 Rotation-induced mixing, a highly uncertain process~\citep{Zahn1992, Maeder1998,
 Lagarde2012}, could transport newly produced C and O into the hydrogen burning
 shell of the CCSN progenitor, facilitating~\Nfourteen~production
@@ -118,9 +130,9 @@ Consequently, N yields at low metallicity are quite sensitive to model-dependent
 assumptions regarding stellar rotation and internal mixing processes
 \citep{Heger2010}.
 \par
-Based on the definition of the abundance ratio [X/Y], we can compute
+With the definition of the abundance ratio [X/Y], we can compute
 the~\no~ratio of CCSN ejecta from the values of~\ycc{N}~and~\ycc{O}~predicted
-from a given yield table:
+by a given yield table:
 \begin{equation}
 \no\subcc = 
 \log_{10}\left(\frac{\ycc{N}}{\ycc{O}}\right) -
@@ -137,29 +149,19 @@ resultant~\no\subcc~ratios in the right panel.
 These yield ratios follow similar trends with progenitor metallicity and
 rotation as~\ycc{N}~itself, a consequence of the fact that these
 studies predict relatively metallicity- and rotation-independent O yields.
-With a horizontal black dashed line, we highlight the value
-of~\no\subcc~=~$-0.7$, the approximate value of the ``plateau'' in~\no~at
-low~\oh~as illustrated by Fig.~\ref{fig:no_oh_observed}.
-There is good general agreement between this empirical value and the rotating
-models of~\citet{Limongi2018}, suggesting that rotating massive stars play an
-important role in establishing the N abundances at low metallicities as
-recently suggested by~\citet{Grisoni2021}.
-\par
-The apparent universality of the~\ohno~relation is generally interpreted as
-being nucleosynthetic in origin, reflecting a ``primary'' yield which does not
-depend on a stellar population's initial metallicity and a ``secondary'' yield
-which does~\citep[e.g.][]{PerezMontero2009, Berg2012, Pilyugin2012,
-Andrews2013}.
-The metallicity independent nature of~\ycc{N}~as predicted by
-\citet{Limongi2018} suggests that rotating massive stars contribute to the
-primary yield component.
 If we assume~\no\subcc~=~$-0.7$ as suggested by Fig.~\ref{fig:no_oh_observed}
 and our adopted O yield of~$\ycc{O} = 0.015$, equation~\refp{eq:no_subcc}
-suggests that~$\ycc{N} = 3.6\times10^{-4}$, which we adopt as our fiducial
-N yield.
-We highlight this value with the horizontal dashed black line in the left panel
-of Fig.~\ref{fig:n_cc_yields}, again finding good agreement with the rotating
-progenitor models of~\citet{Limongi2018}.
+suggests that~$\ycc{N} = 3.6\times10^{-4}$.
+We highlight both~\no\subcc~=~$-0.7$ and~$\ycc{N} = 3.6\times10^{-4}$ with
+horizontal black dashed lines in Fig.~\ref{fig:n_cc_yields}, finding good
+agreement with the rotating progenitor models of~\citet{Limongi2018} in both
+panels.
+This suggests that rotating massive stars play an important role in
+establishing N abundances at low metallicity as recently suggested by
+\citet{Grisoni2021}.
+We therefore take~$\ycc{N} = 3.6\times10^{-4}$ as our fiducial CCSN yield of N;
+both the normalization and metallicity-independence of this choice are
+supported by the~\citet{Limongi2018} models.
 \par
 The~\citet{Sukhbold2016} tables agree nearly perfectly with our empirical value
 of~$\ycc{N} = 3.6\times10^{-4}$, but they overpredict~\no\subcc~by~$\sim$0.2
@@ -295,8 +297,12 @@ convection and convective boundaries within stars, all of which have a
 significant impact on stellar evolution and thus the predicted yields (see
 discussion in, e.g.,~\S~5 of~\citealp{Karakas2016}).
 However, the differences can largely be understood by considering two important
-phenomena known to occur within AGB stars: third dredge-up (TDU) and hot bottom
-burning (HBB).
+phenomena known to occur within AGB stars: third dredge-up\footnote{
+	Here the time adverbial ``third'' refers only to the fact that these
+	dredge-up episodes are occurring while the star is on the asymptotic giant
+	branch. Because they are associated with the thermal pulsations of AGB
+	stars, there are many episodes of third dredge-up.
+} (TDU) and hot bottom burning (HBB).
 Collapsing the information into these two processes is helpful because their
 differences arise as a consequence of the different input physics between the
 stellar evolution models.
@@ -331,8 +337,9 @@ Their high mass AGB star yields are higher at low~$Z$ because both HBB and TDU
 are more efficient (see discussion in~\citealp{Ventura2013}).
 For TDU, each penetration by the convective envelope into the core is deeper
 because of the lower opacity.
-For HBB, the base of the convective envelope is hotter, increasing the rate
-of CNO cycle reactions.
+For HBB, the base of the convective envelope is hotter, and the rate of CNO
+cycle reactions is an extremely strong function of temperature
+\citep[e.g.][]{Bethe1939}.
 This interaction between TDU and HBB is also the reason for the increase in
 the~\ventura~yields near~$\sim$3~\msun, but unlike
 the~\karakasten~and~\karakas~models, their stars experience both processes only

@@ -1,50 +1,50 @@
-This is BibTeX, Version 0.99d (TeX Live 2021)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ms.aux
 The style file: mnras.bst
 Database file #1: ms.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--empty publisher in Mihalas1981
-You've used 154 entries,
+You've used 159 entries,
             2881 wiz_defined-function locations,
-            2074 strings with 61206 characters,
-and the built_in function-call counts, 76587 in all, are:
-= -- 6427
-> -- 5500
-< -- 361
-+ -- 2323
-- -- 866
-* -- 9559
-:= -- 11777
+            2123 strings with 63035 characters,
+and the built_in function-call counts, 78245 in all, are:
+= -- 6542
+> -- 5623
+< -- 374
++ -- 2380
+- -- 878
+* -- 9815
+:= -- 12072
 add.period$ -- 0
-call.type$ -- 154
-change.case$ -- 308
-chr.to.int$ -- 150
-cite$ -- 155
-duplicate$ -- 3696
-empty$ -- 3544
-format.name$ -- 1390
-if$ -- 13428
+call.type$ -- 159
+change.case$ -- 318
+chr.to.int$ -- 155
+cite$ -- 160
+duplicate$ -- 3770
+empty$ -- 3636
+format.name$ -- 1414
+if$ -- 13663
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 155
-newline$ -- 475
-num.names$ -- 1078
-pop$ -- 633
+missing$ -- 160
+newline$ -- 490
+num.names$ -- 1108
+pop$ -- 648
 preamble$ -- 1
-purify$ -- 616
+purify$ -- 636
 quote$ -- 0
-skip$ -- 2449
+skip$ -- 2472
 stack$ -- 0
-substring$ -- 4546
-swap$ -- 2263
-text.length$ -- 626
+substring$ -- 4610
+swap$ -- 2276
+text.length$ -- 645
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1383
+type$ -- 1428
 warning$ -- 1
-while$ -- 1167
+while$ -- 1205
 width$ -- 0
-write$ -- 1551
+write$ -- 1601
 (There was 1 warning)
