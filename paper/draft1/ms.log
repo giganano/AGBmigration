@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.13)  23 NOV 2021 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.13)  30 NOV 2021 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./ms.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(/Users/astrobeard/Library/texmf/tex/latex/mnras/mnras.cls
+(/Users/astrobeard/Library/texmf/tex/latex/base/mnras.cls
 Document Class: mnras 2015/05/22\ v3.0\ LaTeX2e MNRAS document class
 MNRAS document style v3.0, released 2015/05/22
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1037,14 +1037,14 @@ tiple pdfs with page group included in a single page
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8])
-(./results.tex <no_oh_superposition.pdf, id=1088, 361.35pt x 361.35pt>
+(./results.tex <no_oh_superposition.pdf, id=1091, 361.35pt x 361.35pt>
 File: no_oh_superposition.pdf Graphic file (type pdf)
 
 <use no_oh_superposition.pdf>
 Package pdftex.def Info: no_oh_superposition.pdf used on input line 14.
 (pdftex.def)             Requested size: 227.6517pt x 227.6517pt.
 
-<no_oh_timeevol.pdf, id=1089, 361.35pt x 361.35pt>
+<no_oh_timeevol.pdf, id=1092, 361.35pt x 361.35pt>
 File: no_oh_timeevol.pdf Graphic file (type pdf)
  <use no_oh_timeevol.pdf>
 Package pdftex.def Info: no_oh_timeevol.pdf used on input line 15.
@@ -1053,32 +1053,32 @@ Package pdftex.def Info: no_oh_timeevol.pdf used on input line 15.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-<no_oh_predictions_unmodified.pdf, id=1184, 361.35pt x 361.35pt>
+<no_oh_predictions_unmodified.pdf, id=1187, 361.35pt x 361.35pt>
 File: no_oh_predictions_unmodified.pdf Graphic file (type pdf)
 
 <use no_oh_predictions_unmodified.pdf>
 Package pdftex.def Info: no_oh_predictions_unmodified.pdf used on input line 16
-1.
+2.
 (pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
 
-<no_oh_predictions.pdf, id=1185, 361.35pt x 361.35pt>
+<no_oh_predictions.pdf, id=1188, 361.35pt x 361.35pt>
 File: no_oh_predictions.pdf Graphic file (type pdf)
 
 <use no_oh_predictions.pdf>
-Package pdftex.def Info: no_oh_predictions.pdf used on input line 162.
+Package pdftex.def Info: no_oh_predictions.pdf used on input line 163.
 (pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
 
-<no_oh_predictions_karakas.pdf, id=1186, 361.35pt x 361.35pt>
+<no_oh_predictions_karakas.pdf, id=1189, 361.35pt x 361.35pt>
 File: no_oh_predictions_karakas.pdf Graphic file (type pdf)
 
 <use no_oh_predictions_karakas.pdf>
-Package pdftex.def Info: no_oh_predictions_karakas.pdf used on input line 163.
+Package pdftex.def Info: no_oh_predictions_karakas.pdf used on input line 164.
 (pdftex.def)             Requested size: 162.60599pt x 162.60599pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 221--250
+Underfull \hbox (badness 1888) in paragraph at lines 222--251
 []\T1/ntxtlf/m/n/9 In or-der to suc-cess-fully re-pro-duce the ob-ser-va-tions 
 with
  []
@@ -1091,7 +1091,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.250 \par
+l.251 \par
            <./no_oh_superposition.pdf> <./no_oh_timeevol.pdf
 
 pdfTeX warning: pdflatex (file ./no_oh_timeevol.pdf): PDF inclusion: multiple p
@@ -1100,7 +1100,7 @@ dfs with page group included in a single page
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 274--287
+Underfull \hbox (badness 1210) in paragraph at lines 275--288
 \T1/ntxtlf/m/n/9 the $[]$-$[]$ re-la-tion in chem-i-cal evo-lu-tion mod-els wit
 h
  []
@@ -1110,7 +1110,7 @@ h
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.323 \begin{equation}
+l.324 \begin{equation}
                        <./no_oh_predictions_unmodified.pdf> <./no_oh_prediction
 s.pdf
 
@@ -1120,10 +1120,10 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./no_oh_predictions_karakas.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] <t_z_dep_comp.pdf, id=1461, 361.35pt x 361.35pt>
+>] <t_z_dep_comp.pdf, id=1464, 361.35pt x 361.35pt>
 File: t_z_dep_comp.pdf Graphic file (type pdf)
  <use t_z_dep_comp.pdf>
-Package pdftex.def Info: t_z_dep_comp.pdf used on input line 373.
+Package pdftex.def Info: t_z_dep_comp.pdf used on input line 374.
 (pdftex.def)             Requested size: 227.6517pt x 227.6517pt.
 
 [12pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
@@ -1131,54 +1131,54 @@ Package pdftex.def Info: t_z_dep_comp.pdf used on input line 373.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.439 
+l.440 
        <./t_z_dep_comp.pdf>]
-<nh_feh_vs_lookback.pdf, id=1512, 361.35pt x 361.35pt>
+<nh_feh_vs_lookback.pdf, id=1515, 361.35pt x 361.35pt>
 File: nh_feh_vs_lookback.pdf Graphic file (type pdf)
 
 <use nh_feh_vs_lookback.pdf>
-Package pdftex.def Info: nh_feh_vs_lookback.pdf used on input line 447.
+Package pdftex.def Info: nh_feh_vs_lookback.pdf used on input line 448.
 (pdftex.def)             Requested size: 227.6517pt x 227.6517pt.
- <no_vs_age.pdf, id=1513, 361.35pt x 361.35pt>
+ <no_vs_age.pdf, id=1516, 361.35pt x 361.35pt>
 File: no_vs_age.pdf Graphic file (type pdf)
 
 <use no_vs_age.pdf>
-Package pdftex.def Info: no_vs_age.pdf used on input line 459.
+Package pdftex.def Info: no_vs_age.pdf used on input line 460.
 (pdftex.def)             Requested size: 227.6517pt x 227.6517pt.
- <no_vs_ofe.pdf, id=1514, 361.35pt x 361.35pt>
+ <no_vs_ofe.pdf, id=1517, 361.35pt x 361.35pt>
 File: no_vs_ofe.pdf Graphic file (type pdf)
 
 <use no_vs_ofe.pdf>
-Package pdftex.def Info: no_vs_ofe.pdf used on input line 460.
+Package pdftex.def Info: no_vs_ofe.pdf used on input line 461.
 (pdftex.def)             Requested size: 231.26321pt x 231.26321pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <7.3> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 559.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 560.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 559.
+(Font)              scaled to size 7.3pt on input line 560.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <5.5> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 559.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 560.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 559.
+(Font)              scaled to size 5.5pt on input line 560.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.572 \par
+l.573 \par
            <./nh_feh_vs_lookback.pdf>]
-<no_oh_sfevar.pdf, id=1622, 361.35pt x 361.35pt>
+<no_oh_sfevar.pdf, id=1625, 361.35pt x 361.35pt>
 File: no_oh_sfevar.pdf Graphic file (type pdf)
  <use no_oh_sfevar.pdf>
-Package pdftex.def Info: no_oh_sfevar.pdf used on input line 614.
+Package pdftex.def Info: no_oh_sfevar.pdf used on input line 615.
 (pdftex.def)             Requested size: 158.99449pt x 158.99449pt.
 
-<delta_no_schaefercomp.pdf, id=1623, 722.7pt x 361.35pt>
+<delta_no_schaefercomp.pdf, id=1626, 722.7pt x 361.35pt>
 File: delta_no_schaefercomp.pdf Graphic file (type pdf)
 
 <use delta_no_schaefercomp.pdf>
-Package pdftex.def Info: delta_no_schaefercomp.pdf used on input line 615.
+Package pdftex.def Info: delta_no_schaefercomp.pdf used on input line 616.
 (pdftex.def)             Requested size: 339.66904pt x 169.83452pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1188,7 +1188,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.695 \par
+l.696 \par
            <./no_vs_age.pdf> <./no_vs_ofe.pdf
 
 pdfTeX warning: pdflatex (file ./no_vs_ofe.pdf): PDF inclusion: multiple pdfs w
@@ -1214,7 +1214,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16])
-(./acknowledgements.tex) (./ms.bbl [17] [18]) (./vice.tex
+(./acknowledgements.tex) (./ms.bbl [17]
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
+ [18])
+(./vice.tex
 LaTeX Font Info:    Font shape `T1/ntxtt/bx/n' will be
 (Font)              scaled to size 9.0pt on input line 5.
 
@@ -1245,10 +1249,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 12071 strings out of 493013
- 171601 string characters out of 6133343
- 422393 words of memory out of 5000000
- 15090 multiletter control sequences out of 15000+600000
+ 12075 strings out of 493013
+ 171675 string characters out of 6133343
+ 422624 words of memory out of 5000000
+ 15093 multiletter control sequences out of 15000+600000
  130969 words of font info for 215 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,15n,37p,1929b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1280,10 +1284,10 @@ s/type1/public/txfonts/txmia.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/txfonts/txsya.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/newtx/txsys.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on ms.pdf (19 pages, 1134951 bytes).
+Output written on ms.pdf (19 pages, 1135469 bytes).
 PDF statistics:
- 2393 PDF objects out of 2487 (max. 8388607)
- 2184 compressed objects within 22 object streams
- 229 named destinations out of 1000 (max. 500000)
+ 2398 PDF objects out of 2487 (max. 8388607)
+ 2189 compressed objects within 22 object streams
+ 230 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
