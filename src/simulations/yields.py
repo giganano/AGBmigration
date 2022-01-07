@@ -260,15 +260,74 @@ def linear_cc_yield(z):
 vice.mlr.setting = "larson1974"
 
 
-# fiducial set of yields 
-# vice.yields.ccsne.settings['n'] = prompt_agb_yield()
+# # fiducial set of yields
+# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4)
+vice.yields.ccsne.settings['n'] = 3.6e-4
 vice.yields.sneia.settings['n'] = 0
+
+# C11+C15 yields
+# vice.yields.agb.settings['n'] = "cristallo11"
+# vice.yields.agb.settings['o'] = "cristallo11"
+# vice.yields.agb.settings['fe'] = "cristallo11"
+
+# K10 yields
+# vice.yields.agb.settings['n'] = "karakas10"
+# vice.yields.agb.settings['o'] = "karakas10"
+# vice.yields.agb.settings['fe'] = "karakas10"
+
+# KL16+K18 yields
+# vice.yields.agb.settings['n'] = "karakas16"
+# vice.yields.agb.settings['o'] = "karakas16"
+# vice.yields.agb.settings['fe'] = "karakas16"
+
+# V13 yields
+# vice.yields.agb.settings['n'] = "ventura13"
+# vice.yields.agb.settings['o'] = "ventura13"
+#### Fe does not have yields in V13
+
+# C11+C15x3 yields
+# vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
+# 	prefactor = 3)
+
+# V13x2 yields
+# vice.yields.agb.settings['n'] = amplified_agb('n', study = "ventura13",
+# 	prefactor = 2)
+
+# C11+C15, lowered yields, eta
+# vice.yields.ccsne.settings['o'] = 0.005
+# vice.yields.sneia.settings['o'] = 0.
+# vice.yields.agb.settings['o'] = "cristallo11"
+
+# vice.yields.ccsne.settings['fe'] = 0.0004
+# vice.yields.sneia.settings['fe'] = 0.000713
+# vice.yields.agb.settings['fe'] = "cristallo11"
+
+# vice.yields.ccsne.settings['n'] = 1.2e-4
+# vice.yields.sneia.settings['n'] = 0.
+# vice.yields.agb.settings['n'] = "cristallo11"
+
+# modified y_n^cc for the K10 model
+# vice.yields.ccsne.settings['n'] = linear_cc_yield
+
+# modified y_n^cc for the KL16+K18 model
+# vice.yields.ccsne.settings['n'] = broken_cc_yield
+
+# a model with no time-dependence
+# vice.yields.ccsne.settings['n'] = prompt_agb_yield()
+# vice.yields.agb.settings['n'] = zero_agb_yield
+
+# a model with no metallicity-dependence
+vice.yields.agb.settings['n'] = linear_agb_yield_no_zdep(slope = 9.0e-4)
+
+
+
+
+# vice.yields.ccsne.settings['n'] = prompt_agb_yield()
 # vice.yields.agb.settings['n'] = zero_agb_yield
 # vice.yields.agb.settings['n'] = linear_agb_yield_no_zdep(slope = 9.0e-4)
 # vice.yields.sneia.settings['n'] = 0 
-vice.yields.ccsne.settings['n'] = 3.6e-4
-# vice.yields.ccsne.settings['n'] = broken_cc_yield 
-# vice.yields.ccsne.settings['n'] = linear_cc_yield 
+# vice.yields.ccsne.settings['n'] = broken_cc_yield
+# vice.yields.ccsne.settings['n'] = linear_cc_yield
 # vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11", 
 	# prefactor = 3) 
 # vice.yields.agb.settings['n'] = "cristallo11"
@@ -281,7 +340,6 @@ vice.yields.ccsne.settings['n'] = 3.6e-4
 # vice.yields.agb.settings['n'] = "karakas16" 
 # vice.yields.agb.settings['o'] = "karakas16" 
 # vice.yields.agb.settings['fe'] = "karakas16" 
-vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4) 
 
 # set with no time-dependence to the AGB yield 
 # vice.yields.sneia.settings['n'] = 0 
@@ -321,11 +379,11 @@ vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4)
 # one-third set of yields
 # vice.yields.ccsne.settings['o'] = 0.005
 # vice.yields.sneia.settings['o'] = 0.
-# vice.yields.agb.settings['n'] = "cristallo11"
+# vice.yields.agb.settings['o'] = "cristallo11"
 
 # vice.yields.ccsne.settings['fe'] = 0.0004
 # vice.yields.sneia.settings['fe'] = 0.000713
-# vice.yields.agb.settings['n'] = "cristallo11"
+# vice.yields.agb.settings['fe'] = "cristallo11"
 
 # vice.yields.ccsne.settings['n'] = 1.2e-4
 # vice.yields.sneia.settings['n'] = 0.

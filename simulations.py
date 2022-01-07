@@ -11,7 +11,7 @@ import sys
 
 _MIGRATION_MODELS_ = ["diffusion", "linear", "post-process", "sudden"] 
 _EVOLUTION_MODELS_ = ["static", "insideout", "lateburst", "outerburst", 
-	"modulated"] 
+	"modulated", "modifr"] 
 
 def parse(): 
 	r""" 

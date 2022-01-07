@@ -90,7 +90,10 @@ class diskmodel(vice.milkyway):
 		# 			self.zones[i].entrainment.ccsne[elem] = 1. / 3
 		# 			self.zones[i].entrainment.sneia[elem] = 1. / 3
 		# 		else: pass
-		self.mode = "sfr" 
+		if spec.lower() == "modifr":
+			self.mode = "ifr"
+		else:
+			self.mode = "sfr"
 
 
 	def run(self, *args, **kwargs): 
@@ -186,7 +189,8 @@ class star_formation_history:
 					"insideout": 	models.insideout, 
 					"lateburst": 	models.lateburst, 
 					"outerburst": 	models.outerburst, 
-					"modulated": 	models.modulated 
+					"modulated": 	models.modulated,
+					"modifr": 		models.modifr
 				}[spec.lower()]((i + 0.5) * zone_width)) 
 			i += 1 
 

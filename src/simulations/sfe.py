@@ -5,7 +5,7 @@ from .models.utils import sinusoid
 
 class sfe(J21_sf_law, sinusoid): 
 
-	def __init__(self, area, amplitude = 0.25, frequency = 0.5, phase = 0, 
+	def __init__(self, area, amplitude = 0.5, frequency = 0.5, phase = 0, 
 		mode = "sfr", **kwargs): 
 
 		J21_sf_law.__init__(self, area, mode = mode, **kwargs) 
