@@ -11,21 +11,23 @@
 % fig 5
 \begin{figure*}
 \centering
-\includegraphics[scale = 0.63]{no_oh_superposition.pdf}
-\includegraphics[scale = 0.63]{no_oh_timeevol.pdf}
+\includegraphics[scale = 0.6]{no_oh_superposition.pdf}
+\includegraphics[scale = 0.6]{no_oh_timeevol.pdf}
 \caption{
 \textbf{Left}: The gas-phase~\ohno~relation parameterized by time at
 fixed radius (solid coloured lines) in the fiducial model. X's denote the
-abunadnces at~$T = 2$, 4, 6, 8, 10, 12, and 13.2 Gyr (the present day) at all
+abundances at~$T = 2$, 4, 6, 8, 10, 12, and 13.2 Gyr (the present day) at all
 radii.
 The dotted black line is the same as the solid black line in the right panel.
 Coloured dotted lines mark the evolution of our model at~$\rgal = 10$ and 12
-kpc when stellar migration is neglected (i.e. the ``post-processing'' migration
-model from~\citealp{Johnson2021}).
+kpc when we neglect the impact of stellar migration on enrichment rates (i.e.
+the ``post-processing'' migration model from~\citealp{Johnson2021}; see
+discussion in~\S~\ref{sec:multizone}).
 \textbf{Right}: The gas-phase~\ohno~relation parameterized by radius at
 various snapshots (solid coloured lines) in our fiducial model.
 Similar to the left panel, coloured dotted lines denote the resulting relation
-at~$T = 2$ and 5 Gyr when we neglect stellar migration.
+at~$T = 2$ and 5 Gyr when we neglect stellar migration in computing enrichment
+rates.
 }
 \label{fig:no_oh_timeevol}
 \end{figure*}
@@ -52,24 +54,35 @@ interstellar medium (ISM) with N but negligible amounts of O, increasing~\no.
 At this point, the tracks in each ring separate from one another.
 This separation is a consequence of the metallicity gradient in~\oh~being
 established early in the Galaxy's evolution.
-Being an element produced primarily by CCSNe on short delay times, O reaches
-an equilibrium abundance before elements produced by significantly delayed
-nucleosynthetic sources~\citep{Weinberg2017}.
-The ISM achieves equilibrium in O soon after AGB stars begin producing N,
-after which~\no~continues to increase at an approximately fixed~\oh~at all
-radii (see also Fig.~\ref{fig:nh_feh_vs_lookback} and associated discussion
-in~\S~\ref{sec:results:vincenzo_comp}).
-The N and O abundances of the Galaxy in the past therefore differ from that
-which would be derived observationally by taking their values at the present
-day from all rings (shown by the black dotted line, see discussion below).
-% The relation that would be derived observationally for this model by taking the
-% N and O abundances at the present day from all rings (shown by the
-% dotted black line, see discussion below) does not reflect the N and O
-% abundances of the Galaxy in the past.
-This contests the popular assumption that the~\ohno~relation in Milky Way-mass
-galaxies arises as an evolutionary sequence, instead suggesting a superposition
-of endpoints like that previously suggested for low [$\alpha$/Fe] disc stars
-\citep[e.g.][]{Schoenrich2009, Nidever2014, Buck2020, Sharma2021}.
+The radial gradient in our model arises out of a decrease in the equilibrium
+abundance of O with increasing radius.
+Produced on short timescales by CCSNe, O achieves equilibrium faster than
+elements produced by delayed nucleosynthetic sources~\citep{Weinberg2017}.
+% At this point, the tracks in each ring separate from one another.
+% This separation is a consequence of the metallicity gradient in~\oh~being
+% established early in the Galaxy's evolution.
+% Being an element produced primarily by CCSNe on short delay times, O reaches
+% an equilibrium abundance before elements produced by delayed nucleosynthetic
+% sources~\citep{Weinberg2017}.
+The ISM therefore reaches equilibrium in O soon after AGB stars begin
+producing N, after which~\no~continues to increase at an approximately
+fixed~\oh~at all radii (see also Fig.~\ref{fig:nh_feh_vs_lookback} and
+associated discussion in~\S~\ref{sec:results:vincenzo_comp}).
+The separation of these evolutionary tracks contests the popular interpretation
+that the~\ohno~relation arises as an evolutionary sequence, instead suggesting
+a superposition of endpoints.
+Similar arguments have been made regarding low [$\alpha$/Fe] disc
+stars~\citep[e.g.][]{Schoenrich2009, Nidever2014, Buck2020, Sharma2021}.
+In short, a given ring in our model does not evolve along the~\ohno~relation,
+instead following this ``rightward-then-upward'' trajectory dictated by the
+timescales on which N and O achieve equilibrium.
+% The N and O abundances of the Galaxy in the past therefore differ from that
+% which would be derived observationally by taking their values at the present
+% day from all rings (shown by the black dotted line, see discussion below).
+% This contests the popular assumption that the~\ohno~relation in Milky Way-mass
+% galaxies arises as an evolutionary sequence, instead suggesting a superposition
+% of endpoints like that previously suggested for low [$\alpha$/Fe] disc stars
+% \citep[e.g.][]{Schoenrich2009, Nidever2014, Buck2020, Sharma2021}.
 \par
 Because there is a delay between a stellar population's formation and N
 production from its AGB stars ($\sim$250 Myr in this model; see Fig.
@@ -78,14 +91,19 @@ interval.
 Although the bulk of migration occurs on longer timescales, this characteristic
 delay is comparable to the dynamical time of the Milky Way and is thus adequate
 for kinematic heating to at least begin.
-As a consequence, there may be a slight deficit or surplus of N-producing AGB
-stars in a given ring at some time induced by stellar migration.
-These tracks can thus move vertically in this plane in response to AGB stars
-moving between rings as the Galaxy evolves, entirely independent of the SFH and
-the nucleosynthetic yields of stars than formed at a given radius and time.
+In zoom-in hydrodynamical simulations from the FIRE\footnote{
+	\url{https://fire.northwestern.edu}
+} suite~\citep{Hopkins2014},~\citet{El-Badry2016} indeed find that
+stars in a M$_\star \approx 10^{10.6}~\msun$ galaxy can migrate~$1 - 2$ kpc
+within 1 Gyr of their formation.
+Consequently, N enrichment rates at fixed~\rgal~may differ significantly from
+their expected values given the SFH at that radius because stellar migration
+induced a deficit or surplus of N-producing AGB stars.
+These tracks can thus move vertically in the~\ohno~plane in response to AGB
+stars moving between rings as the Galaxy evolves.
 We demonstrate this effect by comparing the solid blue and purple lines to
 their dotted counterparts.
-These are the tracks we compute using the post-processing migration model,
+These are the tracks we compute using the post-processing migration model
 which neglects the impact of migration on enrichment rates (see discussion
 in~\S~\ref{sec:multizone}).
 \par
@@ -105,7 +123,41 @@ Especially when considering the intrinsic scatter that would arise if we were
 to consider models with, e.g., different SFHs, this supports previous
 arguments that the redshift evolution of the~\ohno~relation is at most
 minimal~\citep{Vincenzo2018, HaydenPawson2021}.
-\par
+
+% fig 6
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.45]{no_oh_predictions_unmodified.pdf}
+\includegraphics[scale = 0.45]{no_oh_predictions.pdf}
+\includegraphics[scale = 0.45]{no_oh_predictions_karakas.pdf}
+\caption{
+\textbf{Left}: The present-day gas-phase~\ohno~relation predicted by our
+model with each of the four AGB star yield tables predict by stellar evolution
+models discussed in~\S~\ref{sec:yields:agb}, colour-coded according to the
+legend.
+We include the~\citet{Dopita2016} measurements of this relation for local stars
+and HII regions (duplicated from Fig.~\ref{fig:no_oh_observed}) as the
+observational benchmark.
+\textbf{Middle}: The same as the left panel, but for a case where we
+artificially amplify the~\cristallo~yields by a factor of 3 and
+the~\ventura~yields by a factor of 2.
+We show our fiducial model using the linear AGB star yields with a slope
+of~$\xi = 9\times10^{-4}$ in a solid purple line.
+The black dashed line quantifies a model in which the~\cristallo~yields are
+unmodified, but SN yields and the outflow mass loading factor are lowered by a
+factor of 3 (see discussion in~\S~\ref{sec:results:yields:variations}).
+\textbf{Right}: The same as the left panel, but comparing the predictions made
+by the~\karakasten~and~\karakas~yields with our fiducial value of
+$y_\text{N}^\text{CC}$ (dotted lines, same as left-hand panel) to those with
+alternate forms of~$y_\text{N}^\text{CC}$ (solid lines; see
+equations~\ref{eq:broken_yncc} and~\ref{eq:linear_yncc} and discussion
+in~\S~\ref{sec:results:yields}).
+We show all predictions with our post-processing migration model (see
+discussion in~\S~\ref{sec:multizone}).
+}
+\label{fig:no_oh_predictions}
+\end{figure*}
+
 We again demonstrate the impact of stellar migration in the right panel of
 Fig.~\ref{fig:no_oh_predictions} by comparing the blue and purple solid lines
 to their dotted counterparts, which quantify the relation using the
@@ -156,36 +208,6 @@ produced on longer characteristic delay times.
 \subsection{Comparison to Observed Gas-Phase Trends}
 \label{sec:results:yields}
 
-% fig 6
-\begin{figure*}
-\centering
-\includegraphics[scale = 0.45]{no_oh_predictions_unmodified.pdf}
-\includegraphics[scale = 0.45]{no_oh_predictions.pdf}
-\includegraphics[scale = 0.45]{no_oh_predictions_karakas.pdf}
-\caption{
-\textbf{Left}: The present-day gas-phase~\ohno~relation predicted by our
-model with each of the four yield models based on stellar evolution models
-discussed in~\S~\ref{sec:yields:agb}, colour-coded according to the legend.
-We include the~\citet{Dopita2016} measurements of this relation for local stars
-and HII regions (duplicated from Fig.~\ref{fig:no_oh_observed}) as the
-observational benchmark.
-\textbf{Middle}: The same as the left panel, but for a case where we
-artificially amplify the~\cristallo~yields by a factor of 3 and
-the~\ventura~yields by a factor of 2.
-We include our linear model as well, but with the slope amplified from
-$\xi = 3\times10^{-4}$ as shown in Fig.~\ref{fig:agb_yield_models} to
-$\xi = 9\times10^{-4}$ since it is also based on the~\cristallo~yields.
-\textbf{Right}: The same as the left panel, but comparing the predictions made
-by the~\karakasten~and~\karakas~yields with our fiducial value of
-$y_\text{N}^\text{CC}$ (dotted lines, same as left-hand panel) to those with
-alternate forms of~$y_\text{N}^\text{CC}$ (solid lines; see discussion in~\S
-\ref{sec:results:yields}).
-We show all predictions with ``post-processing'' migration model (see
-discussion in~\S~\ref{sec:multizone}).
-}
-\label{fig:no_oh_predictions}
-\end{figure*}
-
 We use the~\citet{Dopita2016} measurements as our observational benchmark.
 They are a good representation of many results for gas-phase N and O abundances
 (see Fig.~\ref{fig:no_oh_observed}), and they agree well with APOGEE stellar
@@ -199,9 +221,9 @@ In the left panel of Fig.~\ref{fig:no_oh_predictions}, we compare our model
 predictions with each of the AGB star yield tables predicted from stellar
 evolution models (see Fig.~\ref{fig:agb_yield_models} and discussion
 in~\S~\ref{sec:yields:agb}).
-Because our linear model (see equation~\ref{eq:linear_yield}) with a slope of
-$\xi = 3\times10^{-4}$ is based on the~\cristallo~yields, the two make similar
-predictions.
+% Because our linear model (see equation~\ref{eq:linear_yield}) with a slope of
+% $\xi = 3\times10^{-4}$ is based on the~\cristallo~yields, the two make similar
+% predictions.
 With no changes to the~\citet{Johnson2021} parameterization of the model, all
 four AGB star yield tables fail to reproduce the~\ohno~relation as observed.
 The~\cristallo~and~\ventura~yields are able to reproduce the qualitative trend,
@@ -218,14 +240,18 @@ This is also true for the~\karakas~yields, but that model predicts a
 relatively flat~\ohno~relation because of updated model inputs regarding
 opacity and mass loss and the impact this has on~\Nfourteen~yields (see
 discussion in~\S~\ref{sec:yields:agb}).
-\par
+
+\subsubsection{Simultaneous Variations in Outflows and SN Yields}
+\label{sec:results:yields:variations}
+
 In order to successfully reproduce the observations with
 the~\cristallo~and~\ventura~yields, we find that we must artificially amplify
 them by factors of~$\sim$3 and~$\sim$2, respectively.
-Having originally compared our linear model to the~\cristallo~yields in
-Fig.~\ref{fig:agb_yield_models} with a slope of~$\xi = 3\times10^{-4}$, we
-amplify this value by a factor of 3 here as well.
-We illustrate the results of these modified yield models in the middle panel
+% Having originally compared our linear model to the~\cristallo~yields in
+% Fig.~\ref{fig:agb_yield_models} with a slope of~$\xi = 3\times10^{-4}$, we
+% amplify this value by a factor of 3 here as well.
+We illustrate the results of these modified yield models and for our fiducial
+linear model with a slope of~$\xi = 9\times10^{-4}$ in the middle panel
 of Fig.~\ref{fig:no_oh_predictions}.
 Although the~\ventura~model predicts an~\ohno~relation that is slightly
 shallower than the~\citet{Dopita2016} measurements, the predictions are
@@ -242,8 +268,9 @@ However, since the yield and the outflow are simply source and sink terms in
 computing enrichment rates, the model makes similar predictions when both are
 raised or lowered by the same factor.
 We demonstrate this point in the middle panel of Fig.
-\ref{fig:no_oh_predictions} with the black dashed line for the~\cristallo~model
-with both~\ycc{O}~and~$\eta$ each lowered by a factor of 3.
+\ref{fig:no_oh_predictions} with the black dashed line for the
+unmodified~\cristallo~yields with both~\ycc{O}~and~$\eta$ each lowered by a
+factor of 3.
 This model spans a different range in~\oh~because the relation between~\ycc{O},
 $\eta$, and the equilibrium abundance is only approximately one-to-one, but the
 predictions also exhibit good agreement with the~\citet{Dopita2016}
@@ -263,14 +290,21 @@ both theoretical~\citep[e.g.][]{Pejcha2015, Sukhbold2016, Ertl2016} and
 observational perspectives (e.g.~\citealp*{Gerke2015};~\citealp{Adams2017,
 Basinger2021}).
 Although there is presently no combination of a SN nucleosynthesis model with
-a physically motivated black hole landscape is able to reproduce the observed
-abundance patterns~\citep{Griffith2021a}, black hole formation still lowers
-SN yields by simply not ejecting massive star envelopes to the ISM.
+a physically motivated black hole landscape that is able to reproduce the
+observed abundance patterns~\citep{Griffith2021a}, black hole formation still
+lowers SN yields by simply not ejecting massive star envelopes to the ISM.
 With~\vice's~\texttt{vice.yields.ccsne.fractional} function, designed to
 calculate values of~\ycc{X}~for various elements (see discussion
 in~\S~\ref{sec:yields:ccsne} here and in~\S~4 of~\citealp{Griffith2021a}), we
 indeed find a value of~$\ycc{O} = 0.0056$ using the W18 explosion model from
 \citet{Sukhbold2016} compared to our fiducial value of~$\ycc{O} = 0.015$.
+Through this mechanism relating N yields to the CCSN yields of O via~\no~ratios
+and consequently to the black hole landscape, the~\cristallo~and~\ventura~models
+favor a scenario in which a substantial fraction of massive stars produce
+failed supernovae, significantly suppressing O yields by a factor of~$2 - 3$.
+If instead most massive stars successfully explode as CCSNe, these AGB star
+yields must increase by a similar factor to offset the additional O yield under
+the more explosive black hole landscape.
 \par
 Alternatively,~\citet{Vincenzo2016a} are able to reproduce the~\ohno~relation
 in chemical evolution models with the~\ventura~yields by implementing a
@@ -285,11 +319,14 @@ significantly contribute, it would be reasonable to expect some portion of
 the SN ejecta to be swept up by the wind; recent theoretical
 \citep{Christensen2018} and observational arguments~\citep*{Chisholm2018}
 indeed suggest such a scenario.
-\par
+
+\subsubsection{Metallicity-Dependent CCSN Yields of N}
+\label{sec:results:yields:yncc}
+
 With the~\karakasten~and~\karakas~models failing to explain the qualitative
-trend of~\no~with~\oh, none of the variations discussed above in the
-context of the~\cristallo~and~\ventura~yields are able to repair their
-predictions.
+trend of~\no~with~\oh, none of the variations discussed
+in~\S~\ref{sec:results:yields:variations} in the context of
+the~\cristallo~and~\ventura~yields are able to repair their predictions.
 Each of these alternate parameterizations corresponds to a renormalization of
 the predicted~\ohno~relation, and with inaccurate slopes, there is no factor by
 which the predicted~\no~ratios can be amplified or diminished in order to
@@ -297,36 +334,67 @@ accurately explain the data.
 However, in principle it is possible that a metallicity-dependent CCSN yield
 of N could make up the difference.
 \par
-If the~\karakasten~yields are to reproduce the observations, the overall N
-abundance must decrease at low~\oh~and increase at high~\oh.
-We therefore construct the following parameterization of~\ycc{N}:
-\begin{equation}
-\ycc{N} = (3.6\times10^{-4})\left(\frac{Z}{Z_\odot}\right),
-\label{eq:linear_yncc}
-\end{equation}
-where~$Z_\odot$ is the total metallicity of the sun, for which we take a value
-of~$Z = 0.014$ based on the findings of~\citet{Asplund2009} and
-\citet*{Asplund2021}.
-We illustrate this CCSN yield model with the slanted black dotted line in the
-left hand panel of Fig.~\ref{fig:n_cc_yields}.
-While our fiducial value best describes the rotating CCSN progenitor models of
-\citet{Limongi2018}, this alternate parameterization follows the non-rotating
-models published in~\citet{Limongi2018},~\citet{Sukhbold2016},
-\citet{Nomoto2013}, and~\citet{Woosley1995} while maintaing the same base-line
-value of~$3.6\times10^{-4}$ at solar metallicity.
-If the~\karakas~yields are to reproduce the observations, then unlike the
-predictions made with the~\karakasten~yields, the~\no~ratio at low~\oh~is
-fine (albeit slightly high by~$\sim$0.2 dex).
-Instead, only the N abundance at high~\oh~needs correcting.
-We therefore construct a second alternate form of~\ycc{N}~by retaining the
-value of the fiducial yield at sub-solar metallicity but assuming the value of
-equation~\refp{eq:linear_yncc} at super-solar abundances:
+In order for the~\karakas~yields to reproduce the observations, N abundances at
+high~\oh~must increase.
+The non-rotating CCSN models of~\citet{Nomoto2013} suggest that~\ycc{N}~may
+increase at super-solar metallicity (see Fig.~\ref{fig:n_cc_yields}).
+Perhaps this could make up the difference.
+We therefore construct the following parameterization of~\ycc{N} for use with
+the~\karakas~AGB star yields:
 \begin{equation}
 \ycc{N} = (3.6\times10^{-4})\max\left(1, \frac{Z}{Z_\odot}\right).
 \label{eq:broken_yncc}
 \end{equation}
+This yield maintains our baseline value of~$\ycc{N} = 3.6\times10^{-4}$ at
+sub-solar metallicities motivated by the rotating models of~\citet{Limongi2018}
+but adds a significant secondary yield component at higher~$Z$ as suggested
+by non-rotating models.
+In order for the~\karakasten~yields to successfully reproduce the observations,
+the sign of the~\ohno~relation must flip: the N abundances at high (low)~$Z$
+must increase (decrease).
+In a similar fashion, we construct the following parameterization of~\ycc{N} for
+use with the~\karakasten~AGB star yields:
+\begin{equation}
+\ycc{N} = (3.6\times10^{-4})\left(\frac{Z}{Z_\odot}\right)
+\label{eq:linear_yncc}
+\end{equation}
+This yield is motivated by the non-rotating CCSN models quantified in
+Fig.~\ref{fig:n_cc_yields}, in which we also illustrate these parameterizations
+with the slanted black dotted line.
+Although this model with~\ycc{N}~given by equation~\refp{eq:linear_yncc} and
+the~\karakasten~AGB star yields does not include a primary component in that
+the AGB star and CCSN yields both depend on metallicity, the combination is
+qualitatively motivated by reproducing the~\ohno~relation as observed.
+% If the~\karakasten~yields are to reproduce the observations, the overall N
+% abundance must decrease at low~\oh~and increase at high~\oh.
+% We therefore construct the following parameterization of~\ycc{N}:
+% \begin{equation}
+% \ycc{N} = (3.6\times10^{-4})\left(\frac{Z}{Z_\odot}\right),
+% \label{eq:linear_yncc}
+% \end{equation}
+% where~$Z_\odot$ is the total metallicity of the sun, for which we take a value
+% of~$Z = 0.014$ based on the findings of~\citet{Asplund2009} and
+% \citet*{Asplund2021}.
+% We illustrate this CCSN yield model with the slanted black dotted line in the
+% left hand panel of Fig.~\ref{fig:n_cc_yields}.
+% While our fiducial value best describes the rotating CCSN progenitor models of
+% \citet{Limongi2018}, this alternate parameterization follows the non-rotating
+% models published in~\citet{Limongi2018},~\citet{Sukhbold2016},
+% \citet{Nomoto2013}, and~\citet{Woosley1995} while maintaing the same base-line
+% value of~$3.6\times10^{-4}$ at solar metallicity.
+% If the~\karakas~yields are to reproduce the observations, then unlike the
+% predictions made with the~\karakasten~yields, the~\no~ratio at low~\oh~is
+% fine (albeit slightly high by~$\sim$0.2 dex).
+% Instead, only the N abundance at high~\oh~needs correcting.
+% We therefore construct a second alternate form of~\ycc{N}~by retaining the
+% value of the fiducial yield at sub-solar metallicity but assuming the value of
+% equation~\refp{eq:linear_yncc} at super-solar abundances:
+% \begin{equation}
+% \ycc{N} = (3.6\times10^{-4})\max\left(1, \frac{Z}{Z_\odot}\right).
+% \label{eq:broken_yncc}
+% \end{equation}
 \par
-We compare our GCE model predictions with these alternate CCSN yield
+We compare our GCE model predictions with these alternate yield
 parameterizations for the~\karakasten~and~\karakas~AGB star yield models in
 the right-hand panel of Fig.~\ref{fig:no_oh_predictions}.
 These metallicity-dependent CCSN yields are able to make up some of the
@@ -350,19 +418,39 @@ and each of the previously published tables we have investigated capture only
 a handful of realizations of them.
 \par
 In short, we find that in order to reproduce the gas-phase~\ohno~relation as
-observed, our model requires the sum total N yield from both CCSNe and AGB
-stars to scale roughly linearly with progenitor metallicity~$Z$.
-We find that a metallicity independent CCSN yield which sets the zero-point
-combined with an AGB star yield that does depend on~$Z$ is a simple recipe
-that our GCE model has sufficient success with.
-We have illustrated this dependence for our fiducial CCSN yield of
-$\ycc{N} = 3.6\times10^{-4}$ in Fig.~\ref{fig:ssp} (see discussion
-in~\S~\ref{sec:yields:imf_agb}).
-With the~\cristallo~and~\ventura~models specifically, our results suggest that
-a substantial fraction of massive stars must collapse directly to black holes
-if their normalization of the N yield is correct.
-Otherwise, these AGB star yields must increase to offset the additional O
-from massive stars under more explosive black hole landscapes.
+observed, our model requires the metallicity dependence characteristic of the
+secondary N yield to be approximately linear with~$Z$.
+We find in general that describing the primary component as a
+metallicity-independent CCSN yield and the secondary component as a
+metallicity-dependent AGB star yield is a simple recipe that our GCE models
+have sufficient success with.
+We have previously illustrated this dependence in the right panel of
+Fig.~\ref{fig:ssp} for our fiducial model - the linear AGB star yield with
+slope~$\xi = 9\times10^{-4}$ and~$\ycc{N} = 3.6\times10^{-4}$.
+These yields are appropriate for GCE models with strong outflows and massive
+star yields suggested by models in which most M~$>8~\msun$ stars explode as a
+CCSN.
+In models with weaker outflows and lower massive star yields due to extensive
+black hole formation, the N yields may be up to~$\sim$3 times smaller.
+% (i.e.~$\ycc{N} = 1.2\times10^{-4}$ and~$\xi = 3\times10^{-4}$).
+% The unmodified~\cristallo~yields follow this slope quite closely as we have
+% demonstrated in Fig.~\ref{fig:agb_yield_models}.
+Indeed the unmodified~\cristallo~yields follow a slope of~$\xi = 3\times10^{-4}$
+quite closely as we have demonstrated in Fig.~\ref{fig:agb_yield_models}.
+% In short, we find that in order to reproduce the gas-phase~\ohno~relation as
+% observed, our model requires the sum total N yield from both CCSNe and AGB
+% stars to scale roughly linearly with progenitor metallicity~$Z$.
+% We find that a metallicity independent CCSN yield which sets the zero-point
+% combined with an AGB star yield that does depend on~$Z$ is a simple recipe
+% that our GCE model has sufficient success with.
+% We have illustrated this dependence for our fiducial CCSN yield of
+% $\ycc{N} = 3.6\times10^{-4}$ in Fig.~\ref{fig:ssp} (see discussion
+% in~\S~\ref{sec:yields:imf_agb}).
+% With the~\cristallo~and~\ventura~models specifically, our results suggest that
+% a substantial fraction of massive stars must collapse directly to black holes
+% if their normalization of the N yield is correct.
+% Otherwise, these AGB star yields must increase to offset the additional O
+% from massive stars under more explosive black hole landscapes.
 
 
 \subsection{The Importance of the Metallicity Dependence of the Yield}
@@ -395,7 +483,7 @@ To investigate this further, we consider two variants of our fiducial model:
 one with the dependence on stellar age (or, equivalently, stellar mass)
 removed from the enrichment rate calculations, and the other with the
 metallicity dependence removed.
-To make this comparison more straight-forward, we use the post-processing
+To make this comparison more straightforward, we use the post-processing
 migration model (see discussion in~\S~\ref{sec:multizone}).
 \par
 To remove the age dependence, we simply eject the AGB star yields alongside
@@ -410,7 +498,7 @@ discussion in~\S~\ref{sec:yields:ccsne}), we make use of the software's
 capability to let the user specify functional forms for nucleosynthetic yields
 and simply add this N yield to~\ycc{N}~and set~\yagb{N}~to zero.
 In this model,~\ycc{N}~inherits a metallicity dependence from the AGB star
-yields and has the exact shape as the curves in the right hand panel of
+yields and has the exact shape of the purple curve in the right hand panel of
 Fig.~\ref{fig:ssp}.
 To remove the metallicity dependence, the procedure is much simpler: we simply
 evaluate~\yagb{N}~at our assumed solar metallicity of~$Z = 0.014$ at all
@@ -442,6 +530,30 @@ constraining power over the mass dependence of the AGB star yield of N.
 \subsection{Comparison to Stellar Abundances in the Milky Way Disc}
 \label{sec:results:vincenzo_comp}
 
+Although N abundances are typically measured in the gas-phase in external
+galaxies, stellar abundances for the Milky Way are available through APOGEE
+\citep{Majewski2017}.
+By additionally making use of these data, we can investigate trends with
+stellar age and~\ofe~at fixed metallicity.
+Before comparing the predictions of GCE models to N abundances derived from
+spectra of red giant samples such as APOGEE, it is essential to adjust the
+measurements for internal processes known to alter the surface compositions of
+stars because GCE models predict the birth abundances.
+During the main sequence lifetime of M~$\gtrsim 1.3~\msun$ stars, the CNO cycle
+processes much of the C and O nuclei in the core into~\Nfourteen.
+When the star evolves off the main sequence, this N-rich material is mixed with
+the outer convective layers, increasing the N abundance in the
+photosphere~\citep{Gilroy1989, Korn2007, Lind2008, Souto2018, Souto2019}.
+Using~\texttt{MESA} stellar evolution models~\citep{Paxton2011, Paxton2013,
+Paxton2015, Paxton2018} with standard mixing prescriptions,~\citet{Vincenzo2021}
+developed a recipe to approximate the birth abundances of C, N and O and
+applied it to a sample of APOGEE/Kepler red giants with asteroseismic mass
+measurements.
+They found good agreement between the APOGEE abundances and
+the~\citet{Dopita2016} measurements, and with our fiducial model's successful
+reproduction of their data, this indicates that it should also reproduce
+the~\ohno~relation for APOGEE disc stars.
+
 % fig 8
 \begin{figure}
 \centering
@@ -457,8 +569,8 @@ lookback time in the fiducial model at~$\rgal = 4$ (black), 8 (red), and 12 kpc
 % fig 9
 \begin{figure*}
 \centering
-\includegraphics[scale = 0.55]{no_vs_age.pdf}
-\includegraphics[scale = 0.55]{no_vs_ofe.pdf}
+\includegraphics[scale = 0.68]{no_vs_age.pdf}
+\includegraphics[scale = 0.68]{no_vs_ofe.pdf}
 \caption{
 \textbf{Left}:~\no~as a function of stellar age for 5000 stars randomly
 sampled from our model stellar populations in three bins of~\feh~(coloured 
@@ -472,8 +584,11 @@ function of~\ofe~in bins of~\oh.
 \label{fig:vincenzo_comp}
 \end{figure*}
 
-In Fig.~\ref{fig:nh_feh_vs_lookback}, we plot the evolution of N, O, and Fe
-abundances in the gas phase at~$\rgal = 4$, 8, and 12 kpc in our fiducial model
+We find that our models predict a correlation between N and Fe abundances in
+the gas-phase which turns out to be important to understanding how the model
+predictions compare to stellar abundances.
+In Fig.~\ref{fig:nh_feh_vs_lookback}, we plot the evolution of~\nh,~\oh,
+and~\feh~in the ISM at~$\rgal = 4$, 8, and 12 kpc in our fiducial model
 with diffusion migration (see discussion in~\S~\ref{sec:multizone}).
 \nh~is more correlated with~\feh~than~\oh~at all radii, and the relation
 persists up to lookback times of~$\sim$10 Gyr.
@@ -487,45 +602,49 @@ equilibrium before N yields stabilize.
 When many stellar populations are present, the bulk of the N production will
 thus always follow the bulk production of more abundant species; this is 
 qualitatively similar to what~\citet{Johnson2020} found regarding the
-production timescales of Fe and strontium.
+production timescales of Sr and Fe.
 As a consequence of both its slight delay and its metallicity-dependent
 yields, N reaches its equilibrium abundance on timescales similar to Fe rather
 than O~\citep{Weinberg2017}.
 Due to the prompt and metallicity independent nature of O enrichment,~\oh~is
 near equilibrium as far back as~$\sim$10 Gyr ago while~\nh~and~\feh~are not.
-This N-Fe correlation turns out to be important in understanding how these
-model predictions compare to stellar abundances as we discuss below.
+% This N-Fe correlation turns out to be important in understanding how these
+% model predictions compare to stellar abundances as we discuss below.
 \par
-Before comparing the predictions of GCE models to N abundances derived from
-stellar spectra, it is essential to adjust the measurements for internal
-processes known to alter the surface compositions of stars because GCE models
-predict the birth abundances of stars.
-After the CNO cycle has processed much of the C and O nuclei in a star's core
-into~\Nfourteen~during its main sequence lifetime, this N-rich material is
-mixed with the outer convective layers, increasing the N abundance in the
-photosphere~\citep{Gilroy1989, Korn2007, Lind2008, Souto2018, Souto2019}.
-\par
-Using~\texttt{MESA} stellar evolution models~\citep{Paxton2011, Paxton2013,
-Paxton2015, Paxton2018} with standard mixing prescriptions,~\citet{Vincenzo2021}
-developed a recipe to approximate birth abundances of C, N and O and applied it
-to a sample of APOGEE/Kepler red giants.
-They found good agreement between the APOGEE abundances and the
-\citet{Dopita2016} measurements, so our fiducial model's successful
-reproduction of the~\citet{Dopita2016} trend is an indication that it should
-also reproduce the~\ohno~relation for APOGEE disc stars.
+% Before comparing the predictions of GCE models to N abundances derived from
+% stellar spectra, it is essential to adjust the measurements for internal
+% processes known to alter the surface compositions of stars because GCE models
+% predict the birth abundances of stars.
+% After the CNO cycle has processed much of the C and O nuclei in a star's core
+% into~\Nfourteen~during its main sequence lifetime, this N-rich material is
+% mixed with the outer convective layers, increasing the N abundance in the
+% photosphere~\citep{Gilroy1989, Korn2007, Lind2008, Souto2018, Souto2019}.
+% \par
+% Using~\texttt{MESA} stellar evolution models~\citep{Paxton2011, Paxton2013,
+% Paxton2015, Paxton2018} with standard mixing prescriptions,~\citet{Vincenzo2021}
+% developed a recipe to approximate birth abundances of C, N and O and applied it
+% to a sample of APOGEE/Kepler red giants.
+% They found good agreement between the APOGEE abundances and the
+% \citet{Dopita2016} measurements, so our fiducial model's successful
+% reproduction of the~\citet{Dopita2016} trend is an indication that it should
+% also reproduce the~\ohno~relation for APOGEE disc stars.
 Combining the~\citet{Vincenzo2021}~\no~ratios with the APOGEE stellar ages
 taken from~\citet{Miglio2021}, we illustrate the~\no-age relation in bins
-of~\feh~as predicted by our model in the left panel of Fig.
-\ref{fig:vincenzo_comp}.
+of~\feh~as predicted by our model in the left panel of
+Fig.~\ref{fig:vincenzo_comp}.
 In good agreement with the observational measurements, the model predicts
 the~\no-age relation to be relatively flat in bins of~\feh.
 This arises as a consequence of the N-Fe correlation and the fast approach to
 equilibrium in~\oh~as discussed above (see Fig.~\ref{fig:nh_feh_vs_lookback}).
 A bin in~\feh~approximately corresponds to a bin in~\nh, and by extension a bin
 in~\no~as well since~\oh~is nearly constant up to~$\sim$10 Gyr ago.
-This is an important success of the model, because with uncorrected N
-abundances,~\citet{Vincenzo2021} demonstrate that the~\no-age relation exhibits
-a significant negative slope at fixed~\feh~(see their Fig. 7).
+With uncorrected N abundances,~\citet{Vincenzo2021} demonstrate that the~\no-age
+relation exhibits a significant negative slope at fixed~\feh~(see their Fig. 7),
+indicating that we would have erroneously found a tension between our model and
+the observations if we had used uncorrected measurements.
+% This is an important success of the model, because with uncorrected N
+% abundances,~\citet{Vincenzo2021} demonstrate that the~\no-age relation exhibits
+% a significant negative slope at fixed~\feh~(see their Fig. 7).
 \par
 In the right panel of Fig.~\ref{fig:vincenzo_comp}, we compare our model
 predictions to the~\no-\ofe~relation at fixed~\oh~reported by
@@ -541,9 +660,9 @@ mixing processes, the chemical dichotomy in~\no~between the high [$\alpha$/Fe]
 and low [$\alpha$/Fe] disc populations persists (for discussion of the
 Galaxy's two distinct chemical populations see, e.g.,~\citealp{Hayden2015,
 Weinberg2019, Weinberg2021, Griffith2021b}).
-Although the~\citet{Johnson2021} model does not reproduce the infamous
-[$\alpha$/Fe] bimodality in detail (see discussion in their~\S~3.3), a future
-iteration which does should also reproduce it for [N/O] based on these results.
+Although the~\citet{Johnson2021} model does not reproduce the [$\alpha$/Fe]
+bimodality in detail (see discussion in their~\S~3.3), a future iteration which
+does should also reproduce it for [N/O] based on these results.
 \par
 Quantitatively, our model slightly overpredicts~\no~in the lower metallicity
 bins in both panels of Fig.~\ref{fig:vincenzo_comp}.
@@ -556,20 +675,35 @@ with~$Z$ (see equation~\ref{eq:linear_yield}), this suggests that perhaps a
 slightly sub-linear scaling would be more accurate, but only barely because
 the discrepancies in Fig.~\ref{fig:vincenzo_comp} are at the~$\sim$0.1 dex
 level.
+\par
+Although we demonstrate in~\S~\ref{sec:results:t_z_dep_comp} that the
+metallicity dependence of the yield plays the strongest role in establishing
+the~\ohno~relation, the DTD plays an important role in shaping the stellar
+abundances.
+In the model in which AGB nucleosynthetic yields are injected instantaneously
+along with CCSN products, the N-Fe correlation described above is no longer
+present.
+Instead, N approaches equilibrium on much faster timescales, resulting in it
+being much more correlated with O than Fe, and the resulting~\no-age relation
+is positively sloped at fixed~\feh.
+This suggests that the DTD may play a minimal role in establishing gas-phase
+abundances but are important in shaping stellar abundances.
 
 \subsection{The Sources of Scatter in the~\ohno~Relation}
 \label{sec:results:schaefer_comp}
 
 \citet{Schaefer2020} demonstrate that intrinsic scatter in the
 gas-phase~\ohno~relation is correlated with variations in the local SFE.
-This is expected from simple GCE models: with slower star formation, more AGB
-stars enrich the ISM by the time it reaches a given abundance, yielding a
-higher~\no~at a given~\oh~\citep[e.g.][]{Molla2006, Vincenzo2016a}.
+This is expected from one-zone GCE models~\citep[e.g.][]{Molla2006,
+Vincenzo2016a}.
 However,~\citet{Schaefer2020} did not rule out radial migration as another
 potential source of scatter in this relation.
-Our models, taking into account the effects of stellar migration on the
+Although we have demonstrated in~\S~\ref{sec:results:fiducial} that the impact
+of stellar migration on enrichment rates is small, it could nonetheless
+contribute significantly to scatter in the observed~\ohno~relation.
+Our models, taking into account the effects of migration on the
 enrichment rates while allowing full control over the SFH and the SFE
-through~\vice, are the ideal tool with which to address this question.
+through~\vice, are an ideal tool with which to address this question.
 \par
 To this end, we construct two variants of our fiducial model.
 While the fiducial model specifies the SFH~\textit{a priori} and
@@ -578,11 +712,11 @@ the infall history as a function of radius and time.
 As we will demonstrate below, the effects of dilution play an important role in
 driving variations in the~\ohno~plane in these variants, and by specifying the
 infall history we have more control over the amount of dilution.
-Similar to other models discussed in this paper, we normalize
+In a similar fashion as in our fiducial model, we normalize
 $\dot{\Sigma}_\text{in}$ such that a stellar mass consistent with that reported
 by~\citet{Licquia2015} arises from the simulation.
 All other evolutionary parameters are the same as in the~\citet{Johnson2021}
-fiducial model.
+fiducial model (see discussion in~\S~\ref{sec:multizone} for details).
 \par
 In the first variant, the SFE exhibits 50\% sinusoidal oscillations with time
 over 2 Gyr periods:
@@ -600,7 +734,7 @@ methods (see Figs. 4 and 5 of~\citealp{Tacconi2018} and references therein).
 Furthermore, variations in the SFE are of similar magnitude in~\hsim, the
 galaxy from which our model's migration history is drawn.
 In the second variant, the SFE is constant and the infall rate oscillates with
-a 75\% amplitude about its mean value in the first variant:
+a 75\% amplitude about its value in the first variant:
 \begin{equation}
 \dot{\Sigma}_\text{in}(\rgal, t) = \langle\dot{\Sigma}_\text{in}\rangle
 \left(1 + 0.75\sin\left(\frac{2\pi t}{2~\text{Gyr}}\right)\right).
@@ -609,7 +743,8 @@ a 75\% amplitude about its mean value in the first variant:
 The amplitude of 75\% is chosen such that the ensuing variability in the SFR is
 of similar magnitude between the two models ($\sim$40\%).
 We additionally run a model in which neither the accretion rate nor the SFE
-oscillate, replacing the fiducial model used in previous sections.
+oscillate, replacing the fiducial model used in previous sections with this
+constant infall model.
 Otherwise, the evolutionary differences beyond simple oscillations complicate
 the comparison.
 
@@ -620,18 +755,20 @@ the comparison.
 \includegraphics[scale = 0.47]{delta_no_schaefercomp.pdf}
 \caption{
 \textbf{Left}: One cycle of oscillations in the~\ohno~relation at
-high~\oh~induced by 50\% sinusoidal variability in~$\tau_\star$ (solid coloured
-lines).
+high~\oh~induced by sinusoidal variability in~$\tau_\star$ with an amplitude of
+0.5 (solid coloured lines; see equation~\ref{eq:sfe_var}).
 Dotted lines show the~\ohno~relation at the same five snapshots in the fiducial
 model with no variability in~$\tau_\star$ but still with diffusion migration
 (see discussion in~\S~\ref{sec:multizone}).
-The black dashed line shows the time evolution the abundances at~$\rgal = 8$
+The black dashed line shows the time evolutionof the abundances at~$\rgal = 8$
 kpc, the approximate Galactocentric radius of the sun, with the times of each
 of the five snapshots marked by a coloured point.
 \textbf{Middle and Right}: For the same five snapshots in the left hand panel,
 the deviation in~\no~at fixed~\oh~relative to the fiducial model for the case
-with 50\% variability in~$\tau_\star$ (middle) and with 75\% variability
-in~$\dot{\Sigma}_\star$ (right).
+with sinusoidal variability in~$\tau_\star$ at an amplitude of 0.5 (middle; see
+equation~\ref{eq:sfe_var})
+and with sinusoidal variability in~$\dot{\Sigma}_\star$ at an amplitude of 0.75
+(right; see equation~\ref{eq:ifr_var}).
 The shaded regions in both panels quantify the width of the [N/O] distribution
 in~$10^{10.5} - 10^{11}~\msun$ galaxies in MaNGA taken from
 \citet{Schaefer2020}.
@@ -663,7 +800,7 @@ gas-phase~\ohno~relation for five snapshots covering one cycle of fluctuations
 induced by variability in~$\tau_\star$ according to equation~\refp{eq:sfe_var}.
 This model predicts a~$\sim$0.1 dex dynamic range in~\no~at fixed~\oh, whereas
 the constant model with no variability in~$\tau_\star$ predicts the relation
-to be nearly constant over this time interval.
+to be quite steady over this time interval.
 This suggests that stellar migration, present in both the constant model and
 this oscillatory variant, does not induce significant variability in
 the~\ohno~plane; however, we demonstrate below that its effects are nonetheless
@@ -692,8 +829,14 @@ with a black dashed line in the left panel of Fig.~\ref{fig:schaefer_comp}.
 The effect is generally larger in~\oh~than in~\no~($\sim$0.1 dex versus
 $\sim$0.05 dex in this example) because dilution affects
 both~\oh~and~\nh~similarly.
-The minimal increase in~\no~is thus a result of the small difference between N
-and O production timescales.
+% {\color{red}
+% The minimal increase in~\no~is thus a result of the small difference between N
+% and O production timescales.
+% In our model in which AGB star nucleosynthetic products are ejected
+% instantaneously (see discussion in~\S~\ref{sec:results:t_z_dep_comp}), we
+% indeed find the inverse - that decreases in~\oh~are accompanied by decreases
+% in~\no.
+% }
 In the model with oscillations in~$\dot{\Sigma}_\text{in}$, we find that
 qualitatively similar processes drive the evolution in abundances, but there
 are interesting differences in detail which we discuss below in the context of
@@ -726,18 +869,18 @@ with the width of the relation derived observationally by~\citet{Schaefer2020}.
 This supports their argument that variations in the local SFE can drive
 intrinsic scatter in the~\ohno~relation, but the effects of stellar migration
 are still non-negligible.
-We demonstrate this by comparing the green solid and black dashed lines in the
-middle panel, which denotes the same quantity from the oscillatory~$\tau_\star$
-model with post-processing migration (see discussion in~\S~\ref{sec:multizone}).
-As previously demonstrated in Fig.~\ref{fig:no_oh_timeevol} and discussed
-in~\S~\ref{sec:results:fiducial}, stellar migration affects~\no~ratios with
-an amplitude of~$\sim$0.05 dex, and this is apparent in
-Fig.~\ref{fig:schaefer_comp} as well.
+We demonstrate this by comparing the green solid line in the middle panel for
+the~$T = 9.5$ Gyr snapshot to the black dashed line denoting the same quantity
+with post-processing migration (see discussion in~\S~\ref{sec:multizone}).
+While some of the features in~$\Delta\no$ as a function of~\oh~can be
+attributed to the difference in GCE parameters, stellar migration
+affects~\no~ratios with an amplitude of~$\sim$0.05 dex (see also
+Fig.~\ref{fig:no_oh_timeevol} and discussion in~\S~\ref{sec:results:fiducial}).
 Although this is smaller than the impact of oscillations in either~$\tau_\star$
 or~$\dot{\Sigma}_\text{in}$ ($\sim$0.1 dex), it is nonetheless significant
 compared to the width of the~\citet{Schaefer2020} distributions, also at
 the~$\lesssim$0.1 dex level; this suggests that stellar migration is a
-non-negligible but subdominant source of scatter.
+subdominant but non-negligible source of scatter.
 \par
 In general, variability in~$\tau_\star$ impacts abundances more strongly than
 variability in~$\dot{\Sigma}_\text{in}$.
@@ -757,8 +900,9 @@ Consequently,~\no~increases rather than decreases with increasing~\oh, and
 changes in~\no~at fixed~\oh~are smaller.
 In the context of the observational results~\citep{Schaefer2020}, this suggests
 that different~\no~ratios at fixed~\oh~are less likely to reflect changes in
-the accretion rate than internal properties of the star forming ISM (e.g.
-heating/cooling and pressure, which here get folded into~$\tau_\star$).
+the accretion rate and more likely to reflect variations in the internal
+properties of the star forming ISM, such as the thermal state or the pressure,
+quantities which here get folded into~$\tau_\star$.
 
 \end{document}
 

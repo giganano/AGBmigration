@@ -71,16 +71,25 @@ assumptions regarding the Galaxy's dynamical history and the subsequent effects
 on predicted abundances; we plan to pursue this question in future work.
 \par
 Radial migration of stars proceeds from the~\hsim~star particles in a simple
-manner; for a stellar population in our model born at a radius~\rgal~and a
-time~$T$,~\vice~searches for star particles born at~$\rgal \pm 250$ pc and
-$T \pm 250$ Myr.
+manner; for a stellar population in our model born at a radius~$R_\text{birth}$
+and a time~$T_\text{birth}$,~\vice~searches for star particles born at
+$R_\text{birth} \pm 250$ pc and $T_\text{birth} \pm 250$ Myr.
 From the star particles that make this cut, it then randomly selects one to act
 as that stellar population's~\textit{analogue}.
 The stellar population then assumes the present day midplane distance~$z$ and
-the change in orbital radius~$\Delta\rgal$ of its analogue.
+the change in orbital radius~$\Delta\rgal$ of its analogue between its birth
+and the present day.
 In the~\citet{Johnson2021} fiducial model, stellar populations move to their
-implied final radii with a~$\sqrt{\text{age}}$ dependence, similar to the
-assumption made by~\citet{Frankel2018, Frankel2019}.
+implied final radii with a~$\sqrt{\text{age}}$ dependence according to:
+\begin{equation}
+\rgal(T) = R_\text{birth} + \Delta\rgal
+\sqrt{\frac{T - T_\text{birth}}{13.2~\text{Gyr} - T_\text{birth}}},
+\end{equation}
+where 13.2 Gyr is simply the present day (see discussion above).
+With displacement proportional to~$\sqrt{\text{age}}$, this corresponds to a
+scenario in which radial migration proceeds as a diffusion process as modeled
+by~\citet{Frankel2018, Frankel2019} and supported by the N-body simulations
+of~\citet*{Brunetti2011}.
 Although~\citet{Johnson2021} investigated other assumptions for this
 time-dependence, in the present paper we only use this parameterization
 (hereafter referred to as the ``diffusion'' model) and an idealized one in
@@ -98,15 +107,6 @@ As in~\citet{Johnson2021}, we neglect radial gas flows
 \citep[e.g.][]{Lacey1985, Bilitewski2012, Vincenzo2020}, instead focusing on
 the impact of stellar migration.
 \par
-% Although this model does impose some small but nonzero level of star formation
-% at early times in the outer disc, the sample of star particles from~\hsim~is
-% sufficiently large such that stellar populations that form there are typically
-% assigned analogues which formed within~$\sim$2 kpc of their birth radius.
-% While ignoring effects such as the radial growth of the Galaxy (e.g.
-% \citealp*{Bird2012};~\citealp{Bird2013}), this at least ensures that these old,
-% outer disc populations are assigned star particles which given them an outer
-% disc rather than an inner disc dynamical history.
-% \par
 Rather than using a hydrodynamical simulation, some previous studies have
 implemented stellar migration using dynamical arguments
 \citep[e.g.][]{Schoenrich2009, Sharma2021}.
@@ -116,21 +116,30 @@ It is also unclear to what extent the fit might bias the model into agreement
 with quantities in the sample not involved in the fit.
 A disadvantage of our approach is that we are restricted to one realization of
 our dynamical history; slight variations are not possible.
-Because our model assumes smooth migration with a~$\sqrt{\text{age}}$
-dependence (see discussion above), it captures the effects of ``churning'' but
-neglects the effects of ``blurring.'' 
-These terms are commonly used to refer to changes in the guiding centre radii
-of stars and their epicyclic motions, both of which are induced by a variety
-of physical interactions such as molecular cloud scattering
-\citep{Mihalas1981, Jenkins1990, Jenkins1992}, orbital resonances with spiral
-arms or bars~\citep{Sellwood2002, Minchev2011}, and satellite perturbations
-\citep*{Bird2012}.
-All of these effects are included in~\hsim, and therefore realistic churning
-should simply be inherited by the stellar populations in our model.
-Nonetheless, it would be straight-forward to run a version of our model with
-superimposed sinusoidal fluctuations on each stars' change in radius over
-time to mimic the effects of blurring, but we do not pursue this question
-here.
+We do not distinguish between ``blurring'' and ``churning'', terms commonly
+used to refer to changes in the guiding centre radii of stars and their
+epicyclic motions, respectively.
+Both are induced by a variety of physical interactions such as molecular cloud
+scattering~\citep{Mihalas1981, Jenkins1990, Jenkins1992}, orbital resonances
+with spiral arms or bars~\citep{Sellwood2002, Minchev2011}, and satellite
+perturbations~\citep*{Bird2012}.
+All of these effects are included in~\hsim~and should therefore be inherited by
+the stellar populations in our GCE model.
+% Because our model assumes smooth migration with a~$\sqrt{\text{age}}$
+% dependence (see discussion above), it captures the effects of ``churning'' but
+% neglects the effects of ``blurring.'' 
+% These terms are commonly used to refer to changes in the guiding centre radii
+% of stars and their epicyclic motions, both of which are induced by a variety
+% of physical interactions such as molecular cloud scattering
+% \citep{Mihalas1981, Jenkins1990, Jenkins1992}, orbital resonances with spiral
+% arms or bars~\citep{Sellwood2002, Minchev2011}, and satellite perturbations
+% \citep*{Bird2012}.
+% All of these effects are included in~\hsim, and therefore realistic churning
+% should simply be inherited by the stellar populations in our model.
+% Nonetheless, it would be straight-forward to run a version of our model with
+% superimposed sinusoidal fluctuations on each stars' change in radius over
+% time to mimic the effects of blurring, but we do not pursue this question
+% here.
 \par
 We assume the SFH of the ``inside-out'' model from~\citet{Johnson2021}.
 The time-dependence at a given~\rgal~is described by
@@ -181,8 +190,8 @@ ongoing debate about the CO-to-H$_2$ conversion factor
 Based on a compilation of the~\citet{Bigiel2010} and~\citet{Leroy2013} data
 shown in comparison to the theoretically motivated parameterizations of
 \citet[][see their Fig. 2]{Krumholz2018},~\citet{Johnson2021} take a
-three-component power-law as their $\dot{\Sigma}_\star - \Sigma_\text{gas}$
-relation with index given by:
+three-component power-law~$\dot{\Sigma}_\star \propto \Sigma_\text{gas}^N$ with
+index~$N$ given by:
 \begin{equation}
 N =
 \begin{cases}
@@ -198,13 +207,13 @@ $\tau_\star \equiv \Sigma_\text{gas} / \dot{\Sigma}_\star$ at surface densities
 where~$N = 1$ be given by the value derived observationally for molecular gas,
 denoted by~$\tau_\text{mol}$.
 This value at the present day is taken to be~$\tau_{\text{mol},0} = 2$ Gyr
-\citep{Leroy2008, Leroy2013} with a~$t^{1/2}$ time-dependence based on the
-findings of~\citet{Tacconi2018} studying the properties of molecular gas as a
-function of redshift.
+\citep{Leroy2008, Leroy2013} with a~$t^{1/2}$ dependence on cosmic time based
+on the findings of~\citet{Tacconi2018} studying the properties of molecular gas
+as a function of redshift.
 \par
-Because of the yields adopted in the~\citet{Johnson2021} models (see
-discussion at the beginning of~\S~\ref{sec:yields}), considerable outflows are
-required in order to predict plausible abundances.
+With the yields adopted in the~\citet{Johnson2021} models (see discussion at
+the beginning of~\S~\ref{sec:yields}), considerable outflows are required in
+order to predict plausible abundances.
 \citet{Weinberg2017} demonstrate analytically that the equilibrium abundance of
 some element in the gas phase is approximately determined by its yield and the
 mass loading factor~$\eta \equiv \dot{\Sigma}_\text{out} / \dot{\Sigma}_\star$
@@ -213,8 +222,9 @@ with a small correction for the SFH.
 equilibrium abundance as a function of radius corresponds to a reasonable
 metallicity gradient within the Galaxy (see their Fig. 3 and discussion in
 their~\S~3.1).
-Nonetheless, these parameters are mutually degenerate since they act as source
-and sink terms in computing enrichment rates.
+Nonetheless, yields and the strength of outflows are mutually degenerate
+parameters since they act as source and sink terms in computing enrichment
+rates.
 The absolute scale of nucleosynthetic yields is a topic of debate (see
 discussion in, e.g.,~\citealp{Griffith2021a}), and some authors even neglect
 outflows entirely, arguing that they do not significantly alter the chemical
