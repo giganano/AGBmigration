@@ -5,77 +5,6 @@
 \section{Nucleosynthesis}
 \label{sec:yields}
 
-Here we make use of the chemical evolution model for the Milky Way
-presented in~\citet{Johnson2021}, which runs using the publicly available
-\texttt{Versatile Integrator for Chemical Evolution}
-(\vice, see Appendix~\ref{sec:vice};~\citealp{Johnson2020, Griffith2021a,
-Johnson2021}), an open-source~\python~package designed for GCE modeling.
-\citet{Johnson2021} focus their discussion of the model predictions on O and
-Fe, and we retain their yields of these elements here.
-The supernova (SN) yields are defined as the net mass of some element X
-produced over all explosion events in units of the progenitor cluster's mass.
-For example, with a yield of~$y_\text{X} = 0.001$, a hypothetical~$1000~\msun$
-star cluster would produce~$1~\msun$ of the element X instantaneously in the
-case of CCSNe or over the delay-time distribution (DTD) in the case of SNe Ia.
-These yields are net yields in that they do not quantify the metal mass
-ejected to the interstellar medium (ISM) that was initially present within a
-star; in the previous example, the~$1~\msun$ yield is only the newly produced
-metal mass.
-We adopt the following values from~\citet{Johnson2021}, who in turn base them
-off of~\citet*{Weinberg2017} and~\citet{Johnson2020}:
-\begin{itemize}
-	\item $\ycc{O} = 0.015$
-
-	\item $\ycc{Fe} = 0.0012$
-
-	\item $\yia{O} = 0$
-
-	\item $\yia{Fe} = 0.00214$,
-\end{itemize}
-where the subscripts and superscripts differentiate between the element and the
-SN type.
-We explore variations of these values in the context of the overall
-normalization of nucleosynthetic yields and Galactic outflows
-in~\S~\ref{sec:results:yields}.
-We assume that N is not produced in significant amounts by SNe Ia
-\citep{Johnson2019}, setting~$\yia{N} = 0$ throughout this paper
-accordingly, and spend the remainder of this section discussing the CCSN and
-AGB star yields of N.
-\par
-A significant portion of N yields arise as a consequence of the CNO
-cycle.\footnote{
-	\Ctwelve(p,~$\gamma$)\Nthirteen($\beta^+~\nu_\text{e}$)\Cthirteen
-	(p,~$\gamma$)\Nfourteen(p,~$\gamma$)\Ofifteen($\beta^+~\nu_\text{e}$)
-	\Nfifteen(p,~$\alpha$)\Ctwelve
-}
-As the dominant source of pressure and energy generation in non-zero
-metallicity main sequence stars with initial masses of~$\gtrsim$1.3~\msun, this
-cyclic nuclear reaction catalyses the conversion of H into He that would
-otherwise be accomplished by the proton-proton chain~\citep*{Suliga2021}.
-Its slowest component by far is the~\Nfourteen(p,~$\gamma$)\Ofifteen~reaction
-\citep[e.g.][]{LUNA2006}.
-Consequently, the first order effect of the CNO cycle is to convert most of the
-C isotopes in stellar cores into~\Nfourteen.
-As we will discuss in this section, this plays an important role in shaping N
-yields from stars of all masses.
-
-\subsection{Core Collapse Supernovae and Massive Star Winds}
-\label{sec:yields:ccsne}
-
-In~\vice, CCSN nucleosynthetic products are approximated to be produced
-instantaneously following an episode of star formation; this is a valid
-approximation due to how short the lives of massive stars are compared to the
-relevant timescales for GCE.
-Based on this and its definition as being in units of a stellar population's
-total mass, the yield is simply the constant of proportionality between the
-CCSN production rate and the star formation rate (SFR):
-\begin{equation}
-\dot{M}_\text{X}^\text{CC} = \ycc{X}\dot{M}_\star
-\end{equation}
-More generally,~\ycc{X}~quantifies~\textit{all} of the nucleosynthetic material
-approximated to be produced instantaneously following a single stellar
-population's formation.
-
 % fig 2
 \begin{figure*}
 \centering
@@ -92,7 +21,7 @@ according to the legend.
 velocities of 150 (circles) and 300 km/s (stars).
 The horizontal dashed line marks~$\ycc{N} = 3.6\times10^{-4}$,
 the value of our fiducial CCSN yield of N in our GCE models.
-We use the form shown by the slanted line (equation~\ref{eq:linear_yncc})
+We also use the form shown by the slanted line (equation~\ref{eq:linear_yncc})
 in~\S~\ref{sec:results:yields:yncc} in combination with some of our AGB star
 yield models discussed in~\S~\ref{sec:yields:agb}.
 \textbf{Right}: The~\no~ratio predicted by each of the explosion models in
@@ -104,6 +33,113 @@ in Fig.~\ref{fig:no_oh_observed}.
 \label{fig:n_cc_yields}
 \end{figure*}
 
+Here we make use of the chemical evolution model for the Milky Way
+presented by~\citet{Johnson2021}, which runs using the publicly available
+\texttt{Versatile Integrator for Chemical Evolution}
+(\vice, see Appendix~\ref{sec:vice};~\citealp{Johnson2020, Griffith2021a,
+Johnson2021}), an open-source~\python~package designed for GCE modeling.
+\citet{Johnson2021} focus their discussion of the model predictions on O and
+Fe, and we retain their yields of these elements here.
+The supernova (SN) yields are defined as the net mass of some element X
+produced over all explosion events in units of the progenitor cluster's mass.
+For example, with a yield of~$y_\text{X} = 0.001$, a hypothetical~$1000~\msun$
+star cluster would produce~$1~\msun$ of the element X instantaneously in the
+case of CCSNe or over the delay-time distribution (DTD) in the case of SNe Ia.
+These yields are net yields in that they do not quantify the metal mass
+ejected to the interstellar medium (ISM) that was initially present within a
+star; in the previous example, the~$1~\msun$ yield is only the newly produced
+metal mass.
+We adopt the following values from~\citet{Johnson2021}:
+\begin{itemize}
+	\item $\ycc{O} = 0.015$
+
+	\item $\ycc{Fe} = 0.0012$
+
+	\item $\yia{O} = 0$
+
+	\item $\yia{Fe} = 0.00214$,
+\end{itemize}
+where the subscripts and superscripts differentiate between the element and the
+SN type.
+These choices are based on a mix of theoretical and empirical considerations.
+For a~\citet{Kroupa2001} IMF, the solar metallicity CCSN yields of
+\citet{Limongi2006} and~\citet[][based on the~\citealp{Sukhbold2016} models
+with forced explosion]{Griffith2021a} predict~$\ycc{O} = 0.017$ and 0.018,
+respectively, if all stars from~$8 - 120~\msun$ explode.
+The value of~$\ycc{O} = 0.015$ allows for a modest amount of black hole
+formation but implicitly assumes that most massive stars explode.\footnote{
+	If all stars from~$8 - 40~\msun$ explode and all more massive stars
+	collapse, then the~\citet{Sukhbold2016} models with forced explosions
+	yield~$\ycc{O} = 0.013$~\citep{Griffith2021a}.
+}
+In chemical evolution models, this choice of yield also leads to good agreement
+with the observationally inferred deuterium-to-hydrogen ratio of the local
+interstellar medium (ISM)~\citep{Linsky2006}, while substantially
+lower~$\ycc{O}$ leads to disagreement~\citep{Weinberg2017b}.
+\par
+Our adopted values of~\ycc{O}~and~\ycc{Fe}~give~$\ofe\approx0.43$ for stars
+with pure CCSN enrichment, in good agreement with the ``high-$\alpha$'' plateau
+of disk stars found by~\citet{Ramirez2013}; instead matching the APOGEE plateau
+at~$\ofe\approx0.35$~\citep[see, e.g., fig.~6 of][]{Hasselquist2021} would
+require a slightly higher~$\ycc{Fe} = 0.0014$.
+SN Ia models predict minimal O yields, justifying~$\yia{O} = 0$.
+The choice of~$\yia{Fe} = 0.00214$ then leads to good agreement with the
+observed~\ofe~values of low-$\alpha$ thin-disc stars given the star formation
+assumptions used by~\citet{Johnson2021} (for analytic discussion, see~\S~3.1
+of~\citealp{Weinberg2017}).
+For an Fe yield of~$0.77~\msun$ from a single SN Ia event~\citep{Iwamoto1999},
+this~\yia{Fe}~corresponds to a time-integrated SN Ia rate
+of~$R_\text{Ia} = 2.7\times10^{-3}~\msun^{-1}$ (i.e., 2.7 SNe Ia per
+1000~\msun~of star formation), which is moderately higher than the value
+of~$2.2\times10^{-3}~\msun^{-1}$ inferred by~\citet{Maoz2012} for
+a~\citet{Kroupa2001} IMF.
+Our choice of yields is internally consistent and reproduces many Milky Way
+observations~\citep{Johnson2021}, but many of the GCE model predictions would
+be minimally affected if we lowered~\ycc{O},~\ycc{Fe}, and~\yia{Fe}~by a
+common factor and reduced the efficiency of outflows.
+We return to this point in the context of N yields
+in~\S~\ref{sec:results:yields:variations}.
+\par
+We assume that N is not produced in significant amounts by SNe Ia
+\citep{Johnson2019}, setting~$\yia{N} = 0$.
+The remainder of this section discusses the CCSN and AGB star yields of N.
+\par
+A significant portion of N yields arise as a consequence of the CNO
+cycle.\footnote{
+	\Ctwelve(p,~$\gamma$)\Nthirteen($\beta^+~\nu_\text{e}$)\Cthirteen
+	(p,~$\gamma$)\Nfourteen(p,~$\gamma$)\Ofifteen($\beta^+~\nu_\text{e}$)
+	\Nfifteen(p,~$\alpha$)\Ctwelve
+}
+As the dominant source of pressure and energy generation in non-zero
+metallicity main sequence stars with initial masses of~$\gtrsim$1.3~\msun, this
+cyclic nuclear reaction catalyses the conversion of H into He that would
+otherwise be accomplished by the proton-proton chain
+(\citealp{vonWeizsaecker1937, vonWeizsaecker1938, Bethe1939a, Bethe1939b,
+Adelberger2011};~\citealp*{Suliga2021}).
+Its slowest component by far is the~\Nfourteen(p,~$\gamma$)\Ofifteen~reaction
+\citep[e.g.][]{LUNA2006}.
+Consequently, the first order effect of the CNO cycle is to convert most of the
+C isotopes in stellar cores into~\Nfourteen.
+As we will discuss in this section, this plays an important role in shaping N
+yields from stars of all masses.
+
+\subsection{Core Collapse Supernovae and Massive Star Winds}
+\label{sec:yields:ccsne}
+
+In~\vice, CCSN nucleosynthetic products are approximated to be produced
+instantaneously following an episode of star formation; this is a good
+approximation because the lives of massive stars are short compared to the
+relevant timescales for GCE.
+The yield is simply the constant of proportionality between the CCSN production
+rate and the star formation rate (SFR):
+\begin{equation}
+\dot{M}_\text{X}^\text{CC} = \ycc{X}\dot{M}_\star
+\end{equation}
+More generally,~\ycc{X}~quantifies~\textit{all} of the nucleosynthetic material
+approximated to be produced instantaneously following a single stellar
+population's formation, including newly synthesized material expelled in a
+massive star wind before the star explodes or collapses to a black hole.
+\par
 We compute theoretically predicted values of~\ycc{N}~using
 \vice's~\texttt{vice.yields.ccsne.fractional} function assuming a
 \citet{Kroupa2001} IMF; details on how~\vice~handles these calculations can be
@@ -114,8 +150,8 @@ documentation\footnote{\url
 In the left panel of Fig.~\ref{fig:n_cc_yields}, we plot the results as a
 function of progenitor metallicity as predicted by the~\citet{Woosley1995},
 \citet*{Nomoto2013},~\citet{Sukhbold2016}, and~\citet{Limongi2018} tables.
-There is good agreement between the various non-rotating models, but only
-\citet{Limongi2018} report yields for progenitors with non-zero rotational
+There is generally good agreement between the various non-rotating models, but
+only~\citet{Limongi2018} report yields for progenitors with non-zero rotational
 velocities; these yields are substantially larger than their non-rotating
 counterparts, especially at low metallicity.
 With few seed nuclei for the CNO cycle at low~$Z$, production of~\Nfourteen~is
@@ -147,16 +183,19 @@ resultant~\no\subcc~ratios in the right panel.
 These yield ratios follow similar trends with progenitor metallicity and
 rotation as~\ycc{N}~itself, a consequence of the fact that these
 studies predict relatively metallicity- and rotation-independent O yields.
-If we assume~\no\subcc~=~$-0.7$ as suggested by Fig.~\ref{fig:no_oh_observed}
-and our adopted O yield of~$\ycc{O} = 0.015$, equation~\refp{eq:no_subcc}
-suggests that~$\ycc{N} = 3.6\times10^{-4}$.
+At low metallicity, CCSN yields of N dominate over the AGB star yields (see
+discussion in~\S~\ref{sec:yields:agb}), and Fig.~\ref{fig:no_oh_observed}
+suggests a plateau in~\no~at low metallicity at~$\no\subcc\approx-0.7$.
+Taking this value in combination with our adopted O yield of~$\ycc{O} = 0.015$,
+equation~\refp{eq:no_subcc} suggests that~$\ycc{N} = 3.6\times10^{-4}$.
 We highlight both~\no\subcc~=~$-0.7$ and~$\ycc{N} = 3.6\times10^{-4}$ with
 horizontal black dashed lines in Fig.~\ref{fig:n_cc_yields}, finding good
 agreement with the rotating progenitor models of~\citet{Limongi2018} in both
 panels.
-This suggests that rotating massive stars play an important role in
-establishing N abundances at low metallicity as recently suggested by
-\citet{Grisoni2021}.
+This indicates that rotating massive stars play an important role in
+establishing the N abundances at low metallicity, in agreement with previous
+works~\citep{Chiappini2003, Chiappini2005, Chiappini2006, Kobayashi2011,
+Prantzos2018, Grisoni2021}.
 We therefore take~$\ycc{N} = 3.6\times10^{-4}$ as our fiducial CCSN yield of N;
 both the normalization and metallicity-independence of this choice are
 supported by the~\citet{Limongi2018} models.
@@ -177,10 +216,10 @@ For~\citet{Ventura2013, Ventura2014, Ventura2018, Ventura2020} and
 of metallicities available from their provided tables.
 We highlight yields at solar metallicity ($Z = 0.02$ for~\citealp{Karakas2010},
 $Z = 0.014$ otherwise) with bold black lines.
-In the lower right panel, we show the yields predicted by our linear model
-(coloured lines, see equation~\ref{eq:linear_yield}) in comparison to
+In the lower right panel, we show our linear model (coloured lines, see
+equation~\ref{eq:linear_yield}) in comparison to
 the~\citet[][coloured X's]{Cristallo2011, Cristallo2015} predictions.
-We caution that the axis ranges are not the same between panels in this
+We caution that the y-axis ranges are not the same between panels in this
 figure.
 }
 \label{fig:agb_yield_models}
@@ -188,19 +227,19 @@ figure.
 
 The~\citet{Sukhbold2016} tables, available only at solar metallicity, agree
 nearly perfectly with our empirical value of~$\ycc{N} = 3.6\times10^{-4}$, but
-they overpredict~\no\subcc~by~$\sim$0.2 dex.
+they predict a higher value of~\no\subcc~by~$\sim$0.2 dex.
 This is a consequence of the failed supernovae incorporated into their model
 and the lowered values of~\ycc{O} that result (see discussion
 in~\S~\ref{sec:results:yields}).
 While N emerges in substantial amounts in winds, much of the O produced by
 massive stars is ejected during the explosion, making the O yield more
 sensitive to the black hole landscape~\citep{Griffith2021a}.
-Although most of the SN models plotted in Fig.~\ref{fig:n_cc_yields} slightly
-overestimate our empirical value of~\no\subcc~=~$-0.7$, they still fall short
-of solar.
+Most of the SN models plotted in Fig.~\ref{fig:n_cc_yields} estimate slightly
+higher~\no\subcc~at~$\log_{10}(Z / Z_\odot)$ = 0 relative to our empirical
+value of~\no\subcc~=~$-0.7$, but they still fall short of solar~\no.
 This implies the need for an additional enrichment channel, which is expected
 because it is well understood that N is also produced in considerable amounts
-by AGB stars~\citep{Johnson2019}.
+by AGB stars~\citep[e.g.][]{Johnson2019}.
 % Although our empirically calibrated N yield agrees well with
 % the~\citet{Limongi2018} predictions, massive star nucleosynthesis models
 % overwhelmingly neglect the impact of a potential binary companion,
@@ -211,37 +250,34 @@ by AGB stars~\citep{Johnson2019}.
 % Despite being an interesting possibility, GCE models with such yields are beyond
 % the scope of this paper.
 
-\vfill
 \subsection{Asymptotic Giant Branch Stars}
 \label{sec:yields:agb}
 
-Similar to SNe, our AGB star yields are parameterized as fractional net yields.
+Similar to SNe, our AGB star yields are parametrized as fractional net yields.
 For a yield~$\yagb{X}$, the mass yield is given by~$M_\star \yagb{X}$.
-Enrichment proceeds as it does in~\citet{Johnson2021} under the caveat that
-AGB stars place their nucleosynthetic products in the~$\delta\rgal = 100$ pc
-ring that they are in at a given time, allowing stars to enrich distributions
-of radii as they migrate.
-In short,~\vice~implements an algorithm which computes the mass in dying stars
+Enrichment proceeds as it does in~\citet{Johnson2021}: AGB stars place their
+nucleosynthetic products in the~$\delta\rgal = 100$ pc ring that they are in at
+a given time, allowing stars to enrich distributions of radii as they migrate.
+\vice~implements an algorithm that computes the mass in dying stars
 from each stellar population, and the zero age main sequence (ZAMS) mass
 required to compute the fractional yield comes from a mass-lifetime
 relationship. 
 For the latter, we adopt the metallicity independent parabola in
 $\log\tau - \log m$ space from~\citet{Larson1974} with updated coefficients
-from~\citet{Kobayashi2004} and~\citet*{David1990} throughout this paper (see
-discussion of the mass-lifetime relationship in~\vice~in
-Appendix~\ref{sec:vice}).
+from~\citet{Kobayashi2004} and~\citet*{David1990} (see discussion of the
+mass-lifetime relationship in~\vice~in Appendix~\ref{sec:vice}).
 \par
-Here we make use of four previously published tables of AGB star yields
+We make use of four previously published tables of AGB star N yields
 computed from stellar evolution models, each of which are sampled on a grid
 of progenitor masses and metallicities.
 To approximate the net yield~\yagb{X}~as a smooth function of~$M_\star$ and
-$Z_\star$,~\vice~interpolates bi-linearly - once in mass and once in
-metallicity - linearly extrapolating above or below the grid in either quantity
-as necessary.
+$Z_\star$,~\vice~interpolates bi-linearly - once in mass~$M$ and once in
+metallicity~$Z$ - and linearly extrapolates above or below the grid in either
+quantity as necessary.
 By comparing the predicted abundances of the~\citet{Johnson2021} Milky Way
 model to the latest observational data, we can constrain how accurately these
 ``off-the-shelf'' yield models characterize N production.
-These models taken from the literature are:
+These models taken from the literature are as follows.
 \begin{itemize}
 	\item[\textbf{1.}] \citet[][hereafter~\karakasten]{Karakas2010}\footnote{
 		We clarify that our abbreviations of each of these papers refer
@@ -277,6 +313,7 @@ These models taken from the literature are:
 	illustrate a subsample of them in the lower left panel of
 	Fig.~\ref{fig:agb_yield_models}.
 \end{itemize}
+\par
 \vice~also allows users to construct their own functions of progenitor mass
 and metallicity to describe the AGB star yield.
 Motivated by the roughly linear nature of the~\cristallo~yields and their
@@ -284,48 +321,51 @@ general success once renormalized by a constant factor (see discussion
 in~\S~\ref{sec:results:yields}), we construct a model in which the yield is
 linearly proportional to both progenitor ZAMS mass and metallicity:
 \begin{equation}
-\yagb{N} = \xi \left(\frac{M}{M_\odot}\right) \left(\frac{Z}{Z_\odot}\right).
+\yagb{N} = \xi \left(\frac{M_\star}{M_\odot}\right)
+\left(\frac{Z_\star}{Z_\odot}\right).
 \label{eq:linear_yield}
 \end{equation}
 We illustrate this model in the lower middle panel of Fig.
 \ref{fig:agb_yield_models} for~$\xi = 3\times10^{-4}$ in comparison to
 the~\cristallo~yields shown by the coloured X's.
 Although we find good agreement between the~\cristallo~yields and our linear
-model with a slope of~$\xi = 3\times10^{-4}$, for our fiducial AGB star yield
-of N we take a slope of~$\xi = 9\times10^{-4}$.
+model with a normalization of~$\xi = 3\times10^{-4}$, for our fiducial AGB star
+yield of N we take a slope of~$\xi = 9\times10^{-4}$.
 We discuss the absolute scaling of our nucleosynthetic yields
 in~\S~\ref{sec:results:yields} below.
 \par
-Despite reporting values of the same physical quantities, the N yields
-reported by each of these studies show substantial differences between one
-another.
-Unfortunately, ascertaining the origins of their inconsistencies is difficult
+As is clear from Fig.~\ref{fig:agb_yield_models}, the N yields reported by
+these studies show substantial differences.
+Unfortunately, ascertaining the origin of these differences is difficult
 because each model employs its own assumptions for important evolutionary
 parameters such as opacity, mass loss, nuclear reaction networks, and
 convection and convective boundaries within stars, all of which have a
 significant impact on stellar evolution and thus the predicted yields (see
 discussion in, e.g.,~\S~5 of~\citealp{Karakas2016}).
 However, the differences can be qualitatively understood by considering two
-important phenomena known to occur within AGB stars: third dredge-up\footnote{
-	Here the time adverbial ``third'' refers only to the fact that these
+important phenomena known to occur within AGB stars: TDU\footnote{
+	The time adverbial ``third'' in TDU refers only to the fact that these
 	dredge-up episodes are occurring while the star is on the asymptotic giant
 	branch. Because they are associated with the thermal pulsations of AGB
 	stars, there are many episodes of third dredge-up.
-} (TDU) and hot bottom burning (HBB).
+} and HBB.
 The variations in how TDU and HBB proceed between different stellar evolution
 models arise as consequences of the different input physics.
 \par
 When an AGB star experiences a thermal pulsation, this is usually accompanied
-by a TDU event whereby the convective envelope pentrates into the
+by a TDU event whereby the convective envelope penetrates into the
 hydrogen-depleted core, mixing some of this material with other material
 exposed to partial He-shell burning.
-This process does not affect N abundances much because at this evolutionary
-phase, the core is mostly composed of C and O.
-However, the~\Cthirteen($\alpha$, n)\Osixteen~reaction can occur at substantial
-rates when the core material is mixed with the He-rich shell.
-This reaction is the main source of free neutrons in low mass AGB
-stars~\citep{Gallino1998}, and as a consequence, each replenishment of C by TDU
-indirectly raises an AGB star's overall yield.
+The~\Cthirteen($\alpha$, n)\Osixteen~reaction, which is the main source of free
+neutrons in low-mass AGB stars~\citep{Gallino1998}, can occur at substantial
+rates when this core material is mixed with the He-rich shell.
+This process does not directly affect N abundances in the shell because the
+core is mostly composed of C and O at this evolutionary phase,
+but~\Nfourteen~plays an important role in shaping an AGB star's overall
+\textit{s}-process yield by acting as an efficient catalyst of neutron decay
+via the~\Nfourteen(n, p)\Cfourteen($\beta^+~\nu_{e}$)\Nfourteen~reaction, the
+first step of which is a resonant neutron capture~\citep{Cristallo2011}.
+\par
 HBB refers to proton capture reactions at the base of the convective envelope,
 activating the CNO cycle and producing large amounts of~\Nfourteen~at the
 expense of C and O isotopes.
@@ -343,10 +383,12 @@ the~\karakasten~and~\karakas~models; in both yield sets, every star that
 experiences HBB also experiences TDU (see, e.g., Table 1
 of~\citealp{Karakas2010}).
 Their high mass AGB star yields are higher at low~$Z$ because both HBB and TDU
-are more efficient~\citep[][see discussion in]{Ventura2013}.
-When the metallicity is low, each TDU episode is deeper due to the lower
-opacity, and the base of the convective envelope is hotter, increasing the rate
-of CNO cycle reactions in HBB.
+are more efficient~\citep[see discussion in][]{Ventura2013}: when the
+metallicity is low, each TDU episode is deeper due to the lower opacity, and
+the base of the convective envelope is hotter, increasing the rate of CNO cycle
+reactions in HBB.
+% and the base of the convective envelope is hotter, increasing the rate
+% of CNO cycle reactions in HBB.
 % Their high mass AGB star yields depend inversely on metallicity because both
 % HBB and TDU are more efficient at low~$Z$ (see discussion in
 % \citealp{Ventura2013}).
@@ -383,6 +425,11 @@ by the stellar population's initial mass.
 Points mark metallicities at which the published tables report yields, and the
 lines are dotted at metallicities that are above (below) the maximum (minimum)
 metallicity reported by a given study (i.e. where extrapolation is necessary).
+In this panel only, we include the metallicity-independent contribution
+$\ycc{N} = 3.6\times10^{-4}$ from CCSNe (gray dashed line).
+The bold purple curve represents our inference of the~\textit{total} N yield
+(CCSN + AGB) required to reproduce the observational constrains discussed
+in~\S~\ref{sec:results} given our adopted O and Fe yields (\S~\ref{sec:yields}).
 }
 \label{fig:ssp}
 \end{figure*}
@@ -391,14 +438,14 @@ Of all of these yields taken from the literature, the~\cristallo~sample shows
 the smoothest dependence on progenitor mass and metallicity.
 Below~$\sim$3~\msun, their agreement with the~\karakas~yields is good, but this
 model has much lower N yields for higher mass AGB stars.
-Even when collapsing the information into TDU and HBB, pinpointing a single
-reason for this difference is difficult.
+Pinpointing a single reason for this difference is difficult, even when
+considering the differences between HBB and TDU.
 Relative to the~\karakas~yields (see discussion in~\S~5 of
 \citealp{Karakas2016}), the~\cristallo~stars have more mass loss, fewer
 thermal pulses overall, and weaker HBB due to a lower temperature at the base
-of the convective envelope, each of which act to lower the yield of~\Nfourteen.
+of the convective envelope, each of which acts to lower the yield of~\Nfourteen.
 \par
-Although both the~\karakasten~and~\karakas~yield models both show a substantial
+Although the~\karakasten~and~\karakas~yield models both show a substantial
 increase in N yields above~$\sim$4~\msun, there are some noteworthy differences
 between the two.
 In the newer version, the yields at solar metallicity are somewhat higher,
@@ -422,9 +469,9 @@ With more thermal pulses overall and therefore a longer AGB lifetime, these
 stars have more time to convert~\Ctwelve~into~\Nfourteen.
 \karakas~also use low-temperature opacity tables based on~\citet{Marigo2002}
 that more closely follow the surface composition of the star.
-These opacities are high, making the stars larger and increasing the
-mass-loss rate relative to~\karakasten, truncating the N yield of the highest
-mass AGB stars.
+These opacities are high, making the more massive AGB stars larger and
+increasing the mass-loss rate relative to~\karakasten, truncating their N
+yields.
 The~$Z = 0.0028$ model uses the~\citet{Bloecker1995} mass-loss prescription
 rather than that of~\citet{Vassiliadis1993}, which was used for
 the~\karakasten~yields as well as the yields at other metallicities in
@@ -442,6 +489,9 @@ possible.\footnote{
 	Cristallo2015} yields for both O and Fe.
 }
 These O and Fe yields, however, are negligible compared to their SN yields.
+As a reference for the reader, in Table~\ref{tab:yields} we provide a summary
+of our AGB star yield models, where they are defined or published, and in what
+sections we present GCE model predictions with each yield.
 Although we focus our investigation on AGB yields from~$\lesssim$~7~\msun stars,
 slightly more massive stars (up to~$\sim$12~\msun) sit near the critical mass
 boundaries between different types of massive white dwarfs and electron capture
@@ -469,7 +519,7 @@ and~\citet*{Asplund2021}; since the~\karakasten~model reports yields at
 $Z = 0.02$ rather than~$Z = 0.014$, we simply interpolate linearly
 to~$Z = 0.014$ in the same manner that~\vice~does in our GCE models.
 As mentioned in~\S~\ref{sec:yields:agb}, the AGB star yield~\yagb{N}~as we
-have parameterized it is in units of the progenitor star's ZAMS mass, and
+have parametrized it is in units of the progenitor star's ZAMS mass, and
 consequently the~\textit{mass yield} of N is given by~$M_\star \yagb{N}$.
 With an additional weight of~$M_\star^{-2.3}$ from the IMF in this mass range
 \citep[e.g.][]{Kroupa2001}, we therefore multiply the values of~\yagb{N}~by
@@ -478,11 +528,10 @@ total N yield taking into account the intrinsic mass distribution\footnote{
 	This weight gives a contribution per linear interval of M$_\text{ZAMS}$, so
 	one can use area under the curve to assess relative contributions.
 }
-Even with the additional weight of~$M_\star^{-1.3}$, the~\cristallo~yields are
+With the additional weight of~$M_\star^{-1.3}$, the~\cristallo~yields are
 relatively mass-independent.
-For the other yield models, the contributions from higher mass AGB stars is
-yet more pronounced due to the effects of TDU and HBB discussed
-in~\S~\ref{sec:yields:agb}.
+For the other yield models, higher mass AGB stars dominate the overall yield
+due to the effects of TDU and HBB discussed in~\S~\ref{sec:yields:agb}.
 \par
 Using~\vice's~\texttt{vice.single\_stellar\_population} function, in the
 middle panel of Fig.~\ref{fig:ssp} we plot the total N yield as a function of
@@ -493,16 +542,15 @@ We show the results of this procedure for solar metallicity only (again
 $Z = 0.02$ for~\karakasten,~$Z = 0.014$ otherwise), and we normalize all values
 to the total mass produced at~$T = 13.2$ Gyr (the total amount of time our GCE
 model is integrated over; see discussion in~\S~\ref{sec:multizone}).
-% \par
 Under the~\cristallo~yields, it takes~$\sim$250 Myr for a single stellar
 population to produce~$\sim$50\% of its N from AGB stars, as noted by the
 coloured points at the top of the panel.
 This is in good agreement with~\citet{Maiolino2019}, who find that similar
 parameter choices predict 80\% of the N yield to be ejected within~$\sim$1 Gyr
 (see their Fig 1).
-The characteristic timescales for N production are even shorter in our alternate
-yield models with more pronounced contributions from massive stars due to
-their short lifetimes~\citep[e.g.][]{Larson1974, Maeder1989, Padovani1993}.
+The characteristic timescales for N production are even shorter in the other
+yield models because of their more pronounced contributions from massive stars
+with short lifetimes~\citep[e.g.][]{Larson1974, Maeder1989, Padovani1993}.
 For comparison, we plot the enrichment of Fe by our~$t^{-1.1}$ power-law DTD,
 also with the CCSN yield set to zero to highlight the delayed component.
 The characteristic delay time for Fe production is considerably longer than
@@ -512,7 +560,165 @@ As noted in~\citet{Johnson2021}, a characteristic delay time of~$\sim$1 Gyr
 is exactly as expected for a~$\sim t^{-1}$ DTD because half of the SN Ia
 events occur between 100 Myr and 1 Gyr and the other half between 1 Gyr and
 10 Gyr.
-\par
+
+% \begin{table}
+% \caption{
+% A summary of our AGB star yield models, where they are published/defined, and
+% in which sections we present tests of each model.
+% We take a fiducial value of~$\ycc{N} = 3.6\times10^{-4}$ for our IMF-averaged
+% massive star yield (see discussion in~\S~\ref{sec:yields:ccsne}), and we
+% explore alternate parametrizations of this value
+% in~\S~\ref{sec:results:yields:yncc} only (right panel of
+% Fig.~\ref{fig:no_oh_predictions}).
+% }
+% \begin{tabularx}{\textwidth}{c @{\extracolsep{\fill}}c c c c}
+% % \begin{tabularx}{\textwidth}{l @{\extracolsep{\fill}}l l l r}
+% \hline
+% Linear & \cristallo & \ventura & \karakasten & \karakas
+% \\
+% \hline
+% equation~\refp{eq:linear_yield} &
+% \citet{Cristallo2011, Cristallo2015} &
+% \citet{Ventura2013, Ventura2014, Ventura2018, Ventura2020} &
+% \citet{Karakas2010} &
+% \citet{Karakas2016, Karakas2018}
+% \\
+% \ref{sec:results}.* &
+% % \ref{sec:results:fiducial},~\ref{sec:results:yields:variations},
+% % \ref{sec:results:t_z_dep_comp},~\ref{sec:results:vincenzo_comp},
+% % \ref{sec:results:schaefer_comp} &
+% \ref{sec:results:yields},~\ref{sec:results:yields:variations} &
+% \ref{sec:results:yields},~\ref{sec:results:yields:variations} &
+% \ref{sec:results:yields},~\ref{sec:results:yields:yncc} &
+% \ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+% \\
+% \hline
+% \end{tabularx}
+% \label{tab:yields}
+% \end{table}
+
+\begin{table}
+\caption{
+A summary of our AGB star yield models, where they are published/defined, and
+in which sections we present tests of each model.
+We take a fiducial value of~$\ycc{N} = 3.6\times10^{-4}$ for our IMF-averaged
+massive star yield (see discussion in~\S~\ref{sec:yields:ccsne}), and we
+explore alternate parametrizations of this value
+in~\S~\ref{sec:results:yields:yncc} only (right panel of
+Fig.~\ref{fig:no_oh_predictions}).
+}
+% \begin{tabularx}{\columnwidth}{l @{\extracolsep{\fill}} l r}
+\begin{tabularx}{\columnwidth}{p{2cm} @{\extracolsep{\fill}} p{3.2cm} r}
+\hline
+Model & Reference/Definition & Results
+\\
+\hline
+Linear & equation~\refp{eq:linear_yield} (fiducial yield) &
+% \ref{sec:results:fiducial} --~\ref{sec:results:schaefer_comp}
+% \ref{sec:results}.*
+\ref{sec:results:fiducial},~\ref{sec:results:yields:variations},
+\ref{sec:results:t_z_dep_comp},~\ref{sec:results:vincenzo_comp},
+\ref{sec:results:schaefer_comp}
+\\
+\cristallo & \citet{Cristallo2011, Cristallo2015} &
+\ref{sec:results:yields},~\ref{sec:results:yields:variations}
+\\
+\ventura & \citet{Ventura2013, Ventura2014, Ventura2018, Ventura2020} &
+\ref{sec:results:yields},~\ref{sec:results:yields:variations}
+\\
+\karakasten & \citet{Karakas2010} &
+\ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+\\
+\karakas & \citet{Karakas2016, Karakas2018} &
+\ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+\\
+\hline
+\end{tabularx}
+\label{tab:yields}
+\end{table}
+
+% \begin{table}
+% \caption{
+% A summary of our AGB star yield models, where they are published/defined, and
+% in which sections we present tests of each model.
+% We take a fiducial value of~$\ycc{N} = 3.6\times10^{-4}$ for our IMF-averaged
+% massive star yield (see discussion in~\S~\ref{sec:yields:ccsne}), and we
+% explore alternate parametrizations of this value
+% in~\S~\ref{sec:results:yields:yncc} only (right panel of
+% Fig.~\ref{fig:no_oh_predictions}).
+% }
+% \begin{tabularx}{\columnwidth}{l @{\extracolsep{\fill}} r}
+% \hline
+% Model & Results Sections
+% \\
+% \hline
+% Linear &
+% % \ref{sec:results}.*
+% \ref{sec:results:fiducial},~\ref{sec:results:yields:variations},
+% \ref{sec:results:t_z_dep_comp},~\ref{sec:results:vincenzo_comp},
+% \ref{sec:results:schaefer_comp}
+% \\
+% equation~\refp{eq:linear_yield} & \null
+% \\
+% \hline
+% \cristallo & \ref{sec:results:yields},~\ref{sec:results:yields:variations}
+% \\
+% \citet{Cristallo2011, Cristallo2015} & \null
+% \\
+% \hline
+% \ventura & \ref{sec:results:yields},~\ref{sec:results:yields:variations}
+% \\
+% \citet{Ventura2013, Ventura2014, Ventura2018, Ventura2020} & \null
+% \\
+% \hline
+% \karakasten & \ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+% \\
+% \citet{Karakas2010} & \null
+% \\
+% \hline
+% \karakas & \ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+% \\
+% \citet{Karakas2016, Karakas2018} & \null
+% \\
+% \hline
+% \end{tabularx}
+% \label{tab:yields}
+% \end{table}
+
+% \begin{table}
+% \caption{
+% A summary of our AGB star yield models and in which sections we present tests
+% of each model.
+% We take a fiducial value of~$\ycc{N} = 3.6\times10^{-4}$ for our IMF-averaged
+% massive star yield (see discussion in~\S~\ref{sec:yields:ccsne}), and we
+% explore alternate parametrizations of this value
+% in~\S~\ref{sec:results:yields:yncc} only (right panel of
+% Fig.~\ref{fig:no_oh_predictions}).
+% }
+% \begin{tabularx}{\columnwidth}{l @{\extracolsep{\fill}} r}
+% \hline
+% Model & Results Sections
+% \\
+% \hline
+% Linear (equation~\ref{eq:linear_yield}) &
+% % \ref{sec:results}.*
+% \ref{sec:results:fiducial},~\ref{sec:results:yields:variations},
+% \ref{sec:results:t_z_dep_comp},~\ref{sec:results:vincenzo_comp},
+% \ref{sec:results:schaefer_comp}
+% \\
+% \cristallo & \ref{sec:results:yields},~\ref{sec:results:yields:variations}
+% \\
+% \ventura & \ref{sec:results:yields},~\ref{sec:results:yields:variations}
+% \\
+% \karakasten & \ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+% \\
+% \karakas & \ref{sec:results:yields},~\ref{sec:results:yields:yncc}
+% \\
+% \hline
+% \end{tabularx}
+% \label{tab:yields}
+% \end{table}
+
 A characteristic delay time of only~$\sim$250 Myr may seem surprising given
 the relatively mass-independent nature of the IMF-weighted~\cristallo~yields.
 This arises out of the steep nature of the stellar mass-lifetime relation
@@ -533,7 +739,7 @@ element.
 Other elements produced by slow neutron capture often have the highest yields
 from lower mass AGB stars.
 For example,~\citet{Cristallo2011, Cristallo2015} report Sr yields that are
-dominated by~$M_\text{ZAMS} = 2 - 3~\msun$ progenitors (see Fig. 5 of
+dominated by~$M_\text{ZAMS} = 2 - 3~\msun$ progenitors (see fig. 5 of
 \citealp{Johnson2020}), giving it a characteristic delay time of~$\sim$500 Myr.
 The characteristic delay-times will be as long as a few Gyr if and only if the
 yields are dominated by~$\lesssim$1.5~\msun~stars.
@@ -551,8 +757,9 @@ For this calculation, we include the metallicity independent CCSN yield
 In general, there is good qualitative agreement between the~\cristallo~and
 the~\ventura~models, the only major difference being the normalization.
 The predictions with the linear model with~$\xi = 3\times10^{-4}$ are nearly
-identical to the~\cristallo~model, which is unsurprising given their
-similarity in Fig.~\ref{fig:agb_yield_models}.
+identical to the~\cristallo~model, as one would expect from
+Fig.~\ref{fig:agb_yield_models}, but here we show the yields for our fiducial
+choice of~$\xi = 9\times10^{-4}$.
 The value at which these N yields flatten off at low~$Z$ is reflective of our
 adopted value of~\ycc{N}.
 Up to~$\log_{10}(Z / Z_\odot) \approx -0.2$, the~\karakas~yields predict a
@@ -567,8 +774,13 @@ differences regarding the opacity and mass loss prescriptions (see discussion
 in~\S~\ref{sec:yields:agb}).
 Although the normalization depends on the SN yields of all elements, we
 demonstrate in~\S~\ref{sec:results:yields} that reproducing the~\ohno~relation
-as observed requires N yields which scale roughly linearly with metallicity as
-in the~\cristallo~and~\ventura~models.
+as observed requires AGB N yields which scale roughly linearly with metallicity
+as in the~\cristallo~and~\ventura~models.
+More specifically, with our adopted O and Fe yields (see discussion at the
+beginning of~\S~\ref{sec:yields}), reproducing the observational constraints
+that we consider requires~\textit{total} N yields (CCSN + AGB) with the
+metallicity dependence shown by the purple curve in the right panel of
+Fig.~\ref{fig:ssp}.
 
 \end{document}
 

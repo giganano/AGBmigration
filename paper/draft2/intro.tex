@@ -7,23 +7,17 @@
 
 From a nucleosynthesis perspective, N is a unique element.
 Along with C and He, it is one of only three elements lighter
-than iron peak nuclei thought to owe a significant portion of their abundances
-to asymptotic giant branch (AGB) stars~\citep{Johnson2019}.
+than iron peak nuclei thought to owe a significant portion of its abundance
+to asymptotic giant branch (AGB) stars~\citep[e.g.][]{Johnson2019}.
 N is also the primary by-product of the CNO cycle, a cyclic nuclear reaction
-which catalyses the conversion of H into He in non-zero metallicity
-stars more massive than the sun.
+that catalyses the conversion of H into He in stars more massive than the sun.
 However, uncertainties surrounding the nucleosynthetic yields of N make it
 difficult to model its abundances accurately.
 Here we take an empirical approach to constrain N yields by using
 state-of-the-art galactic chemical evolution (GCE) models to assess which
-functional forms describing the yield can reproduce the latest observational
-data - in particular the new measurements of Milky Way trends
-by~\citet{Vincenzo2021}.
-% Furthermore, N is among a select group of elements whose spectroscopically
-% derived abundances do not reflect the birth abundances of evolved stars, a
-% consequence of internal mixing processes carrying CNO processed material
-% to the photosphere (see discussion in, e.g.,~\citealp{Vincenzo2021} and
-% in~\S~\ref{sec:results:vincenzo_comp} below).
+functional forms describing the yield can reproduce recent observational
+data for gas phase abundances and trends in Milky Way disc stars
+by~\citet{Vincenzo2021}
 
 \begin{figure*}
 \centering
@@ -42,7 +36,7 @@ by~\citet{Vincenzo2021}.
 	regions by~\citet{Henry2000} is shown as a black dashed line.
 	We omit all uncertainties for visual clarity.
 	The Sun, at (0, 0) on this plot by definition, is marked by a large red
-	star. 
+	star.
 }
 \label{fig:no_oh_observed}
 \end{figure*}
@@ -73,43 +67,40 @@ along with data from the Milky Way:
 		MaNGA: Mapping Nearby Galaxies at Apache Point Observatory
 		\citep{Bundy2015}.
 		IFU: Integral Field Unit.
-	} survey~\citep{Belfiore2017}.
+	} survey~\citep{Belfiore2017, Bundy2015}.
 \end{enumerate}
+% \par\noindent
 Despite intrinsic scatter and some systematic variation in how the abundances
 are determined, this~\ohno\footnote{
 	We follow standard notation where [X/Y]
 	$\equiv \log_{10}(X/Y) - \log_{10}(X/Y)_\odot$.
-} relation is more or less the same across a wide range of astrophysical
+} relation is found to be similar across a wide range of astrophysical
 environments.
 Furthermore, recent arguments from both theoretical~\citep{Vincenzo2018} and
 observational perspectives~\citep{HaydenPawson2021} suggest that this relation
 is largely redshift-invariant.
 Previous studies have interpreted this consistency as an indication that the
-relation is nucleosynthetic in origin, reflective of a ``primary'' yield which
+relation is nucleosynthetic in origin, reflective of a ``primary'' yield that
 does not depend on a star's initial metal content and a ``secondary'' yield
-which does (\citealp{VilaCostas1993};~\citealp*{vanZee1998};~\citealp{Henry1999,
+that does (\citealp{VilaCostas1993};~\citealp*{vanZee1998};~\citealp{Henry1999,
 PerezMontero2009};~\citealp*{Pilyugin2012};~\citealp{Andrews2013}).
-Both yield components are predicted by stellar evolution models and are
-ultimately expelled in stellar winds and core collapse supernovae (CCSNe).
 Although we have highlighted star forming galaxies in
 Fig.~\ref{fig:no_oh_observed}, N abundances are also easily measured in
 massive ellipticals (see, e.g.,~\citealp{Schiavon2010},~\citealp{Conroy2013},
 and~\citealp*{Conroy2014} for observational references), allowing it to
 potentially bridge the gap between the physical processes affecting galaxies of
 different morphologies.
+% \par\null\par\null\par\null\par
 \par
-The largest source of uncertainty in understanding N abundances is that
-accurate and precise nucleosynthetic yields from various enrichment channels
-remain elusive.
-Relative to other elements, N is a particularly difficult species to predict
-yields for in stellar evolution models (see discussion in,
-e.g.,~\citealp{Andrews2017}).
-% No combination of models for massive star nucleosynthesis and their
-% explodability is able to reproduce the observed abundance pattern of the
-% elements, and N is no exception~\citep{Griffith2021a}.
+The challenge in interpreting N abundances is that accurate nucleosynthetic
+yields from various enrichment channels remain elusive.
+Relative to other light elements, N synthesis is difficult to model because it
+is sensitive to uncertain details of stellar evolution, such as internal
+mixiing (see discussion in, e.g.,~\citealp{Andrews2017} and
+in~\S~\ref{sec:yields:ccsne} below).
 In this paper, we constrain N yields empirically by testing the performance of
 various assumptions within the framework of GCE models.
-To this end we make use of the multi-zone model for the Milky Way published in
+To this end we make use of the multi-zone model for the Milky Way published by
 \citet{Johnson2021}, which treats the Galaxy as a series of concentric rings,
 describing each one as a conventional one-zone model of chemical evolution
 (see discussion in~\S~\ref{sec:multizone}).
@@ -120,35 +111,50 @@ Schoenrich2009};~\citealp*{Minchev2013, Minchev2014};~\citealp{Minchev2017};
 Because of the apparent universality of the~\ohno~relation, our results using
 the Milky Way as a case test should apply to other galaxies as well.
 \par
-Recently,~\citet*{Grisoni2021} argued that rotating massive stars play a key
-role in establishing the N abundances seen in metal-poor stars in the Milky Way.
-Rotation has a considerable impact on the N yields of massive stars, because the
-internal mixing that it causes~\citep{Zahn1992, Maeder1998, Lagarde2012} brings
-internally produced C and O nuclei into the H-burning shell where they can be
-processed into~\Nfourteen~via the CNO cycle~\citep{Heger2010, Frischknecht2016,
-Andrews2017}.
-We find similar results here comparing various theoretical models for
-massive star nucleosynthesis (see discussion in~\S~\ref{sec:yields:ccsne}).
+At low metallicity, rotating massive stars play a key role in establishing the
+observed N abundances (\citealp*{Chiappini2003, Chiappini2005};
+\citealp{Chiappini2006};~\citealp*{Kobayashi2011};~\citealp{Prantzos2018};
+\citealp*{Grisoni2021}).
+Rotation plays a pivotal role in stellar evolution, inducing effects such as
+shear mixing, meridional circulation, and horizontal turbulence~\citep{Zahn1992, Maeder1998, Lagarde2012}.
+These effects carry internally produced C and O nuclei into the H-burning shell
+where they can be processed into~\Nfourteen~via the CNO cycle~\citep{Heger2010,
+Frischknecht2016, Andrews2017}.
+Metal-poor stars spin faster and are more compact~\citep*{Maeder1999}, making
+these effects stronger and consequently enhancing N yields~\citep*{Meynet2002a,
+Meynet2002b, Meynet2006}.
+We find similar results here comparing various theoretical models for massive
+star nucleosynthesis (see discussion in~\S~\ref{sec:yields:ccsne}).
 \par
-Theoretical models for AGB star nucleosynthesis predict N yields to vary as a
-function of progenitor mass and metallicity~\citep{Cristallo2011, Cristallo2015,
-Karakas2010, Karakas2016, Karakas2018, Ventura2013, Ventura2014, Ventura2018,
-Ventura2020}.
+% Recently,~\citet*{Grisoni2021} argued that rotating massive stars play a key
+% role in establishing the N abundances seen in metal-poor stars in the Milky Way.
+% Rotation has a considerable impact on the N yields of massive stars, because the
+% internal mixing that it causes~\citep{Zahn1992, Maeder1998, Lagarde2012} brings
+% internally produced C and O nuclei into the H-burning shell where they can be
+% processed into~\Nfourteen~via the CNO cycle~\citep{Heger2010, Frischknecht2016,
+% Andrews2017}.
+% We find similar results here comparing various theoretical models for
+% massive star nucleosynthesis (see discussion in~\S~\ref{sec:yields:ccsne}).
+% \par
+% Theoretical models for AGB star nucleosynthesis predict N yields to vary as a
+% function of progenitor mass and metallicity~\citep{Cristallo2011, Cristallo2015,
+% Karakas2010, Karakas2016, Karakas2018, Ventura2013, Ventura2014, Ventura2018,
+% Ventura2020}.
 In sufficiently massive AGB stars, the base of the convective envelope is hot
 enough to activate proton capture reactions, allowing the CNO cycle to convert
-C and O isotopes in~\Nfourteen: a process known as hot bottom burning.
+C and O isotopes into~\Nfourteen: a process known as hot bottom burning (HBB).
 AGB stars are also known to experience thermal pulsations, and often these
 pulations are accompanied by a penetration of the convective enevelope into the
 CO-rich core, which incorporates some of this material into the envelope
-itself: a process known as third dredge-up.
-When both processes are active, third-dredge up adds new seed nuclei for hot
-bottom burning to turn into~\Nfourteen, substantially increasing the N yields.
+itself: a process known as third dredge-up (TDU).
+When both processes are active, TDU adds new seed nuclei for HBB to turn
+into~\Nfourteen, substantially increasing N yields.
 We demonstrate in~\S\S~\ref{sec:yields:agb} and~\ref{sec:yields:imf_agb} that
-various published theoretical models predict significantly different N yields
-for high mass AGB stars as a consequence of how third dredge-up and hot bottom
-burning occur in the models.
+various published theoretical models predict significantly discrepant N yields
+for high mass AGB stars as a consequence of differences in TDU and
+HBB.
 The differences in these processes are in turn a consequence of the uncertain
-microphysical assumptions built into the stellar evolution models (e.g. mass
+microphysical assumptions built into stellar evolution models (e.g. mass
 loss, opacity, convection and convective boundaries, nuclear reaction
 networks).
 In~\S~\ref{sec:results:yields}, we test the extent to which each of these
@@ -173,7 +179,8 @@ GCE models.
 % origin~\citep[e.g.][]{Pilyugin2012, Andrews2013}, our results from a GCE model
 % for the Milky Way should apply to other systems as well.
 % \par
-In a sample of 6,507 galaxies from the MaNGA IFU survey~\citep{Bundy2015},
+% \null\par
+With a sample of 6,507 galaxies from the MaNGA IFU survey~\citep{Bundy2015},
 \citet{Schaefer2020} demonstrate that the intrinsic scatter in
 the~\ohno~relation at fixed galaxy mass is correlated with variations in the
 local star formation efficiency (SFE).
@@ -188,10 +195,10 @@ additional source of scatter in the gas-phase~\ohno~relation.
 In principle, there could be a deficit or surplus of N-producing AGB stars in a
 given Galactic region at any time simply because the orbits are evolving,
 driving additional scatter in the correlation.
-The~\citet{Johnson2021} GCE model is the ideal tool with which to test this
+The~\citet{Johnson2021} GCE model is an ideal tool with which to test this
 hypothesis; the novel difference between theirs and previous models with
 similar motivations is that it allows stellar populations to enrich
-distributions of radii as they migrate.
+rings at different radii as they migrate.
 Originally developed to study the abundances of O and iron (Fe), this aspect of
 Galactic evolution turned out to have an important impact on the delayed type
 Ia supernova (SN Ia) enrichment of Fe, causing stochastic fluctuations in the
@@ -203,18 +210,17 @@ SFE dominate scatter in the~\ohno~relation.
 With stellar abundance data, we can test the N abundances predicted by our
 model against observables unavailable for the gas phase, such as age and~\ofe.
 Using data from the Apache Point Observatory Galaxy Evolution Experiment
-(APOGEE;~\citealp{Majewski2017}),~\citet{Vincenzo2021} demonstrate that when
-stellar N abundances are corrected for internal mixing processes, the
-correlations with stellar age and other elemental abundances are affected.
-Whether or not our GCE model is able to reproduce their corrected data
-constitutes a valuable test not only of our understanding of N nucleosynthesis,
-but also the accuracy of the~\citet{Vincenzo2021} measurements which take a
-model-dependent approach to estimate the birth abundances of N for APOGEE red
-giant disc stars with asteroseismic mass measurements.
-They find good agreement between the APOGEE abundances and the
+(APOGEE;~\citealp{Majewski2017}) with asteroseismic mass measurements,
+\citet{Vincenzo2021} demonstrate that when stellar N abundances are corrected
+for internal mixing processes, the correlations with stellar age and other
+elemental abundances are affected.
+Whether or not our GCE model is able to reproduce their data constitutes a
+valuable test of our understanding of N nucleosynthesis and the history of N
+enrichment in the Milky Way.
+\citet{Vincenzo2021} find good agreement between the APOGEE abundances and the
 \citet{Dopita2016} data, which we find to be a good representation of external
-galaxies as well (see Fig.~\ref{fig:no_oh_observed}); we therefore take the
-\citet{Dopita2016} measurements as our observational benchmark.
+galaxies as well; we therefore take the~\citet{Dopita2016} trend (the purple
+points in Fig.~\ref{fig:no_oh_observed}) as our observational benchmark.
 \par
 In~\S~\ref{sec:yields}, we discuss our adopted yields of N from its dominant
 nucleosynthetic sources.
@@ -228,8 +234,9 @@ We investigate the relative importance of the delay-time distribution and the
 metallicity-dependence of AGB star yields in~\S~\ref{sec:results:t_z_dep_comp}.
 We compare our model predictions to stellar N abundances corrected for internal
 mixing processes in~\S~\ref{sec:results:vincenzo_comp}.
-Lastly, we assess the sources of intrinsic scatter in the~\ohno~relation
-in~\S~\ref{sec:results:schaefer_comp}.
+We assess the sources of intrinsic scatter in the~\ohno~relation
+in~\S~\ref{sec:results:schaefer_comp} and summarize our conclusions
+in~\S~\ref{sec:conclusions}.
 
 \end{document}
 

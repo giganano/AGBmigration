@@ -78,6 +78,8 @@ class diskmodel(vice.milkyway):
 			filename = "%s_analogdata.out" % (name)) 
 		self.evolution = star_formation_history(spec = spec, 
 			zone_width = zone_width) 
+		self.setup_nthreads = 12
+		self.nthreads = 5
 		# for i in range(self.n_zones): 
 		# 	self.zones[i].tau_star = sfe(
 		# 		m.pi * ((zone_width * (i + 1))**2 - (zone_width * i)**2)) 

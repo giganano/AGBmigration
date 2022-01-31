@@ -16,11 +16,14 @@
 \usepackage{xcolor}
 \usepackage[toc, page]{appendix}
 \usepackage{subfiles}
+% \usepackage[breaklinks=true]{hyperref}
 % \usepackage{geometry}
 % \geometry{margin=0.6in}
 % \hypersetup{draft}
 % \linespread{1.8}
-\setlength{\parskip}{1mm plus1mm minus1mm}
+\setlength{\parskip}{0.5mm plus0mm minus0mm}
+\setlength{\skip\footins}{0.5cm}
+% \setlength{\tabcolsep}{4pt}
 \hypersetup{ % all blue links
 	colorlinks		= true,
 	urlcolor 		= blue,
@@ -38,6 +41,7 @@
 \newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
 \newcommand{\Ctwelve}{\ensuremath{^{12}\text{C}}}
 \newcommand{\Cthirteen}{\ensuremath{^{13}\text{C}}}
+\newcommand{\Cfourteen}{\ensuremath{^{14}\text{C}}}
 \newcommand{\Nthirteen}{\ensuremath{^{13}\text{N}}}
 \newcommand{\Nfourteen}{\ensuremath{^{14}\text{N}}}
 \newcommand{\Nfifteen}{\ensuremath{^{15}\text{N}}}
@@ -84,7 +88,7 @@ Constraints on the Nucleosynthesis of Nitrogen}
 	Jonathan C. Bird,$^{5}$ and
 	\newauthor
 	Emily J. Griffith$^{1, 2}$
-	\\ \null \\
+	\\
 	$^{1}$ Department of Astronomy, The Ohio State University,
 	140 W. 18th Ave., Columbus, OH, 43210, USA
 	\\
@@ -112,8 +116,8 @@ Constraints on the Nucleosynthesis of Nitrogen}
 \subfile{abstract.tex}
 
 \begin{keywords}
-methods: numerical -- galaxies: abundances, evolution, star formation, stellar
-content
+methods: numerical -- galaxies: abundances -- galaxies: evolution -- galaxies:
+star formation -- galaxies: stellar content
 \end{keywords}
 
 \subfile{intro.tex}
@@ -122,6 +126,7 @@ content
 \subfile{results.tex}
 \subfile{conclusions.tex}
 \subfile{acknowledgements.tex}
+\subfile{data_availability.tex}
 
 \bibliographystyle{mnras}
 \bibliography{ms}

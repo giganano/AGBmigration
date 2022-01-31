@@ -3,32 +3,35 @@
 \begin{document}
 
 \begin{abstract}
-We use a multi-ring galactic chemical evolution model to probe the
-nucleosynthesis of N in the Milky Way.
-This approach incorporates the effects of stellar migration by allowing stars
-to move between rings in a manner based on a hydrodynamical simulation.
-In order to reproduce the gas-phase~\ohno~relation, the metallicity dependence
-of N yields must be approximately linear.
-The combination of a massive star yield which does not depend on progenitor
-metallicity with an AGB star yield which does is sufficiently accurate for
-chemical evolution models.
-In our model, the~\ohno~relation arises not as an evolutionary sequence but as
-a superposition of endpoints.
-This occurs because~\oh~reaches equilibrium significantly faster than~\nh, a
-consequence of the difference in enrichment timescales between the two elements.
-Our model successfully reproduces many of the observed correlations between
-stellar N, O, and Fe abundances when their~\nh~measurements are corrected for
-internal mixing processes known to affect the photospheric compositions of
-red giant stars.
-The timescale for N production is significantly shorter than the timescale for
-stellar migration, and the resulting impact on enrichment rates is minimal.
-We demonstrate that it is a minimal source of scatter in the
-gas-phase~\ohno~relation as a consequence.
-Variations in the star formation efficiency and episodic accretion both
-produce changes in~\no~at fixed~\oh~that are a factor of~$\sim$2 larger than
-that induced by stellar migration.
-Our models run using the publicly available~\texttt{Versatile Integrator for
-Chemical Evolution} (\vice;~\url{https://pypi.org/project/vice}).
+We derive empirical constraints on the nucleosynthetic yields of nitrogen by
+incorporating N enrichment into our previously developed and empirically tuned
+mutli-zone galactic chemical evolution model.
+We adopt a metallicity-independent (``primary'') N yield from massive stars and
+a metallicity-dependent (``secondary'') N yield from AGB stars.
+In our model, galactic radial zones do not evolve along the observed
+[N/O]-[O/H] relation, but first increase in [O/H] at roughly constant [N/O],
+then move upward in [N/O] via secondary N production.
+By~$t\approx5$ Gyr, the model approaches an equilibrium [N/O]-[O/H] relation,
+which traces the radial oxygen gradient.
+We find good agreement with the [N/O]-[O/H] trend observed in extra-galactic
+systems if we adopt an IMF-averaged massive star yield
+$y_\text{N}^\text{CC}=3.6\times10^{-4}$, consistent with predictions for
+rapidly rotating progenitors, and a fractional AGB yield that is linear in mass
+and metallicity
+$y_\text{N}^\text{AGB}=(9\times10^{-4})(M_*/M_\odot)(Z_*/Z_\odot)$.
+This model reproduces the [N/O]-[O/H] relation found for Milky Way stars
+in the APOGEE survey as well as (though imperfectly) the trends of
+stellar [N/O] with age and [O/Fe].
+The metallicity-dependent yield plays the dominant role in shaping the gas-phase
+[N/O]-[O/H] relation, but the AGB time-delay is required to match the APOGEE
+stellar age and [O/Fe] trends.
+If we add~$\sim$40\% oscillations to the star formation rate, the model
+reproduces the scatter in gas-phase [N/O] vs. [O/H] observed in external
+galaxies by MaNGA.
+We also construct models using published AGB yields and examine their empirical
+successes and shortcomings.
+For all AGB yields we consider, simple stellar populations release half their
+N after only~$\sim$250 Myr.
 \end{abstract}
 
 \end{document}

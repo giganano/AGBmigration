@@ -3,6 +3,7 @@ This file declares the nucleosynthetic yields for use in these models
 """ 
 
 import numbers 
+import math as m
 import vice 
 from vice.yields.presets import JW20 
 vice.yields.sneia.settings['fe'] *= 10**0.1 
@@ -160,6 +161,15 @@ class prompt_agb_yield(vice.toolkit.interpolation.interp_scheme_1d):
 		vice.yields.agb.settings['n'] = current_agb_yield
 
 
+class ia_yield(prompt_agb_yield):
+
+	ia_yield = 0
+
+	def __call__(self, Z):
+		return (self.ia_yield +
+			vice.toolkit.interpolation.interp_scheme_1d.__call__(self, Z)
+		)
+
 
 class linear_agb_yield: 
 
@@ -261,7 +271,7 @@ vice.mlr.setting = "larson1974"
 
 
 # # fiducial set of yields
-# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4)
+vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4)
 vice.yields.ccsne.settings['n'] = 3.6e-4
 vice.yields.sneia.settings['n'] = 0
 
@@ -317,7 +327,24 @@ vice.yields.sneia.settings['n'] = 0
 # vice.yields.agb.settings['n'] = zero_agb_yield
 
 # a model with no metallicity-dependence
-vice.yields.agb.settings['n'] = linear_agb_yield_no_zdep(slope = 9.0e-4)
+# vice.yields.agb.settings['n'] = linear_agb_yield_no_zdep(slope = 9.0e-4)
+
+# a model that produces N on the SN Ia DTD
+# vice.yields.agb.settings['n'] = zero_agb_yield
+# vice.yields.sneia.settings['n'] = ia_yield()
+
+# one-third set of yields
+# vice.yields.ccsne.settings['o'] = 0.005
+# vice.yields.sneia.settings['o'] = 0.
+# vice.yields.agb.settings['o'] = "cristallo11"
+
+# vice.yields.ccsne.settings['fe'] = 0.0004
+# vice.yields.sneia.settings['fe'] = 0.000713
+# vice.yields.agb.settings['fe'] = "cristallo11"
+
+# vice.yields.ccsne.settings['n'] = 1.2e-4
+# vice.yields.sneia.settings['n'] = 0.
+# vice.yields.agb.settings['n'] = "cristallo11"
 
 
 
