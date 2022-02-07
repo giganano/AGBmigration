@@ -1,0 +1,57 @@
+
+\subsection{The [N/O]-[O/H] relation as an equilibrium phenomenon}
+
+As shown by \cite{Weinberg2017}, under generic conditions the abundances of
+a one-zone model with continuing gas infall evolve to an equilibrium, in 
+which new metal production is balanced by dilution and by the loss of ISM
+metals into stars and outflows.  Fig.~\ref{Fig5} shows that the [N/O] ratio
+at a given radius in our multi-zone GCE model approaches equilibrium
+after $t \approx 5\Gyr$.  Fig.~\ref{Fig7} further shows that the [N/O]-[O/H]
+relation that emerges in our model is driven by the metallicity dependence
+of the N yield with the time delay of AGB enrichment having minimal impact.
+It is therefore useful to apply insights from analytic models to the origin
+of this relation, extending our discussion from \S\ref{Sec4.2.1}.
+
+For an exponential star formation history 
+$\mdotstar \propto e^{-t/\tau_{\rm SFH}}$ and instantaneous enrichment and
+recycling of an element with IMF-averaged yield $y$, the equilibrium ISM
+mass fraction is
+\begin{equation}
+Z_{\rm eq} = y/(1+\eta-r-\taustar/\tau_{\rm SFH}~,
+\label{eqn:zeq}
+\end{equation}
+where, as before $\eta = \dot{M}_{\rm out}/\mdotstar$, $r \approx 0.4$ is
+the recycling fraction, and $\taustar = M_{\rm gas}/\mdotstar$ is the 
+SFE timescale \citep{Weinberg2017}.  When an element's characteristic
+enrichment time delay is $\ll \tau_{\rm SFH}$, the correction to 
+equation~(\ref{eqn:zeq}) is very small.  Therefore, even with a declining
+SFR and AGB time delay, the N/O abundance ratio in equilibrium should equal
+the yield ratio.  While a full time-dependent analytic solution is only
+possible for a metallicity-independent yield, to compute the equilibrium ratio 
+we can just take the N yield at the metallicity implied by the oxygen 
+abundance.  This argument leads to the expectation
+\begin{equation}
+10^{[N/O]} = {(Z_N/Z_O}_{\rm eq} \over (Z_{N,\odot}/Z_{O,\odot})} 
+           = {y_N(Z_O)/y_O \over Z_{N,\odot}/Z_{O,\odot}}~,
+\label{eqn:NOeq}
+\end{equation}
+with $10^{[O/H]} = Z_O/Z_{O,\odot}$.
+
+Equation~\ref{eqn:NOeq} can be used to predict the [N/O]-[O/H] relation
+for a given set of yields.  {\bf TBD:} We have spot-checked this formula
+against a number of the cases shown in Fig.~\ref{Fig6} and find agreement
+to 0.05 dex {\bf TBD} or better.  One can also use equation~(\ref{eqn:NOeq})
+to reverse engineer the IMF-averaged N yield required to match an
+empirical [N/O]-[O/H] relation for a specified $y_O$.  Our fiducial
+AGB yield (equation XX with $\xi = 9\times 10^{-4}$ gives an IMF-averaged
+yield of $\ynagb = 9.4\times 10^{-4}$ {\bf Check.  Read off plot.}
+at $Z = Z_\odot$, with a linear dependence on $Z$.
+Applying this yield (and $\yncc = 3.6 \times 10^{-4}$, $\yocc = 0.015$,
+$Z_{N,\odot}=6.91 \times 10^{-4}$, $Z_{O,\odot} = 5.72 \times 10^{-3}$)
+to equation~(\ref{eqn:NOeq}) gives
+\begin{equation}
+10^{[N/O]} = 0.199 + 0.519 \times 10^{[O/H]}~.
+\end{equation}
+
+ONE MORE PARAGRAPH ON THE LIMITS OF EQUILIBRIUM.
+

@@ -73,8 +73,8 @@ this is however an interesting question for future work.
 \par
 Radial migration of stars proceeds from the~\hsim~star particles in a simple
 manner; for a stellar population in our model born at a radius~$R_\text{birth}$
-and a time~$T_\text{birth}$,~\vice~searches for star particles born at
-$R_\text{birth} \pm 250$ pc and $T_\text{birth} \pm 250$ Myr.
+and a time~$t_\text{birth}$,~\vice~searches for star particles born at
+$R_\text{birth} \pm 250$ pc and $t_\text{birth} \pm 250$ Myr.
 From the star particles that make this cut, it then randomly selects one to act
 as that stellar population's~\textit{analogue}.
 The stellar population then assumes the present day midplane distance~$z$ and
@@ -84,7 +84,7 @@ In the~\citet{Johnson2021} fiducial model, stellar populations move to their
 implied final radii with a~$\sqrt{\text{age}}$ dependence according to:
 \begin{equation}
 \rgal(T) = R_\text{birth} + \Delta\rgal
-\sqrt{\frac{T - T_\text{birth}}{13.2~\text{Gyr} - T_\text{birth}}},
+\sqrt{\frac{t - t_\text{birth}}{13.2~\text{Gyr} - t_\text{birth}}},
 \end{equation}
 where 13.2 Gyr is simply the present day (see discussion above).
 With displacement proportional to~$\sqrt{\text{age}}$, this corresponds to a
@@ -93,13 +93,14 @@ by~\citet{Frankel2018, Frankel2019} and supported by the N-body simulations
 of~\citet*{Brunetti2011}.
 Although~\citet{Johnson2021} investigated other assumptions for this
 time-dependence, in the present paper we only use this parametrization
-(hereafter referred to as the ``diffusion'' model) and an idealized one in
-which stars remain at their birth radius until they instantaneously migrate at
-the present day (hereafter referred to as the ``post-processing'' model).
+(hereafter referred to as the ``diffusion'' prescription) and an idealized one
+in which stars remain at their birth radius until they instantaneously migrate
+at the present day (hereafter referred to as the ``post-processing''
+prescription).
 If~\vice~does not find any star particles from~\hsim~in its initial
-$\rgal \pm 250$ pc and~$T \pm 250$ Myr search, it widens it to
-$\rgal \pm 500$ pc and~$T \pm 500$ Myr; if still no candidate analogues are
-found,~\vice~maintains the~$T \pm 500$ Myr requirement, but assigns the star
+$\rgal \pm 250$ pc and~$t \pm 250$ Myr search, it widens it to
+$\rgal \pm 500$ pc and~$t \pm 500$ Myr; if still no candidate analogues are
+found,~\vice~maintains the~$t \pm 500$ Myr requirement, but assigns the star
 particle with the smallest difference in birth radius as the analogue.
 This procedure can be thought of as ``injecting'' the dynamics of
 the~\hsim~galaxy into our multi-zone chemical evolution model, and it can in
@@ -183,14 +184,14 @@ Based on the findings of~\citet{Kennicutt1998}, GCE models often adopt a
 single power-law relating the surface density of gas~$\Sigma_\text{gas}$ to
 the surface density of star formation~$\dot{\Sigma}_\star$.
 Recent studies, however, have revealed that the spatially resolved
-$\Sigma_\text{gas} - \dot{\Sigma}_\star$ relation is much more nuanced than the
+$\Sigma_\text{gas} - \dot{\Sigma}_\star$ relation is more nuanced than the
 integrated relation~\citep{delosReyes2019, Ellison2021, Kennicutt2021}.
 Some of the uncertainty regarding its details can be traced back to the
 ongoing debate about the CO-to-H$_2$ conversion factor
 (\citealp{Kennicutt2012};~\citealp*{Liu2015}).
 Based on a compilation of the~\citet{Bigiel2010} and~\citet{Leroy2013} data
 shown in comparison to the theoretically motivated parametrizations of
-\citet[][see their Fig. 2]{Krumholz2018},~\citet{Johnson2021} take a
+\citet[][see their fig. 2]{Krumholz2018},~\citet{Johnson2021} take a
 three-component power-law~$\dot{\Sigma}_\star \propto \Sigma_\text{gas}^N$ with
 index~$N$ given by:
 \begin{equation}
@@ -203,12 +204,12 @@ N =
 \end{cases}
 \label{eq:sflaw_indeces}
 \end{equation}
-The normalization is set by letting the SFE timescale
+The normalization is fixed by setting the SFE timescale
 $\tau_\star \equiv \Sigma_\text{gas} / \dot{\Sigma}_\star$ at surface densities
-where~$N = 1$ be given by the value derived observationally for molecular gas,
-denoted by~$\tau_\text{mol}$.
+where~$N = 1$ to the value derived observationally for molecular gas, denoted
+by~$\tau_\text{mol}$.
 This value at the present day is taken to be~$\tau_{\text{mol},0} = 2$ Gyr
-\citep{Leroy2008, Leroy2013} with a~$t^{1/2}$ dependence on cosmic time based
+\citep{Leroy2008, Leroy2013}, with a~$t^{1/2}$ dependence on cosmic time based
 on the findings of~\citet{Tacconi2018} studying the properties of molecular gas
 as a function of redshift.
 \par
@@ -221,7 +222,7 @@ mass loading factor~$\eta \equiv \dot{\Sigma}_\text{out} / \dot{\Sigma}_\star$
 with a small correction for the SFH.
 \citet{Johnson2021} select a scaling of~$\eta$ with~\rgal~such that the
 equilibrium abundance as a function of radius corresponds to a reasonable
-metallicity gradient within the Galaxy (see their Fig. 3 and discussion in
+metallicity gradient within the Galaxy (see their fig. 3 and discussion in
 their~\S~3.1).
 Nonetheless, yields and the strength of outflows are mutually degenerate
 parameters since they act as source and sink terms in computing enrichment

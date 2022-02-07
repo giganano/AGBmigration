@@ -16,8 +16,8 @@ difficult to model its abundances accurately.
 Here we take an empirical approach to constrain N yields by using
 state-of-the-art galactic chemical evolution (GCE) models to assess which
 functional forms describing the yield can reproduce recent observational
-data for gas phase abundances and trends in Milky Way disc stars
-by~\citet{Vincenzo2021}
+data for gas phase abundances and trends in Milky Way disc stars found
+by~\citet{Vincenzo2021}.
 
 \begin{figure*}
 \centering
@@ -27,8 +27,8 @@ by~\citet{Vincenzo2021}
 	HII regions from the first six CHAOS galaxies (golden +'s: NGC 3184, NGC
 	628, NGC 5194, NGC 5457, M101, and NGC 2403;~\citealp{Berg2020,
 	Skillman2020, Rogers2021}) and other nearby NGC spiral galaxies (grey X's;
-	\citealp{Pilyugin2010}), HII regions in blue diffuse star forming dwarf
-	galaxies (red triangles:~\citealp{Berg2012}; green stars:
+	\citealp[][``ONS'' calibration]{Pilyugin2010}), HII regions in blue diffuse
+	star forming dwarf galaxies (red triangles:~\citealp{Berg2012}; green stars:
 	\citealp{Izotov2012}; blue diamonds:~\citealp{James2015}), in local stars
 	and HII regions (purple circles:~\citealp{Dopita2016}), and in the MaNGA
 	IFU survey (black squares:~\citealp{Belfiore2017}).
@@ -52,7 +52,8 @@ along with data from the Milky Way:
 	} galaxies: NGC 3184, NGC 628, NGC 5194, NGC 5457, M101, and NGC 2403
 	\citep{Berg2020, Skillman2020, Rogers2021}.
 
-	\item[\textbf{2.}] HII regions in nearby NGC spirals~\citep*{Pilyugin2010}.
+	\item[\textbf{2.}] HII regions in nearby NGC spirals
+	\citep*[][``ONS'' calibration]{Pilyugin2010}.
 
 	\item[\textbf{3.}] HII regions in blue, diffuse star forming dwarf galaxies
 	(\citealp{Berg2012};~\citealp*{Izotov2012};~\citealp{James2015}).
@@ -67,18 +68,19 @@ along with data from the Milky Way:
 		MaNGA: Mapping Nearby Galaxies at Apache Point Observatory
 		\citep{Bundy2015}.
 		IFU: Integral Field Unit.
-	} survey~\citep{Belfiore2017, Bundy2015}.
+	} survey~\citep{Belfiore2017}.
 \end{enumerate}
-% \par\noindent
 Despite intrinsic scatter and some systematic variation in how the abundances
 are determined, this~\ohno\footnote{
 	We follow standard notation where [X/Y]
 	$\equiv \log_{10}(X/Y) - \log_{10}(X/Y)_\odot$.
 } relation is found to be similar across a wide range of astrophysical
 environments.
-Furthermore, recent arguments from both theoretical~\citep{Vincenzo2018} and
-observational perspectives~\citep{HaydenPawson2021} suggest that this relation
-is largely redshift-invariant.
+% mbox prevents this citation from getting split across pages and turning all
+% of Fig. 1 into a giant hyperlink for Vincenzo & Kobayashi (2018).
+Furthermore, recent arguments from both theoretical~\mbox{\citep{Vincenzo2018}}
+and observational perspectives~\citep{HaydenPawson2021} suggest that this
+relation is largely redshift-invariant.
 Previous studies have interpreted this consistency as an indication that the
 relation is nucleosynthetic in origin, reflective of a ``primary'' yield that
 does not depend on a star's initial metal content and a ``secondary'' yield
@@ -116,7 +118,8 @@ observed N abundances (\citealp*{Chiappini2003, Chiappini2005};
 \citealp{Chiappini2006};~\citealp*{Kobayashi2011};~\citealp{Prantzos2018};
 \citealp*{Grisoni2021}).
 Rotation plays a pivotal role in stellar evolution, inducing effects such as
-shear mixing, meridional circulation, and horizontal turbulence~\citep{Zahn1992, Maeder1998, Lagarde2012}.
+shear mixing, meridional circulation, and horizontal turbulence~\citep{Zahn1992, 
+Maeder1998, Lagarde2012}.
 These effects carry internally produced C and O nuclei into the H-burning shell
 where they can be processed into~\Nfourteen~via the CNO cycle~\citep{Heger2010,
 Frischknecht2016, Andrews2017}.
@@ -144,7 +147,7 @@ In sufficiently massive AGB stars, the base of the convective envelope is hot
 enough to activate proton capture reactions, allowing the CNO cycle to convert
 C and O isotopes into~\Nfourteen: a process known as hot bottom burning (HBB).
 AGB stars are also known to experience thermal pulsations, and often these
-pulations are accompanied by a penetration of the convective enevelope into the
+pulsations are accompanied by a penetration of the convective enevelope into the
 CO-rich core, which incorporates some of this material into the envelope
 itself: a process known as third dredge-up (TDU).
 When both processes are active, TDU adds new seed nuclei for HBB to turn
@@ -185,13 +188,13 @@ With a sample of 6,507 galaxies from the MaNGA IFU survey~\citep{Bundy2015},
 the~\ohno~relation at fixed galaxy mass is correlated with variations in the
 local star formation efficiency (SFE).
 In regions of slower star formation,~\no~tends to be slightly higher at
-fixed~\oh~(see their Fig. 4), which is expected from simple GCE models.
+fixed~\oh~(see their fig. 4), which is expected from simple GCE models.
 In classical ``closed-box models''~\citep[e.g.][]{Molla2006}, more AGB stars
-enrich the ISM with N by the time a given~\oh~is reached, whereas in ``open-box
-models'' with inflows and outflows like the ones we present here, dilution by
-primordial gas accretion drives~\oh~down at fixed~\no.
-However,~\citet{Schaefer2020} did not rule out stellar migration as an
-additional source of scatter in the gas-phase~\ohno~relation.
+enrich the interstellar medium (ISM) with N by the time a given~\oh~is reached,
+whereas in ``open-box models'' with inflows and outflows like the ones we
+present here, dilution by primordial gas accretion drives~\oh~down at fixed~\no.
+However,~\citet{Schaefer2020} did not investigate stellar migration as a
+potential source of additional scatter in the gas-phase~\ohno~relation.
 In principle, there could be a deficit or surplus of N-producing AGB stars in a
 given Galactic region at any time simply because the orbits are evolving,
 driving additional scatter in the correlation.
@@ -199,7 +202,7 @@ The~\citet{Johnson2021} GCE model is an ideal tool with which to test this
 hypothesis; the novel difference between theirs and previous models with
 similar motivations is that it allows stellar populations to enrich
 rings at different radii as they migrate.
-Originally developed to study the abundances of O and iron (Fe), this aspect of
+Originally developed to study the abundances of O and Fe, this aspect of
 Galactic evolution turned out to have an important impact on the delayed type
 Ia supernova (SN Ia) enrichment of Fe, causing stochastic fluctuations in the
 enrichment rates with time at fixed radius.
@@ -235,7 +238,9 @@ metallicity-dependence of AGB star yields in~\S~\ref{sec:results:t_z_dep_comp}.
 We compare our model predictions to stellar N abundances corrected for internal
 mixing processes in~\S~\ref{sec:results:vincenzo_comp}.
 We assess the sources of intrinsic scatter in the~\ohno~relation
-in~\S~\ref{sec:results:schaefer_comp} and summarize our conclusions
+in~\S~\ref{sec:results:schaefer_comp}.
+We provide an analytic understanding of our key results
+in~\S~\ref{sec:results:ohno_equilibrium} and summarize our conclusions
 in~\S~\ref{sec:conclusions}.
 
 \end{document}
