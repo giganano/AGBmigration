@@ -271,9 +271,19 @@ vice.mlr.setting = "larson1974"
 
 
 # # fiducial set of yields
-vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4)
-vice.yields.ccsne.settings['n'] = 3.6e-4
+# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 9.0e-4)
+# vice.yields.ccsne.settings['n'] = 3.6e-4
+# vice.yields.sneia.settings['n'] = 0
+
+vice.yields.agb.settings['n'] = linear_agb_yield(slope = 6.0e-4)
+vice.yields.ccsne.settings['n'] = 2.4e-4
 vice.yields.sneia.settings['n'] = 0
+
+vice.yields.ccsne.settings['o'] = 0.01
+vice.yields.sneia.settings['o'] = 0
+
+vice.yields.ccsne.settings['fe'] *= 2 / 3
+vice.yields.sneia.settings['fe'] *= 2 / 3
 
 # C11+C15 yields
 # vice.yields.agb.settings['n'] = "cristallo11"

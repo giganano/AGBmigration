@@ -80,6 +80,7 @@ class diskmodel(vice.milkyway):
 			zone_width = zone_width) 
 		self.setup_nthreads = 12
 		self.nthreads = 5
+		self.mass_loading = twothirds_mass_loading
 		# for i in range(self.n_zones): 
 		# 	self.zones[i].tau_star = sfe(
 		# 		m.pi * ((zone_width * (i + 1))**2 - (zone_width * i)**2)) 
@@ -130,6 +131,14 @@ class diskmodel(vice.milkyway):
 		model.bins = config.bins 
 		model.elements = config.elements 
 		return model 
+
+
+def twothirds_mass_loading(radius):
+	r"""
+	Takes the default mass loading factor as a function of galactocentric
+	radius provided with vice.milkyway and multiplies it by 2/3.
+	"""
+	return 2. * vice.milkyway.default_mass_loading(radius) / 3
 
 
 def halved_mass_loading(radius): 

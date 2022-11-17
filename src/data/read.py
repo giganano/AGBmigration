@@ -154,42 +154,42 @@ def dopita2016():
 		}) 
 
 
-def vincenzo2021(): 
-	r""" 
-	Reads the data from Vincenzo et al. (2021) [1]_. 
+def vincenzo2021():
+	r"""
+	Reads the data from Vincenzo et al. (2021) [1]_.
 
-	.. [1] Vincenzo et al. (2021), arxiv:2016.03912 
-	""" 
-	f = open("%s/CNOdredgeup.obj" % (PATHROOT), "rb") 
-	raw = pickle.load(f, encoding = "bytes") 
-	f.close() 
-	mgfe = raw[1].tolist() 
-	feh = raw[2].tolist() 
-	cfe = raw[3].tolist() 
-	nfe = raw[4].tolist() 
-	ch = raw[5].tolist() 
-	nh = raw[6].tolist() 
-	age = raw[7].tolist() 
-	cn = raw[9].tolist() 
-	no = [logNO_bracket_conversion(_) for _ in raw[11]] 
-	oh = [a - b for a, b in zip(nh, no)] 
+	.. [1] Vincenzo et al. (2021), arxiv:2016.03912
+	"""
+	f = open("%s/CNOdredgeup.obj" % (PATHROOT), "rb")
+	raw = pickle.load(f, encoding = "bytes")
+	f.close()
+	mgfe = raw[1].tolist()
+	feh = raw[2].tolist()
+	cfe = raw[3].tolist()
+	nfe = raw[4].tolist()
+	ch = raw[5].tolist()
+	nh = raw[6].tolist()
+	age = raw[7].tolist()
+	cn = raw[9].tolist()
+	no = [logNO_bracket_conversion(_) for _ in raw[11]]
+	oh = [a - b for a, b in zip(nh, no)]
 	data = vice.dataframe({
-		"[mg/fe]": mgfe, 
-		"[fe/h]": feh, 
-		"[c/fe]": cfe, 
-		"[n/fe]": nfe, 
-		"[c/h]": ch, 
-		"[n/h]": nh, 
-		"age": age, 
-		"[c/n]": cn, 
-		"[o/h]": oh, 
-		"[n/o]": no 
-	}) 
+		"[mg/fe]": mgfe,
+		"[fe/h]": feh,
+		"[c/fe]": cfe,
+		"[n/fe]": nfe,
+		"[c/h]": ch,
+		"[n/h]": nh,
+		"age": age,
+		"[c/n]": cn,
+		"[o/h]": oh,
+		"[n/o]": no
+	})
 	return data.filter(
 		"[o/h]", ">=", -10).filter(
 		"[o/h]", "<=", 10).filter(
 		"[n/o]", ">=", -10).filter(
-		"[n/o]", "<=", 10) 
+		"[n/o]", "<=", 10)
 
 
 def schaefer2020(): 
