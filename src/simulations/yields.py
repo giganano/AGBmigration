@@ -275,7 +275,9 @@ vice.mlr.setting = "larson1974"
 # vice.yields.ccsne.settings['n'] = 3.6e-4
 # vice.yields.sneia.settings['n'] = 0
 
-vice.yields.agb.settings['n'] = linear_agb_yield(slope = 6.0e-4)
+# vice.yields.agb.settings['n'] = linear_agb_yield(slope = 6.0e-4)
+vice.yields.agb.settings['n'] = amplified_agb('n', study = "cristallo11",
+	prefactor = 2)
 vice.yields.ccsne.settings['n'] = 2.4e-4
 vice.yields.sneia.settings['n'] = 0
 
