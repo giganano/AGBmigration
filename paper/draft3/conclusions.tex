@@ -1,0 +1,145 @@
+
+\documentclass[ms.tex]{subfiles}
+\begin{document}
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+Building on the multi-zone GCE model of~\citet{Johnson2021}, which reproduces
+many observed features of the [$\alpha$/Fe]-[Fe/H]-age distribution of Milky
+Way disc stars, we have inferred empirical constraints on the stellar
+nucleosynthesis of N by comparing model predictions to observed gas-phase trends
+in extenal galaxies and stellar trends in the Milky Way disc.
+In our models, the gas-phase abundance at a given Galactocentric radius first
+evolves to higher~\oh~at roughly constant~\no~because of primary
+(metallicity-independent) N production, then evolves upward in~\no~with slowly
+increasing~\oh~because of secondary N production that increases with
+metallicity (Fig.~\ref{fig:no_oh_timeevol}).
+The~\ohno~relation reaches an approximate equilibrium after~$t = 5 - 8$ Gyr,
+consistent with previous arguments that this relation is largely
+redshift-independent~\citep{Vincenzo2018, HaydenPawson2021}.
+This~\ohno~relation represents a superposition of evolutionary track endpoints
+rather than an evolutionary track itself, similar to some explanations of the
+low-$\alpha$ disc sequence in the Milky Way~\citep[e.g.][]{Schoenrich2009,
+Nidever2014, Buck2020, Sharma2021, Johnson2021}.
+\par
+As our principal observational benchmark, we take Dopita et
+al.'s (\citeyear{Dopita2016}) characterization of observed gas-phase abundances
+in external galaxies (see Fig.~\ref{fig:no_oh_observed}).
+Using Johnson et al.'s (\citeyear{Johnson2021}) CCSN oxygen yield
+of~$\ycc{O} = 0.015$, we obtain agreement with
+the~\citet{Dopita2016}~\ohno~relation if we assume a metallicity-independent
+massive star yield of~$\ycc{N} = 3.6\times10^{-4}$ and an AGB fractional N
+yield that is linear in stellar mass and metallicity
+(equation~\ref{eq:linear_yield}) with~$\xi = 9\times10^{-4}$.
+This value of~$\ycc{N}$ is consistent with the rotating massive star models of
+\citet{Limongi2018}, and we concur with previous arguments that rotating massive
+stars are required to explain the~$\no \approx -0.7$ plateau observed at low
+metallicities (see Fig.~\ref{fig:no_oh_observed};~\citealp{Chiappini2003,
+Chiappini2005, Chiappini2006, Kobayashi2011, Prantzos2018, Grisoni2021}).
+The AGB yield is similar in form but 3 times higher in amplitude than the
+models of~\cristallo.
+\par
+With~$\ycc{O} = 0.015$ and~$\ycc{N} = 3.6\times10^{-4}$, the AGB N yields
+of~\cristallo~and~\ventura~must be amplified by factors of three and two,
+respectively, to achieve agreement with the~\citet{Dopita2016}~\ohno~relation
+(Fig.~\ref{fig:no_oh_predictions}).
+However, as predicted abundance ratios depend primarily on yield ratios, we can
+also obtain agreement by using the~\cristallo~or~\ventura~yields and
+lowering~\ycc{O}~and~\ycc{N}~by the corresponding factor.
+Such a change could be physically justified if black hole formation is more
+extensive, or the IMF steeper, than implicitly assumed by the value
+of~$\ycc{O} = 0.015$ (see~\S~\ref{sec:results:yields:variations}
+and~\citealp{Griffith2021}).
+Other successful predictions of the~\citet{Johnson2021} models, including the
+Galactic~\oh~gradient that is one of its basic constraints, would be largely
+unchanged if~\ycc{Fe},~\yia{Fe}, and outflow mass loading efficiencies~$\eta$
+were all reduced by the same factor.
+Alternatively, one could retain a higher~\ycc{O}~and~\ycc{N}~but assume that
+Galactic winds preferentially eject CCSN products relative to AGB products, as
+suggested by~\citet{Vincenzo2016a}.
+The degeneracy between the overall scaling of yields and the magnitude of
+outflows is one of the key sources of uncertainty in GCE models.
+\par
+In contrast to~\cristallo~and~\ventura, the AGB models
+of~\karakasten~and~\karakas~predict IMF-averaged yields that are decreasing or
+approximately flat with increasing~$Z$ (Fig.~\ref{fig:ssp}).
+In our GCE models, these yields lead to clear disagreement with the
+\citet{Dopita2016} trend, even when we allow reasonable variations in the
+metallicity dependence of~\ycc{N} (Fig.~\ref{fig:no_oh_predictions}).
+There are many uncertain physical effects in AGB stellar models, so it is
+difficult to pinpoint a single cause for this discrepancy.
+In general, the most efficient N production occurs when both TDU and HBB occur
+simultaneously because each replenishment of C and O isotopes from the stellar
+core by TDU adds new seed nuclei for HBB to process in~\Nfourteen~via the CNO
+cycle~\citep{Ventura2013}.
+The distinctive metallicity dependence of the~\karakasten~and~\karakas~yields
+traces back to the simultaneous occurrence of TDU and HBB over a substantial
+mass range at all metallicities (Fig.~\ref{fig:agb_yield_models}).
+\par
+All of the AGB models predict that IMF-averaged N production is dominated by
+stars with M~$> 2~\msun$ (Fig.~\ref{fig:ssp}).
+As a result, the delay-time required to produce 50\% of the AGB N is 250 Myr or
+less, shorter than the~$\sim$1 Gyr characteristic delay of Fe fron SN Ia.
+The form of the~\ohno~relation is driven by the metallicity dependence of N
+yields, not by the time delay of AGB production (Fig.~\ref{fig:t_z_dep_comp}),
+and it can be calculated accurately from simple equilibrium arguments under
+most circumstances (\S~\ref{sec:results:ohno_equilibrium},
+equation~\ref{eq:noeq}).
+\par
+\citet{Vincenzo2021} inferred the median~\ohno~trend of Milky Way disc stars
+from APOGEE abundances corrected for mixing on the red giant branch using the
+asteroseismic mass measurements from~\citet{Miglio2021}.
+They found good agreement with the~\citet{Dopita2016} trend, our observational
+benchmark, so our model is also consistent with their derived APOGEE trends.
+% \citet{Vincenzo2021} find that the median~\ohno~trend of Milky Way disc stars,
+% inferred from APOGEE abundances corrected for mixing on the red giant branch,
+% follows the trend of~\citet{Dopita2016}, so it is also reproduced by our model.
+Our model also reproduces, at least approximately, two important findings of
+\citet{Vincenzo2021}:~\no~exhibits little correlation with stellar age at
+fixed~\feh~for ages~$\lesssim 9$ Gyr, and~\no~declines linearly with
+increasing~\ofe~at fixed~\oh~(Fig.~\ref{fig:vincenzo_comp}).
+The match to these observations~\textit{does} depend on the AGB DTD, and it
+breaks down if we either make the AGB enrichment instantaneous or make it occur
+as slowly as SN Ia Fe production.
+\par
+To investigate the sources of scatter in the~\ohno~relation, we construct
+variants of our fiducial model that have~$\sim$40\% sinusoidal oscillations in
+the SFR with a 2 Gyr period, induced by oscillations in either the SFE or the
+gas infall rate.
+The combined effects of dilution by pristine infall and metallicity-dependent N
+production lead to oscillations in the~\ohno~relation comparable in magnitude
+to the scatter measured in MaNGA galaxies by~\citet{Schaefer2020}
+(Fig.~\ref{fig:schaefer_comp}).
+We concur with their conclusion that variations in the SFE can plausibly
+explain most of the observed scatter.
+\citet{Johnson2021} find that stellar migration induces stochastic variations
+in [$\alpha$/Fe] enrichment because a stellar population can migrate from its
+birth radius before most of its SN Ia Fe production takes place.
+The same effect occurs for AGB N enrichment but to a lesser extent because the
+shorter production timescale ($\sim$250 Myr) leaves less time for migration.
+We find that migration leads to~$\sim$0.05-dex scatter in~\no~at fixed~\oh,
+which is smaller than the scatter measured by~\citet{Schaefer2020} but not
+negligible.
+\par
+Our findings illustrate the value and methodology of empirically constraining
+stellar yields by combining general theoretical expectations with GCE modelling
+and observational constraints.
+For the case of N, we have used the expectation that massive stars and AGB stars
+both contribute, with the AGB contribution moderately delayed in time.
+The metallicity dependence of the combined IMF-averaged yield is tightly
+constrained, and it is plausibly partitioned into a massive star yield that is
+independent of metallicity and an AGB yield that is linear in metallicity~$Z$
+and progenitor mass~$M$.
+The normalization of the yield is well-constrained~\textit{relative} to the
+IMF-averaged O yield.
+The DTD predicted by our fiducial model, in concert with the~\citet{Johnson2021}
+GCE prescriptions, leads to good agreement with the~\no-age and~\no-\ofe~trends
+for Milky Way disc stars (Fig.~\ref{fig:vincenzo_comp}).
+As this approach is extended to increasing numbers of elements, the web of
+yield constraints and consistency tests will become steadily more powerful,
+providing valuable insights on stellar astrophysics, SN physics, and the
+history of our Galaxy.
+
+\end{document}
+

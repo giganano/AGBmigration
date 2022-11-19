@@ -1,0 +1,141 @@
+
+\documentclass[fleqn, usenatbib]{mnras}
+\usepackage{newtxtext, newtxmath} 	% Required for MNRAS
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{pdflscape}
+\usepackage{natbib}
+\usepackage[section]{placeins}
+\usepackage{lipsum}
+\usepackage{etoolbox}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{ulem}
+\usepackage[toc, page]{appendix}
+\usepackage{subfiles}
+% \usepackage[breaklinks=true]{hyperref}
+% \usepackage{geometry}
+% \geometry{margin=0.6in}
+% \hypersetup{draft}
+% \linespread{1.8}
+\setlength{\parskip}{0.5mm plus0mm minus0mm}
+\setlength{\skip\footins}{0.5cm}
+% \setlength{\tabcolsep}{4pt}
+\hypersetup{ % all blue links
+	colorlinks		= true,
+	urlcolor 		= blue,
+	linkcolor 		= blue,
+	citecolor 		= blue
+}
+
+% control over bibtex's alphabetizing
+\providecommand{\noopsort}[1]{}
+
+%%% prevent multi-page footnotes %%%
+\interfootnotelinepenalty=10000
+
+%%% useful commands %%%
+\newcommand{\ddfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\Ctwelve}{\ensuremath{^{12}\text{C}}}
+\newcommand{\Cthirteen}{\ensuremath{^{13}\text{C}}}
+\newcommand{\Cfourteen}{\ensuremath{^{14}\text{C}}}
+\newcommand{\Nthirteen}{\ensuremath{^{13}\text{N}}}
+\newcommand{\Nfourteen}{\ensuremath{^{14}\text{N}}}
+\newcommand{\Nfifteen}{\ensuremath{^{15}\text{N}}}
+\newcommand{\Ofifteen}{\ensuremath{^{15}\text{O}}}
+\newcommand{\Osixteen}{\ensuremath{^{16}\text{O}}}
+\newcommand{\vice}{\texttt{VICE}}
+\newcommand{\python}{\texttt{PYTHON}}
+\newcommand{\nh}{\ensuremath{\text{[N/H]}}}
+\newcommand{\feh}{\ensuremath{\text{[Fe/H]}}}
+\newcommand{\oh}{\ensuremath{\text{[O/H]}}}
+\newcommand{\no}{\ensuremath{\text{[N/O]}}}
+\newcommand{\ofe}{\ensuremath{\text{[O/Fe]}}}
+\newcommand{\ohno}{\no-\oh}
+\newcommand{\msun}{\ensuremath{\text{M}_\odot}}
+\newcommand{\persqkpc}{\ensuremath{\text{kpc}^{-2}}}
+\newcommand{\refp}[1]{(\ref{#1})}
+\newcommand{\rgal}{\ensuremath{R_\text{gal}}}
+\newcommand{\hsim}{\texttt{h277}}
+\newcommand{\subcc}{\ensuremath{_\text{cc}}}
+\newcommand{\ycc}[1]{\ensuremath{y_\text{#1}^\text{CC}}}
+\newcommand{\yia}[1]{\ensuremath{y_\text{#1}^\text{Ia}}}
+\newcommand{\yagb}[1]{\ensuremath{y_\text{#1}^\text{AGB}}}
+
+\defcitealias{Cristallo2011}{C11}
+\defcitealias{Cristallo2015}{C15}
+\defcitealias{Karakas2010}{K10}
+\defcitealias{Karakas2016}{KL16}
+\defcitealias{Karakas2018}{K18}
+\defcitealias{Ventura2013}{V13}
+
+\newcommand{\cristallo}{\citetalias{Cristallo2011}+\citetalias{Cristallo2015}}
+\newcommand{\karakasten}{\citetalias{Karakas2010}}
+\newcommand{\karakas}{\citetalias{Karakas2016}+\citetalias{Karakas2018}}
+\newcommand{\ventura}{\citetalias{Ventura2013}}
+
+\title[Empirical Constraints on the Nucleosynthesis of Nitrogen]{Empirical
+Constraints on the Nucleosynthesis of Nitrogen}
+
+\author[J.W. Johnson et al.]{James W. Johnson,$^{1, 2}$\thanks{
+	Contanct e-mail: \href{mailto:
+	johnson.7419@osu.edu}{johnson.7419@osu.edu}}
+	David H. Weinberg,$^{1, 2, 3}$
+	Fiorenzo Vincenzo,$^{1, 2, 4}$
+	Jonathan C. Bird,$^{5}$ and
+	\newauthor
+	Emily J. Griffith$^{1, 2}$
+	\\
+	$^{1}$ Department of Astronomy, The Ohio State University,
+	140 W. 18th Ave., Columbus, OH, 43210, USA
+	\\
+	$^{2}$ Center for Cosmology and Astroparticle Physics (CCAPP),
+	The Ohio State University, 191 W. Woodruff Ave., Columbus, OH, 43210, USA
+	\\
+	$^{3}$ Institute for Advanced Study, 1 Einstein Dr., Princeton, NJ, 08540,
+	USA
+	\\
+	$^{4}$ E.A. Milne Centre for Astrophysics, University of Hull, Cottingham
+	Rd, Kingston upon Hull, HU6 7RX, United Kingdom
+	\\
+	$^{5}$ Department of Physics \& Astronomy, Vanderbilt University,
+	2301 Vanderbilt Place, Nashville, TN, 37235, USA
+}
+
+\date{Accepted XXX; Received YYY; in original form ZZZ}
+\pubyear{2021}
+
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+\subfile{abstract.tex}
+
+\begin{keywords}
+methods: numerical -- galaxies: abundances -- galaxies: evolution -- galaxies:
+star formation -- galaxies: stellar content
+\end{keywords}
+
+\subfile{intro.tex}
+\subfile{nucleosynthesis.tex}
+\subfile{multizone.tex}
+\subfile{results.tex}
+\subfile{conclusions.tex}
+\subfile{acknowledgements.tex}
+\subfile{data_availability.tex}
+
+\bibliographystyle{mnras}
+\bibliography{ms}
+
+\begin{appendices}
+\subfile{vice.tex}
+\end{appendices}
+
+\label{lastpage}
+\end{document}
+

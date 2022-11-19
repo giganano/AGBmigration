@@ -1,0 +1,19 @@
+\@doanenote {1}
+macro:->
+Install
+(PyPI):~\url
+{https://pypi.org/project/vice}
+\\
+Documentation:~\url
+{https://vice-astro.readthedocs.io}
+\\
+Source
+Code:~\url
+{https://github.com/giganano/VICE.git}
+
+\@endanenote 
+\@doanenote {2}
+macro:->\url
+{https://vice-astro.readthedocs.io/en/latest/science_documentation/}
+
+\@endanenote 
