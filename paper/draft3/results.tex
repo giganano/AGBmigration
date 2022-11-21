@@ -122,7 +122,8 @@ associated discussion in~\S~\ref{sec:results:vincenzo_comp}).
 The separation of these evolutionary tracks contests the popular interpretation
 that the~\ohno~relation arises as an evolutionary sequence, instead suggesting
 a superposition of evolutionary endpoints at equilibrium values set by
-different outflow efficiencies.
+different outflow efficiencies~{\color{red} \citep[a similar argument was made
+by][]{Chiappini2003}}.
 Similar arguments have been made regarding low [$\alpha$/Fe] disc
 stars~\citep[e.g.][]{Schoenrich2009, Nidever2014, Buck2020, Sharma2021}.
 In short, a given ring in our model does not evolve along the~\ohno~relation,
@@ -367,13 +368,14 @@ we alternatively use the unmodified~\cristallo~and~\ventura~yields and make
 simultaneous adjustments to the strength of outflows and the normalization of
 our SN yields.
 We cannot modify one without modifying the other, because the
-\citet{Johnson2021} model implements a scaling of the mass-loading factor with
-radius such that the Galactic~\oh~gradient that arises reflects a radial
-gradient in equilibrium abundances (see their Figs. 3 and 9 and discussion in
-their~\S~2.4).
-We demonstrate this in the central panel of Fig.~\ref{fig:no_oh_predictions}
-for a model that uses the unmodified~\cristallo~yields and~$\ycc{O} = 0.005$
-with the strength of outflows lowered by a factor of 3.
+\citet{Johnson2021} model sets the Galactic~\oh~gradient according to a scaling
+of the equilibrium abundance with radius via an increase in the strength of
+outflows.
+Adjustments to the strength of outflows must therefore be accompanied by a
+revision of all SN yields with a similar multiplicative factor.
+The central panel of Fig.~\ref{fig:no_oh_predictions} shows a model that uses
+the unmodified~\cristallo~yields and~$\ycc{O} = 0.005$ with the strength of
+outflows lowered by a factor of 3.
 For robustness, we also include a variation in which~$\ycc{O} = 0.01$ with
 the~\cristallo~yields amplified by a factor of 2 and the strength of outflows
 adjusted accordingly.
@@ -385,12 +387,12 @@ in determining the equilibrium abundance is not exactly one-to-one.\footnote{
 	mass-loading factor and~$r \approx 0.4$ is a corrective term for
 	recycling~\citep{Weinberg2017}.
 }
-Regardless of the assumed scale of effective yields and outflows, we find that
-the observed~\ohno~relation can be reproduced as long as the
+Regardless of the assumed normalization, we find that the
+observed~\ohno~relation can be reproduced as long as the
 metallicity-dependence of population-averaged N yields is approximately linear.
 We expect that these results will hold if outflows are omitted since this
 corresponds to the limiting case in which we would scale our yields down by
-much larger factors.
+larger factors.
 \sout{
 As an alternative to amplifying the~\cristallo~and~\ventura~yields, we find
 good agreement with the observed relation if we instead lower our SN yields
@@ -692,7 +694,8 @@ equilibrium before N yields stabilize.
 When many stellar populations are present, the bulk of the N production will
 thus always follow the bulk production of more abundant species; this is 
 qualitatively similar to what~\citet{Johnson2020} found regarding the
-production timescales of Sr and Fe.
+production timescales of Sr and Fe
+{\color{red} \citep[see also][]{Tinsley1979}}.
 As a consequence of both its slight delay and its metallicity-dependent
 yields, N reaches its equilibrium abundance on timescales similar to Fe rather
 than O.
@@ -1114,5 +1117,110 @@ slowly.
 However, these galaxies are also typically in the low-metallicity regime
 where~\no~is determined by the metallicity-independent primary yields anyway.
 
+{\color{red}
+\subsection{Summary}
+\label{sec:results:summary}
+In general, we find good agreement between GCE model predictions and the
+observed~\ohno~relation if N yields scale with progenitor metallicity
+approximately as
+\begin{subequations}\begin{align}
+\frac{\ycc{N}}{\ycc{O}} &= 0.024
+\label{eq:advocated_n_cc_yield}
+\\
+\frac{\yagb{N}(M_\star, Z_\star)}{\ycc{O}} &= 0.06
+\left(\frac{M_\star}{M_\odot}\right)\left(\frac{Z}{Z_\odot}\right).
+\label{eq:advocated_n_agb_yield}
+\end{align}\end{subequations}
+We cannot constrain absolute yields of N because their normalization is
+degenerate with the strength of outflows in GCE models
+(see discussion in~\S~\ref{sec:results:yields:variations}).
+We have therefore scaled our reported N yields above by the adopted value
+of~\ycc{O}.
+Our investigations best constrain the metallicity dependence of the total
+population-averaged yield.
+While this metallicity dependence is all that is required to
+reproduce the gas-phase trends (see Fig.~\ref{fig:t_z_dep_comp} and discussion
+in~\S~\ref{sec:results:t_z_dep_comp}), stellar trends of~\no~with~\ofe~and age
+are sensitive to the portion of the yield attributed to AGB stars and their
+associated time-delay.
+We have success reproducing these results when the relative contribution of
+AGB stars follows equations~\refp{eq:advocated_n_cc_yield} and
+\refp{eq:advocated_n_agb_yield} and with a characteristic time-delay on the
+order of~$\sim$250 Myr (see Fig.~\ref{fig:vincenzo_comp} and discussion
+in~\S~\ref{sec:results:vincenzo_comp}).
+However, this comparison suggests that slightly super-linear N yields may be a
+better representation of the data.
+We would have arrived at the same conclusion had we adopted one of the steeper
+observational benchmarks from Fig.~\ref{fig:no_oh_observed} in place of
+\citeauthor{Dopita2016}'s~\citeyearpar{Dopita2016} measurements.
+\par
+Variations in the assumed SFH do not change the overall structure of the
+predicted~\ohno~relation, instead inducing scatter about the mean trend (see
+Fig.~\ref{fig:schaefer_comp} and discussion
+in~\S~\ref{sec:results:schaefer_comp}).
+These results should not be impacted by IMF variability.
+We have examined alternate versions of Fig.~\ref{fig:n_cc_yields} with
+different slopes of the~\citet{Kroupa2001} IMF at the high-mass end.
+While the normalization of~\ycc{N} is impacted, the~$\ycc{N} / \ycc{O}$ ratio
+is unaffected.
+Changes in the IMF could in principle impact the effective DTD of N production
+by AGB stars, but this is determined by the mass-dependence of the yields as
+opposed to the metallicity-dependence, and as discussed above, the DTD has
+little effect on gas-phase trends.
+}
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
