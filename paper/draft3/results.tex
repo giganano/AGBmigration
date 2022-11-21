@@ -374,14 +374,14 @@ outflows.
 Adjustments to the strength of outflows must therefore be accompanied by a
 revision of all SN yields with a similar multiplicative factor.
 The central panel of Fig.~\ref{fig:no_oh_predictions} shows a model that uses
-the unmodified~\cristallo~yields and~$\ycc{O} = 0.005$ with the strength of
-outflows lowered by a factor of 3.
-For robustness, we also include a variation in which~$\ycc{O} = 0.01$ with
-the~\cristallo~yields amplified by a factor of 2 and the strength of outflows
-adjusted accordingly.
+the unmodified~\cristallo~yields and~$\ycc{O} = 0.005$ with the outflow
+mass-loading factor lowered by a factor of three.
+We also show a variation with~$\ycc{O} = 0.01$, the~\cristallo~yields amplified
+by a factor of two, and the strength of outflows adjusted accordingly.
 While each of these variations lie along the observed~\ohno~relation, they span
-slightly different ranges in~\oh~since the relation between yields and outflows
-in determining the equilibrium abundance is not exactly one-to-one.\footnote{
+slightly different ranges in~\oh~because the relation between yields and
+outflows in determining the equilibrium abundance is not exactly
+one-to-one.\footnote{
 	\color{red}
 	Rather, it is one-to-one with~$1 + \eta - r$, where~$\eta$ is the
 	mass-loading factor and~$r \approx 0.4$ is a corrective term for
@@ -389,7 +389,8 @@ in determining the equilibrium abundance is not exactly one-to-one.\footnote{
 }
 Regardless of the assumed normalization, we find that the
 observed~\ohno~relation can be reproduced as long as the
-metallicity-dependence of population-averaged N yields is approximately linear.
+metallicity-dependence of population-averaged AGB N yields is approximately
+linear.
 We expect that these results will hold if outflows are omitted since this
 corresponds to the limiting case in which we would scale our yields down by
 larger factors.
@@ -1120,24 +1121,33 @@ where~\no~is determined by the metallicity-independent primary yields anyway.
 {\color{red}
 \subsection{Summary}
 \label{sec:results:summary}
-In general, we find good agreement between GCE model predictions and the
-observed~\ohno~relation if N yields scale with progenitor metallicity
-approximately as
+We find good agreement between GCE model predictions and the
+observed~\ohno~relation if IMF-averaged N yields scale with progenitor
+metallicity approximately as
 \begin{subequations}\begin{align}
 \frac{\ycc{N}}{\ycc{O}} &= 0.024
 \label{eq:advocated_n_cc_yield}
 \\
-\frac{\yagb{N}(M_\star, Z_\star)}{\ycc{O}} &= 0.06
-\left(\frac{M_\star}{M_\odot}\right)\left(\frac{Z}{Z_\odot}\right).
+\frac{y_\text{N}^\text{AGB}}{\ycc{O}} &= 0.062\left(\frac{Z}{Z_\odot}\right),
 \label{eq:advocated_n_agb_yield}
-\end{align}\end{subequations}
-We cannot constrain absolute yields of N because their normalization is
-degenerate with the strength of outflows in GCE models
-(see discussion in~\S~\ref{sec:results:yields:variations}).
-We have therefore scaled our reported N yields above by the adopted value
-of~\ycc{O}.
-Our investigations best constrain the metallicity dependence of the total
-population-averaged yield.
+\end{align}
+\label{eq:advocated_n_yield}%
+\end{subequations}
+where the prefactor of~$0.062$ comes from integrating our linear model with
+$\xi = 9\times10^{-4}$ over the mass range~$M_\star = 1 - 8$~\msun and
+normalizing by~$\ycc{O} = 0.015$.
+The absolute scale of yields is degenerate with the strength of outflows in GCE
+models (see discussion in~\S~\ref{sec:results:yields:variations}), but the
+ratio of~$(\ycc{N} + y_\text{N}^\text{AGB}) / \ycc{O}$ is well-constrained by
+the observed~\ohno~trend.
+Motivated by the~\cristallo~AGB yields, we have assigned all of the metallicity
+dependence in equation~\refp{eq:advocated_n_yield} to the AGB component, but
+other~$\ycc{N} + y_\text{N}^\text{AGB}$ combinations with the same total
+metallicity dependence would predict similar trends.
+Reproducing one of the steeper~\ohno~relations shown in
+Fig.~\ref{fig:no_oh_observed} as opposed to the~\citet{Dopita2016} relation
+would require a steeper (i.e., super-linear) metallicity dependence.
+\par
 While this metallicity dependence is all that is required to
 reproduce the gas-phase trends (see Fig.~\ref{fig:t_z_dep_comp} and discussion
 in~\S~\ref{sec:results:t_z_dep_comp}), stellar trends of~\no~with~\ofe~and age
@@ -1148,11 +1158,16 @@ AGB stars follows equations~\refp{eq:advocated_n_cc_yield} and
 \refp{eq:advocated_n_agb_yield} and with a characteristic time-delay on the
 order of~$\sim$250 Myr (see Fig.~\ref{fig:vincenzo_comp} and discussion
 in~\S~\ref{sec:results:vincenzo_comp}).
-However, this comparison suggests that slightly super-linear N yields may be a
-better representation of the data.
-We would have arrived at the same conclusion had we adopted one of the steeper
-observational benchmarks from Fig.~\ref{fig:no_oh_observed} in place of
-\citeauthor{Dopita2016}'s~\citeyearpar{Dopita2016} measurements.
+The agreement in Fig.~\ref{fig:vincenzo_comp} would also be improved by a
+super-linear metallicity dependence of the AGB yield.
+The~\cristallo~models imply an approximately linear mass dependence of the
+fractional N yield~$\yagb{N}(M_\star)$.
+With this mass dependence and the IMF-averaged yield of equation
+\refp{eq:advocated_n_agb_yield}, we can write
+\begin{equation}
+\frac{\yagb{N}(M_\star, Z_\star)}{\ycc{O}} =
+0.06\left(\frac{M_\star}{M_\odot}\right)\left(\frac{Z_\star}{Z_\odot}\right).
+\end{equation}
 \par
 Variations in the assumed SFH do not change the overall structure of the
 predicted~\ohno~relation, instead inducing scatter about the mean trend (see
@@ -1167,9 +1182,48 @@ Changes in the IMF could in principle impact the effective DTD of N production
 in AGB stars by adjusting the relative numbers of stars of different masses.
 However, gas-phase trends are insensitive to the DTD (see discussion
 in~\S~\ref{sec:results:t_z_dep_comp}), and the stellar trends
-of~\no~with~\ofe~and age do not tightly constrain the DTD anyway (see
-discussion in~\S~\ref{sec:results:vincenzo_comp}).
+of~\no~with~\ofe~and age do not tightly constrain the DTD (see discussion
+in~\S~\ref{sec:results:vincenzo_comp}).
 }
+
+% We cannot constrain absolute yields of N because their normalization is
+% degenerate with the strength of outflows in GCE models
+% (see discussion in~\S~\ref{sec:results:yields:variations}).
+% We have therefore scaled our reported N yields above by the adopted value
+% of~\ycc{O}.
+% Our investigations best constrain the metallicity dependence of the total
+% population-averaged yield.
+% While this metallicity dependence is all that is required to
+% reproduce the gas-phase trends (see Fig.~\ref{fig:t_z_dep_comp} and discussion
+% in~\S~\ref{sec:results:t_z_dep_comp}), stellar trends of~\no~with~\ofe~and age
+% are sensitive to the portion of the yield attributed to AGB stars and their
+% associated time-delay.
+% We have success reproducing these results when the relative contribution of
+% AGB stars follows equations~\refp{eq:advocated_n_cc_yield} and
+% \refp{eq:advocated_n_agb_yield} and with a characteristic time-delay on the
+% order of~$\sim$250 Myr (see Fig.~\ref{fig:vincenzo_comp} and discussion
+% in~\S~\ref{sec:results:vincenzo_comp}).
+% However, this comparison suggests that slightly super-linear N yields may be a
+% better representation of the data.
+% We would have arrived at the same conclusion had we adopted one of the steeper
+% observational benchmarks from Fig.~\ref{fig:no_oh_observed} in place of
+% \citeauthor{Dopita2016}'s~\citeyearpar{Dopita2016} measurements.
+% \par
+% Variations in the assumed SFH do not change the overall structure of the
+% predicted~\ohno~relation, instead inducing scatter about the mean trend (see
+% Fig.~\ref{fig:schaefer_comp} and discussion
+% in~\S~\ref{sec:results:schaefer_comp}).
+% Our results should also not be impacted by the assumed IMF.
+% We have examined alternate versions of Fig.~\ref{fig:n_cc_yields} with
+% different slopes of the~\citet{Kroupa2001} IMF at the high-mass end.
+% While the normalization of~\ycc{N} is impacted, the~$\ycc{N} / \ycc{O}$ ratio
+% is unaffected.
+% Changes in the IMF could in principle impact the effective DTD of N production
+% in AGB stars by adjusting the relative numbers of stars of different masses.
+% However, gas-phase trends are insensitive to the DTD (see discussion
+% in~\S~\ref{sec:results:t_z_dep_comp}), and the stellar trends
+% of~\no~with~\ofe~and age do not tightly constrain the DTD anyway (see
+% discussion in~\S~\ref{sec:results:vincenzo_comp}).
 
 \end{document}
 

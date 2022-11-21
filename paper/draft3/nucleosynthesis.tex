@@ -93,10 +93,10 @@ In GCE models, our choice of normalization leads to good agreement with the
 observationally inferred deuterium-to-hydrogen ratio of the local ISM
 \citep{Linsky2006}, while substantially lower~$\ycc{O}$ leads to disagreement
 \citep{Weinberg2017b}.
-However, there are a number of models which reproduce the observed
-abundance patterns in the Milky Way with much lower yields and weak or no winds
-at all (e.g.,~\citealp*{Kubryk2015};~\citealp{Prantzos2018, Spitoni2019,
-Spitoni2021}).
+However, there are a number of models that reproduce observed abundance
+patterns of other elements in the Milky Way with weak or negligible outflows
+and a much lower yield normalization (e.g.,~\citealp*{Kubryk2015};
+\citealp{Prantzos2018, Spitoni2019, Spitoni2021}).
 We explore variations of the absolute scale of nucleosynthetic yields and
 outflows in~\S~\ref{sec:results:yields:variations} below and find that our
 conclusions are not impacted by the assumed normalization.
@@ -219,9 +219,9 @@ suggests a plateau in~\no~at low metallicity at~$\no\subcc\approx-0.7$.
 We have examined versions of Fig.~\ref{fig:n_cc_yields} with shallow and steep
 variations of the~\citet{Kroupa2001} IMF (i.e., power-law indices
 $\gamma = -2.0$ and~$-2.6$, respectively).
-This level of IMF variability produces factor of~$\lesssim2$ variations in
-$\ycc{N}$, but the~\no\subcc~ratios are unaffected because massive star yields
-of N and O follow similar trends with stellar mass.
+This level of IMF variability produces factor of~$\sim2$ variations in
+$\ycc{N}$, but the~\no\subcc~ratios are nearly unaffected because massive star
+yields of N and O follow similar trends with stellar mass.
 }
 Taking this value in combination with our adopted O yield of~$\ycc{O} = 0.015$,
 equation~\refp{eq:no_subcc} suggests that~$\ycc{N} = 3.6\times10^{-4}$.
@@ -294,8 +294,16 @@ by AGB stars~\citep[e.g.][]{Johnson2019}.
 \subsection{Asymptotic Giant Branch Stars}
 \label{sec:yields:agb}
 
+{\color{red}
+\sout{
 Similar to SNe, our AGB star yields are parametrized as fractional net yields.
 For a yield~$\yagb{X}$, the mass yield is given by~$M_\star \yagb{X}$.
+}
+We use~\yagb{X} to denote the fractional net yield of an AGB star of mass
+$M_\star$, so that the mass yield is~$M_\star\yagb{X}$.
+We then define the IMF-averaged yield~$y_\text{X}^\text{AGB}$ by integrating
+over the mass range~$M_\star = 1 - 8$~\msun.
+}
 Enrichment proceeds as it does in~\citet{Johnson2021}: AGB stars place their
 nucleosynthetic products in the~$\delta\rgal = 100$ pc ring that they are in at
 a given time, allowing stars to enrich distributions of radii as they migrate.
